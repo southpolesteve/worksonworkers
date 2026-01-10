@@ -1,0 +1,15 @@
+{
+  "name": "nanoid",
+  "version": "5.1.6",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "id-generation",
+  "example": "import { nanoid } from 'nanoid';\n\n// Usage:\nconst id = nanoid();\nreturn { success: id.length === 21, result: id };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T22:57:36.602Z",
+  "testedBy": "automated"
+}

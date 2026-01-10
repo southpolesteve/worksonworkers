@@ -1,0 +1,17 @@
+{
+  "name": "mathjs",
+  "version": "15.1.0",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "utility",
+  "notes": "ESM import issues with dependencies",
+  "investigated": true,
+  "errorMessage": "The requested module 'complex.js' does not provide an export named 'default'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:59:24.394Z",
+  "testedBy": "automated"
+}

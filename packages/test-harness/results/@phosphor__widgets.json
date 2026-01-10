@@ -1,0 +1,15 @@
+{
+  "name": "@phosphor/widgets",
+  "version": "1.9.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "ui-components",
+  "notes": "PhosphorJS is an archived (2019) browser-only UI widget library for building desktop-style web applications. Provides widgets, layouts, and DOM manipulation for complex browser UIs. Originally used by JupyterLab, now superseded by @jupyterlab/lumino. Requires DOM APIs (window, document, HTMLElement) which are not available in Workers. Designed for client-side browser rendering, not serverless environments.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:07:25.266Z",
+  "testedBy": "automated"
+}

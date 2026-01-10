@@ -1,0 +1,16 @@
+{
+  "name": "meow",
+  "version": "14.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "CLI helper library",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:52:47.221Z",
+  "testedBy": "automated"
+}

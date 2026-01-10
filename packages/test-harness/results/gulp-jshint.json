@@ -1,0 +1,16 @@
+{
+  "name": "gulp-jshint",
+  "version": "2.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-jshint is a Gulp plugin for JSHint linting during build workflows. The name pattern 'gulp-*' indicates it's a Gulp plugin (like gulp-babel, gulp-concat, gulp-uglify). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('*.js').pipe(jshint()).pipe(jshint.reporter())). Used during development/build workflows to automatically lint JavaScript files using JSHint, check code quality, enforce style rules. Processes files from disk using Node.js streams and filesystem access. Part of the Gulp plugin ecosystem alongside gulp-eslint (ESLint linting), gulp-tslint (TypeScript linting - deprecated). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern linting uses ESLint CLI directly (without Gulp) or build tools with built-in linting (webpack/vite with eslint-loader/eslint-webpack-plugin).",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:37:43.986Z",
+  "testedBy": "automated"
+}

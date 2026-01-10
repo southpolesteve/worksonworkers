@@ -1,0 +1,15 @@
+{
+  "name": "babel-plugin-transform-es2015-modules-commonjs",
+  "version": "6.26.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-plugin-transform-es2015-modules-commonjs is a Babel 6 plugin that transforms ES6 module syntax (import/export, e.g., `import foo from 'bar'`, `export default baz`) to CommonJS (require/module.exports) during build/compilation. Babel transform plugins (babel-plugin-transform-*, @babel/plugin-transform-*) are code transformation tools that modify JavaScript during the build process. Like all Babel plugins (babel-plugin-syntax-*, @babel/plugin-proposal-*, @babel/preset-*), these are build-time tools configured in .babelrc or babel.config.js during development/build pipelines with webpack, vite, or esbuild. In Babel 7+, this functionality is in @babel/plugin-transform-modules-commonjs. Modern build tools and Workers natively support ES modules, making this transformation often unnecessary for Workers development.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:58:58.974Z",
+  "testedBy": "automated"
+}

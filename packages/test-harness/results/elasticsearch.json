@@ -1,0 +1,17 @@
+{
+  "name": "elasticsearch",
+  "version": "16.7.3",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "database",
+  "notes": "DEPRECATED package (no longer maintained since 2020). Official legacy Elasticsearch JavaScript client for connecting to Elasticsearch servers via HTTP REST API. Replaced by @elastic/elasticsearch (the new official client). The old client is no longer maintained and users are strongly advised to migrate to the new client. While theoretically an HTTP REST client could work in Workers, this legacy package is unmaintained and has compatibility issues. Original error 'Cannot read properties of undefined (reading 'bold')' occurred due to outdated dependencies and lack of maintenance.",
+  "alternative": "@elastic/elasticsearch (new official client) - may work with Workers, needs testing",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:37:12.850Z",
+  "testedBy": "automated",
+  "investigated": true
+}

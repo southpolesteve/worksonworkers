@@ -1,0 +1,16 @@
+{
+  "name": "portfinder",
+  "version": "1.0.38",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "Finds available ports for local servers - not applicable to Workers",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:41:07.286Z",
+  "testedBy": "automated"
+}

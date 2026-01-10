@@ -1,0 +1,16 @@
+{
+  "name": "merge-stream",
+  "version": "2.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import mergeStream from 'merge-stream';\n\n// Usage:\nconst merged = mergeStream();\nreturn { success: typeof merged === 'object', result: 'merge-utility' };",
+  "notes": "Utility for merging multiple readable streams into one",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:10:07.437Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "rc-slider",
+  "version": "11.1.9",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "React browser UI component - requires DOM",
+  "errorMessage": "Package rc-slider needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:13:33.703Z",
+  "testedBy": "automated",
+  "investigated": true
+}

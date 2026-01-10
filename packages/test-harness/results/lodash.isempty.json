@@ -1,0 +1,15 @@
+{
+  "name": "lodash.isempty",
+  "version": "4.4.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import isEmpty from 'lodash.isempty';\n\n// Usage:\nconst result = [isEmpty({}), isEmpty([]), isEmpty(''), isEmpty({ a: 1 })];\nreturn { success: result[0] && result[1] && result[2] && !result[3], result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:18:48.869Z",
+  "testedBy": "automated"
+}

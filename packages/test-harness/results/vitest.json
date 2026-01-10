@@ -1,0 +1,15 @@
+{
+  "name": "vitest",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "testing",
+  "example": "\n\n// Usage:\n",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:51:58.828Z",
+  "testedBy": "automated"
+}

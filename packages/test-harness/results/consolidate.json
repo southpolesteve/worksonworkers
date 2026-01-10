@@ -1,0 +1,15 @@
+{
+  "name": "consolidate",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "server-framework",
+  "notes": "consolidate is a template engine consolidation library for Express/Node.js that provides a unified API for rendering templates with 40+ template engines (EJS, Pug, Handlebars, Nunjucks, Mustache, React, etc.). Requires filesystem access to read template files from disk (views/*.html, views/*.ejs, etc.) and is designed for Express server architecture with app.engine() and res.render() patterns. Workers uses different rendering patterns - use SSR frameworks like Remix/Hono with built-in rendering, return HTML directly via Response, or implement client-side rendering.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:22:51.254Z",
+  "testedBy": "automated"
+}

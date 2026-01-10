@@ -1,0 +1,16 @@
+{
+  "name": "raf",
+  "version": "3.4.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import raf from 'raf';\n\n// Usage:\nlet executed = false;\nconst id = raf(() => { executed = true; });\n\n// Wait a bit for the callback to execute\nawait new Promise(resolve => setTimeout(resolve, 50));\n\nreturn { \n  success: executed,\n  result: { executed, id }\n};",
+  "notes": "requestAnimationFrame polyfill",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:27:26.142Z",
+  "testedBy": "automated"
+}

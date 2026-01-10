@@ -1,0 +1,16 @@
+{
+  "name": "diff",
+  "version": "8.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import * as diff from 'diff';\n\n// Usage:\nconst result = diff.diffChars('hello', 'hallo');\nreturn { success: result.length > 0 && result.some(p => p.added || p.removed), result };",
+  "notes": "Text diff implementation (characters, words, lines, JSON)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:33:01.056Z",
+  "testedBy": "automated"
+}

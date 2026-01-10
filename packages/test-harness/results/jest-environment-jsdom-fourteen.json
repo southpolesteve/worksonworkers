@@ -1,0 +1,17 @@
+{
+  "name": "jest-environment-jsdom-fourteen",
+  "version": "1.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "test-framework",
+  "notes": "Jest JSDOM environment",
+  "investigated": true,
+  "errorMessage": "Package jest-environment-jsdom-fourteen needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:01:36.153Z",
+  "testedBy": "automated"
+}

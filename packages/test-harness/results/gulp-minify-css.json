@@ -1,0 +1,16 @@
+{
+  "name": "gulp-minify-css",
+  "version": "1.2.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-minify-css is a Gulp plugin for minifying CSS during build workflows. The 'gulp-*' prefix indicates it's part of the Gulp plugin ecosystem (like gulp-concat, gulp-uglify, gulp-sass, gulp-autoprefixer, gulp-clean-css). Configured in gulpfile.js as part of Gulp's streaming build system. Used during development/build workflows to minify CSS files for production. Requires filesystem access to read source CSS files and write minified output. Not applicable to Workers which is a runtime environment, not a build environment. Modern CSS minification uses clean-css CLI directly (without Gulp), build tools with built-in minification (webpack/vite), or PostCSS with cssnano.",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:47:06.940Z",
+  "testedBy": "automated"
+}

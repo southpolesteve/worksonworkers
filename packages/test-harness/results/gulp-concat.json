@@ -1,0 +1,16 @@
+{
+  "name": "gulp-concat",
+  "version": "2.6.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-concat is a Gulp plugin for concatenating files during build workflows. The name pattern 'gulp-*' clearly indicates it's a Gulp plugin (like gulp-babel, gulp-uglify, gulp-autoprefixer, gulp-clean-css, gulp-sass, etc.). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src(['file1.js', 'file2.js']).pipe(concat('bundle.js')).pipe(gulp.dest('dist'))). Used during development/build workflows to automatically combine multiple files (JavaScript modules, CSS stylesheets, HTML templates) into single output files for reducing HTTP requests in production. Processes files from disk using Node.js streams and filesystem access (fs.createReadStream for reading multiple source files, fs.createWriteStream for writing concatenated output). Supports source maps for debugging concatenated files, custom separators between concatenated files, and new line characters. Part of the Gulp plugin ecosystem alongside gulp-uglify (minify JavaScript), gulp-sass (compile Sass), gulp-autoprefixer (add CSS vendor prefixes), gulp-clean-css (minify CSS), gulp-sourcemaps (generate sourcemaps). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern file concatenation uses build tools with built-in bundling (webpack/rollup/esbuild bundle modules automatically), module bundlers (no manual concatenation needed with ES modules), or concat-cli (command-line concatenation without Gulp).",
+  "errorMessage": "Cannot read properties of undefined (reading 'slice')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:27:22.779Z",
+  "testedBy": "automated"
+}

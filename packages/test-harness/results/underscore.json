@@ -1,0 +1,15 @@
+{
+  "name": "underscore",
+  "version": "1.13.7",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import _ from 'underscore';\n\n// Usage:\nconst result = _.flatten([[1, 2], [3, 4]]);\nreturn { success: true, result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T22:59:23.329Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "babel-helper-vue-jsx-merge-props",
+  "version": "2.0.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-helper-vue-jsx-merge-props is a Babel helper function used by babel-plugin-transform-vue-jsx during build/compilation to merge JSX props when transforming Vue JSX syntax (e.g., `<Component {...props1} {...props2} />`) to Vue render functions. Part of Vue's JSX build pipeline used by Babel plugins and build tools (webpack, vite) to transpile JSX in Vue applications. Like all Babel helpers and plugins, this is a build-time utility for development workflows, not for runtime execution in Workers.",
+  "errorMessage": "Package babel-helper-vue-jsx-merge-props needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:53:50.185Z",
+  "testedBy": "automated"
+}

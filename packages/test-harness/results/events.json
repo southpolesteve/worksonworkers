@@ -1,0 +1,16 @@
+{
+  "name": "events",
+  "version": "3.3.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { EventEmitter } from 'events';\n\n// Usage:\nconst ee = new EventEmitter();\nlet count = 0;\nee.on('test', () => { count++; });\nee.emit('test');\nreturn { success: count === 1, result: { count } };",
+  "notes": "Node.js EventEmitter - available in Workers",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:45:54.776Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "simple-git",
+  "version": "3.30.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "alternative": "@cloudflare/workers-github-api",
+  "notes": "Git CLI wrapper requires child_process - use GitHub API for Git operations",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:13:39.401Z",
+  "testedBy": "automated"
+}

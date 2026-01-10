@@ -1,0 +1,15 @@
+{
+  "name": "jwt-decode",
+  "version": "4.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { jwtDecode } from 'jwt-decode';\n\n// Usage:\nconst token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c';\nconst decoded = jwtDecode(token);\nreturn { success: decoded.sub === '1234567890' && decoded.name === 'John Doe', result: decoded };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:09:52.667Z",
+  "testedBy": "automated"
+}

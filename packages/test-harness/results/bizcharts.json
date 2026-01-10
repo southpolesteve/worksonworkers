@@ -1,0 +1,16 @@
+{
+  "name": "bizcharts",
+  "version": "4.1.23",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "BizCharts is a React-based data visualization library built on top of G2 (grammar of graphics) for creating interactive charts using HTML5 Canvas rendering. Designed exclusively for browser environments (requires DOM APIs like window, document, HTMLCanvasElement) to render charts client-side in React applications. Not applicable to Workers which is a serverless runtime without DOM APIs. For data visualization in Workers, use server-side chart generation libraries or return data to client for rendering. Part of the AntV ecosystem (Alibaba's data visualization framework).",
+  "errorMessage": "Package bizcharts needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:02:25.435Z",
+  "testedBy": "automated"
+}

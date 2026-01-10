@@ -1,0 +1,16 @@
+{
+  "name": "grunt-contrib-watch",
+  "version": "1.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Official Grunt plugin for watching files and running tasks when they change. Part of grunt-contrib-* ecosystem. Configured in Gruntfile.js as grunt.loadNpmTasks('grunt-contrib-watch') with task configuration defining files to watch and tasks to run on changes. Requires filesystem access (fs.watch, fs.stat) to monitor file/directory changes during development workflows (auto-running tasks on file save, live reload, continuous testing, build automation). Used by build tools, dev servers, and CI workflows. Not applicable to Workers which is a runtime environment without filesystem watching capability, not a build environment.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:11:30.779Z",
+  "testedBy": "automated",
+  "investigated": true
+}

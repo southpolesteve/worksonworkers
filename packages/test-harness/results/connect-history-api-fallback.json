@@ -1,0 +1,15 @@
+{
+  "name": "connect-history-api-fallback",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "framework",
+  "example": "import historyFallback from 'connect-history-api-fallback';\n\n// Usage:\nreturn { success: false, result: 'n/a' };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:16:50.868Z",
+  "testedBy": "automated"
+}

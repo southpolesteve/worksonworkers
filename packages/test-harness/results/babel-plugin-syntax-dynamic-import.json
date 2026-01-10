@@ -1,0 +1,15 @@
+{
+  "name": "babel-plugin-syntax-dynamic-import",
+  "version": "6.18.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-plugin-syntax-dynamic-import is a Babel syntax plugin from Babel 6 that enables parsing of dynamic import() syntax (e.g., import('./module.js')) in code. Babel syntax plugins (babel-plugin-syntax-*, @babel/plugin-syntax-*) are parser plugins that extend Babel's parser (@babel/parser) to recognize new/experimental JavaScript syntax during code parsing - they don't transform code, just enable parsing it. Like all Babel plugins (babel-plugin-transform-*, @babel/plugin-proposal-*, @babel/preset-*), these are build-time tools configured in .babelrc or babel.config.js for code parsing/transformation during development/build pipelines with webpack, vite, or esbuild. Not a runtime library for Workers execution. Note: Dynamic import() syntax is now natively supported in modern JavaScript and Workers, making this plugin unnecessary in modern build tools.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:27:04.504Z",
+  "testedBy": "automated"
+}

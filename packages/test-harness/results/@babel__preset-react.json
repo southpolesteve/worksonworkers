@@ -1,0 +1,16 @@
+{
+  "name": "@babel/preset-react",
+  "version": "7.28.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/preset-react is a Babel preset (collection of Babel plugins) for transforming React JSX syntax (e.g., `<div>Hello</div>`, `<Component prop={value} />`) to JavaScript function calls during build/compilation. Part of Babel's code transformation ecosystem used by build tools like webpack, esbuild, and vite to transpile JSX. Like all Babel presets (@babel/preset-env, @babel/preset-typescript, @babel/preset-flow), this is a build-time tool for development workflows, not for runtime execution in Workers. You configure it in .babelrc or babel.config.js during development. Error 'Expected opts.sync to be a function' occurs because Babel presets expect to run in a Node.js build environment. Not designed for or needed in Cloudflare Workers runtime.",
+  "errorMessage": "Expected opts.sync to be a function.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:24:40.612Z",
+  "testedBy": "automated"
+}

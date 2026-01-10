@@ -1,0 +1,16 @@
+{
+  "name": "connect-flash",
+  "version": "0.1.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "utility",
+  "notes": "Express/Connect middleware for flash messages (temporary messages stored in session across redirects). Requires stateful session storage via express-session with persistent session store. Workers is stateless - sessions must be managed externally using KV, D1, or Durable Objects. Flash messages are a traditional stateful server pattern not suited for serverless. For flash-like messages in Workers, pass messages via URL parameters, cookies, or implement custom session management with KV/Durable Objects.",
+  "errorMessage": "Package connect-flash needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:02:57.753Z",
+  "testedBy": "automated"
+}

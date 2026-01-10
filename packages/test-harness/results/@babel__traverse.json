@@ -1,0 +1,15 @@
+{
+  "name": "@babel/traverse",
+  "version": "7.28.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/traverse is part of Babel's core AST (Abstract Syntax Tree) traversal and transformation system. It provides the API for walking through and transforming code trees during build/compilation. Like @babel/parser, @babel/core, and other Babel packages, this is a build-time tool used by Babel plugins and build systems (webpack, esbuild, vite) to analyze and transform code. Not a runtime library - you don't traverse ASTs in request handlers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:55:42.800Z",
+  "testedBy": "automated"
+}

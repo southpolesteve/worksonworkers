@@ -1,0 +1,16 @@
+{
+  "name": "forwarded",
+  "version": "0.2.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "http-client",
+  "example": "import forwarded from 'forwarded';\n\n// Usage:\nconst req = { \n  headers: { 'x-forwarded-for': '192.168.1.1, 10.0.0.1' },\n  connection: { remoteAddress: '127.0.0.1' }\n};\nconst addresses = forwarded(req);\nreturn { success: Array.isArray(addresses) && addresses.length === 3, result: addresses };",
+  "notes": "Parse X-Forwarded-For header",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:47:24.965Z",
+  "testedBy": "automated"
+}

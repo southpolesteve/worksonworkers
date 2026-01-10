@@ -1,0 +1,15 @@
+{
+  "name": "awesome-typescript-loader",
+  "version": "5.2.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "awesome-typescript-loader is a webpack loader for transpiling TypeScript files during the webpack build process. It's a build-time tool used in webpack.config.js (e.g., { test: /\\.tsx?$/, loader: 'awesome-typescript-loader' }) to handle TypeScript compilation with webpack. Like all webpack loaders (ts-loader, babel-loader, css-loader, file-loader, etc.), this is designed for build/development workflows, not runtime execution in Workers. The package is also archived/deprecated - the TypeScript team recommends using ts-loader instead.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:07:50.428Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "mysql",
+  "version": "2.18.1",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "other",
+  "example": "import * as pkg from 'mysql';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+  "notes": "MySQL client - use Cloudflare D1, @planetscale/database, or mysql2 with TCP socket support",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:54:45.871Z",
+  "testedBy": "automated",
+  "alternative": "@planetscale/database or mysql2",
+  "investigated": true
+}

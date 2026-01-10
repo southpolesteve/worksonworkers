@@ -1,0 +1,15 @@
+{
+  "name": "cli-color",
+  "version": "2.0.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "CLI/terminal coloring and formatting utility for console output. Provides functions for adding colors, styling (bold, italic, underline), and formatting to terminal/stdout text using ANSI escape codes. Designed exclusively for command-line interfaces and Node.js terminal applications requiring process.stdout, TTY control, and ANSI color support. Not applicable to Workers which is an HTTP request/response runtime without terminal I/O. For colored console.log() output in Workers during development, use standard console methods. Similar CLI styling libraries include chalk, colors, kleur, ansi-colors. The original error was a module resolution issue in es5-ext dependency.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:28:35.376Z",
+  "testedBy": "automated"
+}

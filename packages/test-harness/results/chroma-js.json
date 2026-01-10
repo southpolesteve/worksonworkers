@@ -1,0 +1,16 @@
+{
+  "name": "chroma-js",
+  "version": "3.2.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import chroma from 'chroma-js';\n\n// Usage:\nconst color = chroma('#ff0000');\nconst hex = color.hex();\nconst rgb = color.rgb();\nconst darken = color.darken().hex();\nreturn { success: hex === '#ff0000' && rgb[0] === 255, result: { hex, rgb, darken } };",
+  "notes": "Color manipulation library for parsing, converting, and manipulating colors.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:07:14.733Z",
+  "testedBy": "automated"
+}

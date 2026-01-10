@@ -1,0 +1,16 @@
+{
+  "name": "raw-loader",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack loader for raw file imports",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:18:16.575Z",
+  "testedBy": "automated"
+}

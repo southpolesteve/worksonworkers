@@ -1,0 +1,16 @@
+{
+  "name": "@fortawesome/fontawesome-svg-core",
+  "version": "7.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "ui",
+  "example": "import { library, icon } from '@fortawesome/fontawesome-svg-core';\nimport { faUser } from '@fortawesome/free-solid-svg-icons';\n\n// Usage:\nlibrary.add(faUser);\nconst result = icon({ prefix: 'fas', iconName: 'user' });\nconst svg = result?.html?.[0];\nreturn { success: svg?.includes('<svg') && svg?.includes('data-icon=\"user\"'), result: { length: svg?.length } };",
+  "notes": "Works for server-side SVG generation, but DOM manipulation features require browser",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T13:26:21.956Z",
+  "testedBy": "automated"
+}

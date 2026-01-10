@@ -1,0 +1,15 @@
+{
+  "name": "findup-sync",
+  "version": "5.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "findup-sync is a filesystem utility from the Gulp ecosystem for finding files by walking up directory trees using glob patterns. Searches for files matching patterns (e.g., '.eslintrc', 'package.json', 'tsconfig.json') by traversing from current directory to parent directories. Part of gulpjs tooling (https://github.com/gulpjs/findup-sync). Used by build tools, linters, and config loaders during development workflows to locate configuration files. Requires Node.js filesystem APIs (fs.readdir, fs.stat, path) to traverse directory hierarchies. Workers is a stateless serverless environment without filesystem access - each request runs in isolation with no directory structure to traverse. Similar filesystem search tools include find-up, pkg-dir, find-pkg.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:03:32.869Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "babel-plugin-transform-react-remove-prop-types",
+  "version": "0.4.24",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-plugin-transform-react-remove-prop-types is a Babel plugin that removes React PropTypes declarations from production builds to reduce bundle size. For example, it transforms `Component.propTypes = { name: PropTypes.string }` to remove the PropTypes assignments during build/compilation. Babel transform plugins (babel-plugin-transform-*, @babel/plugin-transform-*) are code transformation tools that modify JavaScript during the build process. Like all Babel plugins (babel-plugin-syntax-*, @babel/plugin-proposal-*, @babel/preset-*), these are build-time tools configured in .babelrc or babel.config.js during development/build pipelines with webpack, vite, or esbuild. PropTypes are typically stripped in production builds. Not a runtime library for Workers execution.",
+  "errorMessage": "Package babel-plugin-transform-react-remove-prop-types needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:28:16.040Z",
+  "testedBy": "automated"
+}

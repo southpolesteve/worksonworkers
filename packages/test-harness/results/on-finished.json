@@ -1,0 +1,15 @@
+{
+  "name": "on-finished",
+  "version": "2.4.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import onFinished from 'on-finished';\n\n// Usage:\nconst mockRes = { \n  finished: false, \n  headersSent: false,\n  on: function(event, cb) { if (event === 'finish') setTimeout(cb, 0); return this; },\n  once: function(event, cb) { return this.on(event, cb); },\n  removeListener: function() { return this; }\n};\nlet called = false;\nonFinished(mockRes, () => { called = true; });\nreturn { success: true, result: 'onFinished called' };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:42:40.596Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "download",
+  "version": "8.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "dev-tool",
+  "notes": "download is a filesystem-based HTTP file downloader for downloading and extracting files to disk. The API takes a URL and optional destination directory path (e.g., download('http://example.com/foo.jpg', 'dist')), downloads the file via HTTP/HTTPS, and writes it to the filesystem using fs.writeFileSync or createWriteStream. Supports extracting archives with the extract option using decompress to extract zip/tar files to disk. Requires persistent filesystem write access for saving downloaded files and stream piping to disk. Workers is a stateless serverless environment without persistent filesystem write access. For file downloads in Workers, fetch() data directly and return Response to client, or upload to R2 storage using env.R2_BUCKET.put(). Similar filesystem-based download utilities include node-fetch with fs.createWriteStream, axios with fs streams, got with pipe to filesystem.",
+  "errorMessage": "Cannot read properties of undefined (reading 'match')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:34:58.322Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "eslint-plugin-node",
+  "version": "11.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "ESLint plugin for Node.js-specific linting rules (no-unsupported-features, prefer-global/buffer, no-deprecated-api, etc.). ESLint plugins extend ESLint's rule set via the 'plugins' array in .eslintrc configuration files. Used exclusively during development/CI workflows to enforce Node.js best practices and catch compatibility issues. Not applicable to Workers which is a runtime environment, not a linting environment. Similar ESLint Node.js plugins include eslint-plugin-n (actively maintained fork), @typescript-eslint/eslint-plugin (TypeScript rules), eslint-plugin-import (import/export rules).",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:23:43.068Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "camelcase",
+  "version": "9.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "string",
+  "example": "import camelCase from 'camelcase';\n\n// Usage:\nconst result1 = camelCase('foo-bar');\nconst result2 = camelCase('foo_bar');\nconst result3 = camelCase('foo bar');\nreturn { success: result1 === 'fooBar' && result2 === 'fooBar' && result3 === 'fooBar', result: { result1, result2, result3 } };",
+  "notes": "Convert strings to camelCase format.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:01:13.220Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ip",
+  "version": "2.0.1",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "utility",
+  "notes": "Requires node:os module which is not available in Workers. For IP validation/parsing, use native URL parsing or write custom validators.",
+  "errorMessage": "No such module \"node:os\".",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:11:44.699Z",
+  "testedBy": "automated"
+}

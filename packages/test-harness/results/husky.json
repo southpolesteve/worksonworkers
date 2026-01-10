@@ -1,0 +1,17 @@
+{
+  "name": "husky",
+  "version": "9.1.7",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "git-hooks",
+  "notes": "Git hooks tool - runs during development",
+  "investigated": true,
+  "errorMessage": "Package husky needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:06:33.292Z",
+  "testedBy": "automated"
+}

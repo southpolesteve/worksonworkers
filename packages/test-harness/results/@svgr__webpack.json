@@ -1,0 +1,16 @@
+{
+  "name": "@svgr/webpack",
+  "version": "8.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@svgr/webpack is a webpack loader that transforms SVG files into React components during build/compilation. Part of SVGR's webpack integration used by build tools to process SVG imports (e.g., `import Logo from './logo.svg'`) at build time. Like all webpack loaders (babel-loader, css-loader, file-loader, ts-loader), this is a build-time tool for development workflows, not for runtime execution in Workers. You configure it in webpack.config.js during development. Error 'Expected opts.sync to be a function' occurs because webpack loaders expect to run in a Node.js build environment with webpack's loader API.",
+  "errorMessage": "Expected opts.sync to be a function.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:13:06.948Z",
+  "testedBy": "automated"
+}

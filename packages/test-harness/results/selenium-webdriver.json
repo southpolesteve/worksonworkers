@@ -1,0 +1,16 @@
+{
+  "name": "selenium-webdriver",
+  "version": "4.39.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "Browser automation tool for testing - not applicable to Workers runtime",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:39:37.434Z",
+  "testedBy": "automated"
+}

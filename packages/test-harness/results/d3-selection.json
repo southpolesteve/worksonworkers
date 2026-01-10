@@ -1,0 +1,16 @@
+{
+  "name": "d3-selection",
+  "version": "3.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "d3-selection is a D3.js library for data-driven DOM manipulation - selecting, modifying, and binding data to DOM elements (document.querySelector, element.appendChild, data binding with selection.data()). Requires browser APIs like document, window, HTMLElement, NodeList, and DOM tree manipulation which are not available in Workers' serverless environment. Designed exclusively for client-side browser-based data visualization and interactive DOM updates. Part of the D3.js ecosystem for creating dynamic, interactive visualizations in web browsers. For data visualization in Workers, use D3's non-DOM utilities (d3-array, d3-scale, d3-time, d3-format) for data processing and return data to client for rendering with D3.js, React, or other browser frameworks. Similar browser-only DOM manipulation libraries include jQuery, Zepto, cash-dom.",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:30:20.836Z",
+  "testedBy": "automated"
+}

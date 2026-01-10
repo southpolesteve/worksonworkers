@@ -1,0 +1,16 @@
+{
+  "name": "semver",
+  "version": "7.7.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import semver from 'semver';\n\n// Usage:\nconst valid = semver.valid('1.2.3');\nconst gt = semver.gt('2.0.0', '1.0.0');\nconst satisfies = semver.satisfies('1.5.0', '^1.0.0');\n\nreturn { success: valid === '1.2.3' && gt === true && satisfies === true, result: { valid, gt, satisfies } };",
+  "notes": "Semantic version parser and comparator",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:37:55.750Z",
+  "testedBy": "automated"
+}

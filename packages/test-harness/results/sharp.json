@@ -1,0 +1,17 @@
+{
+  "name": "sharp",
+  "version": "0.34.5",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "image",
+  "alternative": "Cloudflare Images or @cloudflare/workers-image (when available)",
+  "notes": "sharp is a native module with C++ bindings (uses libvips) that requires node:child_process and won't work in Workers. Use Cloudflare Images API for image transformations, or consider browser-based image libraries like pica or jimp for client-side processing.",
+  "errorMessage": "No such module \"node:child_process\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:41:02.642Z",
+  "testedBy": "automated"
+}

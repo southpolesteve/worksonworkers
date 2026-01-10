@@ -1,0 +1,16 @@
+{
+  "name": "express-session",
+  "version": "1.18.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "http-client",
+  "example": "import session from 'express-session';\n\n// Usage:\nconst middleware = session({ secret: 'test', resave: false, saveUninitialized: true });\nreturn { success: typeof middleware === 'function', result: 'session middleware created' };",
+  "notes": "Express middleware for session management",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:46:10.423Z",
+  "testedBy": "automated"
+}

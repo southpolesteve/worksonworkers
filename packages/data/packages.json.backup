@@ -1,0 +1,3244 @@
+{
+  "schemaVersion": 1,
+  "lastUpdated": "2026-01-09T02:00:15.605Z",
+  "wranglerVersion": "3.114.16",
+  "compatibilityDate": "2026-01-08",
+  "packages": [
+    {
+      "name": "debug",
+      "version": "4.4.3",
+      "weeklyDownloads": 200000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'debug';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:21:19.063Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "minimatch",
+      "version": "10.1.1",
+      "weeklyDownloads": 150000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'minimatch';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:29:50.227Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "ms",
+      "version": "2.1.3",
+      "weeklyDownloads": 150000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'ms';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:03:10.868Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "escape-string-regexp",
+      "version": "5.0.0",
+      "weeklyDownloads": 100000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'escape-string-regexp';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:30:22.589Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "ajv",
+      "version": "8.17.1",
+      "weeklyDownloads": 90000000,
+      "status": "doesnt-work",
+      "category": "validation",
+      "notes": "May have compatibility issues with Workers. Consider zod or valibot as alternatives.",
+      "alternative": "zod",
+      "errorMessage": "Unexpected token ':'",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:26:19.810Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.3",
+      "weeklyDownloads": 90000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'picomatch';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:30:12.234Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "uuid",
+      "version": "13.0.0",
+      "weeklyDownloads": 85000000,
+      "status": "works",
+      "category": "id-generation",
+      "example": "import { v4 as uuidv4, validate } from 'uuid';\n\n// Usage:\nconst id = uuidv4();\nconst isValid = validate(id);\nreturn { success: isValid, result: id };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T22:58:20.267Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "weeklyDownloads": 80000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'fast-deep-equal';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:28:22.672Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "micromatch",
+      "version": "4.0.8",
+      "weeklyDownloads": 80000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'micromatch';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:30:01.543Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "p-limit",
+      "version": "7.2.0",
+      "weeklyDownloads": 80000000,
+      "status": "works",
+      "category": "async",
+      "example": "import pLimit from 'p-limit';\n\n// Usage:\nconst limit = pLimit(2);\nconst results = await Promise.all([\n  limit(() => Promise.resolve(1)),\n  limit(() => Promise.resolve(2)),\n]);\nreturn { success: true, result: results };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:11:31.354Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "qs",
+      "version": "6.14.1",
+      "weeklyDownloads": 65000000,
+      "status": "works",
+      "category": "parsing",
+      "example": "import qs from 'qs';\n\n// Usage:\nconst parsed = qs.parse('a=1&b=2');\nconst stringified = qs.stringify({ c: 3, d: 4 });\nreturn { success: true, result: { parsed, stringified } };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:04:35.500Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "is-number",
+      "version": "7.0.0",
+      "weeklyDownloads": 60000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'is-number';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:10:59.273Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "lodash",
+      "version": "4.17.21",
+      "weeklyDownloads": 57000000,
+      "status": "works",
+      "category": "utility",
+      "example": "import _ from 'lodash';\n\n// Usage:\nconst result = _.chunk(['a', 'b', 'c', 'd'], 2);\nreturn { success: true, result };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T22:57:50.978Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "axios",
+      "version": "1.13.2",
+      "weeklyDownloads": 55000000,
+      "status": "use-alternative",
+      "category": "http-client",
+      "example": "import axios from 'axios';\n\n// Usage:\nconst response = await axios.get('https://httpbin.org/json');\nreturn { success: response.status === 200, result: response.data };",
+      "notes": "Works but consider using native fetch() instead",
+      "alternative": "built-in: fetch",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:03:22.674Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "js-yaml",
+      "version": "4.1.1",
+      "weeklyDownloads": 50000000,
+      "status": "works",
+      "category": "parsing",
+      "example": "import yaml from 'js-yaml';\n\n// Usage:\nconst obj = yaml.load('name: Alice\\nage: 30');\nreturn { success: true, result: obj };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:04:57.292Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "json5",
+      "version": "2.2.3",
+      "weeklyDownloads": 50000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'json5';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:06:22.293Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "node-fetch",
+      "version": "3.3.2",
+      "weeklyDownloads": 50000000,
+      "status": "use-alternative",
+      "category": "http-client",
+      "example": "import fetch from 'node-fetch';\n\n// Usage:\nreturn { success: true, result: 'Use native fetch instead' };",
+      "notes": "Workers has native fetch() - no need for this package",
+      "alternative": "built-in: fetch",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:03:55.945Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "async",
+      "version": "3.2.6",
+      "weeklyDownloads": 45000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'async';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:12:58.335Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "kind-of",
+      "version": "6.0.3",
+      "weeklyDownloads": 45000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'kind-of';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:11:20.673Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "dotenv",
+      "version": "17.2.3",
+      "weeklyDownloads": 40000000,
+      "status": "not-applicable",
+      "category": "config",
+      "notes": "Not needed in Workers. Use environment bindings in wrangler.toml or dashboard instead of .env files.",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:10:15.991Z",
+      "testedBy": "manual"
+    },
+    {
+      "name": "path-to-regexp",
+      "version": "8.3.0",
+      "weeklyDownloads": 40000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'path-to-regexp';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:27:27.375Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "type-fest",
+      "version": "unknown",
+      "weeklyDownloads": 40000000,
+      "status": "not-applicable",
+      "category": "types",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:31:26.186Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "cosmiconfig",
+      "version": "9.0.0",
+      "weeklyDownloads": 35000000,
+      "status": "not-applicable",
+      "category": "other",
+      "notes": "Cosmiconfig loads configuration files from the filesystem, which is not available in Workers. In Workers, use environment variables, secrets, or KV bindings for configuration instead. This is a build-time/development tool, not a runtime library.",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:13:27.775Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "escape-html",
+      "version": "1.0.3",
+      "weeklyDownloads": 35000000,
+      "status": "works",
+      "category": "string",
+      "example": "import escapeHtml from 'escape-html';\n\n// Usage:\nconst escaped = escapeHtml('<script>alert(\"xss\")</script>');\nreturn { success: escaped.includes('&lt;'), result: escaped };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:07:14.960Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "isobject",
+      "version": "4.0.0",
+      "weeklyDownloads": 35000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'isobject';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:11:09.969Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "nanoid",
+      "version": "5.1.6",
+      "weeklyDownloads": 35000000,
+      "status": "works",
+      "category": "id-generation",
+      "example": "import { nanoid } from 'nanoid';\n\n// Usage:\nconst id = nanoid();\nreturn { success: id.length === 21, result: id };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T22:57:36.602Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "he",
+      "version": "1.2.0",
+      "weeklyDownloads": 30000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'he';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:07:25.523Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "undici",
+      "version": "7.18.2",
+      "weeklyDownloads": 30000000,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Cannot destructure property 'Console' of 'require(...)' as it is undefined.",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:26:56.645Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "yaml",
+      "version": "2.8.2",
+      "weeklyDownloads": 30000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'yaml';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:05:07.926Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "deepmerge",
+      "version": "4.3.1",
+      "weeklyDownloads": 25000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'deepmerge';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:27:59.259Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "htmlparser2",
+      "version": "10.0.0",
+      "weeklyDownloads": 25000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'htmlparser2';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:06:11.960Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "is-plain-object",
+      "version": "5.0.0",
+      "weeklyDownloads": 25000000,
+      "status": "works",
+      "category": "type-checking",
+      "example": "import { isPlainObject } from 'is-plain-object';\n\n// Usage:\nconst r1 = isPlainObject({});\nconst r2 = isPlainObject([]);\nreturn { success: r1 && !r2, result: { object: r1, array: r2 } };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:10:48.374Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "rfdc",
+      "version": "1.4.1",
+      "weeklyDownloads": 25000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'rfdc';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:29:27.895Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "zod",
+      "version": "4.3.5",
+      "weeklyDownloads": 25000000,
+      "status": "works",
+      "category": "validation",
+      "example": "import { z } from 'zod';\n\n// Usage:\nconst schema = z.object({ name: z.string(), age: z.number() });\nconst result = schema.safeParse({ name: 'Alice', age: 30 });\nreturn { success: result.success, result: result.data };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T22:58:06.240Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "date-fns",
+      "version": "4.1.0",
+      "weeklyDownloads": 22000000,
+      "status": "works",
+      "category": "date-time",
+      "example": "import { format, parseISO } from 'date-fns';\n\n// Usage:\nconst date = parseISO('2026-01-08');\nconst formatted = format(date, 'yyyy-MM-dd');\nreturn { success: formatted === '2026-01-08', result: formatted };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:01:42.286Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "clone",
+      "version": "2.1.2",
+      "weeklyDownloads": 20000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'clone';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:29:17.051Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "dayjs",
+      "version": "1.11.19",
+      "weeklyDownloads": 20000000,
+      "status": "works",
+      "category": "date-time",
+      "example": "import dayjs from 'dayjs';\n\n// Usage:\nconst date = dayjs('2026-01-08');\nconst formatted = date.format('YYYY-MM-DD');\nreturn { success: formatted === '2026-01-08', result: formatted };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:01:30.980Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "deep-equal",
+      "version": "2.2.3",
+      "weeklyDownloads": 20000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'deep-equal';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:28:11.960Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "moment",
+      "version": "2.30.1",
+      "weeklyDownloads": 20000000,
+      "status": "works",
+      "category": "date-time",
+      "example": "import moment from 'moment';\n\n// Usage:\nconst date = moment('2026-01-08');\nconst formatted = date.format('YYYY-MM-DD');\nreturn { success: formatted === '2026-01-08', result: formatted };",
+      "notes": "Consider using dayjs or date-fns for smaller bundle size",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:03:00.436Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "p-map",
+      "version": "7.0.4",
+      "weeklyDownloads": 20000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'p-map';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:12:16.120Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "lodash.clonedeep",
+      "version": "4.5.0",
+      "weeklyDownloads": 18000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'lodash.clonedeep';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:29:06.246Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "fast-xml-parser",
+      "version": "5.3.3",
+      "weeklyDownloads": 15000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'fast-xml-parser';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:05:50.135Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "got",
+      "version": "14.6.6",
+      "weeklyDownloads": 15000000,
+      "status": "doesnt-work",
+      "category": "http-client",
+      "notes": "Large bundle size, consider ky or native fetch",
+      "errorMessage": "No such module \"node:os\".",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:26:40.882Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "hash.js",
+      "version": "1.1.7",
+      "weeklyDownloads": 15000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'hash.js';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:09:55.082Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "jsonwebtoken",
+      "version": "9.0.3",
+      "weeklyDownloads": 15000000,
+      "status": "works",
+      "category": "crypto",
+      "example": "import jwt from 'jsonwebtoken';\n\n// Usage:\nconst token = jwt.sign({ sub: '123' }, 'secret');\nconst decoded = jwt.verify(token, 'secret');\nreturn { success: decoded.sub === '123', result: decoded };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:09:23.279Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "lodash-es",
+      "version": "4.17.22",
+      "weeklyDownloads": 15000000,
+      "status": "works",
+      "category": "utility",
+      "example": "import { chunk } from 'lodash-es';\n\n// Usage:\nconst result = chunk(['a', 'b', 'c', 'd'], 2);\nreturn { success: true, result };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T22:59:12.836Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "lodash.merge",
+      "version": "4.6.2",
+      "weeklyDownloads": 15000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'lodash.merge';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:28:33.562Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "normalize-url",
+      "version": "8.1.1",
+      "weeklyDownloads": 15000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'normalize-url';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:27:48.496Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "p-retry",
+      "version": "7.1.1",
+      "weeklyDownloads": 15000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'p-retry';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:11:52.926Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "pako",
+      "version": "2.1.0",
+      "weeklyDownloads": 15000000,
+      "status": "works",
+      "category": "compression",
+      "example": "import pako from 'pako';\n\n// Usage:\nconst input = new TextEncoder().encode('Hello, World!');\nconst compressed = pako.deflate(input);\nconst decompressed = pako.inflate(compressed);\nconst output = new TextDecoder().decode(decompressed);\nreturn { success: output === 'Hello, World!', result: output };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:10:16.432Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "query-string",
+      "version": "9.3.1",
+      "weeklyDownloads": 15000000,
+      "status": "works",
+      "category": "parsing",
+      "example": "import queryString from 'query-string';\n\n// Usage:\nconst parsed = queryString.parse('a=1&b=2');\nreturn { success: true, result: parsed };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:04:46.499Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "change-case",
+      "version": "5.4.4",
+      "weeklyDownloads": 12000000,
+      "status": "works",
+      "category": "string",
+      "example": "import { camelCase, snakeCase } from 'change-case';\n\n// Usage:\nconst camel = camelCase('hello world');\nconst snake = snakeCase('helloWorld');\nreturn { success: true, result: { camel, snake } };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:07:04.258Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "immer",
+      "version": "11.1.3",
+      "weeklyDownloads": 12000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'immer';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T22:59:44.462Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "lodash.get",
+      "version": "4.4.2",
+      "weeklyDownloads": 12000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'lodash.get';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:28:44.315Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "winston",
+      "version": "3.19.0",
+      "weeklyDownloads": 12000000,
+      "status": "doesnt-work",
+      "category": "logging",
+      "errorMessage": "No such module \"node:os\".",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:20:58.248Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "cross-fetch",
+      "version": "4.1.0",
+      "weeklyDownloads": 10000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'cross-fetch';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:04:06.817Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "flat",
+      "version": "6.0.1",
+      "weeklyDownloads": 10000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'flat';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:29:38.777Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "jose",
+      "version": "6.1.3",
+      "weeklyDownloads": 10000000,
+      "status": "works",
+      "category": "crypto",
+      "example": "import * as jose from 'jose';\n\n// Usage:\nconst secret = new TextEncoder().encode('my-secret-key-at-least-32-chars!');\nconst jwt = await new jose.SignJWT({ sub: '123' }).setProtectedHeader({ alg: 'HS256' }).sign(secret);\nreturn { success: typeof jwt === 'string', result: jwt.substring(0, 50) + '...' };",
+      "notes": "Recommended for JWT in Workers",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:09:33.848Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "loglevel",
+      "version": "1.9.2",
+      "weeklyDownloads": 10000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'loglevel';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:21:08.774Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "marked",
+      "version": "17.0.1",
+      "weeklyDownloads": 10000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'marked';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:07:57.454Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "object-hash",
+      "version": "3.0.0",
+      "weeklyDownloads": 10000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'object-hash';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:10:05.674Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "url-join",
+      "version": "5.0.0",
+      "weeklyDownloads": 10000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'url-join';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:27:37.834Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "bignumber.js",
+      "version": "9.3.1",
+      "weeklyDownloads": 8000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'bignumber.js';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:30:54.895Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "cheerio",
+      "version": "1.1.2",
+      "weeklyDownloads": 8000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'cheerio';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:06:01.668Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "crypto-js",
+      "version": "4.2.0",
+      "weeklyDownloads": 8000000,
+      "status": "use-alternative",
+      "category": "crypto",
+      "example": "import CryptoJS from 'crypto-js';\n\n// Usage:\nconst hash = CryptoJS.SHA256('hello').toString();\nreturn { success: hash.length === 64, result: hash };",
+      "notes": "Consider using built-in Web Crypto API",
+      "alternative": "built-in: crypto",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:09:07.200Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "lodash.set",
+      "version": "4.3.2",
+      "weeklyDownloads": 8000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'lodash.set';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:28:55.281Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "luxon",
+      "version": "3.7.2",
+      "weeklyDownloads": 8000000,
+      "status": "works",
+      "category": "date-time",
+      "example": "import { DateTime } from 'luxon';\n\n// Usage:\nconst dt = DateTime.fromISO('2026-01-08');\nconst formatted = dt.toFormat('yyyy-MM-dd');\nreturn { success: formatted === '2026-01-08', result: formatted };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:01:52.782Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "markdown-it",
+      "version": "14.1.0",
+      "weeklyDownloads": 8000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'markdown-it';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:08:07.912Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "pino",
+      "version": "10.1.0",
+      "weeklyDownloads": 8000000,
+      "status": "works",
+      "category": "logging",
+      "example": "import pino from 'pino';\n\n// Usage:\nconst logger = pino({ level: 'info' });\nlogger.info({ test: true }, 'Hello from pino');\nreturn { success: true, result: 'logged' };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:20:46.940Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "underscore",
+      "version": "1.13.7",
+      "weeklyDownloads": 8000000,
+      "status": "works",
+      "category": "utility",
+      "example": "import _ from 'underscore';\n\n// Usage:\nconst result = _.flatten([[1, 2], [3, 4]]);\nreturn { success: true, result };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T22:59:23.329Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "yup",
+      "version": "1.7.1",
+      "weeklyDownloads": 8000000,
+      "status": "works",
+      "category": "validation",
+      "example": "import * as yup from 'yup';\n\n// Usage:\nconst schema = yup.object({ name: yup.string().required() });\nconst result = await schema.validate({ name: 'Alice' });\nreturn { success: true, result };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:00:26.330Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "joi",
+      "version": "18.0.2",
+      "weeklyDownloads": 7000000,
+      "status": "works",
+      "category": "validation",
+      "example": "import Joi from 'joi';\n\n// Usage:\nconst schema = Joi.object({ name: Joi.string().required() });\nconst { value } = schema.validate({ name: 'Alice' });\nreturn { success: true, result: value };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:00:37.180Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "nodemailer",
+      "version": "7.0.12",
+      "weeklyDownloads": 6000000,
+      "status": "not-applicable",
+      "category": "email",
+      "notes": "Nodemailer requires the Node.js 'net' module to create SMTP connections over TCP sockets. Workers don't support raw TCP socket connections. For sending emails from Workers, use email API services like Resend, SendGrid, Mailgun, or Cloudflare Email Routing API instead.",
+      "errorMessage": "SyntaxError: Unexpected token ':' at nodemailer/lib/fetch/index.js:10 (require('net'))",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:46:35.000Z",
+      "testedBy": "manual"
+    },
+    {
+      "name": "p-queue",
+      "version": "9.1.0",
+      "weeklyDownloads": 6000000,
+      "status": "works",
+      "category": "async",
+      "example": "import PQueue from 'p-queue';\n\n// Usage:\nconst queue = new PQueue({ concurrency: 1 });\nconst results = await Promise.all([\n  queue.add(() => Promise.resolve(1)),\n  queue.add(() => Promise.resolve(2)),\n]);\nreturn { success: true, result: results };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:11:42.276Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "ramda",
+      "version": "0.32.0",
+      "weeklyDownloads": 6000000,
+      "status": "works",
+      "category": "utility",
+      "example": "import * as R from 'ramda';\n\n// Usage:\nconst result = R.map(x => x * 2, [1, 2, 3]);\nreturn { success: true, result };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T22:59:34.017Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "async-retry",
+      "version": "1.3.3",
+      "weeklyDownloads": 5000000,
+      "status": "works",
+      "category": "async",
+      "example": "import retry from 'async-retry';\n\n// Usage:\nlet attempts = 0;\nconst result = await retry(async () => {\n  attempts++;\n  if (attempts < 2) throw new Error('retry');\n  return 'success';\n}, { retries: 3 });\nreturn { success: result === 'success', result };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:12:05.481Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "devalue",
+      "version": "5.6.1",
+      "weeklyDownloads": 5000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'devalue';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:06:43.231Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "fflate",
+      "version": "0.8.2",
+      "weeklyDownloads": 5000000,
+      "status": "works",
+      "category": "compression",
+      "example": "import { deflateSync, inflateSync } from 'fflate';\n\n// Usage:\nconst input = new TextEncoder().encode('Hello, World!');\nconst compressed = deflateSync(input);\nconst decompressed = inflateSync(compressed);\nconst output = new TextDecoder().decode(decompressed);\nreturn { success: output === 'Hello, World!', result: output };",
+      "notes": "Fast and lightweight compression library",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:10:27.102Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "slugify",
+      "version": "1.6.6",
+      "weeklyDownloads": 5000000,
+      "status": "works",
+      "category": "string",
+      "example": "import slugify from 'slugify';\n\n// Usage:\nconst slug = slugify('Hello World!');\nreturn { success: slug === 'Hello-World!', result: slug };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:25:40.390Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "bcrypt",
+      "version": "6.0.0",
+      "weeklyDownloads": 4000000,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "No such module \"node:os\".",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:16:25.665Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "class-validator",
+      "version": "0.14.3",
+      "weeklyDownloads": 4000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'class-validator';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:01:20.599Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "csv-parse",
+      "version": "6.1.0",
+      "weeklyDownloads": 4000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'csv-parse';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:05:28.845Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "dompurify",
+      "version": "3.3.1",
+      "weeklyDownloads": 4000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'dompurify';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:07:46.932Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "bcryptjs",
+      "version": "3.0.3",
+      "weeklyDownloads": 3000000,
+      "status": "works",
+      "category": "crypto",
+      "example": "import bcrypt from 'bcryptjs';\n\n// Usage:\nconst hash = await bcrypt.hash('password', 10);\nconst match = await bcrypt.compare('password', hash);\nreturn { success: match, result: { hash: hash.substring(0, 20) + '...' } };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T22:58:52.456Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "bottleneck",
+      "version": "2.19.5",
+      "weeklyDownloads": 3000000,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Unexpected token ':'",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T01:23:30.837Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "ky",
+      "version": "1.14.2",
+      "weeklyDownloads": 3000000,
+      "status": "works",
+      "category": "http-client",
+      "example": "import ky from 'ky';\n\n// Usage:\nconst data = await ky.get('https://httpbin.org/json').json();\nreturn { success: true, result: data };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:03:33.667Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "lz-string",
+      "version": "1.5.0",
+      "weeklyDownloads": 3000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'lz-string';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:10:37.860Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "papaparse",
+      "version": "5.5.3",
+      "weeklyDownloads": 3000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'papaparse';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:05:39.306Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "superjson",
+      "version": "2.2.6",
+      "weeklyDownloads": 3000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'superjson';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:06:32.775Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "superstruct",
+      "version": "2.0.2",
+      "weeklyDownloads": 3000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'superstruct';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:01:08.822Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "ts-essentials",
+      "version": "10.1.1",
+      "weeklyDownloads": 3000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'ts-essentials';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:30:44.166Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "js-sha256",
+      "version": "0.11.1",
+      "weeklyDownloads": 2000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'js-sha256';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:09:44.539Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "p-all",
+      "version": "5.0.1",
+      "weeklyDownloads": 2000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'p-all';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:12:26.750Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "sanitize-html",
+      "version": "2.17.0",
+      "weeklyDownloads": 2000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'sanitize-html';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:07:36.349Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "toml",
+      "version": "3.0.0",
+      "weeklyDownloads": 2000000,
+      "status": "works",
+      "category": "parsing",
+      "example": "import TOML from 'toml';\n\n// Usage:\nconst obj = TOML.parse('name = \"Alice\"\\nage = 30');\nreturn { success: true, result: obj };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:05:18.367Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "ulid",
+      "version": "3.0.2",
+      "weeklyDownloads": 2000000,
+      "status": "works",
+      "category": "id-generation",
+      "example": "import { ulid } from 'ulid';\n\n// Usage:\nconst id = ulid();\nreturn { success: id.length === 26, result: id };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T22:59:54.850Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "cuid",
+      "version": "3.0.0",
+      "weeklyDownloads": 1500000,
+      "status": "doesnt-work",
+      "category": "id-generation",
+      "errorMessage": "No such module \"node:os\".",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:00:05.055Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "showdown",
+      "version": "2.1.0",
+      "weeklyDownloads": 1500000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'showdown';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:08:18.524Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "p-throttle",
+      "version": "8.1.0",
+      "weeklyDownloads": 1000000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'p-throttle';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:12:37.317Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "valibot",
+      "version": "1.2.0",
+      "weeklyDownloads": 1000000,
+      "status": "works",
+      "category": "validation",
+      "example": "import * as v from 'valibot';\n\n// Usage:\nconst schema = v.object({ name: v.string() });\nconst result = v.safeParse(schema, { name: 'Alice' });\nreturn { success: result.success, result: result.output };",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:00:58.510Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "short-uuid",
+      "version": "6.0.3",
+      "weeklyDownloads": 500000,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'short-uuid';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:00:15.389Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "10",
+      "version": "0.0.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from '10';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:47:09.071Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "101",
+      "version": "1.6.3",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "you should require a method of 101, just like require(\"101/<util>\")",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:46:58.396Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "141",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Command failed: npm install\nnpm error code E404\nnpm error 404 Not Found - GET https://registry.npmjs.org/141 - Not found\nnpm error 404\nnpm error 404  '141@latest' is not in this registry.\nnpm error 404\nnpm error 404 Note that you can also install from a\nnpm error 404 tarball, folder, http url, or git url.\nnpm error A complete log of this run can be found in: /Users/steve/.npm/_logs/2026-01-08T23_48_35_565Z-debug-0.log\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:48:37.937Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "150",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Command failed: npm install\nnpm error code E404\nnpm error 404 Not Found - GET https://registry.npmjs.org/150 - Not found\nnpm error 404\nnpm error 404  '150@latest' is not in this registry.\nnpm error 404\nnpm error 404 Note that you can also install from a\nnpm error 404 tarball, folder, http url, or git url.\nnpm error A complete log of this run can be found in: /Users/steve/.npm/_logs/2026-01-08T23_51_58_918Z-debug-0.log\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:52:07.670Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "@apidevtools/swagger-parser",
+      "version": "12.1.0",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Unexpected token ':'",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:59:17.305Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "@graphql-tools/schema",
+      "version": "10.0.31",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from '@graphql-tools/schema';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:42:13.117Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "@libsql/client",
+      "version": "0.17.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from '@libsql/client';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:40:13.127Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "@msgpack/msgpack",
+      "version": "3.1.3",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from '@msgpack/msgpack';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:50:54.391Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "@neondatabase/serverless",
+      "version": "1.0.2",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from '@neondatabase/serverless';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:40:01.126Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "@planetscale/database",
+      "version": "1.19.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from '@planetscale/database';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:39:03.480Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "accepts",
+      "version": "1.3.8",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "http",
+      "notes": "Depends on mime-types which uses CommonJS require('./db.json') that doesn't work in Workers. The mime-db package loads a 182KB JSON database via require() which fails even with nodejs_compat.",
+      "errorMessage": "SyntaxError: Unexpected token ':' at mime-db/index.js:12 (require('./db.json'))",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:39:25.256Z",
+      "testedBy": "manual-investigation"
+    },
+    {
+      "name": "assert",
+      "version": "2.1.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'assert';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:58:23.361Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "base64-js",
+      "version": "1.5.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'base64-js';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:56:47.530Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "big.js",
+      "version": "7.0.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'big.js';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:35:59.377Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "buffer",
+      "version": "6.0.3",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'buffer';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:56:26.267Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "bytes",
+      "version": "3.1.2",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'bytes';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:03:23.330Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "cbor",
+      "version": "10.0.11",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'cbor';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:51:05.051Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "chalk",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "cli",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:54:54.673Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "chroma-js",
+      "version": "3.2.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'chroma-js';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:36:45.853Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "color",
+      "version": "5.0.3",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'color';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:36:23.592Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "commander",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "cli",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:54:52.180Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "concat-stream",
+      "version": "2.0.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'concat-stream';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:58:12.082Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "content-type",
+      "version": "1.0.5",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'content-type';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:42:44.526Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "cookie-signature",
+      "version": "1.2.2",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'cookie-signature';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:43:37.469Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "cookie",
+      "version": "1.1.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'cookie';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:43:26.801Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "currency.js",
+      "version": "2.0.4",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'currency.js';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:37:07.979Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "decimal.js",
+      "version": "10.6.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'decimal.js';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:35:48.396Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "depd",
+      "version": "2.0.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'depd';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:03:34.093Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "destroy",
+      "version": "1.2.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'destroy';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:05:20.504Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "dinero.js",
+      "version": "1.9.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'dinero.js';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:37:18.795Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "drizzle-orm",
+      "version": "0.45.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'drizzle-orm';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:38:41.769Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "ejs",
+      "version": "3.1.10",
+      "weeklyDownloads": 0,
+      "status": "works-with-caveats",
+      "category": "templating",
+      "notes": "EJS works in Workers but has a CommonJS JSON import issue at lib/ejs.js:54 (`require('../package.json').version`). This causes failures in vitest tests but works fine when deployed or tested with `wrangler dev`. The bundler (esbuild) handles the JSON import correctly at build time, making the package functional in production. Note: EJS file system features won't work - use string templates only.",
+      "errorMessage": "SyntaxError: Unexpected token ':' at ejs/lib/ejs.js:54 (require('../package.json') - CommonJS JSON import, but works when bundled)",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T01:20:21.327Z",
+      "testedBy": "manual"
+    },
+    {
+      "name": "email-validator",
+      "version": "2.0.4",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'email-validator';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:40:34.865Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "encoding",
+      "version": "0.1.13",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'encoding';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:02:44.904Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "esbuild",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "build-tool",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:51:54.600Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "eslint",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "build-tool",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:51:52.094Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "etag",
+      "version": "1.8.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'etag';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:43:05.725Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "eventemitter3",
+      "version": "5.0.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'eventemitter3';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:49:39.198Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "execa",
+      "version": "9.6.1",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "process-management",
+      "notes": "Execa is for running external processes using child_process, which is not available in Workers. Workers run in a sandboxed V8 isolate with no access to OS processes. For background tasks in Workers, use Durable Objects, Queues, or scheduled events instead.",
+      "errorMessage": "No such module \"node:child_process\".",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:18:13.418Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "forwarded",
+      "version": "0.2.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'forwarded';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:02:55.338Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "graphql-tag",
+      "version": "2.12.6",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'graphql-tag';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:42:01.748Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "graphql",
+      "version": "16.12.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'graphql';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:41:51.106Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "handlebars",
+      "version": "4.7.8",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'handlebars';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T01:58:16.803Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "hono",
+      "version": "4.11.3",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'hono';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:58:44.936Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "http-errors",
+      "version": "2.0.1",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Unexpected token ':'",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:42:50.074Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "i18next",
+      "version": "25.7.4",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'i18next';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:59:28.200Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "iconv-lite",
+      "version": "0.7.2",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'iconv-lite';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:02:34.477Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "inquirer",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "cli",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:54:53.821Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "intl-messageformat",
+      "version": "11.0.9",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'intl-messageformat';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:59:39.433Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "itty-router",
+      "version": "5.0.22",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'itty-router';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:58:55.746Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "jest",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "testing",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:51:57.110Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "jimp",
+      "version": "1.6.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'jimp';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:41:16.158Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "kysely",
+      "version": "0.28.9",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'kysely';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:38:52.653Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "liquid",
+      "version": "5.1.1",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "The \"original\" argument must be of type function. Received undefined",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:51:35.568Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "lru-cache",
+      "version": "11.2.4",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'lru-cache';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:50:11.000Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "mathjs",
+      "version": "15.1.0",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "The requested module 'complex.js' does not provide an export named 'default'",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T01:55:32.328Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "media-typer",
+      "version": "1.1.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'media-typer';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:02:13.083Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "memoizee",
+      "version": "0.4.17",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "No such module \"Users/steve/works-on-workers/packages/test-harness/sandbox/memoizee/node_modules/d/es5-ext/string/#/contains\".",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T01:26:23.995Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "mime-db",
+      "version": "1.54.0",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Unexpected token ':'",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:21:39.965Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "mime-types",
+      "version": "3.0.2",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Unexpected token ':'",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:21:14.793Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "mime",
+      "version": "4.1.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'mime';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:42:34.061Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "mitt",
+      "version": "3.0.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'mitt';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:49:49.772Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "mocha",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "testing",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:51:57.922Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "msgpack-lite",
+      "version": "0.1.26",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'msgpack-lite';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:50:43.542Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "mustache",
+      "version": "4.2.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'mustache';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:37:40.118Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "negotiator",
+      "version": "1.0.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'negotiator';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:02:02.405Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "numeral",
+      "version": "2.0.6",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'numeral';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:36:56.578Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "nunjucks",
+      "version": "3.2.4",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Unexpected token 'null'",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T01:51:57.327Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "on-finished",
+      "version": "2.4.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'on-finished';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:05:31.665Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "openapi-types",
+      "version": "12.1.3",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'openapi-types';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:59:06.409Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "ora",
+      "version": "9.0.0",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "cli",
+      "notes": "Ora is a CLI spinner for terminal applications. It requires TTY access (process.stdout/stderr) which is not available in Workers. Additionally, the current version fails to import due to its dependency cli-spinners using import attributes syntax (`import './spinners.json' with {type: 'json'}`) which Workers bundler doesn't support yet. Even if the import issue were fixed, ora is designed for CLI tools, not serverless functions.",
+      "errorMessage": "Unrecognized import attributes specified",
+      "alternative": "For logging in Workers, use console.log() or structured logging libraries. Progress indicators don't make sense in serverless request/response context.",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T01:58:48.373Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "parseurl",
+      "version": "1.3.3",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'parseurl';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:05:42.285Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "pdf-lib",
+      "version": "1.17.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'pdf-lib';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:41:40.466Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "pdfkit",
+      "version": "0.17.2",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Unexpected token ':'",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:41:28.607Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "prettier",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "build-tool",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:51:52.944Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "proxy-addr",
+      "version": "2.0.7",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'proxy-addr';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:03:06.055Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "quick-lru",
+      "version": "7.3.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'quick-lru';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:50:21.164Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "range-parser",
+      "version": "1.2.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'range-parser';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:05:53.059Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "rate-limiter-flexible",
+      "version": "9.0.1",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "No such module \"node:cluster\".",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T01:49:39.984Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "raw-body",
+      "version": "3.0.2",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Unexpected token ':'",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:07:25.103Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "readable-stream",
+      "version": "4.7.0",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Cannot redefine property: Symbol(nodejs.util.promisify.custom)",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:56:58.153Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "resolve",
+      "version": "1.22.11",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "No such module \"node:os\".",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:56:15.589Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "rollup",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "build-tool",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:51:56.257Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "safe-buffer",
+      "version": "5.2.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'safe-buffer';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:56:36.937Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "semver",
+      "version": "7.7.3",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'semver';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:56:04.723Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "serialize-error",
+      "version": "12.0.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'serialize-error';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:44:09.120Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "sharp",
+      "version": "0.34.5",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "No such module \"node:child_process\".",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:41:02.642Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "source-map",
+      "version": "0.7.6",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'source-map';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:55:54.231Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "statuses",
+      "version": "2.0.2",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Unexpected token ':'",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:43:48.217Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "through2",
+      "version": "4.0.2",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'through2';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:57:08.924Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "tiny-emitter",
+      "version": "2.1.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'tiny-emitter';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:50:00.314Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "tiny-invariant",
+      "version": "1.3.3",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'tiny-invariant';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:58:34.165Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "tinycolor2",
+      "version": "1.6.0",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'tinycolor2';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:36:35.043Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "tslib",
+      "version": "2.8.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'tslib';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:55:43.180Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "type-is",
+      "version": "2.0.1",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "Unexpected token ':'",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-09T00:49:05.962Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "typescript",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "build-tool",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:51:51.256Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "unleash-client",
+      "version": "6.9.0",
+      "weeklyDownloads": 0,
+      "status": "doesnt-work",
+      "category": "other",
+      "notes": "Generic import test",
+      "errorMessage": "No such module \"node:os\".",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:59:52.061Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "validator",
+      "version": "13.15.26",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'validator';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:40:51.164Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "vary",
+      "version": "1.1.2",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'vary';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:43:16.266Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "verror",
+      "version": "1.10.1",
+      "weeklyDownloads": 0,
+      "status": "works",
+      "category": "other",
+      "example": "import * as pkg from 'verror';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+      "notes": "Generic import test",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:49:28.767Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "vite",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "build-tool",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:51:55.423Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "vitest",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "testing",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:51:58.828Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "webpack",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "build-tool",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:51:53.782Z",
+      "testedBy": "automated"
+    },
+    {
+      "name": "yargs",
+      "version": "unknown",
+      "weeklyDownloads": 0,
+      "status": "not-applicable",
+      "category": "cli",
+      "example": "\n\n// Usage:\n",
+      "testedWith": {
+        "wranglerVersion": "3.114.16",
+        "compatibilityDate": "2026-01-08",
+        "nodeCompat": true
+      },
+      "lastTested": "2026-01-08T23:54:53.003Z",
+      "testedBy": "automated"
+    }
+  ]
+}

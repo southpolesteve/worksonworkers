@@ -1,0 +1,17 @@
+{
+  "name": "redux-form",
+  "version": "8.3.10",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "Redux form management for React apps - requires browser DOM",
+  "investigated": true,
+  "errorMessage": "Package redux-form needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:31:06.473Z",
+  "testedBy": "automated"
+}

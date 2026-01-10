@@ -1,0 +1,16 @@
+{
+  "name": "randombytes",
+  "version": "2.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "crypto",
+  "example": "import randomBytes from 'randombytes';\n\n// Usage:\nconst bytes = randomBytes(16);\nreturn { success: bytes.length === 16, result: { length: bytes.length } };",
+  "notes": "Crypto random bytes generation",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:42:47.436Z",
+  "testedBy": "automated"
+}

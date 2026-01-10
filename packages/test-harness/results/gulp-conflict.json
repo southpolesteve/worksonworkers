@@ -1,0 +1,16 @@
+{
+  "name": "gulp-conflict",
+  "version": "0.4.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-conflict is a Gulp plugin for handling file conflicts during Gulp workflows (detecting existing files, prompting for overwrite/skip/diff). The name pattern 'gulp-*' clearly indicates it's a Gulp plugin (like gulp-concat, gulp-babel, gulp-uglify, gulp-autoprefixer, gulp-clean-css, gulp-sass). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('templates/**').pipe(conflict('./')).pipe(gulp.dest('.'))). Used during development/build workflows to prevent accidental file overwrites (prompting users before overwriting existing files), generating files from templates (scaffolding tools, yeoman generators), code generation workflows (avoiding conflicts when generating code from templates), and file copying with user confirmation. Processes files from disk using Node.js streams and filesystem access (fs.stat to check if file exists, fs.readFile to read existing content, process.stdin/stdout for interactive prompts). Part of the Gulp plugin ecosystem alongside gulp-rename (rename files), gulp-template (compile templates), gulp-inject (inject file references), gulp-conflict (this package), gulp-install (install dependencies). Not applicable to Workers which is a runtime environment without filesystem access or interactive terminal prompts, not a build environment. Modern conflict resolution uses inquirer (interactive prompts), prompts (lightweight prompts), or yeoman-generator (scaffolding with conflict resolution built-in).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:24:45.256Z",
+  "testedBy": "automated",
+  "investigated": true
+}

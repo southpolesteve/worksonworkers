@@ -1,0 +1,15 @@
+{
+  "name": "hogan.js",
+  "version": "3.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import Hogan from 'hogan.js';\n\n// Usage:\nconst template = Hogan.compile('Hello {{name}}!');\nconst result = template.render({ name: 'World' });\nreturn { success: result === 'Hello World!', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:07:02.602Z",
+  "testedBy": "automated"
+}

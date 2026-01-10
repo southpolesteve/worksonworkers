@@ -1,0 +1,17 @@
+{
+  "name": "bl",
+  "version": "6.1.6",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "utility",
+  "notes": "Buffer List for collecting and managing multiple buffers with a readable Buffer interface. GENUINELY BROKEN: Fails with 'Cannot redefine property: Symbol(nodejs.util.promisify.custom)'. The bl package attempts to redefine built-in Node.js symbols on readable-stream's internal objects, specifically trying to add util.promisify support to the Stream prototype. Workers' stricter object property definitions don't allow redefining already-frozen symbol properties on built-in objects. This is a fundamental incompatibility with how bl tries to monkey-patch Node.js stream internals for promisify support. For buffer concatenation in Workers, use native Buffer.concat() or manual buffer accumulation.",
+  "errorMessage": "Cannot redefine property: Symbol(nodejs.util.promisify.custom)",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T17:24:21.454Z",
+  "testedBy": "automated"
+}

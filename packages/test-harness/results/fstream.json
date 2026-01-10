@@ -1,0 +1,16 @@
+{
+  "name": "fstream",
+  "version": "1.0.12",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "filesystem-tool",
+  "notes": "DEPRECATED - 'This package is no longer supported.' fstream was npm's filesystem streaming library for reading/writing file trees using Node.js streams. Provided Reader/Writer classes for filesystem entries (files, directories, symlinks) with stream-based API (pipe(), on('entry'), on('end')). Used for recursive directory operations (copying trees, creating archives, extracting tarballs) in npm package installation, backup tools, and archive utilities. Part of npm's legacy filesystem stack alongside tar, fstream-npm, fstream-ignore. Requires persistent filesystem with read/write access (fs.createReadStream, fs.createWriteStream, fs.mkdir, fs.symlink) for recursive directory traversal and streaming file operations. Workers is a stateless serverless environment without persistent filesystem access. For file operations in Workers, use R2 for object storage or stream Web APIs for in-memory streaming. Similar deprecated filesystem streaming tools include fstream-npm, fstream-ignore.",
+  "errorMessage": null,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:42:04.890Z",
+  "testedBy": "automated"
+}

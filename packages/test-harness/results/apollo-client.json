@@ -1,0 +1,16 @@
+{
+  "name": "apollo-client",
+  "version": "2.6.10",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "http-client",
+  "notes": "apollo-client v2 is deprecated. It was the old GraphQL client for React apps, split into multiple npm packages (apollo-client, apollo-cache-inmemory, apollo-link-http, graphql-tag). Primarily designed for browser/React environments. Replaced by the unified @apollo/client v3+ package.",
+  "alternative": "@apollo/client",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T14:56:08.676Z",
+  "testedBy": "automated"
+}

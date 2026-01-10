@@ -1,0 +1,15 @@
+{
+  "name": "child-process-promise",
+  "version": "2.2.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "utility",
+  "notes": "child-process-promise is a promise wrapper around Node.js's built-in child_process module (exec, spawn, fork, execFile). Since child_process functionality is not available in Cloudflare Workers (spawning child processes requires operating system process management and is not supported in Workers' sandboxed V8 isolate environment), this wrapper library is also not applicable. The nodejs_compat flag provides child_process as a non-functional stub that throws errors. For background tasks in Workers, use Durable Objects, Queues, or external services.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:32:11.413Z",
+  "testedBy": "automated"
+}

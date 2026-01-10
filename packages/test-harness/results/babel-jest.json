@@ -1,0 +1,16 @@
+{
+  "name": "babel-jest",
+  "version": "30.2.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "test-framework",
+  "notes": "babel-jest is a Jest transformer that uses Babel to compile JavaScript/TypeScript during test execution. Part of Jest's test runner ecosystem used by jest CLI to transpile source files before running tests. Like all Jest transformers (@jest/transform, ts-jest) and test frameworks (jest, mocha, jasmine, vitest), this is a build-time/testing tool for development workflows, not for runtime execution in Workers. You configure it in jest.config.js (e.g., transform: { '^.+\\.jsx?$': 'babel-jest' }) to tell Jest how to process files during test runs.",
+  "errorMessage": "Expected opts.sync to be a function.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:54:34.681Z",
+  "testedBy": "automated"
+}

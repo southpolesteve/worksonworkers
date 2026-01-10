@@ -1,0 +1,16 @@
+{
+  "name": "quick-lru",
+  "version": "7.3.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import QuickLRU from 'quick-lru';\n\n// Usage:\nconst lru = new QuickLRU({ maxSize: 100 });\nlru.set('foo', 'bar');\nlru.set('hello', 'world');\n\nreturn { \n  success: lru.has('foo') && lru.get('foo') === 'bar' && lru.get('hello') === 'world',\n  result: { foo: lru.get('foo'), hello: lru.get('hello'), size: lru.size }\n};",
+  "notes": "Simple LRU cache implementation",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:27:51.721Z",
+  "testedBy": "automated"
+}

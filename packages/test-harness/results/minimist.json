@@ -1,0 +1,15 @@
+{
+  "name": "minimist",
+  "version": "1.2.8",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import minimist from 'minimist';\n\n// Usage:\nconst args = minimist(['--foo', 'bar', '-n', '3']);\nreturn { success: args.foo === 'bar' && args.n === 3, result: args };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:33:33.520Z",
+  "testedBy": "automated"
+}

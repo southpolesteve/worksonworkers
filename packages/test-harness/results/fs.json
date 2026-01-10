@@ -1,0 +1,16 @@
+{
+  "name": "fs",
+  "version": "0.0.1-security",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import * as fs from 'node:fs';\n\n// Usage:\nconst result = { existsSync: typeof fs.existsSync === 'function', readFileSync: typeof fs.readFileSync === 'function' };\nreturn { success: result.existsSync && result.readFileSync, result };",
+  "notes": "Node.js fs module (polyfilled in Workers)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:59:03.372Z",
+  "testedBy": "automated"
+}

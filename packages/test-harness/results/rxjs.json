@@ -1,0 +1,16 @@
+{
+  "name": "rxjs",
+  "version": "7.8.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { of, map } from 'rxjs';\n\n// Usage:\nconst observable = of(1, 2, 3).pipe(\n  map(x => x * 2)\n);\n\nlet result = [];\nawait new Promise((resolve) => {\n  observable.subscribe({\n    next: value => result.push(value),\n    complete: () => resolve(undefined)\n  });\n});\n\nreturn { success: result.join(',') === '2,4,6', result };",
+  "notes": "Reactive extensions for JavaScript",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:35:20.040Z",
+  "testedBy": "automated"
+}

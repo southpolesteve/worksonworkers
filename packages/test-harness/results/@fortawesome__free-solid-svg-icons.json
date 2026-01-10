@@ -1,0 +1,16 @@
+{
+  "name": "@fortawesome/free-solid-svg-icons",
+  "version": "7.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "ui",
+  "example": "import { faUser, faHeart, faCheck } from '@fortawesome/free-solid-svg-icons';\n\n// Usage:\nconst hasCorrectStructure = faUser.prefix === 'fas' && \n  faUser.iconName === 'user' && \n  Array.isArray(faUser.icon);\nreturn { success: hasCorrectStructure, result: { icons: ['faUser', 'faHeart', 'faCheck'], prefix: faUser.prefix } };",
+  "notes": "Icon definitions for Font Awesome, works in Workers",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T13:26:55.710Z",
+  "testedBy": "automated"
+}

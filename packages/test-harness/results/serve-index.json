@@ -1,0 +1,16 @@
+{
+  "name": "serve-index",
+  "version": "1.9.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "middleware",
+  "notes": "Express middleware for serving directory indexes. Not applicable to Workers.",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:55:54.061Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "nprogress",
+  "version": "0.2.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "Browser-based progress bar library",
+  "investigated": true,
+  "errorMessage": "Package nprogress needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:02:08.918Z",
+  "testedBy": "automated"
+}

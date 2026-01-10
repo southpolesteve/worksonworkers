@@ -1,0 +1,16 @@
+{
+  "name": "urijs",
+  "version": "1.19.11",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import URI from 'urijs';\n\n// Usage:\nconst uri = new URI('http://example.com/path?query=value');\nreturn { success: uri.hostname() === 'example.com', result: { host: uri.hostname(), path: uri.path() } };",
+  "notes": "URI parsing and manipulation",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:34:25.257Z",
+  "testedBy": "automated"
+}

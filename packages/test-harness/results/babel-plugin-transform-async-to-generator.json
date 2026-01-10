@@ -1,0 +1,15 @@
+{
+  "name": "babel-plugin-transform-async-to-generator",
+  "version": "6.24.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-plugin-transform-async-to-generator is a Babel 6 plugin that transforms async/await syntax (e.g., async function foo() { await bar(); }) to generator functions with helper utilities during build/compilation. Babel transform plugins (babel-plugin-transform-*, @babel/plugin-transform-*) are code transformation tools that modify JavaScript during the build process. Like all Babel plugins (babel-plugin-syntax-*, @babel/plugin-proposal-*, @babel/preset-*), these are build-time tools configured in .babelrc or babel.config.js during development/build pipelines with webpack, vite, or esbuild. async/await is now natively supported in modern JavaScript/Workers. Not a runtime library for Workers execution.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:55:01.785Z",
+  "testedBy": "automated"
+}

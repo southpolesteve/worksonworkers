@@ -1,0 +1,16 @@
+{
+  "name": "prop-types",
+  "version": "15.8.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "validation",
+  "example": "import PropTypes from 'prop-types';\n\n// Usage:\nconst stringType = PropTypes.string.isRequired;\nconst numberType = PropTypes.number;\nconst objectShape = PropTypes.shape({\n  name: PropTypes.string,\n  age: PropTypes.number\n});\nreturn { \n  success: typeof stringType === 'function' && typeof numberType === 'function',\n  result: { hasString: !!stringType, hasNumber: !!numberType, hasShape: !!objectShape }\n};",
+  "notes": "React PropTypes - runtime type checking for React components",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:20:25.689Z",
+  "testedBy": "automated"
+}

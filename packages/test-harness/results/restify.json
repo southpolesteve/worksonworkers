@@ -1,0 +1,17 @@
+{
+  "name": "restify",
+  "version": "11.1.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "framework",
+  "notes": "Node.js HTTP framework using process.binding - use hono or itty-router for Workers",
+  "alternative": "hono",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:50:24.914Z",
+  "testedBy": "automated"
+}

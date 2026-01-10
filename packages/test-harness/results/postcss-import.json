@@ -1,0 +1,17 @@
+{
+  "name": "postcss-import",
+  "version": "16.1.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "PostCSS plugin - build tool",
+  "investigated": true,
+  "errorMessage": "Cannot convert undefined or null to object",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:24:31.078Z",
+  "testedBy": "automated"
+}

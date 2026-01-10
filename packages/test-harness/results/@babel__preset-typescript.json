@@ -1,0 +1,16 @@
+{
+  "name": "@babel/preset-typescript",
+  "version": "7.28.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/preset-typescript is a Babel preset (collection of Babel plugins) for transforming TypeScript syntax (type annotations, interfaces, enums, decorators, etc.) to JavaScript during build/compilation. Part of Babel's code transformation ecosystem used by build tools like webpack, esbuild, and vite to transpile TypeScript. Like all Babel presets (@babel/preset-env, @babel/preset-react, @babel/preset-flow), this is a build-time tool for development workflows, not for runtime execution in Workers. You configure it in .babelrc or babel.config.js during development.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:20:03.155Z",
+  "testedBy": "automated",
+  "investigated": true
+}

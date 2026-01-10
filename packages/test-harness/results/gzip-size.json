@@ -1,0 +1,17 @@
+{
+  "name": "gzip-size",
+  "version": "7.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "CLI tool for checking gzip size",
+  "investigated": true,
+  "errorMessage": "Package gzip-size needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:07:15.254Z",
+  "testedBy": "automated"
+}

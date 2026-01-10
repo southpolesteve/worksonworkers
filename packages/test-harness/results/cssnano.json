@@ -1,0 +1,16 @@
+{
+  "name": "cssnano",
+  "version": "7.1.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "cssnano is a PostCSS-based CSS minifier/optimizer for build-time CSS processing. Used during build/compilation to minify and optimize CSS files by removing whitespace, merging rules, removing unused code, and applying various CSS optimizations. Configured in PostCSS pipelines (postcss.config.js) with build tools like webpack, vite, rollup, or standalone via PostCSS CLI. Similar CSS optimization tools include csso, clean-css, postcss-clean. Like all CSS preprocessors/postprocessors (sass, less, postcss, autoprefixer, tailwindcss), this is designed for development/build workflows, not runtime execution in Workers. Modern bundlers handle CSS minification during build time.",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:13:51.421Z",
+  "testedBy": "automated"
+}

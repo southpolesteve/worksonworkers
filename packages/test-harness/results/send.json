@@ -1,0 +1,16 @@
+{
+  "name": "send",
+  "version": "1.2.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "middleware",
+  "notes": "Filesystem-based static file middleware - Workers uses R2/Assets/KV for static files",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:50:44.206Z",
+  "testedBy": "automated"
+}

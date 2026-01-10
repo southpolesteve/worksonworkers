@@ -1,0 +1,16 @@
+{
+  "name": "memoize-one",
+  "version": "6.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import memoizeOne from 'memoize-one';\n\n// Usage:\nlet calls = 0;\nconst fn = memoizeOne((a, b) => { calls++; return a + b; });\nfn(1, 2); fn(1, 2); fn(2, 3);\nreturn { success: calls === 2, result: { calls } };",
+  "notes": "Memoization with single result cache",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:00:12.719Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "vue-hot-reload-api",
+  "version": "2.3.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Vue HMR for dev - build tool",
+  "errorMessage": "Package vue-hot-reload-api needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:03:35.874Z",
+  "testedBy": "automated",
+  "investigated": true
+}

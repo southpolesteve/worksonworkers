@@ -1,0 +1,16 @@
+{
+  "name": "apollo-link",
+  "version": "1.2.14",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "http-client",
+  "alternative": "@apollo/client",
+  "notes": "apollo-link is the core interface/base class for Apollo Client v2's modular link architecture (apollo-link, apollo-link-http, apollo-link-ws, apollo-link-state, etc.). Published 6 years ago (2018) as part of the split Apollo Client v2 system where each transport/middleware was a separate package. Apollo Client v3+ (released 2020) unified all these packages into a single @apollo/client package with better TypeScript support, improved caching, and modern React hooks. This package is deprecated infrastructure - use @apollo/client instead.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:53:06.600Z",
+  "testedBy": "automated"
+}

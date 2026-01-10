@@ -1,0 +1,16 @@
+{
+  "name": "gulp-load-plugins",
+  "version": "2.0.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-load-plugins is a Gulp plugin for lazy-loading other Gulp plugins during build workflows. The name pattern 'gulp-*' indicates it's a Gulp plugin (like gulp-babel, gulp-concat, gulp-uglify, gulp-autoprefixer, gulp-clean-css). Configured in gulpfile.js as const $ = require('gulp-load-plugins')() which automatically loads all gulp-* dependencies from package.json (e.g., gulp-sass becomes $.sass, gulp-autoprefixer becomes $.autoprefixer). Provides convenient lazy loading (plugins loaded only when first used), automatic camelCase naming (gulp-foo-bar becomes $.fooBar), overrides for custom naming, pattern matching for loading plugins, and scope options for @scoped packages. Used during development/build workflows to simplify Gulp plugin management (avoiding manual require() for each plugin), reducing boilerplate code (one require instead of dozens), improving startup time (lazy loading defers plugin initialization), and organizing build scripts (centralized plugin management). Part of the Gulp plugin ecosystem alongside gulp (core task runner), gulp-if (conditional processing), gulp-rename (rename files), gulp-plumber (error handling), gulp-util (deprecated utilities). Not applicable to Workers which is a runtime environment without Gulp build system, filesystem access for reading package.json, or dynamic plugin loading from node_modules, not a build environment. Modern build tools use direct imports (import plugins explicitly in build scripts), build tool plugins (webpack/vite plugins loaded via config), or task runners (npm scripts without Gulp complexity). Useful for traditional Gulp workflows but obsolete in modern bundler-based workflows.",
+  "errorMessage": null,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:15:46.137Z",
+  "testedBy": "automated"
+}

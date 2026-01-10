@@ -1,0 +1,16 @@
+{
+  "name": "eslint-plugin-react-hooks",
+  "version": "7.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "ESLint plugin for enforcing React Hooks rules (rules of hooks, exhaustive deps). Used exclusively during development/CI for linting. Not applicable to Workers runtime.",
+  "errorMessage": "Expected opts.sync to be a function.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:29:10.492Z",
+  "testedBy": "automated"
+}

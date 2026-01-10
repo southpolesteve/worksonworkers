@@ -1,0 +1,16 @@
+{
+  "name": "moment",
+  "version": "2.30.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "date-time",
+  "example": "import moment from 'moment';\n\n// Usage:\nconst date = moment('2026-01-08');\nconst formatted = date.format('YYYY-MM-DD');\nreturn { success: formatted === '2026-01-08', result: formatted };",
+  "notes": "Consider using dayjs or date-fns for smaller bundle size",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:03:00.436Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "opn",
+  "version": "6.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "Opens URLs/files in default browser (deprecated, use 'open')",
+  "investigated": true,
+  "errorMessage": "No such module \"node:child_process\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:04:08.288Z",
+  "testedBy": "automated"
+}

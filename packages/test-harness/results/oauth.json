@@ -1,0 +1,17 @@
+{
+  "name": "oauth",
+  "version": "0.10.2",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "auth",
+  "notes": "OAuth 1.0 client - use arctic (OAuth 2.0) or @cloudflare/access for Workers",
+  "alternative": "arctic or @cloudflare/access",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:04:45.425Z",
+  "testedBy": "automated"
+}

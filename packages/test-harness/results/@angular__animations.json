@@ -1,0 +1,17 @@
+{
+  "name": "@angular/animations",
+  "version": "21.0.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "Angular is a browser-based framework for client-side rendering. Requires DOM/browser APIs (window, document, Web Animations API) which are not available in Workers. Error 'Disallowed operation called within global scope' occurs because Angular performs initialization at import time that's incompatible with Workers' execution model. For server-side rendering with Angular, use Node.js, not Workers.",
+  "errorMessage": "Disallowed operation called within global scope. Asynchronous I/O (ex: fetch() or connect()), setting a timeout, and generating random values are not allowed within global scope. To fix this error, perform this operation within a handler. https://developers.cloudflare.com/workers/runtime-apis/handlers/",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:49:49.891Z",
+  "testedBy": "automated",
+  "investigated": true
+}

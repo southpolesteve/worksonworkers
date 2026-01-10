@@ -1,0 +1,15 @@
+{
+  "name": "clipboard",
+  "version": "2.0.11",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "clipboard (clipboard.js) is a browser-only library for copying text to the system clipboard using DOM APIs. Requires browser APIs like document, window, HTMLElement, and clipboard APIs (document.execCommand('copy') or navigator.clipboard). Designed exclusively for client-side browser environments to interact with the user's clipboard for copy-to-clipboard functionality in web applications. Not applicable to Workers which is a serverless HTTP runtime without DOM APIs or access to the system clipboard. For clipboard functionality, implement client-side in the browser using clipboard.js. Similar browser-only clipboard libraries include copy-to-clipboard, clipboard-copy.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:33:27.081Z",
+  "testedBy": "automated"
+}

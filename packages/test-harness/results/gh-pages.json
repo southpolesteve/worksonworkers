@@ -1,0 +1,16 @@
+{
+  "name": "gh-pages",
+  "version": "6.3.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gh-pages is a build/deployment tool for publishing files to GitHub Pages (gh-pages branch on GitHub or any other branch on any other remote). Used in CI/CD pipelines and build scripts to deploy static sites to GitHub Pages. Provides publish() function and gh-pages CLI command that takes a directory path and publishes its contents to the gh-pages branch. Requires: (1) Git operations - cloning repos, creating commits, pushing to remotes using git command or nodegit library, (2) Filesystem access - reading files to publish from local directories (fs.readdir, fs.readFile), managing local git repository clones, (3) Process execution - running git commands via child_process. Common use cases: deploying documentation sites (TypeDoc, JSDoc), publishing static sites (React, Vue, Angular builds), deploying to GitHub Pages from build scripts (npm run deploy). Part of GitHub Pages deployment ecosystem alongside gh-pages CLI, GitHub Actions deploy actions, Netlify, Vercel. Workers is a stateless serverless runtime without filesystem access to read directories, git operations capability, or process execution. Not applicable to Workers which is a runtime environment, not a build/deployment environment. Similar deployment tools include gh-pages CLI (same package, CLI mode), semantic-release (automated package releases), firebase-tools (Firebase hosting deployment).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:14:08.136Z",
+  "testedBy": "automated",
+  "investigated": true
+}

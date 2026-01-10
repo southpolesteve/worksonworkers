@@ -1,0 +1,16 @@
+{
+  "name": "@polymer/polymer",
+  "version": "3.5.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "Polymer is Google's library for building web components using browser-native Web Components APIs (Custom Elements, Shadow DOM, HTML Templates). Requires DOM and browser APIs (window, document, HTMLElement) which aren't available in Workers. Designed for client-side browser rendering, not serverless environments. Error: 'window is not defined'.",
+  "errorMessage": "window is not defined",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:33:56.146Z",
+  "testedBy": "automated"
+}

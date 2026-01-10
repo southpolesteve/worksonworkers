@@ -1,0 +1,16 @@
+{
+  "name": "rfdc",
+  "version": "1.4.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import rfdc from 'rfdc';\n\n// Usage:\nconst clone = rfdc();\nconst obj = { a: 1, b: { c: 2 } };\nconst cloned = clone(obj);\n\ncloned.b.c = 3;\n\nreturn { \n  success: obj.b.c === 2 && cloned.b.c === 3,\n  result: { original: obj, cloned }\n};",
+  "notes": "Fast deep cloning utility",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:34:49.664Z",
+  "testedBy": "automated"
+}

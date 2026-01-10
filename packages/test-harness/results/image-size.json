@@ -1,0 +1,16 @@
+{
+  "name": "image-size",
+  "version": "2.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import sizeOf from 'image-size';\n\n// Usage:\n// Create a simple 1x1 PNG (base64 encoded)\nconst pngData = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==', 'base64');\nconst dimensions = sizeOf(pngData);\nreturn { success: dimensions.width === 1 && dimensions.height === 1 && dimensions.type === 'png', result: dimensions };",
+  "notes": "Get image dimensions from buffer or file",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:12:01.135Z",
+  "testedBy": "automated"
+}

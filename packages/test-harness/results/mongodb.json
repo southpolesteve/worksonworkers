@@ -1,0 +1,18 @@
+{
+  "name": "mongodb",
+  "version": "7.0.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "database",
+  "notes": "MongoDB driver - use D1 or @upstash/redis instead",
+  "alternative": "@cloudflare/d1, @upstash/redis",
+  "investigated": true,
+  "errorMessage": "Maximum call stack size exceeded",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:47:06.065Z",
+  "testedBy": "automated"
+}

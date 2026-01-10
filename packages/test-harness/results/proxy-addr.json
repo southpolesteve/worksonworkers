@@ -1,0 +1,16 @@
+{
+  "name": "proxy-addr",
+  "version": "2.0.7",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "network",
+  "example": "import proxyAddr from 'proxy-addr';\n\n// Usage:\n// Create mock request object\nconst req = {\n  connection: { remoteAddress: '127.0.0.1' },\n  headers: { 'x-forwarded-for': '203.0.113.195, 70.41.3.18, 150.172.238.178' }\n};\n\n// Parse proxy address with trust function\nconst addr = proxyAddr(req, () => true);\n\nreturn { \n  success: addr === '203.0.113.195',\n  result: { address: addr }\n};",
+  "notes": "Parse proxy addresses from request headers",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:23:53.233Z",
+  "testedBy": "automated"
+}

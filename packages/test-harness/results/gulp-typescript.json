@@ -1,0 +1,15 @@
+{
+  "name": "gulp-typescript",
+  "version": "6.0.0-alpha.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-typescript is a Gulp plugin for compiling TypeScript to JavaScript during build workflows. The name pattern 'gulp-*' indicates it's a Gulp plugin (like gulp-babel, gulp-sass, gulp-concat, gulp-uglify, gulp-autoprefixer, gulp-clean-css). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('src/**/*.ts').pipe(typescript()).pipe(gulp.dest('dist'))). Used during development/build workflows to automatically compile TypeScript files to JavaScript, apply TypeScript compiler options (target, module, strict, sourceMap), generate declaration files (.d.ts), and support TypeScript project references. Processes TypeScript files from disk using Node.js streams and filesystem access (fs.createReadStream for reading .ts files, fs.createWriteStream for writing .js/.d.ts output). Supports incremental compilation (faster rebuilds by tracking changes), sourcemaps generation (debugging transpiled code), custom TypeScript compiler options (tsconfig.json integration), and error reporting in Gulp pipelines. Part of the Gulp plugin ecosystem alongside gulp-babel (transpile JavaScript), gulp-concat (concatenate files), gulp-uglify (minify JavaScript), gulp-sourcemaps (generate sourcemaps), gulp-tslint (TypeScript linting - deprecated). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern TypeScript compilation uses tsc CLI directly (npx tsc), build tools with built-in TypeScript support (webpack with ts-loader, vite with built-in TS support, esbuild with native TS support), or swc (Rust-based TypeScript compiler). Changed status from doesnt-work to not-applicable, category to build-tool.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:46:11.053Z",
+  "testedBy": "automated"
+}

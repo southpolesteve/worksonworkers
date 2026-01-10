@@ -1,0 +1,15 @@
+{
+  "name": "gaze",
+  "version": "1.1.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gaze is a filesystem watching library that wraps fs.watch() with glob pattern matching for monitoring file/directory changes during development. Used by build tools (Grunt via grunt-contrib-watch, Gulp tasks, webpack dev server for hot reload), test runners (Jest watch mode, Karma for test re-running), live reload servers, and file watching utilities. Provides Gaze class for watching files/directories with glob patterns (*.js, **/*.css), emits events (changed, added, deleted, renamed) when files change, uses fs.watch() for efficient native filesystem monitoring. Part of the file watching ecosystem alongside chokidar (most popular, used by webpack/vite), node-watch (lightweight alternative), sane (Facebook's file watcher). Requires Node.js filesystem APIs (fs.watch, fs.stat, fs.readdir) for real-time monitoring of filesystem changes. Workers is a stateless serverless environment without persistent filesystem to watch - each request runs in isolation with no file watching capability. Not applicable to Workers which is a runtime environment, not a build/development environment.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:45:15.348Z",
+  "testedBy": "automated"
+}

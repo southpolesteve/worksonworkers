@@ -1,0 +1,15 @@
+{
+  "name": "p-queue",
+  "version": "9.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "async",
+  "example": "import PQueue from 'p-queue';\n\n// Usage:\nconst queue = new PQueue({ concurrency: 1 });\nconst results = await Promise.all([\n  queue.add(() => Promise.resolve(1)),\n  queue.add(() => Promise.resolve(2)),\n]);\nreturn { success: true, result: results };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:11:42.276Z",
+  "testedBy": "automated"
+}

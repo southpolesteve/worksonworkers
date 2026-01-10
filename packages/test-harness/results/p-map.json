@@ -1,0 +1,16 @@
+{
+  "name": "p-map",
+  "version": "7.0.4",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import pMap from 'p-map';\n\n// Usage:\nconst input = [1, 2, 3];\nconst mapper = x => Promise.resolve(x * 2);\nconst result = await pMap(input, mapper, { concurrency: 2 });\nreturn { success: result.length === 3 && result[0] === 2, result };",
+  "notes": "Map over promises concurrently with optional concurrency limit",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:48:05.250Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "eslint-plugin-import",
+  "version": "2.32.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "ESLint plugin for linting ES6+ import/export syntax. Provides rules for validating import/export statements: no-unresolved (ensure imports point to files/modules that exist), named (ensure named imports correspond to named exports), default (ensure default imports have default exports), namespace (ensure namespace imports properly reference exports), no-duplicates (report duplicate imports), order (enforce import order conventions), newline-after-import (spacing rules), no-cycle (detect circular dependencies), etc. ESLint plugins extend ESLint's rule set via the 'plugins' array in .eslintrc configuration files. Used exclusively during development/CI workflows to enforce import best practices and catch module resolution errors. Not applicable to Workers which is a runtime environment, not a linting environment. Similar ESLint plugins include eslint-plugin-node (Node.js-specific rules), @typescript-eslint/eslint-plugin (TypeScript rules).",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:33:31.031Z",
+  "testedBy": "automated",
+  "investigated": true
+}

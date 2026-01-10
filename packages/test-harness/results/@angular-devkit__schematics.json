@@ -1,0 +1,16 @@
+{
+  "name": "@angular-devkit/schematics",
+  "version": "21.0.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Schematics is Angular CLI's code generation and scaffolding library. It transforms filesystems, creates files, and refactors code during development using \"Trees\" and \"Rules\". This is a build-time tool for Angular CLI - not a runtime library. Similar to yeoman, plop, or hygen. Not designed for or needed in Cloudflare Workers runtime.",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:30:32.915Z",
+  "testedBy": "automated"
+}

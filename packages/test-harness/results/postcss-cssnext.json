@@ -1,0 +1,17 @@
+{
+  "name": "postcss-cssnext",
+  "version": "3.1.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "PostCSS plugin - build tool",
+  "investigated": true,
+  "errorMessage": "Package postcss-cssnext needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:29:26.436Z",
+  "testedBy": "automated"
+}

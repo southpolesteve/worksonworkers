@@ -1,0 +1,16 @@
+{
+  "name": "babel",
+  "version": "6.23.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel (v6.23.0) is a legacy Babel 6 CLI wrapper package that redirects to babel-core for the Node.js API and babel-cli for command-line usage. The package itself contains no actual implementation - it's just a placeholder that throws 'The node API for `babel` has been moved to `babel-core`'. In Babel 7+, use @babel/core for the API and @babel/cli for the CLI. Like all Babel packages, this is a build-time tool for development workflows and build pipelines, not for runtime execution in Workers.",
+  "errorMessage": "The node API for `babel` has been moved to `babel-core`.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:33:06.776Z",
+  "testedBy": "automated"
+}

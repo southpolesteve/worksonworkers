@@ -1,0 +1,16 @@
+{
+  "name": "deasync",
+  "version": "0.1.31",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "native-module",
+  "notes": "deasync is a native C++ addon (uses node-gyp for compilation) that manipulates Node.js's event loop to turn async functions into synchronous ones via blocking operations. It requires compiling platform-specific native code and direct access to Node.js internals (libuv event loop) which are not available in Workers. Workers uses V8 isolates with a completely different execution model that doesn't support native addons or event loop blocking. Native modules require C++ bindings, node-gyp compilation, and OS-specific compiled binaries (.node files) which cannot run in Workers' sandboxed JavaScript-only runtime. For synchronous-looking code in Workers, use modern async/await syntax or top-level await in modules. Similar native modules that manipulate event loops include fibers, synchronize, sync-rpc.",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:03:24.219Z",
+  "testedBy": "automated"
+}

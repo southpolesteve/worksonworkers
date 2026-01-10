@@ -1,0 +1,30 @@
+{
+  "name": "works-on-workers",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A comprehensive database of npm package compatibility with Cloudflare Workers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudflare/works-on-workers"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "npm run test -w packages/test-harness",
+    "test:package": "npm run test:package -w packages/test-harness --",
+    "dev": "npm run dev -w packages/website",
+    "build": "npm run build -w packages/website",
+    "deploy": "npm run deploy -w packages/website"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "npm",
+    "compatibility"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "pluralize": "^8.0.0"
+  }
+}

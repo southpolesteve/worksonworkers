@@ -1,0 +1,18 @@
+{
+  "name": "github",
+  "version": "14.0.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "api-client",
+  "notes": "DEPRECATED! Package renamed to @octokit/rest. The 'github' package is the old GitHub API client library that has been superseded by @octokit/rest which is the official GitHub REST API client for Node.js/browser maintained by GitHub. Provides comprehensive GitHub API integration: repositories (create/read/update/delete), issues/PRs (list/create/comment/merge), users/orgs (profiles/memberships), gists (create/update), notifications, search, git data operations. @octokit/rest has better TypeScript support, active maintenance, OAuth2/token authentication, pagination helpers, rate limit handling, and webhooks support. Works in Node.js and browsers with fetch API. Similar GitHub API libraries include @octokit/graphql (GraphQL API), octonode (alternative client), github-api (community client).",
+  "alternative": "@octokit/rest (official successor, actively maintained by GitHub) - works on Workers with fetch API",
+  "investigated": true,
+  "errorMessage": "'github' has been renamed to '@octokit/rest' (https://git.io/vNB11)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:39:38.611Z",
+  "testedBy": "automated"
+}

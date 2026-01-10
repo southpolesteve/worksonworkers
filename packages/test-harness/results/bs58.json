@@ -1,0 +1,16 @@
+{
+  "name": "bs58",
+  "version": "6.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "encoding",
+  "example": "import bs58 from 'bs58';\n\n// Usage:\nconst bytes = new Uint8Array([1, 2, 3, 4, 5]);\nconst encoded = bs58.encode(bytes);\nconst decoded = bs58.decode(encoded);\nreturn { success: decoded.length === 5 && decoded[0] === 1, result: { encoded, decoded: Array.from(decoded) } };",
+  "notes": "Base58 encoding/decoding - commonly used in Bitcoin, IPFS, and other blockchain applications.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:00:42.840Z",
+  "testedBy": "automated"
+}

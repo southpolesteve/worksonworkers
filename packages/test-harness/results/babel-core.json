@@ -1,0 +1,16 @@
+{
+  "name": "babel-core",
+  "version": "6.26.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-core (v6.26.3) is the legacy Babel 6 compiler core - now replaced by @babel/core (Babel 7+). Like all Babel packages (@babel/core, webpack, esbuild, tsc), this is a build-time transpilation tool for transforming JavaScript code using Babel plugins/presets during development and build pipelines. Requires filesystem access and Node.js APIs for compilation. Designed for build processes, not runtime execution in Workers.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:27:38.369Z",
+  "testedBy": "automated"
+}

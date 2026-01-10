@@ -1,0 +1,16 @@
+{
+  "name": "colors",
+  "version": "1.4.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "colors is a terminal/CLI coloring and formatting utility for console output. Provides functions for adding colors (red, blue, green, etc.) and styling (bold, italic, underline) to terminal/stdout text using ANSI escape codes. Designed exclusively for command-line interfaces and Node.js terminal applications requiring process.stdout, TTY control, and ANSI color support. Not applicable to Workers which is an HTTP request/response runtime without terminal I/O. Similar CLI styling libraries include chalk, kleur, ansi-colors, picocolors, cli-color. Original error \"No such module \\\"node:os\\\"\" occurred because colors uses the os module which is not available in Workers.",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:25:59.423Z",
+  "testedBy": "automated"
+}

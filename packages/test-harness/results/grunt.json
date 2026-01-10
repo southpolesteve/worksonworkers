@@ -1,0 +1,16 @@
+{
+  "name": "grunt",
+  "version": "1.6.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Grunt is a JavaScript task runner for automating repetitive tasks like minification, compilation, unit testing, and linting during development workflows. Used to define and run tasks in Gruntfile.js configurations. Requires filesystem access, process execution, and Node.js APIs for running build tasks. Not applicable to Workers which is a runtime environment, not a build environment.",
+  "errorMessage": "No such module \"node:child_process\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:11:30.827Z",
+  "testedBy": "automated"
+}

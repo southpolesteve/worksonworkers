@@ -1,0 +1,16 @@
+{
+  "name": "strip-ansi",
+  "version": "7.1.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "string",
+  "example": "import stripAnsi from 'strip-ansi';\n\n// Usage:\nconst result = stripAnsi('\\u001b[31mHello\\u001b[0m');\nreturn { success: result === 'Hello', result };",
+  "notes": "Strip ANSI escape codes from strings",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:44:58.692Z",
+  "testedBy": "automated"
+}

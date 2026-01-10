@@ -1,0 +1,15 @@
+{
+  "name": "pako",
+  "version": "2.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "compression",
+  "example": "import pako from 'pako';\n\n// Usage:\nconst input = new TextEncoder().encode('Hello, World!');\nconst compressed = pako.deflate(input);\nconst decompressed = pako.inflate(compressed);\nconst output = new TextDecoder().decode(decompressed);\nreturn { success: output === 'Hello, World!', result: output };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:10:16.432Z",
+  "testedBy": "automated"
+}

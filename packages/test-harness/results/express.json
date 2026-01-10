@@ -1,0 +1,18 @@
+{
+  "name": "express",
+  "version": "5.2.1",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "server-framework",
+  "notes": "Express is a Node.js web framework designed for traditional HTTP servers using http.createServer(). While Express has some Workers support via @cloudflare/workers-web-api bridge, it's not optimized for Workers' serverless environment. Express relies on Node.js middleware patterns (req, res, next) and expects persistent server processes. Workers uses fetch event handlers with Request/Response objects and stateless execution. Bundle size overhead is significant. Better alternatives exist that are purpose-built for Workers with better performance, smaller bundle sizes, and native Workers integration.",
+  "alternative": "Hono (most Express-like, fastest), itty-router (tiny, simple), Toucan (Sentry-like routing), or workers-router (official Cloudflare routing helper)",
+  "investigated": true,
+  "errorMessage": "Unexpected strict mode reserved word",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:24:27.656Z",
+  "testedBy": "automated"
+}

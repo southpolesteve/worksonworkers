@@ -1,0 +1,15 @@
+{
+  "name": "@babel/types",
+  "version": "7.28.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/types is Babel's utility library for Abstract Syntax Tree (AST) nodes. It provides Lodash-like helper functions for creating, validating, and manipulating AST nodes during code transformation. Part of Babel's core build-time ecosystem used by Babel plugins, parsers, and code transformation tools. Like @babel/parser, @babel/traverse, and @babel/core, this is a build-time tool for development workflows and build pipelines (webpack, esbuild, vite), not for runtime execution in Workers. You don't work with AST nodes in request handlers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:18:53.897Z",
+  "testedBy": "automated"
+}

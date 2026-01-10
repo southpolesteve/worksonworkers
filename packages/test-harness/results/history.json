@@ -1,0 +1,16 @@
+{
+  "name": "history",
+  "version": "5.3.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { createMemoryHistory } from 'history';\n\n// Usage:\nconst history = createMemoryHistory();\nhistory.push('/test');\nreturn { success: history.location.pathname === '/test', result: { pathname: history.location.pathname } };",
+  "notes": "History/routing library for SPAs",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:00:22.835Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "rxjs-compat",
+  "version": "6.6.7",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "async-library",
+  "alternative": "rxjs",
+  "notes": "Compatibility layer for older RxJS - use rxjs@7+ directly",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:36:45.964Z",
+  "testedBy": "automated"
+}

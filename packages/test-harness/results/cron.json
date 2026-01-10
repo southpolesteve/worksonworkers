@@ -1,0 +1,18 @@
+{
+  "name": "cron",
+  "version": "4.4.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "utility",
+  "notes": "Node.js cron job scheduler for running scheduled tasks (e.g., CronJob('0 0 * * *', callback)). Requires child_process for spawning tasks. Workers has built-in Scheduled Events (Cron Triggers) for scheduled tasks - use scheduled handler: export default { scheduled(event, env, ctx) { ... } }",
+  "alternative": "Cloudflare Workers Scheduled Events (Cron Triggers) - built-in",
+  "errorMessage": "No such module \"node:child_process\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:45:01.615Z",
+  "testedBy": "automated",
+  "investigated": true
+}

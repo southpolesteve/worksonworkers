@@ -1,0 +1,16 @@
+{
+  "name": "object-hash",
+  "version": "3.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "crypto",
+  "example": "import hash from 'object-hash';\n\n// Usage:\nconst hash1 = hash({ a: 1, b: 2 });\nconst hash2 = hash({ b: 2, a: 1 });\nreturn { success: hash1 === hash2 && typeof hash1 === 'string', result: { hash1, hash2 } };",
+  "notes": "Generate consistent hashes from JavaScript objects regardless of key order",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:47:21.174Z",
+  "testedBy": "automated"
+}

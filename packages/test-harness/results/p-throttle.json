@@ -1,0 +1,17 @@
+{
+  "name": "p-throttle",
+  "version": "8.1.0",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "utility",
+  "notes": "Throttle promise-returning & async functions - import resolution issue",
+  "errorMessage": "(0 , __vite_ssr_import_0__.pThrottle) is not a function",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:51:08.421Z",
+  "testedBy": "automated"
+}

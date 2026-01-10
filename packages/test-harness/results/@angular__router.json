@@ -1,0 +1,17 @@
+{
+  "name": "@angular/router",
+  "version": "21.0.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "@angular/router is Angular's routing module for browser-based single-page applications (SPAs). It provides components and services for navigation, route guards, lazy loading, and URL management in Angular applications. Like all Angular packages, this requires DOM APIs and performs initialization at import time that's incompatible with Workers. Angular's Router depends on browser features (Location API, History API, DOM) which aren't available in Workers. For routing in Workers, use edge-compatible frameworks like Remix, Hono, or itty-router.",
+  "errorMessage": "Disallowed operation called within global scope. Asynchronous I/O (ex: fetch() or connect()), setting a timeout, and generating random values are not allowed within global scope. To fix this error, perform this operation within a handler. https://developers.cloudflare.com/workers/runtime-apis/handlers/",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:37:59.224Z",
+  "testedBy": "automated",
+  "investigated": true
+}

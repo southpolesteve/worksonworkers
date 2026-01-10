@@ -1,0 +1,15 @@
+{
+  "name": "lodash",
+  "version": "4.17.21",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import _ from 'lodash';\n\n// Usage:\nconst result = _.chunk(['a', 'b', 'c', 'd'], 2);\nreturn { success: true, result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T22:57:50.978Z",
+  "testedBy": "automated"
+}

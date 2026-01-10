@@ -1,0 +1,16 @@
+{
+  "name": "backbone",
+  "version": "1.6.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "Backbone.js is a browser-only MV* framework from 2010 for building single-page applications with models, views, collections, and routers. Requires DOM APIs (window, document, Element) which are not available in Workers. Designed for client-side rendering in browsers, not serverless environments. Modern alternatives include React, Vue, Svelte for browser-side rendering, or server-side frameworks like Hono, Remix, or Next.js for Workers. Original error 'spawn npm ENOENT' was a test infrastructure issue.",
+  "errorMessage": null,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:17:55.628Z",
+  "testedBy": "automated"
+}

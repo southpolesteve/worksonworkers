@@ -1,0 +1,16 @@
+{
+  "name": "fbjs",
+  "version": "3.0.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "deprecated-lib",
+  "notes": "fbjs is a collection of internal Facebook utility libraries (invariant, warning, emptyFunction, ExecutionEnvironment, etc.) primarily used by React and other Facebook projects during their build process. The package explicitly throws an error when imported at the root level: 'The fbjs package should not be required without a full path' - it's designed to be used via subpath imports (fbjs/lib/invariant, fbjs/lib/warning, etc.). Modern React 18+ no longer depends on fbjs - these utilities are now either built into React or deprecated. The package was used for cross-environment polyfills (promises, fetch, setImmediate, object-assign) and utility functions (invariant assertions, warning messages, empty functions, UA parsing). Last updated 2023-06. Not applicable to Workers - these are internal library development utilities, not for direct application use. Modern alternatives: implement utilities directly or use React 18+ which has these built-in.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:41:18.816Z",
+  "testedBy": "automated",
+  "investigated": true
+}

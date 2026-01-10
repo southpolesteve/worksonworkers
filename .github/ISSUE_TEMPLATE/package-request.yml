@@ -1,0 +1,32 @@
+name: "📦 Package Test Request"
+description: Request testing for an npm package
+title: "Test package: "
+labels: ["package-request"]
+body:
+  - type: input
+    id: package-name
+    attributes:
+      label: Package Name
+      description: The exact npm package name (e.g., "lodash" or "@scope/package")
+      placeholder: package-name
+    validations:
+      required: true
+      
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: How do you want to use this package in a Worker? (optional)
+      placeholder: I want to use this package to...
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I've searched existing issues and this package hasn't been requested yet
+          required: true
+        - label: This package is published on npm
+          required: true

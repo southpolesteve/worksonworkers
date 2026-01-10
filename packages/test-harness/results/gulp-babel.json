@@ -1,0 +1,16 @@
+{
+  "name": "gulp-babel",
+  "version": "8.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-babel is a Gulp plugin for transpiling JavaScript using Babel during build workflows. The name pattern 'gulp-*' clearly indicates it's a Gulp plugin (like gulp-concat, gulp-uglify, gulp-autoprefixer, gulp-sass, gulp-clean-css, etc.). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('src/**/*.js').pipe(babel()).pipe(gulp.dest('dist'))). Used during development/build workflows to automatically transpile modern JavaScript (ES6+) to ES5 for browser compatibility using Babel's configurable presets and plugins. Processes JavaScript files from disk using Node.js streams and filesystem access (fs.createReadStream, fs.createWriteStream). Part of the Gulp plugin ecosystem alongside gulp-typescript (compile TypeScript), gulp-concat (concatenate files), gulp-uglify (minify JavaScript), gulp-sourcemaps (generate sourcemaps). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern JavaScript transpilation uses Babel CLI directly (without Gulp), build tools with built-in transpilation (webpack/vite with babel-loader), or native ES6+ support in modern environments.",
+  "errorMessage": "Cannot read properties of undefined (reading 'slice')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:18:45.213Z",
+  "testedBy": "automated"
+}

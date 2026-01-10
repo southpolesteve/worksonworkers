@@ -1,0 +1,15 @@
+{
+  "name": "ramda",
+  "version": "0.32.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import * as R from 'ramda';\n\n// Usage:\nconst result = R.map(x => x * 2, [1, 2, 3]);\nreturn { success: true, result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T22:59:34.017Z",
+  "testedBy": "automated"
+}

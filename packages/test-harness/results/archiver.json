@@ -1,0 +1,16 @@
+{
+  "name": "archiver",
+  "version": "7.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "utility",
+  "notes": "Archiver is a Node.js library for creating ZIP/TAR archive files using streams and filesystem APIs (fs.createWriteStream, fs.createReadStream). Designed for build-time archive creation tasks like packaging releases, creating backups, or bundling files. In Workers, archives are typically created during build processes, not at runtime. Workers lack persistent filesystem access and creating archives on-the-fly in request handlers would be inefficient and impractical. For serving pre-created archives from Workers, use R2 or KV storage.",
+  "errorMessage": "Cannot read properties of undefined (reading 'match')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:20:07.738Z",
+  "testedBy": "automated"
+}

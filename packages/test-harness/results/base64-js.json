@@ -1,0 +1,16 @@
+{
+  "name": "base64-js",
+  "version": "1.5.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "encoding",
+  "example": "import * as base64 from 'base64-js';\n\n// Usage:\nconst text = 'Hello World!';\nconst bytes = new TextEncoder().encode(text);\nconst encoded = base64.fromByteArray(bytes);\nconst decoded = base64.toByteArray(encoded);\nconst result = new TextDecoder().decode(decoded);\nreturn { success: result === text, result: { encoded, decoded: result } };",
+  "notes": "Base64 encoding/decoding",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:53:09.939Z",
+  "testedBy": "automated"
+}

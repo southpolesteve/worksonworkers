@@ -1,0 +1,16 @@
+{
+  "name": "redux-logger",
+  "version": "3.0.6",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { createLogger } from 'redux-logger';\n\n// Usage:\nconst logger = createLogger();\nreturn { success: typeof logger === 'function', result: { isFunction: typeof logger === 'function' } };",
+  "notes": "Redux logging middleware",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:31:51.905Z",
+  "testedBy": "automated"
+}

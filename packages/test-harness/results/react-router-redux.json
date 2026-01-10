@@ -1,0 +1,16 @@
+{
+  "name": "react-router-redux",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "React Router Redux bindings - browser-only",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:19:52.534Z",
+  "testedBy": "automated"
+}

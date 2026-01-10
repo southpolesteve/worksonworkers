@@ -1,0 +1,16 @@
+{
+  "name": "@neondatabase/serverless",
+  "version": "1.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "database",
+  "example": "import { neon } from '@neondatabase/serverless';\n\n// Usage:\nconst sql = neon('postgresql://user:pass@host/db');\nreturn { success: typeof sql === 'function', result: 'Neon client created' };",
+  "notes": "Serverless Postgres driver for Neon. Works on Workers with HTTP connection pooling.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:48:25.516Z",
+  "testedBy": "automated"
+}

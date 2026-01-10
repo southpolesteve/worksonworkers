@@ -1,0 +1,17 @@
+{
+  "name": "@material-ui/core",
+  "version": "4.12.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "example": "import * as pkg from '@material-ui/core';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+  "notes": "Material-UI React components - browser-only",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:10:51.354Z",
+  "testedBy": "automated",
+  "investigated": true
+}

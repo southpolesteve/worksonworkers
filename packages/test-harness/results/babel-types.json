@@ -1,0 +1,15 @@
+{
+  "name": "babel-types",
+  "version": "6.26.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-types is a Babel 6 AST (Abstract Syntax Tree) utility library that provides functions for creating, validating, and manipulating AST nodes during code transformation - now replaced by @babel/types in Babel 7+. Used by Babel plugins and @babel/core to construct and validate AST nodes programmatically (e.g., t.identifier('foo'), t.callExpression(t.identifier('fn'), [t.numericLiteral(42)]), t.isIdentifier(node)). Like all Babel packages (babel-core, babel-generator, babel-traverse, babel-template, @babel/parser), this is a build-time tool for development workflows and build pipelines, not for runtime execution in Workers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:45:55.503Z",
+  "testedBy": "automated"
+}

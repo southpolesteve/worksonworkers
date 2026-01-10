@@ -1,0 +1,18 @@
+{
+  "name": "shortid",
+  "version": "2.2.17",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "id-generation",
+  "notes": "Deprecated package with issues",
+  "alternative": "nanoid",
+  "errorMessage": "Cannot read properties of undefined (reading 'random')",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T04:03:07.546Z",
+  "testedBy": "automated"
+}

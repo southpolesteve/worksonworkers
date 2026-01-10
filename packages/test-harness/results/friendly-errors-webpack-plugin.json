@@ -1,0 +1,15 @@
+{
+  "name": "friendly-errors-webpack-plugin",
+  "version": "1.7.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "friendly-errors-webpack-plugin is a webpack plugin for improving webpack error reporting during builds. The name pattern '*-webpack-plugin' clearly indicates it's a webpack build tool (like html-webpack-plugin, copy-webpack-plugin, extract-text-webpack-plugin, etc.). Configured in webpack.config.js as a plugin: new FriendlyErrorsWebpackPlugin(). Used during development/build workflows to display webpack compilation errors in a more friendly, readable format with better formatting, clear stack traces, and actionable error messages. Not applicable to Workers which is a runtime environment, not a build environment. Similar webpack error/logging plugins include webpack-bundle-analyzer (bundle analysis), webpackbar (progress bar), webpack-notifier (desktop notifications).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:57:39.029Z",
+  "testedBy": "automated"
+}

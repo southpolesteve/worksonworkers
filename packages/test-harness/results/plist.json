@@ -1,0 +1,16 @@
+{
+  "name": "plist",
+  "version": "3.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import plist from 'plist';\n\n// Usage:\nconst obj = { name: 'test', version: 1 };\nconst xml = plist.build(obj);\nconst parsed = plist.parse(xml);\nreturn { success: parsed.name === 'test', result: parsed };",
+  "notes": "Parse/build Apple plist files",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:28:09.869Z",
+  "testedBy": "automated"
+}

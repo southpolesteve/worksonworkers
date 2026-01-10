@@ -1,0 +1,16 @@
+{
+  "name": "ember-cli-babel",
+  "version": "8.2.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "ember-cli-babel is an Ember CLI plugin (build-time tool) that uses Babel and @babel/preset-env to transpile JavaScript code during the Ember CLI build process. It's configured in ember-cli-build.js as part of the Ember CLI build pipeline. Transpilation happens during development/build time, not at runtime. Similar build-time transpilation tools include babel-loader (webpack), @vitejs/plugin-react (vite), and other framework-specific Babel plugins. Not applicable to Workers which is a runtime environment, not a build tool. Modern bundlers (wrangler, webpack, vite, esbuild) handle JavaScript transpilation during the build step.",
+  "errorMessage": "Cannot read properties of undefined (reading 'length')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:37:33.724Z",
+  "testedBy": "automated"
+}

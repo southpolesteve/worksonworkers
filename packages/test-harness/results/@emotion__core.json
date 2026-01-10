@@ -1,0 +1,17 @@
+{
+  "name": "@emotion/core",
+  "version": "11.0.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "css-in-js",
+  "notes": "@emotion/core is deprecated and was replaced by @emotion/react in Emotion v11. Emotion is a CSS-in-JS library for React that requires browser/DOM APIs (document, window, HTMLElement) and React runtime for styling components. It's designed for client-side browser rendering with features like the css prop, styled components, theming, and dynamic styles. Not suitable for Workers serverless environment which has no DOM. For styling in Workers SSR, pre-generate styles at build time or use edge-compatible CSS solutions.",
+  "alternative": "@emotion/react (though also requires browser/React - neither work on Workers)",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:58:13.096Z",
+  "testedBy": "automated"
+}

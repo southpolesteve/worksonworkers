@@ -1,0 +1,16 @@
+{
+  "name": "pretty-bytes",
+  "version": "7.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import prettyBytes from 'pretty-bytes';\n\n// Usage:\nconst result = prettyBytes(1337);\nreturn { success: result === '1.34 kB', result };",
+  "notes": "Convert bytes to human readable string",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:24:55.332Z",
+  "testedBy": "automated"
+}

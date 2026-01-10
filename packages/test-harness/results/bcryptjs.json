@@ -1,0 +1,15 @@
+{
+  "name": "bcryptjs",
+  "version": "3.0.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "crypto",
+  "example": "import bcrypt from 'bcryptjs';\n\n// Usage:\nconst hash = await bcrypt.hash('password', 10);\nconst match = await bcrypt.compare('password', hash);\nreturn { success: match, result: { hash: hash.substring(0, 20) + '...' } };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T22:58:52.456Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "babel-generator",
+  "version": "6.26.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-generator (v6.26.1) is the legacy Babel 6 code generator that converts Abstract Syntax Trees (AST) back to JavaScript source code - now replaced by @babel/generator (Babel 7+). Part of Babel's build-time code transformation pipeline used by Babel plugins, @babel/core, and other build tools (webpack, esbuild) to generate JavaScript output after transforming the AST. Like all Babel packages (@babel/core, @babel/parser, @babel/traverse), this is a build-time tool for development workflows and build pipelines, not for runtime execution in Workers. You don't generate JavaScript source code from AST nodes in request handlers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:47:40.093Z",
+  "testedBy": "automated"
+}

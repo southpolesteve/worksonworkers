@@ -1,0 +1,16 @@
+{
+  "name": "eslint-loader",
+  "version": "4.0.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack loader for running ESLint during webpack compilation. Loader integration for webpack build pipeline - runs ESLint on files during webpack builds via module.rules configuration. Designed exclusively for development/build workflows in webpack.config.js, not runtime execution. Similar webpack loaders: style-loader, babel-loader, file-loader, css-loader. Modern bundlers handle linting during build time.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:55:00.117Z",
+  "testedBy": "automated"
+}

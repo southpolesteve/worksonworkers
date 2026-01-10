@@ -1,0 +1,15 @@
+{
+  "name": "gulp-template",
+  "version": "6.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Gulp plugin for template compilation during build workflows. The 'gulp-*' pattern indicates it's a Gulp plugin (like gulp-babel, gulp-concat, gulp-uglify). Configured in gulpfile.js as part of Gulp's streaming build system. Used during development/build workflows for compiling templates (Lodash templates, EJS, Handlebars integration) with variable interpolation and custom delimiters. Processes template files from disk using Node.js streams and filesystem access. Part of the Gulp plugin ecosystem alongside gulp-ejs (EJS templates), gulp-handlebars (Handlebars templates), gulp-pug (Pug templates). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern template compilation uses template engines directly (ejs, handlebars, pug CLI) or build tools with built-in template support.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:57:50.237Z",
+  "testedBy": "automated"
+}

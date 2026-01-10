@@ -1,0 +1,15 @@
+{
+  "name": "highland",
+  "version": "2.13.5",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import H from 'highland';\n\n// Usage:\nconst result: number[] = [];\nH([1, 2, 3, 4])\n  .map((x: number) => x * 2)\n  .each((x: number) => result.push(x));\nreturn { success: result.join(',') === '2,4,6,8', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:06:37.951Z",
+  "testedBy": "automated"
+}

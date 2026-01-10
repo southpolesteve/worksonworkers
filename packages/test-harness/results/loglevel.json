@@ -1,0 +1,15 @@
+{
+  "name": "loglevel",
+  "version": "1.9.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import log from 'loglevel';\n\n// Usage:\nlog.setLevel('info');\nconst level = log.getLevel();\nlog.info('test');\nreturn { success: typeof level === 'number', result: { level } };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:11:58.643Z",
+  "testedBy": "automated"
+}

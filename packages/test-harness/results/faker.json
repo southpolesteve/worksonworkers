@@ -1,0 +1,17 @@
+{
+  "name": "faker",
+  "version": "6.6.6",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "dev-tool",
+  "notes": "DEPRECATED package (last published 2022) - the original faker.js library by Marak for generating fake data (names, addresses, emails, phone numbers, lorem ipsum, dates, etc.). Package was abandoned in January 2022 after the maintainer deleted the repository in protest. The community immediately forked the project to @faker-js/faker which is now the official maintained successor with active development, bug fixes, new locales, TypeScript improvements, and better tree-shaking. The old 'faker' package (v6.6.6) still works for basic fake data generation but receives no updates, security patches, or new features. Used extensively in: test data generation (seeding databases, populating fixtures), development/demos (mock data for UI development), API mocking (generating realistic API responses), and data anonymization. @faker-js/faker has identical API for easy migration (faker.name.findName(), faker.internet.email(), faker.address.city(), etc.), better TypeScript support with improved type definitions, more locales (70+ languages), active community maintenance with regular updates, and modern bundler optimization. Similar fake data generators include chance.js (alternative API), casual (simpler alternative), json-schema-faker (generates from JSON schemas).",
+  "alternative": "@faker-js/faker (official community-maintained fork) - may work with Workers, needs testing",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:45:25.747Z",
+  "testedBy": "automated"
+}

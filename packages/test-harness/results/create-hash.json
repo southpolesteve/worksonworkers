@@ -1,0 +1,17 @@
+{
+  "name": "create-hash",
+  "version": "1.2.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "crypto",
+  "notes": "create-hash is a Node.js crypto.createHash polyfill (part of crypto-browserify) that provides hash digest functions (md5, sha1, sha256, sha512, etc.). Fails with 'Cannot read properties of undefined (reading 'slice')' due to Buffer implementation incompatibilities. Workers has the built-in Web Crypto API (crypto.subtle.digest) which is the modern standard for hashing and provides better performance.",
+  "alternative": "Web Crypto API (crypto.subtle.digest) - built-in",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T21:52:05.119Z",
+  "testedBy": "automated"
+}

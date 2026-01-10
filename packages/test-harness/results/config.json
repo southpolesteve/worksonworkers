@@ -1,0 +1,16 @@
+{
+  "name": "config",
+  "version": "4.1.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "dev-tool",
+  "notes": "config is a filesystem-based configuration management library for Node.js that organizes hierarchical configurations across deployment environments (development, production, etc.). It loads configuration files from disk (config/default.json, config/production.json, etc.) and merges them based on NODE_ENV. Requires filesystem access to read configuration files, the node:os module (not available in Workers), and persistent file storage. Workers is a stateless serverless environment without a persistent filesystem - configuration files cannot be stored or loaded at runtime. For configuration in Workers, use environment variables via wrangler.toml, Wrangler secrets, KV for runtime configuration, hardcoded configuration objects, or Durable Objects for dynamic configuration.",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:22:33.180Z",
+  "testedBy": "automated"
+}

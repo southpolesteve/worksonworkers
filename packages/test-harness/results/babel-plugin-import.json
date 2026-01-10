@@ -1,0 +1,15 @@
+{
+  "name": "babel-plugin-import",
+  "version": "1.13.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-plugin-import is a Babel plugin that automatically transforms imports to enable tree-shaking for component libraries like antd, lodash, and material-ui. For example, it transforms `import { Button } from 'antd'` to `import Button from 'antd/lib/button'` during build/compilation to reduce bundle size. Like all Babel plugins (babel-plugin-*, @babel/plugin-*, babel-plugin-transform-*, etc.), this is a build-time tool configured in .babelrc or babel.config.js for code transformation during development/build pipelines with webpack, vite, or esbuild. Not a runtime library for Workers execution.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:02:21.925Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "gulp-postcss",
+  "version": "10.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Gulp plugin for PostCSS CSS processing during build workflows. The name pattern 'gulp-*' indicates it's a Gulp plugin (like gulp-sass, gulp-autoprefixer, gulp-clean-css). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('*.css').pipe(postcss([autoprefixer, cssnano])).pipe(gulp.dest('dist'))). Used during development/build workflows to apply PostCSS transformations (autoprefixer for vendor prefixes, cssnano for minification, postcss-preset-env for future CSS features). Processes CSS files from disk using Node.js streams and filesystem access. Part of the Gulp plugin ecosystem alongside gulp-sass (compile Sass), gulp-autoprefixer (add vendor prefixes), gulp-clean-css (minify CSS). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern PostCSS processing uses PostCSS CLI directly (without Gulp), build tools with built-in PostCSS support (webpack with postcss-loader, vite with built-in PostCSS), or postcss package with Node.js API.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:31:27.830Z",
+  "testedBy": "automated",
+  "investigated": true
+}

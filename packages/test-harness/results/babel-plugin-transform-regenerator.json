@@ -1,0 +1,15 @@
+{
+  "name": "babel-plugin-transform-regenerator",
+  "version": "6.26.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-plugin-transform-regenerator is a Babel 6 plugin that transforms ES6 generator functions (function* foo() { yield 1; }) and async/await syntax to ES5-compatible code using regenerator-runtime during build/compilation. Babel transform plugins (babel-plugin-transform-*, @babel/plugin-transform-*) are code transformation tools that modify JavaScript during the build process. Like all Babel plugins (babel-plugin-syntax-*, @babel/plugin-proposal-*, @babel/preset-*), these are build-time tools configured in .babelrc or babel.config.js during development/build pipelines with webpack, vite, or esbuild. Generators and async/await are now natively supported in modern JavaScript/Workers. In Babel 7+, use @babel/plugin-transform-regenerator.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:06:06.444Z",
+  "testedBy": "automated"
+}

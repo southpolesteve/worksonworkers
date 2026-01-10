@@ -1,0 +1,16 @@
+{
+  "name": "highlight.js",
+  "version": "11.11.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import hljs from 'highlight.js';\n\n// Usage:\nconst result = hljs.highlight('const x = 5;', { language: 'javascript' });\nreturn { success: result.value.includes('const'), result: { highlighted: result.value.substring(0, 50) } };",
+  "notes": "Syntax highlighting library",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:00:07.280Z",
+  "testedBy": "automated"
+}

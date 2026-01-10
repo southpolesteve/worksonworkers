@@ -1,0 +1,18 @@
+{
+  "name": "bunyan",
+  "version": "1.8.15",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "logging",
+  "notes": "Bunyan is a JSON logging library for Node.js that requires unsupported Node.js APIs. Fails with 'No such module \"node:os\"' - the os module (for hostname, platform info) is not available in Workers even with nodejs_compat. Bunyan relies on Node.js-specific APIs like os.hostname(), process.pid, and filesystem streams for logging.",
+  "alternative": "pino",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T20:42:47.231Z",
+  "testedBy": "automated",
+  "investigated": true
+}

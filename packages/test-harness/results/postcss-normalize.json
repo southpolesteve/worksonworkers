@@ -1,0 +1,17 @@
+{
+  "name": "postcss-normalize",
+  "version": "13.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "PostCSS plugin - build tool",
+  "investigated": true,
+  "errorMessage": "Package postcss-normalize needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:53:40.289Z",
+  "testedBy": "automated"
+}

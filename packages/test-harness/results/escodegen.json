@@ -1,0 +1,16 @@
+{
+  "name": "escodegen",
+  "version": "2.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "JavaScript code generator from AST (Mozilla Parser API). Part of the AST tooling ecosystem used during build/compilation workflows. Takes Abstract Syntax Trees (from parsers like esprima/acorn) and generates JavaScript code. Primarily used by transpilers (Babel), bundlers (webpack/rollup), code transformation tools, and AST manipulation utilities during build time. Used for source transformations, code generation, AST-based refactoring tools. Similar AST tools: esprima (parser), acorn (parser), recast (AST transformation). For code generation in Workers, generate code at build time or return raw strings. Fails with \"Unexpected token ':'\" syntax error when bundled for Workers runtime.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T23:11:30.856Z",
+  "testedBy": "automated",
+  "investigated": true
+}

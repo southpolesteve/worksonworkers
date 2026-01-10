@@ -1,0 +1,16 @@
+{
+  "name": "grunt-contrib-jshint",
+  "version": "3.2.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Official Grunt plugin for JSHint linting during build workflows. Provides jshint task for Grunt build system that validates JavaScript code quality and enforces coding standards. Configured in Gruntfile.js as grunt.loadNpmTasks('grunt-contrib-jshint') with task configuration defining files to lint, JSHint options (.jshintrc), and reporter settings. Requires filesystem access (fs.readFile) to read JavaScript source files and configuration files. Used during development/build workflows for enforcing code quality (detecting syntax errors, undefined variables, style violations), CI/CD pipelines (failing builds on lint errors), pre-commit hooks (linting staged files), and development workflows (auto-linting on file save). Part of the grunt-contrib-* official plugin ecosystem alongside grunt-contrib-uglify (minify), grunt-contrib-concat (concatenate files), grunt-contrib-clean (delete files), grunt-contrib-watch (watch for changes). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern linters like ESLint with eslint-cli have superseded JSHint/Grunt for most workflows, with better rule configuration, auto-fixing, and plugin ecosystems.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:48:02.557Z",
+  "testedBy": "automated",
+  "investigated": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "regenerate",
+  "version": "1.4.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import regenerate from 'regenerate';\n\n// Usage:\nconst set = regenerate().addRange(0x61, 0x7A); // a-z\nconst result = set.toString();\nreturn { success: result.includes('[a-z]'), result };",
+  "notes": "Generate JavaScript-compatible regular expressions",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T04:02:31.327Z",
+  "testedBy": "automated"
+}

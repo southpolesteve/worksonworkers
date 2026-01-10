@@ -1,0 +1,16 @@
+{
+  "name": "base-64",
+  "version": "1.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "string",
+  "example": "import base64 from 'base-64';\n\n// Usage:\nconst encoded = base64.encode('Hello, World!');\nconst decoded = base64.decode(encoded);\nreturn { success: decoded === 'Hello, World!', result: { encoded, decoded } };",
+  "notes": "JavaScript base64 encoder/decoder. Workers also has native atob()/btoa() functions.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T17:11:47.652Z",
+  "testedBy": "automated"
+}

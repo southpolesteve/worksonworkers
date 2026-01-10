@@ -1,0 +1,16 @@
+{
+  "name": "react-virtualized",
+  "version": "9.22.6",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "React list virtualization library for browser DOM. Not applicable to Workers runtime.",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:05:27.679Z",
+  "testedBy": "automated"
+}

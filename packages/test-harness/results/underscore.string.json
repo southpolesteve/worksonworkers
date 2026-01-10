@@ -1,0 +1,16 @@
+{
+  "name": "underscore.string",
+  "version": "3.3.6",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import s from 'underscore.string';\n\n// Usage:\nconst result = s.capitalize('hello');\nreturn { success: result === 'Hello', result };",
+  "notes": "String manipulation utilities",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:53:21.546Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "coffee-script",
+  "version": "1.12.7",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "CoffeeScript is a programming language/transpiler that compiles .coffee files to JavaScript during build-time. Like all transpilers/compilers (TypeScript, Babel, Sass), this is a build-time tool configured in build pipelines and CLI workflows (coffee -c file.coffee), not a runtime library for Workers execution. The package was deprecated in 2017 and replaced by 'coffeescript' (without the hyphen). Original error 'Unexpected eval or arguments in strict mode' occurred because the compiler uses eval/arguments in strict mode which isn't allowed in Workers' strict runtime.",
+  "errorMessage": "Unexpected eval or arguments in strict mode",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:38:47.827Z",
+  "testedBy": "automated"
+}

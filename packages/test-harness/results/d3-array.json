@@ -1,0 +1,16 @@
+{
+  "name": "d3-array",
+  "version": "3.2.4",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { min, max, mean, median, extent, group } from 'd3-array';\n\n// Usage:\nconst data = [1, 5, 2, 8, 3];\nconst minVal = min(data);\nconst maxVal = max(data);\nconst meanVal = mean(data);\nconst medianVal = median(data);\nconst extentVal = extent(data);\nconst grouped = group([{key: 'a', val: 1}, {key: 'b', val: 2}, {key: 'a', val: 3}], d => d.key);\nreturn { success: minVal === 1 && maxVal === 8 && meanVal === 3.8 && medianVal === 3, result: { minVal, maxVal, meanVal, medianVal, extentVal, grouped: grouped.size } };",
+  "notes": "D3 array manipulation library with statistical functions (min, max, mean, median), array transformations (group, bin, bisect), and data operations.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T22:29:48.522Z",
+  "testedBy": "automated"
+}

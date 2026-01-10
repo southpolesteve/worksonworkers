@@ -1,0 +1,16 @@
+{
+  "name": "csv",
+  "version": "6.4.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import { parse, stringify } from 'csv/sync';\n\n// Usage:\nconst csvInput = 'name,age\\nAlice,30\\nBob,25';\nconst records = parse(csvInput, { columns: true });\nconst csvOutput = stringify(records, { header: true });\nreturn { success: records.length === 2 && records[0].name === 'Alice', result: { records, csvOutput } };",
+  "notes": "CSV parsing and generation library with sync and stream APIs.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T22:00:35.686Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ky",
+  "version": "1.14.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "http-client",
+  "example": "import ky from 'ky';\n\n// Usage:\nconst data = await ky.get('https://httpbin.org/json').json();\nreturn { success: true, result: data };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:03:33.667Z",
+  "testedBy": "automated"
+}

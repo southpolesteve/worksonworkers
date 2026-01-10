@@ -1,0 +1,16 @@
+{
+  "name": "form-data",
+  "version": "4.0.5",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "http-client",
+  "example": "import FormData from 'form-data';\n\n// Usage:\nconst form = new FormData();\nform.append('key', 'value');\nreturn { success: true, result: 'FormData created' };",
+  "notes": "Multipart/form-data encoding",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:46:40.833Z",
+  "testedBy": "automated"
+}

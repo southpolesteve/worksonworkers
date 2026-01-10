@@ -1,0 +1,15 @@
+{
+  "name": "lodash.assign",
+  "version": "4.2.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import assign from 'lodash.assign';\n\n// Usage:\nconst result = assign({}, { a: 1 }, { b: 2 });\nreturn { success: result.a === 1 && result.b === 2, result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:19:29.568Z",
+  "testedBy": "automated"
+}

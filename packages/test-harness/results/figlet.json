@@ -1,0 +1,17 @@
+{
+  "name": "figlet",
+  "version": "1.9.4",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "utility",
+  "notes": "ASCII art text generator",
+  "errorMessage": "Synchronous font loading is not implemented for the browser, it will only work for fonts already loaded.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:51:19.866Z",
+  "testedBy": "automated",
+  "investigated": true
+}

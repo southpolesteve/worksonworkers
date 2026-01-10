@@ -1,0 +1,17 @@
+{
+  "name": "node-emoji",
+  "version": "2.2.0",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "utility",
+  "notes": "Module resolution issue with emojilib dependency",
+  "investigated": true,
+  "errorMessage": "No such module \"Users/steve/works-on-workers/packages/test-harness/sandbox/node-emoji/node_modules/emojilib/emojis\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:03:47.119Z",
+  "testedBy": "automated"
+}

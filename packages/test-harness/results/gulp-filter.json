@@ -1,0 +1,15 @@
+{
+  "name": "gulp-filter",
+  "version": "9.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-filter is a Gulp plugin for filtering files in Gulp streaming build pipelines. The name pattern 'gulp-*' clearly indicates it's a Gulp plugin (like gulp-babel, gulp-concat, gulp-uglify, gulp-autoprefixer, gulp-clean-css, gulp-sass). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('src/**/*.js').pipe(filter(['**', '!**/vendor/**'])).pipe(uglify()).pipe(filter.restore)). Used during development/build workflows to conditionally process files in the stream (filter by glob patterns, process subset of files, restore filtered files later in pipeline). Processes files from disk using Node.js streams and filesystem access (fs.createReadStream for reading source files). Part of the Gulp plugin ecosystem alongside gulp-ignore (ignore files), gulp-if (conditional processing), gulp-changed (only changed files), gulp-newer (only newer files). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern file filtering uses build tools with built-in filtering (webpack with include/exclude rules, vite with config filtering) or glob patterns in build configs.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:44:52.790Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "immutability-helper",
+  "version": "3.1.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import update from 'immutability-helper';\n\n// Usage:\nconst state = { name: 'Alice', age: 30 };\nconst newState = update(state, { age: { $set: 31 } });\nreturn { success: newState.age === 31 && state.age === 30, result: newState };",
+  "notes": "Immutable state updates for React and other frameworks",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:46:01.571Z",
+  "testedBy": "automated"
+}

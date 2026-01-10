@@ -1,0 +1,15 @@
+{
+  "name": "date-fns",
+  "version": "4.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "date-time",
+  "example": "import { format, parseISO } from 'date-fns';\n\n// Usage:\nconst date = parseISO('2026-01-08');\nconst formatted = format(date, 'yyyy-MM-dd');\nreturn { success: formatted === '2026-01-08', result: formatted };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:01:42.286Z",
+  "testedBy": "automated"
+}

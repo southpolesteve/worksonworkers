@@ -1,0 +1,16 @@
+{
+  "name": "JSONStream",
+  "version": "1.3.5",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import JSONStream from 'JSONStream';\n\n// Usage:\nconst stream = JSONStream.parse('*');\nreturn { success: stream !== undefined && typeof stream.pipe === 'function', result: 'Stream created' };",
+  "notes": "Streaming JSON parser",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:18:09.918Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "clui",
+  "version": "0.3.6",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "clui is a terminal/CLI toolkit for building command-line interfaces with interactive components (gauges, progress bars, sparklines, spinners, LineBuffer for terminal drawing). Designed exclusively for command-line interfaces and Node.js terminal applications requiring process.stdout/stdin, terminal dimensions (process.stdout.columns/rows), ANSI escape codes, and TTY control. Provides LineBuffer for buffering and cropping text lines to fit terminal dimensions, Line for column-based text output, Gauge for horizontal gauge rendering, Sparkline for command-line sparklines, Progress for progress bars, and Spinner for animated terminal spinners. Not applicable to Workers which is an HTTP request/response runtime without terminal I/O. Similar CLI toolkit libraries include blessed (TUI framework), ink (React-based TUI), blessed-contrib (charts/widgets), cli-table (terminal tables), ora (spinners), chalk (colors).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:02:10.285Z",
+  "testedBy": "automated"
+}

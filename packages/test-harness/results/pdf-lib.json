@@ -1,0 +1,16 @@
+{
+  "name": "pdf-lib",
+  "version": "1.17.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "other",
+  "example": "import { PDFDocument } from 'pdf-lib';\n\n// Usage:\nconst pdfDoc = await PDFDocument.create();\nconst page = pdfDoc.addPage([600, 400]);\npage.drawText('Hello Workers!', { x: 50, y: 350, size: 30 });\nconst pdfBytes = await pdfDoc.save();\nreturn { success: pdfBytes.length > 0, result: { size: pdfBytes.length } };",
+  "notes": "PDF creation and manipulation - works in Workers!",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:15:12.703Z",
+  "testedBy": "automated"
+}

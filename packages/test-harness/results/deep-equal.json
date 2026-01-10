@@ -1,0 +1,16 @@
+{
+  "name": "deep-equal",
+  "version": "2.2.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import deepEqual from 'deep-equal';\n\n// Usage:\nconst result1 = deepEqual({ a: 1, b: { c: 2 } }, { a: 1, b: { c: 2 } });\nconst result2 = deepEqual({ a: 1 }, { a: 2 });\nreturn { success: result1 && !result2, result: { result1, result2 } };",
+  "notes": "Deep equality comparison for objects",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:30:35.022Z",
+  "testedBy": "automated"
+}

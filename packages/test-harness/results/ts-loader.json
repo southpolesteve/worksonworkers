@@ -1,0 +1,16 @@
+{
+  "name": "ts-loader",
+  "version": "9.5.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack loader for TypeScript compilation",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:34:59.525Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "eslint-plugin-jsx-a11y",
+  "version": "6.10.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "ESLint plugin for accessibility rules on JSX elements (React). Provides linting rules for JSX/React components to enforce WCAG accessibility standards: alt-text (images must have alt text), aria-* (ARIA attributes validation), click-events-have-key-events (keyboard accessibility), heading-has-content (headings must have content), img-redundant-alt (avoid redundant image alt text), interactive-supports-focus (interactive elements must be focusable), label-has-associated-control (form labels must be associated with controls), media-has-caption (media elements must have captions), no-autofocus (avoid autofocus for accessibility), role-has-required-aria-props (ARIA roles must have required props), tabindex-no-positive (avoid positive tabindex values). ESLint plugins extend ESLint's rule set via the 'plugins' array in .eslintrc or eslint.config.js configuration files. Used exclusively during development/CI workflows to enforce JSX accessibility best practices and catch accessibility violations in React components. Not applicable to Workers which is a runtime environment, not a linting environment. Similar ESLint accessibility plugins include eslint-plugin-vuejs-accessibility (Vue), eslint-plugin-jsx-a11y (React - this package). Original error \"Unexpected token ':'\" occurred during attempted runtime initialization, but this is irrelevant since the package is a linter plugin.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:49:05.020Z",
+  "testedBy": "automated",
+  "investigated": true
+}

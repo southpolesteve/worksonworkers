@@ -1,0 +1,16 @@
+{
+  "name": "map-stream",
+  "version": "0.0.7",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import mapStream from 'map-stream';\n\n// Usage:\nconst stream = mapStream((data, callback) => {\n  callback(null, data * 2);\n});\nreturn { success: typeof stream === 'object', result: 'stream-utility' };",
+  "notes": "Stream mapping utility for transforming stream data",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:09:52.059Z",
+  "testedBy": "automated"
+}

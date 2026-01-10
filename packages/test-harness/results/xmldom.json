@@ -1,0 +1,15 @@
+{
+  "name": "xmldom",
+  "version": "0.6.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import { DOMParser } from 'xmldom';\n\n// Usage:\nconst parser = new DOMParser();\nconst doc = parser.parseFromString('<root><name>test</name></root>', 'text/xml');\nconst name = doc.getElementsByTagName('name')[0]?.textContent;\nreturn { success: name === 'test', result: name };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T09:08:39.540Z",
+  "testedBy": "automated"
+}

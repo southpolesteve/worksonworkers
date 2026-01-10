@@ -1,0 +1,16 @@
+{
+  "name": "drizzle-orm",
+  "version": "0.45.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "database",
+  "example": "import { sql } from 'drizzle-orm';\n\n// Usage:\nconst query = sql`SELECT * FROM users WHERE id = ${123}`;\nreturn { success: query.queryChunks.length > 0, result: 'SQL query built' };",
+  "notes": "TypeScript ORM with SQL-like syntax",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:40:40.149Z",
+  "testedBy": "automated"
+}

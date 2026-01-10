@@ -1,0 +1,16 @@
+{
+  "name": "adm-zip",
+  "version": "0.5.16",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "compression",
+  "example": "import AdmZip from 'adm-zip';\n\n// Usage:\nconst zip = new AdmZip();\nzip.addFile('test.txt', Buffer.from('hello world'));\nconst entries = zip.getEntries();\nreturn { success: entries.length === 1 && entries[0].entryName === 'test.txt', result: entries[0].entryName };",
+  "notes": "Create/extract ZIP archives in memory",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:49:11.405Z",
+  "testedBy": "automated"
+}

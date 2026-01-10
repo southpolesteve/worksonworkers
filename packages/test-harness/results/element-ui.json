@@ -1,0 +1,17 @@
+{
+  "name": "element-ui",
+  "version": "2.15.14",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "Browser-only Vue 2.x desktop component library. Provides UI components (buttons, forms, tables, dialogs, menus, date pickers, etc.) that require DOM APIs (document, window, HTMLElement) for rendering and user interaction. Designed exclusively for client-side browser environments with full DOM support. Element UI is the predecessor to Element Plus (Vue 3.x version). Not applicable to Workers which is a serverless HTTP runtime without DOM APIs.",
+  "errorMessage": "document is not defined",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:24:29.100Z",
+  "testedBy": "automated",
+  "investigated": true
+}

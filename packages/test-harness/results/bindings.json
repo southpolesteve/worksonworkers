@@ -1,0 +1,16 @@
+{
+  "name": "bindings",
+  "version": "1.5.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import bindings from 'bindings';\n\n// Usage:\n// bindings is used to load native .node addons - test basic functionality\nconst isFunction = typeof bindings === 'function';\nreturn { success: isFunction, result: 'bindings loader available' };",
+  "notes": "Helper to load native Node.js addons. Limited use in Workers (no native addons support).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:57:38.163Z",
+  "testedBy": "automated"
+}

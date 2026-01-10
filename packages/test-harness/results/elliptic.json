@@ -1,0 +1,18 @@
+{
+  "name": "elliptic",
+  "version": "6.6.1",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "crypto",
+  "notes": "Pure JavaScript elliptic curve cryptography library for ECDSA, EdDSA, and ECDH operations. Supports curves: secp256k1, p192, p224, p256, p384, p521, curve25519, ed25519. Fails with 'Unexpected token \":\"' parse error when bundled for Workers - likely due to code incompatible with Workers runtime. Workers has the built-in Web Crypto API (crypto.subtle) which provides native elliptic curve cryptography (ECDSA with P-256/P-384/P-521, ECDH) with better performance and security than pure JavaScript implementations.",
+  "alternative": "Web Crypto API (crypto.subtle.sign/verify with ECDSA, crypto.subtle.deriveKey/deriveBits with ECDH) - built-in",
+  "errorMessage": "Unexpected token ':'",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T22:58:07.230Z",
+  "testedBy": "automated"
+}

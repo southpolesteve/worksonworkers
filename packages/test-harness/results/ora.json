@@ -1,0 +1,17 @@
+{
+  "name": "ora",
+  "version": "9.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "Ora is a CLI spinner for terminal applications. It requires TTY access (process.stdout/stderr) which is not available in Workers. Additionally, the current version fails to import due to its dependency cli-spinners using import attributes syntax (`import './spinners.json' with {type: 'json'}`) which Workers bundler doesn't support yet. Even if the import issue were fixed, ora is designed for CLI tools, not serverless functions.",
+  "errorMessage": "Unrecognized import attributes specified",
+  "alternative": "For logging in Workers, use console.log() or structured logging libraries. Progress indicators don't make sense in serverless request/response context.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T01:58:48.373Z",
+  "testedBy": "automated"
+}

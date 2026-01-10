@@ -1,0 +1,17 @@
+{
+  "name": "@angular/forms",
+  "version": "21.0.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "Angular Forms is part of Angular framework for browser-based client-side rendering. Requires DOM APIs and browser environment (form controls, validators, directives). Not designed for serverless environments like Workers.",
+  "investigated": true,
+  "errorMessage": "Disallowed operation called within global scope. Asynchronous I/O (ex: fetch() or connect()), setting a timeout, and generating random values are not allowed within global scope. To fix this error, perform this operation within a handler. https://developers.cloudflare.com/workers/runtime-apis/handlers/",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:35:19.798Z",
+  "testedBy": "automated"
+}

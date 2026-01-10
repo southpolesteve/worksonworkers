@@ -1,0 +1,16 @@
+{
+  "name": "cookie",
+  "version": "1.1.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "http-client",
+  "example": "import cookie from 'cookie';\n\n// Usage:\nconst result = cookie.parse('foo=bar; baz=qux');\nreturn { success: result.foo === 'bar' && result.baz === 'qux', result };",
+  "notes": "HTTP cookie parsing/serialization",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:19:46.016Z",
+  "testedBy": "automated"
+}

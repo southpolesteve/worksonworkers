@@ -1,0 +1,16 @@
+{
+  "name": "boxen",
+  "version": "8.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "boxen is a terminal/CLI utility for creating ASCII/Unicode bordered boxes around text in terminal output (stdout). Designed exclusively for command-line interfaces and Node.js terminal applications using process.stdout, terminal width detection, ANSI escape codes, and TTY control. Not applicable to Workers which is an HTTP request/response runtime without terminal I/O. Similar CLI box/styling libraries include cli-boxes, boxen-cli, chalk (colors), ora (spinners). The original error 'Unexpected token ':'' occurred during import/parsing, but this is irrelevant since the package is fundamentally a CLI tool.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:41:30.386Z",
+  "testedBy": "automated"
+}

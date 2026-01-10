@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-standard",
+  "version": "17.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "ESLint shareable config for JavaScript Standard Style linting. ESLint configurations define linting rules, parser options, and plugin configurations for the ESLint linter. Used exclusively during development/CI workflows to enforce JavaScript Standard Style code conventions (no semicolons, 2-space indentation, single quotes, etc.). Configured in .eslintrc via extends: ['standard']. Not applicable to Workers which is a runtime environment, not a linting/development environment. Similar ESLint configs include eslint-config-airbnb, eslint-config-google, eslint-config-prettier.",
+  "errorMessage": null,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:27:34.034Z",
+  "testedBy": "automated"
+}

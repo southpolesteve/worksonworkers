@@ -1,0 +1,16 @@
+{
+  "name": "normalize-url",
+  "version": "8.1.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import normalizeUrl from 'normalize-url';\n\n// Usage:\nconst url = normalizeUrl('https://example.com:443//foo/../bar?c=1&a=2');\nreturn { success: url === 'https://example.com/bar?a=2&c=1', result: url };",
+  "notes": "Normalizes URLs by removing default ports, sorting query params, resolving paths, etc.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:45:59.099Z",
+  "testedBy": "automated"
+}

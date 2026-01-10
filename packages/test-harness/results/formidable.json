@@ -1,0 +1,18 @@
+{
+  "name": "formidable",
+  "version": "3.5.4",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "server-framework",
+  "notes": "Formidable is a Node.js form parsing library for handling multipart/form-data, especially file uploads, in traditional Node.js HTTP servers (http.createServer). Requires node:os module which is not supported in Workers nodejs_compat (only crypto, fs, path, buffer, stream, events, util, http, https, net, dns, zlib, timers, url, assert, process, diagnostics_channel, async_hooks are supported). Designed for Node.js request/response objects and filesystem-based temporary file storage during upload processing. Workers uses Request/Response objects and has better alternatives for form parsing.",
+  "alternative": "Workers Request.formData() API (native multipart/form-data parsing built-in), or busboy (lower-level multipart parser that may work with Workers)",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:36:26.012Z",
+  "testedBy": "automated",
+  "investigated": true
+}

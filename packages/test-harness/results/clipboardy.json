@@ -1,0 +1,16 @@
+{
+  "name": "clipboardy",
+  "version": "5.0.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "clipboardy is a CLI tool for accessing the system clipboard (copy/paste) that spawns native clipboard commands (pbcopy/pbpaste on macOS, xclip/xsel on Linux, clip.exe on Windows) via child_process.spawn(). Requires child_process for spawning system clipboard utilities and OS-level APIs for clipboard access. Workers doesn't support child_process (non-functional stub) or system clipboard APIs. Designed exclusively for CLI/terminal applications and local development scripting requiring system clipboard interaction. Not applicable to Workers which is a serverless HTTP runtime without access to system resources. Similar CLI clipboard tools include clipboard-cli, clipcopy.",
+  "errorMessage": "Package clipboardy needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:36:12.894Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "tinycolor2",
+  "version": "1.6.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import tinycolor from 'tinycolor2';\n\n// Usage:\nconst color = tinycolor('#ff0000');\nconst hex = color.toHexString();\nreturn { success: hex === '#ff0000', result: hex };",
+  "notes": "Color manipulation library",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:50:45.682Z",
+  "testedBy": "automated"
+}

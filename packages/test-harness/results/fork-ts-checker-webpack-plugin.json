@@ -1,0 +1,15 @@
+{
+  "name": "fork-ts-checker-webpack-plugin",
+  "version": "9.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "fork-ts-checker-webpack-plugin is a webpack plugin for running TypeScript type checking in a separate process during webpack builds. Like all *-webpack-plugin packages (html-webpack-plugin, copy-webpack-plugin, etc.), this is exclusively a build-time tool configured in webpack.config.js. Not applicable to Workers runtime.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:36:58.865Z",
+  "testedBy": "automated"
+}

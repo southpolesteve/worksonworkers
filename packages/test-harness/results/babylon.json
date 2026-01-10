@@ -1,0 +1,16 @@
+{
+  "name": "babylon",
+  "version": "6.18.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Babel parser (deprecated) - build tool",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:25:56.779Z",
+  "testedBy": "automated"
+}

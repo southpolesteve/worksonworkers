@@ -1,0 +1,15 @@
+{
+  "name": "browserify",
+  "version": "17.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Browserify is a build tool that bundles Node.js-style modules (using require()) into a single JavaScript file for browser usage. It processes module dependency graphs, applies transforms (like babelify, envify), and creates browser-compatible bundles during build/compilation. Like all bundlers (webpack, rollup, esbuild, parcel), this is designed for development/build workflows configured via CLI (browserify entry.js -o bundle.js) or build scripts, not for runtime execution in Workers. Modern build tools (webpack, vite, esbuild) have largely replaced Browserify. Original error 'No such module \"node:os\"' occurred because browserify requires Node.js filesystem and OS APIs for bundling operations.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:03:57.426Z",
+  "testedBy": "automated"
+}

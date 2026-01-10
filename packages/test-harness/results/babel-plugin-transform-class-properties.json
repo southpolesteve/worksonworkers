@@ -1,0 +1,16 @@
+{
+  "name": "babel-plugin-transform-class-properties",
+  "version": "6.24.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-plugin-transform-class-properties is a Babel 6 plugin that transforms class properties syntax (e.g., class Foo { bar = 42; static baz = 123; }) to constructor assignments during build/compilation. Babel transform plugins (babel-plugin-transform-*, @babel/plugin-transform-*) are code transformation tools that modify JavaScript during the build process. Like all Babel plugins (babel-plugin-syntax-*, @babel/plugin-proposal-*, @babel/preset-*), these are build-time tools configured in .babelrc or babel.config.js during development/build pipelines with webpack, vite, or esbuild. Class properties are now natively supported in modern JavaScript/Workers. In Babel 7+, this functionality is in @babel/plugin-proposal-class-properties.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:36:23.357Z",
+  "testedBy": "automated"
+}

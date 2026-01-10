@@ -1,0 +1,16 @@
+{
+  "name": "bcrypt-nodejs",
+  "version": "0.0.3",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "crypto",
+  "notes": "bcrypt-nodejs is deprecated and unmaintained since 2013. The package explicitly recommends using bcrypt or bcryptjs instead (see https://github.com/kelektiv/node.bcrypt.js/wiki/bcrypt-vs-brypt.js). While bcrypt-nodejs is pure JavaScript and might technically work, the recommended alternative bcryptjs works perfectly on Workers and is actively maintained.",
+  "alternative": "bcryptjs",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:28:51.211Z",
+  "testedBy": "automated"
+}

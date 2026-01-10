@@ -1,0 +1,16 @@
+{
+  "name": "react-lifecycles-compat",
+  "version": "3.0.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "React lifecycle compatibility library for browser environments. Not applicable to Workers runtime.",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:11:42.526Z",
+  "testedBy": "automated"
+}

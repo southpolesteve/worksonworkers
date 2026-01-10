@@ -1,0 +1,17 @@
+{
+  "name": "crypto-js",
+  "version": "4.2.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "crypto",
+  "example": "import CryptoJS from 'crypto-js';\n\n// Usage:\nconst hash = CryptoJS.SHA256('hello').toString();\nreturn { success: hash.length === 64, result: hash };",
+  "notes": "Consider using built-in Web Crypto API",
+  "alternative": "built-in: crypto",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:09:07.200Z",
+  "testedBy": "automated"
+}

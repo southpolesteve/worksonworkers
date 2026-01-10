@@ -1,0 +1,15 @@
+{
+  "name": "yamljs",
+  "version": "0.3.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import YAML from 'yamljs';\n\n// Usage:\nconst obj = { name: 'test', age: 30 };\nconst str = YAML.stringify(obj);\nconst parsed = YAML.parse(str);\nreturn { success: parsed.name === 'test' && parsed.age === 30, result: parsed };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T09:07:08.858Z",
+  "testedBy": "automated"
+}

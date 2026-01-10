@@ -1,0 +1,16 @@
+{
+  "name": "babel-preset-stage-0",
+  "version": "6.24.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-preset-stage-0 is a Babel 6 preset that enables ALL Stage 0 (experimental/strawman) JavaScript language proposals by bundling together Stage 0, 1, 2, and 3 preset plugins. Stage 0 proposals include highly experimental features like function bind (::) operator, do expressions, function sent meta property, etc. Babel presets (babel-preset-*, @babel/preset-*) are collections of Babel plugins bundled together for convenience. Like all Babel plugins and presets, these are build-time tools configured in .babelrc or babel.config.js during development/build pipelines with webpack, vite, or esbuild. Stage 0 preset was deprecated and removed in Babel 7+ as the TC39 process matured and Stage 0 features rarely became standard.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:10:20.158Z",
+  "testedBy": "automated"
+}

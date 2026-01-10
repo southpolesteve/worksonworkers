@@ -1,0 +1,17 @@
+{
+  "name": "babel-plugin-transform-object-rest-spread",
+  "version": "6.26.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "example": "import * as pkg from 'babel-plugin-transform-object-rest-spread';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+  "notes": "Babel plugin - build tool",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:25:40.999Z",
+  "testedBy": "automated"
+}

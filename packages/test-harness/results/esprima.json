@@ -1,0 +1,16 @@
+{
+  "name": "esprima",
+  "version": "4.0.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { parseScript } from 'esprima';\n\n// Usage:\nconst ast = parseScript('const x = 42;');\nreturn { success: ast.type === 'Program', result: ast.type };",
+  "notes": "JavaScript parser (ECMAScript parser)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:41:24.143Z",
+  "testedBy": "automated"
+}

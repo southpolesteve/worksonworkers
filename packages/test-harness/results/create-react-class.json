@@ -1,0 +1,16 @@
+{
+  "name": "create-react-class",
+  "version": "15.7.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "DEPRECATED React utility for creating class components using React.createClass() syntax (pre-ES6 pattern from React <v16). Modern React uses ES6 classes or functional components with hooks. Requires React as peer dependency and is designed for browser-based React applications. Not applicable to Workers. React removed createClass from core in v16 and moved it to this package for legacy support only.",
+  "errorMessage": "No such module \"Users/steve/works-on-workers/packages/test-harness/sandbox/create-react-class/node_modules/create-react-class/react\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:24:14.831Z",
+  "testedBy": "automated"
+}

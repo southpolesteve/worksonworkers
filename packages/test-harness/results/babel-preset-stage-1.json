@@ -1,0 +1,15 @@
+{
+  "name": "babel-preset-stage-1",
+  "version": "6.24.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-preset-stage-1 is a Babel 6 preset that enables TC39 Stage 1 (proposal) JavaScript language features by bundling together Stage 1, 2, and 3 preset plugins. Stage 1 proposals include experimental features like class decorators, export extensions, do expressions, etc. - features that have been formally proposed to TC39 but are still experimental. Babel presets (babel-preset-*, @babel/preset-*) are collections of Babel plugins bundled together for convenience. Like all Babel plugins and presets, these are build-time tools configured in .babelrc or babel.config.js during development/build pipelines with webpack, vite, or esbuild. Stage presets were deprecated and removed in Babel 7+ as the TC39 process matured and individual plugin usage became preferred.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:13:59.475Z",
+  "testedBy": "automated"
+}

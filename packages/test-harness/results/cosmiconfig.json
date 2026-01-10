@@ -1,0 +1,15 @@
+{
+  "name": "cosmiconfig",
+  "version": "9.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "other",
+  "notes": "Cosmiconfig loads configuration files from the filesystem, which is not available in Workers. In Workers, use environment variables, secrets, or KV bindings for configuration instead. This is a build-time/development tool, not a runtime library.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T00:13:27.775Z",
+  "testedBy": "automated"
+}

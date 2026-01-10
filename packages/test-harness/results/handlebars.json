@@ -1,0 +1,17 @@
+{
+  "name": "handlebars",
+  "version": "4.7.8",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "parsing",
+  "notes": "Handlebars template engine - code generation (new Function) not allowed in Workers",
+  "errorMessage": "Code generation from strings disallowed for this context",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:59:18.834Z",
+  "testedBy": "automated"
+}

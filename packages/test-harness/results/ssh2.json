@@ -1,0 +1,16 @@
+{
+  "name": "ssh2",
+  "version": "1.17.0",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "networking",
+  "notes": "Requires TCP sockets (node:net) - not available in Workers runtime",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:47:11.572Z",
+  "testedBy": "automated"
+}

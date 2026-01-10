@@ -1,0 +1,16 @@
+{
+  "name": "intl",
+  "version": "1.2.5",
+  "weeklyDownloads": 0,
+  "status": "built-in",
+  "category": "polyfill",
+  "notes": "Intl API is built into Workers runtime",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T00:00:00.000Z",
+  "testedBy": "manual"
+}

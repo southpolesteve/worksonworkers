@@ -1,0 +1,17 @@
+{
+  "name": "ncp",
+  "version": "2.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "example": "import * as pkg from 'ncp';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+  "notes": "File copy CLI tool",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:16:46.015Z",
+  "testedBy": "automated",
+  "investigated": true
+}

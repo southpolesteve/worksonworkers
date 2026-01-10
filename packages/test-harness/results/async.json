@@ -1,0 +1,16 @@
+{
+  "name": "async",
+  "version": "3.2.6",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import async from 'async';\n\n// Usage:\nconst results = await async.parallel([\n  async () => 1,\n  async () => 2,\n  async () => 3,\n]);\nreturn { success: results[0] === 1 && results[1] === 2 && results[2] === 3, result: results };",
+  "notes": "Async utilities for control flow",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:53:25.389Z",
+  "testedBy": "automated"
+}

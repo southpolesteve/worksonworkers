@@ -1,0 +1,16 @@
+{
+  "name": "tar",
+  "version": "7.5.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "filesystem-utility",
+  "notes": "TAR archive utility - requires filesystem",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:35:58.515Z",
+  "testedBy": "automated"
+}

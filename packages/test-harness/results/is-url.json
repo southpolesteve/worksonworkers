@@ -1,0 +1,16 @@
+{
+  "name": "is-url",
+  "version": "1.2.4",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "validation",
+  "example": "import isUrl from 'is-url';\n\n// Usage:\nconst results = [\n  isUrl('https://example.com'),\n  isUrl('http://example.com/path'),\n  isUrl('not a url'),\n  isUrl('example.com')\n];\nreturn { success: results[0] && results[1] && !results[2] && !results[3], result: results };",
+  "notes": "Validate if a string is a valid URL",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:46:16.808Z",
+  "testedBy": "automated"
+}

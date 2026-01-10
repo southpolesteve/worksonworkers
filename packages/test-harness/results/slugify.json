@@ -1,0 +1,15 @@
+{
+  "name": "slugify",
+  "version": "1.6.6",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "string",
+  "example": "import slugify from 'slugify';\n\n// Usage:\nconst slug = slugify('Hello World!');\nreturn { success: slug === 'Hello-World!', result: slug };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:25:40.390Z",
+  "testedBy": "automated"
+}

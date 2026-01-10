@@ -1,0 +1,16 @@
+{
+  "name": "extend-shallow",
+  "version": "3.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import extend from 'extend-shallow';\n\n// Usage:\nconst obj1 = { a: 1, b: 2 };\nconst obj2 = { b: 3, c: 4 };\nconst obj3 = { c: 5, d: 6 };\nconst result = extend(obj1, obj2, obj3);\nconst success = result.a === 1 && result.b === 3 && result.c === 5 && result.d === 6;\nreturn { success, result };",
+  "notes": "Shallow object extension utility. Like Object.assign() but with more flexible API for merging multiple objects.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T23:35:17.954Z",
+  "testedBy": "automated"
+}

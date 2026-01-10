@@ -1,0 +1,15 @@
+{
+  "name": "broccoli-funnel",
+  "version": "3.0.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Broccoli plugin for filtering files during Broccoli build process. Broccoli is a build tool (like webpack, gulp, rollup) used primarily in Ember.js ecosystem for asset pipeline processing. broccoli-funnel filters/selects files from input nodes based on regex patterns, globs, and other criteria during build-time. Like all Broccoli plugins (broccoli-merge-trees, broccoli-concat, broccoli-uglify-js) and build tools, this is designed for development/build workflows, not runtime execution in Workers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:58:02.137Z",
+  "testedBy": "automated"
+}

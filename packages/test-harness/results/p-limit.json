@@ -1,0 +1,15 @@
+{
+  "name": "p-limit",
+  "version": "7.2.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "async",
+  "example": "import pLimit from 'p-limit';\n\n// Usage:\nconst limit = pLimit(2);\nconst results = await Promise.all([\n  limit(() => Promise.resolve(1)),\n  limit(() => Promise.resolve(2)),\n]);\nreturn { success: true, result: results };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:11:31.354Z",
+  "testedBy": "automated"
+}

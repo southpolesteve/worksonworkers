@@ -1,0 +1,17 @@
+{
+  "name": "ioredis",
+  "version": "5.9.1",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "database",
+  "alternative": "@upstash/redis",
+  "notes": "Redis client for Node.js. Use Cloudflare Workers KV for key-value storage or @upstash/redis for Redis over HTTP.",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:15:29.538Z",
+  "testedBy": "automated"
+}

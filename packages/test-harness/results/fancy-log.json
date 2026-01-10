@@ -1,0 +1,15 @@
+{
+  "name": "fancy-log",
+  "version": "2.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Gulp build task logging utility from the gulpjs ecosystem. Provides timestamped console logging for Gulp build workflows (gulp.task, gulp.src, etc.). Used during development/build processes to log task execution with color-coded timestamps. Part of Gulp task runner tooling (gulp, gulp-*, vinyl-fs). Not applicable to Workers which is a runtime environment, not a build environment. For runtime logging in Workers, use console.log/error/warn directly or structured logging libraries like pino.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:15:33.691Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "mobx",
+  "version": "6.15.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { observable, autorun } from 'mobx';\n\n// Usage:\nconst state = observable({ count: 0 });\nlet result = 0;\nautorun(() => { result = state.count; });\nstate.count = 5;\nreturn { success: result === 5, result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:35:26.200Z",
+  "testedBy": "automated"
+}

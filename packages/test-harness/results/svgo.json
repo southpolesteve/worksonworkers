@@ -1,0 +1,16 @@
+{
+  "name": "svgo",
+  "version": "4.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "SVG optimizer - use at build time",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:15:57.569Z",
+  "testedBy": "automated"
+}

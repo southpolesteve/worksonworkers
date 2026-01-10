@@ -1,0 +1,16 @@
+{
+  "name": "component-emitter",
+  "version": "2.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "async",
+  "example": "import Emitter from 'component-emitter';\n\n// Usage:\nconst emitter = new Emitter();\nlet result = null;\nemitter.on('test', (data) => { result = data; });\nemitter.emit('test', 'hello');\nreturn { success: result === 'hello', result };",
+  "notes": "Simple event emitter for creating event-based APIs with on/off/emit methods.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T21:35:24.900Z",
+  "testedBy": "automated"
+}

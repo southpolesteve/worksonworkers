@@ -1,0 +1,16 @@
+{
+  "name": "gulp-plumber",
+  "version": "1.2.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-plumber is a Gulp plugin for error handling in build pipelines. The name pattern 'gulp-*' indicates it's a Gulp plugin (like gulp-if, gulp-babel, gulp-concat, gulp-uglify). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('*.js').pipe(plumber()).pipe(uglify()).pipe(gulp.dest('dist'))). Prevents pipe breaking on errors during build workflows - when a task fails (e.g., syntax error in JS file being uglified), plumber() catches the error and allows the stream to continue instead of crashing the entire pipeline. Used during development/build workflows to improve developer experience (prevents watch mode from stopping on errors, allows build to continue past non-critical failures, provides better error reporting). Requires Gulp's streaming build system and filesystem access (reading/writing files through streams). Part of the Gulp plugin ecosystem alongside gulp-watch (file watching), gulp-notify (desktop notifications), gulp-util (deprecated utility functions). Not applicable to Workers which is a runtime environment without Gulp build system or filesystem access, not a build environment. Modern error handling uses build tool native features (webpack error handling, vite error overlay) or on-error packages for stream error handling.",
+  "errorMessage": "Cannot read properties of undefined (reading 'slice')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:22:49.141Z",
+  "testedBy": "automated"
+}

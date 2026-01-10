@@ -1,0 +1,16 @@
+{
+  "name": "pull-stream",
+  "version": "3.7.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "async",
+  "example": "import pull from 'pull-stream';\n\n// Usage:\nconst result = [];\npull(\n  pull.values([1, 2, 3]),\n  pull.map(x => x * 2),\n  pull.drain(x => result.push(x))\n);\nreturn { success: result.length === 3 && result[0] === 2, result };",
+  "notes": "Minimal pull-stream implementation",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:42:31.736Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "micromatch",
+  "version": "4.0.8",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import micromatch from 'micromatch';\n\n// Usage:\nconst result = micromatch(['foo.js', 'bar.txt'], '*.js');\nreturn { success: result.length === 1 && result[0] === 'foo.js', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:30:02.872Z",
+  "testedBy": "automated"
+}

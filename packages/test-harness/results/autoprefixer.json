@@ -1,0 +1,16 @@
+{
+  "name": "autoprefixer",
+  "version": "10.4.23",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "PostCSS plugin for adding vendor prefixes to CSS during build/compilation. Used in CSS processing pipelines (webpack, vite, PostCSS CLI) to transform modern CSS into cross-browser compatible CSS. Not a runtime library - CSS preprocessing happens at build time, not in Workers request handlers.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:46:42.455Z",
+  "testedBy": "automated"
+}

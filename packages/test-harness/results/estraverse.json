@@ -1,0 +1,16 @@
+{
+  "name": "estraverse",
+  "version": "5.3.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "estraverse is an ECMAScript AST (Abstract Syntax Tree) traversal library used for walking and manipulating JavaScript ASTs during build/development workflows. Provides traverse() and replace() functions for visiting nodes in ASTs produced by parsers like esprima, acorn, or @babel/parser. Used extensively by: linters (ESLint uses it to walk ASTs for rule checking), transpilers (Babel plugins use it to transform code via AST manipulation), bundlers (webpack/rollup plugins for code analysis), code analysis tools (complexity checkers, dead code detectors), and AST manipulation utilities (jscodeshift for refactoring). Part of the estools ecosystem (escodegen for code generation, esrecurse for recursive AST visiting, escope for scope analysis). AST traversal happens during build/compilation workflows, not at runtime. Workers is a runtime environment, not a build environment. For runtime AST operations (if truly needed), generate/transform code at build time using build scripts. Similar AST traversal tools include @babel/traverse (Babel's traverser), ast-types (AST visitor framework), estree-walker (lightweight AST walker).",
+  "errorMessage": "Package estraverse needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:59:22.455Z",
+  "testedBy": "automated"
+}

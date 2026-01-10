@@ -1,0 +1,16 @@
+{
+  "name": "es6-promisify",
+  "version": "7.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "async",
+  "example": "import { promisify } from 'es6-promisify';\n\n// Usage:\n// Create a callback-based function\nconst callbackFn = (a, b, callback) => {\n  setTimeout(() => callback(null, a + b), 10);\n};\n// Convert to promise-based\nconst promiseFn = promisify(callbackFn);\nconst result = await promiseFn(2, 3);\nreturn { success: result === 5, result };",
+  "notes": "Converts callback-based functions to ES6 Promises.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T23:08:10.452Z",
+  "testedBy": "automated"
+}

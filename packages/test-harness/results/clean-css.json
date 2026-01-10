@@ -1,0 +1,15 @@
+{
+  "name": "clean-css",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "example": "import CleanCSS from 'clean-css';\n\n// Usage:\nconst output = new CleanCSS({}).minify('a { color: red; }');\nreturn { success: output.styles.includes('a{color:red'), result: output.styles };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:13:10.017Z",
+  "testedBy": "automated"
+}

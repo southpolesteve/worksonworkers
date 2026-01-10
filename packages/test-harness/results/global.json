@@ -1,0 +1,16 @@
+{
+  "name": "global",
+  "version": "4.4.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import global from 'global';\n\n// Usage:\n// global is a polyfill for accessing global variables across environments\n// It returns the global object (globalThis in Workers)\nconst hasGlobal = typeof global === 'object';\nconst hasGlobalThis = global === globalThis;\nreturn { success: hasGlobal && hasGlobalThis, result: { type: typeof global, isGlobalThis: hasGlobalThis } };",
+  "notes": "Polyfill for accessing the global object across environments. Returns globalThis in Workers. Useful for cross-environment compatibility.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T00:18:56.274Z",
+  "testedBy": "automated"
+}

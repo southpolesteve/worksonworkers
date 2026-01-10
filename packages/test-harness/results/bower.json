@@ -1,0 +1,16 @@
+{
+  "name": "bower",
+  "version": "1.8.14",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "bower is a deprecated package manager from 2012 for managing frontend dependencies (JavaScript, CSS, images) via bower.json configuration. The project was officially deprecated in 2017 with maintainers recommending migration to npm or Yarn. Like all package managers (npm, yarn, pnpm), this is a CLI tool (bower install, bower update, bower search) requiring filesystem access and terminal I/O for package management during development, not a runtime library for Workers execution. Original error \"Code generation from strings disallowed for this context\" occurred because bower uses eval() or Function() constructor.",
+  "errorMessage": "Code generation from strings disallowed for this context",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:31:59.461Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "chai",
+  "version": "6.2.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "testing",
+  "example": "import { expect } from 'chai';\n\n// Usage:\nexpect(2 + 2).to.equal(4);\nexpect('hello').to.be.a('string');\nexpect([1, 2, 3]).to.have.lengthOf(3);\nreturn { success: true, result: 'All assertions passed' };",
+  "notes": "BDD/TDD assertion library. Works on Workers but primarily for test frameworks.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:01:44.082Z",
+  "testedBy": "automated"
+}

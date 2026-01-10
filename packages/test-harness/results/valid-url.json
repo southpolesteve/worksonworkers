@@ -1,0 +1,16 @@
+{
+  "name": "valid-url",
+  "version": "1.0.9",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "validation",
+  "example": "import validUrl from 'valid-url';\n\n// Usage:\nconst valid = validUrl.isUri('http://example.com');\nconst invalid = validUrl.isUri('not a url');\nreturn { success: valid && !invalid, result: { valid, invalid } };",
+  "notes": "URL validation",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:40:49.384Z",
+  "testedBy": "automated"
+}

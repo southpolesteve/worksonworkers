@@ -1,0 +1,16 @@
+{
+  "name": "hash.js",
+  "version": "1.1.7",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "crypto",
+  "example": "import { sha256 } from 'hash.js';\n\n// Usage:\nconst hash = sha256().update('hello').digest('hex');\nreturn { success: hash.length === 64, result: hash };",
+  "notes": "Pure JavaScript hash functions",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:59:35.276Z",
+  "testedBy": "automated"
+}

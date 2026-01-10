@@ -1,0 +1,16 @@
+{
+  "name": "tar-fs",
+  "version": "3.1.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "filesystem-utility",
+  "notes": "TAR filesystem utility - requires filesystem",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:33:14.703Z",
+  "testedBy": "automated"
+}

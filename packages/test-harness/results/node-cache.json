@@ -1,0 +1,16 @@
+{
+  "name": "node-cache",
+  "version": "5.1.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import NodeCache from 'node-cache';\n\n// Usage:\nconst cache = new NodeCache();\ncache.set('key', 'value', 10);\nconst result = cache.get('key');\nreturn { success: result === 'value', result };",
+  "notes": "In-memory caching",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:03:31.982Z",
+  "testedBy": "automated"
+}

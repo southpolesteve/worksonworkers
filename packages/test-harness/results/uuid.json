@@ -1,0 +1,15 @@
+{
+  "name": "uuid",
+  "version": "13.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "id-generation",
+  "example": "import { v4 as uuidv4, validate } from 'uuid';\n\n// Usage:\nconst id = uuidv4();\nconst isValid = validate(id);\nreturn { success: isValid, result: id };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T22:58:20.267Z",
+  "testedBy": "automated"
+}

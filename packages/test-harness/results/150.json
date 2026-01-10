@@ -1,0 +1,16 @@
+{
+  "name": "150",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "invalid",
+  "notes": "Package does not exist in npm registry (404 error). May be a typo or delisted package.",
+  "errorMessage": "Command failed: npm install\nnpm error code E404\nnpm error 404 Not Found - GET https://registry.npmjs.org/150 - Not found\nnpm error 404\nnpm error 404  '150@latest' is not in this registry.\nnpm error 404\nnpm error 404 Note that you can also install from a\nnpm error 404 tarball, folder, http url, or git url.\nnpm error A complete log of this run can be found in: /Users/steve/.npm/_logs/2026-01-08T23_51_58_918Z-debug-0.log\n",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:52:07.670Z",
+  "testedBy": "automated"
+}

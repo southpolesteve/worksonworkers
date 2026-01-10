@@ -1,0 +1,15 @@
+{
+  "name": "joi",
+  "version": "18.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "validation",
+  "example": "import Joi from 'joi';\n\n// Usage:\nconst schema = Joi.object({ name: Joi.string().required() });\nconst { value } = schema.validate({ name: 'Alice' });\nreturn { success: true, result: value };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:00:37.180Z",
+  "testedBy": "automated"
+}

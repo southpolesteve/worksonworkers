@@ -1,0 +1,15 @@
+{
+  "name": "cookie-signature",
+  "version": "1.2.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "crypto",
+  "example": "import { sign, unsign } from 'cookie-signature';\n\n// Usage:\nconst val = sign('hello', 'secret');\nconst result = unsign(val, 'secret');\nreturn { success: result === 'hello', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:17:11.963Z",
+  "testedBy": "automated"
+}

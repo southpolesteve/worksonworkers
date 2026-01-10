@@ -1,0 +1,16 @@
+{
+  "name": "graphql-tools",
+  "version": "9.0.26",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { makeExecutableSchema } from 'graphql-tools';\n\n// Usage:\n// Create a simple GraphQL schema\nconst typeDefs = `\n  type Query {\n    hello: String\n  }\n`;\nconst resolvers = {\n  Query: {\n    hello: () => 'Hello from Workers!'\n  }\n};\nconst schema = makeExecutableSchema({ typeDefs, resolvers });\nreturn { \n  success: schema != null && schema.getQueryType()?.name === 'Query',\n  result: { hasSchema: true, queryType: schema.getQueryType()?.name }\n};",
+  "notes": "GraphQL schema building utilities - makeExecutableSchema, mergeSchemas, schema stitching",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T00:26:21.766Z",
+  "testedBy": "automated"
+}

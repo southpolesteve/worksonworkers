@@ -1,0 +1,17 @@
+{
+  "name": "tslint-react",
+  "version": "5.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "TSLint React rules",
+  "investigated": true,
+  "errorMessage": "Package tslint-react needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:02:33.774Z",
+  "testedBy": "automated"
+}

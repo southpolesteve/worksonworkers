@@ -1,0 +1,16 @@
+{
+  "name": "@types/node",
+  "version": "25.0.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "type-definitions",
+  "notes": "@types/node is a TypeScript type definition package providing type information for Node.js built-in APIs (fs, http, process, buffer, etc.). All @types/* packages contain only compile-time type definitions for TypeScript projects with no runtime code or behavior. These packages are used during development by the TypeScript compiler and removed during transpilation.",
+  "errorMessage": "Failed to resolve entry for package \"@types/node\". The package may have incorrect main/module/exports specified in its package.json.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:30:39.087Z",
+  "testedBy": "automated"
+}

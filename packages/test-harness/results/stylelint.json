@@ -1,0 +1,17 @@
+{
+  "name": "stylelint",
+  "version": "16.26.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "CSS linter",
+  "investigated": true,
+  "errorMessage": "No such module \"node:v8\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:33:28.201Z",
+  "testedBy": "automated"
+}

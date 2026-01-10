@@ -1,0 +1,15 @@
+{
+  "name": "@types/mocha",
+  "version": "10.0.10",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "type-definitions",
+  "notes": "TypeScript type definition package providing type information for the Mocha test framework. All @types/* packages contain only compile-time type definitions for TypeScript projects with no runtime code or behavior. These packages are used during development by the TypeScript compiler and removed during transpilation.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:15:29.829Z",
+  "testedBy": "automated"
+}

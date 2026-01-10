@@ -1,0 +1,16 @@
+{
+  "name": "decimal.js",
+  "version": "10.6.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import Decimal from 'decimal.js';\n\n// Usage:\nconst x = new Decimal(0.1);\nconst y = new Decimal(0.2);\nconst result = x.plus(y).toString();\nreturn { success: result === '0.3', result };",
+  "notes": "Arbitrary-precision decimal arithmetic",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:30:11.164Z",
+  "testedBy": "automated"
+}

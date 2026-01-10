@@ -1,0 +1,15 @@
+{
+  "name": "fs-extra",
+  "version": "11.3.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "filesystem-tool",
+  "notes": "fs-extra is a filesystem utility library that extends Node.js's fs module with promise-based methods and utilities like copy(), emptyDir(), ensureDir(), move(), remove(), outputFile(), readJson(), writeJson(), etc. Designed for real filesystem operations (copying files, creating directories, moving files, cleaning directories) on disk. Workers has only a limited virtual filesystem stub via nodejs_compat - essentially read-only access to bundled assets with no persistent storage or real I/O capability. fs-extra's operations require persistent filesystem access for reading/writing/modifying files and directories. Not applicable to Workers which is a stateless serverless environment without persistent filesystem to manipulate. For file storage in Workers, use R2 (object storage), KV (key-value store), or D1 (database). Similar filesystem utilities include fs-plus (Atom's fs extensions), graceful-fs (improved fs reliability), memfs (in-memory filesystem).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T00:02:55.921Z",
+  "testedBy": "automated"
+}

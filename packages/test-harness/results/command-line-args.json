@@ -1,0 +1,15 @@
+{
+  "name": "command-line-args",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "example": "import commandLineArgs from 'command-line-args';\n\n// Usage:\nreturn { success: false, result: 'n/a' };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:17:17.691Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "dayjs",
+  "version": "1.11.19",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "date-time",
+  "example": "import dayjs from 'dayjs';\n\n// Usage:\nconst date = dayjs('2026-01-08');\nconst formatted = date.format('YYYY-MM-DD');\nreturn { success: formatted === '2026-01-08', result: formatted };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:01:30.980Z",
+  "testedBy": "automated"
+}

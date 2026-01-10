@@ -1,0 +1,16 @@
+{
+  "name": "assert-plus",
+  "version": "1.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "validation",
+  "example": "import assert from 'assert-plus';\n\n// Usage:\nassert.string('hello', 'value');\nassert.number(42, 'value');\nassert.object({ foo: 'bar' }, 'value');\nreturn { success: true, result: 'All assertions passed' };",
+  "notes": "Extra assertions on top of Node.js assert module - provides type checking utilities",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T15:03:14.685Z",
+  "testedBy": "automated"
+}

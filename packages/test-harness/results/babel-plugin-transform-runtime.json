@@ -1,0 +1,17 @@
+{
+  "name": "babel-plugin-transform-runtime",
+  "version": "6.23.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "example": "import * as pkg from 'babel-plugin-transform-runtime';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+  "notes": "Babel plugin - build tool",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:09:16.965Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "querystring",
+  "version": "0.2.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import querystring from 'querystring';\n\n// Usage:\nconst parsed = querystring.parse('foo=bar&abc=xyz&abc=123');\nconst stringified = querystring.stringify({ foo: 'bar', baz: ['qux', 'quux'] });\n\nreturn { \n  success: parsed.foo === 'bar' && stringified.includes('foo=bar'),\n  result: { parsed, stringified }\n};",
+  "notes": "Query string parsing (use URLSearchParams instead)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:26:55.945Z",
+  "testedBy": "automated"
+}

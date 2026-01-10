@@ -1,0 +1,17 @@
+{
+  "name": "discord.js",
+  "version": "14.25.1",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "utility",
+  "notes": "discord.js is a Discord bot library that requires persistent WebSocket connections to Discord's Gateway API for real-time events (listening to messages, presence updates, voice state changes, etc.). Designed for long-running Node.js bot applications that maintain always-on Gateway connections. Workers is a stateless serverless environment without support for persistent WebSocket connections or long-running processes. The main discord.js package uses @discordjs/ws for Gateway WebSocket management which is incompatible with Workers' request/response lifecycle. Note: The discord.js website shows 'Powered by Cloudflare Workers' because their documentation site is hosted on Workers, not because the bot library works on Workers. For Discord interactions on Workers, use @discordjs/rest (REST API only) or @discordjs/core (thin wrapper for REST + webhook-based interactions). These packages support slash commands, webhooks, and REST API calls without requiring Gateway connections.",
+  "alternative": "@discordjs/rest or @discordjs/core for REST-only Discord interactions (slash commands, webhooks)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:49:58.795Z",
+  "testedBy": "automated",
+  "investigated": true
+}

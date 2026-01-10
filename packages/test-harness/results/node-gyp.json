@@ -1,0 +1,16 @@
+{
+  "name": "node-gyp",
+  "version": "12.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Build tool for compiling native C++ Node.js addons",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:07:38.948Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "parse5",
+  "version": "8.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "html",
+  "example": "import { parse } from 'parse5';\n\n// Usage:\nconst doc = parse('<html><body><h1>Test</h1></body></html>');\nreturn { success: doc.nodeName === '#document', result: { nodeName: doc.nodeName } };",
+  "notes": "HTML5 parser",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:16:17.222Z",
+  "testedBy": "automated"
+}

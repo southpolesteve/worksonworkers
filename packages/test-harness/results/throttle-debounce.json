@@ -1,0 +1,16 @@
+{
+  "name": "throttle-debounce",
+  "version": "5.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { throttle, debounce } from 'throttle-debounce';\n\n// Usage:\nconst fn = () => 42;\nconst throttled = throttle(100, fn);\nconst debounced = debounce(100, fn);\nreturn { success: typeof throttled === 'function' && typeof debounced === 'function', result: { throttled: typeof throttled, debounced: typeof debounced } };",
+  "notes": "Throttle and debounce functions",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:45:45.019Z",
+  "testedBy": "automated"
+}

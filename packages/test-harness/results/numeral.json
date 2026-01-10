@@ -1,0 +1,16 @@
+{
+  "name": "numeral",
+  "version": "2.0.6",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import numeral from 'numeral';\n\n// Usage:\nconst formatted = numeral(1000).format('0,0');\nconst value = numeral('1,000').value();\nreturn { success: formatted === '1,000' && value === 1000, result: { formatted, value } };",
+  "notes": "Format and manipulate numbers (currency, percentages, etc.)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:47:01.244Z",
+  "testedBy": "automated"
+}

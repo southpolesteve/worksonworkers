@@ -1,0 +1,16 @@
+{
+  "name": "serialize-javascript",
+  "version": "7.0.2",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "utility",
+  "notes": "Random value generation in global scope not allowed",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:58:21.685Z",
+  "testedBy": "automated"
+}

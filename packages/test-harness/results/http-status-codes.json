@@ -1,0 +1,15 @@
+{
+  "name": "http-status-codes",
+  "version": "2.3.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { StatusCodes, getReasonPhrase } from 'http-status-codes';\n\n// Usage:\nconst ok = StatusCodes.OK;\nconst notFound = StatusCodes.NOT_FOUND;\nconst phrase = getReasonPhrase(200);\nreturn { success: ok === 200 && notFound === 404 && phrase === 'OK', result: { ok, notFound, phrase } };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:09:18.406Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@babel/plugin-proposal-export-default-from",
+  "version": "7.27.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/plugin-proposal-export-default-from is a Babel plugin for transforming export-default-from syntax (e.g., `export v from 'mod'`) during build/compilation. Part of Babel's code transformation ecosystem used by build tools like webpack, esbuild, and vite to transpile experimental JavaScript features. Like all Babel plugins (@babel/plugin-transform-runtime, @babel/plugin-proposal-decorators, @babel/plugin-proposal-class-properties, etc.), these are build-time tools for development workflows, not runtime libraries. Not designed for or needed in Cloudflare Workers runtime.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:12:05.806Z",
+  "testedBy": "automated",
+  "investigated": true
+}

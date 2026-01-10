@@ -1,0 +1,16 @@
+{
+  "name": "eslint-plugin-jest",
+  "version": "29.12.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "eslint-plugin-jest is an ESLint plugin for linting Jest test files. Provides Jest-specific linting rules (no-disabled-tests, no-focused-tests, no-identical-title, prefer-to-have-length, valid-expect, etc.) to enforce testing best practices and catch common Jest mistakes. ESLint plugins extend ESLint's rule set via the 'plugins' array in .eslintrc or eslint.config.js configuration files. Used exclusively during development/CI workflows to lint test files and enforce Jest conventions. Not applicable to Workers which is a runtime environment, not a linting environment. Similar ESLint testing plugins include eslint-plugin-mocha (Mocha test linting), eslint-plugin-jasmine (Jasmine test linting), eslint-plugin-jest-extended (extended Jest matchers linting).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:03:12.495Z",
+  "testedBy": "automated",
+  "investigated": true
+}

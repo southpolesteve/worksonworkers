@@ -1,0 +1,15 @@
+{
+  "name": "eslint-plugin-vue",
+  "version": "10.6.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "eslint-plugin-vue is the official ESLint plugin for Vue.js. Provides linting rules for Vue single-file components (.vue files): component naming conventions (component-definition-name-casing, multi-word-component-names), template syntax validation (valid-template-root, no-parsing-error, valid-v-for/v-if/v-bind/v-on/v-slot), prop validation (require-prop-types, prop-name-casing, require-default-prop), directive usage (v-on-event-hyphenation, no-unused-vars in template), Vue 3 composition API rules (setup, script setup syntax), attribute ordering, HTML formatting, and accessibility best practices in Vue templates. ESLint plugins extend ESLint's rule set via the 'plugins' array in .eslintrc or eslint.config.js configuration files. Used exclusively during development/CI workflows to enforce Vue.js best practices and catch common Vue mistakes like missing keys in v-for, unused variables in templates, incorrect prop definitions, and template syntax errors. Not applicable to Workers which is a runtime environment, not a linting environment. Similar Vue tooling includes @vue/eslint-config-typescript (Vue TypeScript rules), eslint-plugin-vuejs-accessibility (Vue accessibility rules), vite-plugin-vue (Vue SFC compilation for Vite).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:46:55.380Z",
+  "testedBy": "automated"
+}

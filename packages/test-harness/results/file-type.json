@@ -1,0 +1,16 @@
+{
+  "name": "file-type",
+  "version": "21.3.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { fileTypeFromBuffer } from 'file-type';\n\n// Usage:\n// PNG magic bytes: 89 50 4E 47 0D 0A 1A 0A (with some extra bytes for the tokenizer)\nconst pngBytes = new Uint8Array([\n  0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A,\n  0x00, 0x00, 0x00, 0x0D, 0x49, 0x48, 0x44, 0x52,\n  0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01,\n  0x08, 0x06, 0x00, 0x00, 0x00, 0x1F, 0x15, 0xC4\n]);\nconst result = await fileTypeFromBuffer(pngBytes);\nreturn { success: result?.ext === 'png' && result?.mime === 'image/png', result };",
+  "notes": "Detects file types from file signatures (magic bytes). Works with Uint8Array buffers. Useful for validating uploads, detecting MIME types.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T23:49:23.281Z",
+  "testedBy": "automated"
+}

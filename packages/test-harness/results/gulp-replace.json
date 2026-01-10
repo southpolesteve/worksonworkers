@@ -1,0 +1,17 @@
+{
+  "name": "gulp-replace",
+  "version": "1.1.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-replace is a Gulp plugin for search and replace operations on files in Gulp streaming build pipelines. The name pattern 'gulp-*' indicates it's a Gulp plugin (like gulp-babel, gulp-concat, gulp-uglify, gulp-sass, gulp-autoprefixer). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('*.js').pipe(replace('oldText', 'newText')).pipe(gulp.dest('dist'))). Used during development/build workflows for text replacement in files (replacing version numbers in source code, updating API endpoints between environments, swapping environment-specific strings, replacing tokens in templates, updating configuration values). Supports string replacement (literal text matching), regex replacement (pattern matching with capture groups), function-based replacement (custom transformation logic), and streaming file operations. Processes files from disk using Node.js streams and filesystem access (fs.createReadStream for reading source files, fs.createWriteStream for writing modified output). Part of the Gulp plugin ecosystem alongside gulp-rename (rename files), gulp-inject (inject file references), gulp-template (compile templates), gulp-strip-comments (remove comments), gulp-modify-file (modify file contents). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern text replacement uses build tools with built-in string replacement (webpack DefinePlugin, vite define option), sed/awk CLI tools, or replace-in-file package for programmatic replacement.",
+  "errorMessage": "Package gulp-replace needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:54:56.123Z",
+  "testedBy": "automated",
+  "investigated": true
+}

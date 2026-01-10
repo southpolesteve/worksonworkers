@@ -1,0 +1,16 @@
+{
+  "name": "deep-extend",
+  "version": "0.6.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import deepExtend from 'deep-extend';\n\n// Usage:\nconst result = deepExtend({ a: 1, b: { c: 2 } }, { b: { d: 3 } });\nreturn { success: result.a === 1 && result.b.c === 2 && result.b.d === 3, result };",
+  "notes": "Recursively extend objects",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:30:55.249Z",
+  "testedBy": "automated"
+}

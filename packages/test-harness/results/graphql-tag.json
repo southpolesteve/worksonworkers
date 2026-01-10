@@ -1,0 +1,16 @@
+{
+  "name": "graphql-tag",
+  "version": "2.12.6",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import gql from 'graphql-tag';\n\n// Usage:\nconst query = gql`\n  query GetUser($id: ID!) {\n    user(id: $id) {\n      name\n      email\n    }\n  }\n`;\nreturn { success: query.kind === 'Document' && query.definitions.length > 0, result: { kind: query.kind, definitions: query.definitions.length } };",
+  "notes": "GraphQL query parser for template literals",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:52:06.172Z",
+  "testedBy": "automated"
+}

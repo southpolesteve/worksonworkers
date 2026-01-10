@@ -1,0 +1,17 @@
+{
+  "name": "sync-request",
+  "version": "6.1.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "http",
+  "alternative": "fetch",
+  "notes": "Synchronous HTTP requests (blocking). Use native fetch() instead",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:27:27.349Z",
+  "testedBy": "automated"
+}

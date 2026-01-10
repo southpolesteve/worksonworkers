@@ -1,0 +1,15 @@
+{
+  "name": "errorhandler",
+  "version": "1.5.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "server-framework",
+  "notes": "Express/Connect middleware for development-only error handling. Designed for traditional Node.js HTTP servers with Express/Connect (requires req/res objects from http.createServer). Provides formatted error responses with stack traces, content negotiation (HTML/JSON/plain text), and console.error logging. Workers uses fetch handler model with Request/Response objects, not Express middleware pattern. For error handling in Workers, use try/catch blocks in fetch handlers and return custom Response objects with error details.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:02:44.904Z",
+  "testedBy": "automated"
+}

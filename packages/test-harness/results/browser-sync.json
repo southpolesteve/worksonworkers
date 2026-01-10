@@ -1,0 +1,15 @@
+{
+  "name": "browser-sync",
+  "version": "3.0.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "dev-tool",
+  "notes": "browser-sync is a development server tool that provides live browser reloading and synchronization during development. It creates a local HTTP server, watches files for changes, opens/controls real browsers, and injects scripts to auto-reload browsers when files change. Requires filesystem watching (to detect changes), HTTP server capabilities (to serve files), browser automation (to open/reload browsers), and terminal I/O (for CLI usage). Like all dev server tools (webpack-dev-server, vite dev server, live-server, http-server), this is designed for local development workflows, not for runtime execution in Workers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:32:55.428Z",
+  "testedBy": "automated"
+}

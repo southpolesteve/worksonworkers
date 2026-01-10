@@ -1,0 +1,16 @@
+{
+  "name": "redux",
+  "version": "5.0.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { createStore } from 'redux';\n\n// Usage:\nconst reducer = (state = 0, action) => action.type === 'INC' ? state + 1 : state;\nconst store = createStore(reducer);\nstore.dispatch({ type: 'INC' });\nreturn { success: store.getState() === 1, result: store.getState() };",
+  "notes": "Redux state management - can be used in Workers",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:31:06.211Z",
+  "testedBy": "automated"
+}

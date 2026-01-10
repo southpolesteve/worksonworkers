@@ -1,0 +1,16 @@
+{
+  "name": "@babel/core",
+  "version": "7.28.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/core is Babel's compiler core - a build-time tool for transpiling JavaScript code. It provides the API for transforming JavaScript using Babel plugins and presets. This is designed for build pipelines and development workflows (like webpack, vite, or standalone babel CLI), not for runtime execution in Workers. Error 'Expected opts.sync to be a function' occurs because Babel expects filesystem access and synchronous operations during compilation. Like webpack, esbuild, or tsc, this belongs in your build process, not deployed to Workers runtime.",
+  "errorMessage": "Expected opts.sync to be a function.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:38:21.900Z",
+  "testedBy": "automated"
+}

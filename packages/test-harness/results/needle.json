@@ -1,0 +1,17 @@
+{
+  "name": "needle",
+  "version": "3.3.1",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "http-client",
+  "notes": "HTTP client",
+  "alternative": "fetch (built-in), ky, undici",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:39:04.593Z",
+  "testedBy": "automated"
+}

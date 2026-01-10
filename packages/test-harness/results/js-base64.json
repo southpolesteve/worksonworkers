@@ -1,0 +1,15 @@
+{
+  "name": "js-base64",
+  "version": "3.7.8",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { Base64 } from 'js-base64';\n\n// Usage:\nconst encoded = Base64.encode('hello');\nconst decoded = Base64.decode(encoded);\nreturn { success: decoded === 'hello', result: { encoded, decoded } };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:41:12.387Z",
+  "testedBy": "automated"
+}

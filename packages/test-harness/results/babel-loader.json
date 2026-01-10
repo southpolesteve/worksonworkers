@@ -1,0 +1,16 @@
+{
+  "name": "babel-loader",
+  "version": "10.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-loader is a webpack loader that uses Babel to transpile JavaScript/TypeScript files during the webpack build process. It's a bridge between webpack and @babel/core, allowing webpack to process JavaScript through Babel transformations. Like all webpack loaders (ts-loader, css-loader, file-loader, vue-loader, etc.), this is a build-time tool designed for development/build workflows with webpack.config.js, not for runtime execution in Workers. You configure it in webpack config (e.g., { test: /\\.jsx?$/, loader: 'babel-loader' }) to handle code transpilation during bundling.",
+  "errorMessage": "Expected opts.sync to be a function.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:28:04.387Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "coveralls",
+  "version": "3.1.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "test-framework",
+  "notes": "Coveralls is a code coverage reporting service and CLI tool for uploading test coverage reports (from Istanbul, Jest, Mocha, etc.) to the Coveralls.io SaaS platform. Exclusively used in CI/CD pipelines and development workflows (via CLI commands like 'coveralls < coverage/lcov.info') during testing, not for runtime execution in Workers. Similar coverage reporting tools include Codecov, Code Climate.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:53:18.399Z",
+  "testedBy": "automated"
+}

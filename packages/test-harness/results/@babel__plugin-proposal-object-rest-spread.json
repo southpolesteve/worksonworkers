@@ -1,0 +1,16 @@
+{
+  "name": "@babel/plugin-proposal-object-rest-spread",
+  "version": "7.20.7",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Babel plugin for transforming object rest/spread syntax (e.g., `{...obj}`, `let {x, ...rest} = obj`) during build/compilation. Part of Babel's code transformation ecosystem used by build tools like webpack, esbuild, and vite to transpile modern JavaScript features. Like all Babel plugins, this is a build-time tool for development workflows, not a runtime library. Not designed for or needed in Cloudflare Workers runtime.",
+  "errorMessage": "Expected opts.sync to be a function.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:23:28.302Z",
+  "testedBy": "automated"
+}

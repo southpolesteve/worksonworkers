@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-airbnb-base",
+  "version": "15.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "ESLint shareable config from Airbnb for JavaScript code linting. ESLint configurations are JSON/JavaScript files that define linting rules, parser options, and plugin configurations for the ESLint linter. Used exclusively during development/CI workflows to enforce code style and catch errors (e.g., eslint --config airbnb-base src/). Not applicable to Workers which is a runtime environment, not a linting/development environment. Similar ESLint configs include eslint-config-standard, eslint-config-google, eslint-config-prettier.",
+  "errorMessage": "undefined is not a function",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:20:56.488Z",
+  "testedBy": "automated"
+}

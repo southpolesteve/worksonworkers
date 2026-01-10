@@ -1,0 +1,18 @@
+{
+  "name": "urllib",
+  "version": "4.9.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "other",
+  "notes": "HTTP client for Node.js - use fetch or ky instead",
+  "errorMessage": "Package urllib needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:47:28.829Z",
+  "testedBy": "automated",
+  "investigated": true,
+  "alternative": "fetch / ky"
+}

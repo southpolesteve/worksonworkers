@@ -1,0 +1,17 @@
+{
+  "name": "hammerjs",
+  "version": "2.0.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "Touch gesture library - requires window/DOM",
+  "investigated": true,
+  "errorMessage": "window is not defined",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:22:15.338Z",
+  "testedBy": "automated"
+}

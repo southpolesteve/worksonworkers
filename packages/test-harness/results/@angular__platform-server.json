@@ -1,0 +1,17 @@
+{
+  "name": "@angular/platform-server",
+  "version": "21.0.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "server-framework",
+  "notes": "@angular/platform-server is Angular's server-side rendering (SSR) module designed for Node.js environments to render Angular applications on the server using DOM emulation. It's part of Angular Universal and provides tools for pre-rendering Angular apps and handling server-side rendering. Like other Angular packages, this is designed for specific Node.js SSR environments (Angular Universal, Analog), not for Cloudflare Workers. For SSR on Workers, use frameworks designed for edge environments like Remix, SolidStart, or Qwik.",
+  "alternative": "For edge SSR, use Remix, SolidStart, Qwik, or Hono with JSX",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:28:11.503Z",
+  "testedBy": "automated"
+}

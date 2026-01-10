@@ -1,0 +1,17 @@
+{
+  "name": "normalize.css",
+  "version": "8.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "example": "import * as pkg from 'normalize.css';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+  "notes": "CSS reset library for browsers",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:26:25.942Z",
+  "testedBy": "automated",
+  "investigated": true
+}

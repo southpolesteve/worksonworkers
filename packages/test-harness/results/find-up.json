@@ -1,0 +1,16 @@
+{
+  "name": "find-up",
+  "version": "8.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "find-up is a filesystem utility for searching parent directories to locate files (like finding package.json, .eslintrc, tsconfig.json by walking up from /a/b/c/d to /a/b/c, /a/b, /a, etc.). Used extensively by development tools: linters (ESLint finding .eslintrc files from current directory), transpilers (Babel finding babel.config.js), bundlers (webpack finding webpack.config.js), package managers (finding workspace root), monorepo tools (lerna, nx finding project root), and config loaders. Requires Node.js filesystem APIs (fs.readFile, fs.stat, path.resolve, path.dirname) to traverse directory hierarchies and read files. Part of the find-* utility ecosystem alongside find-cache-dir, find-pkg, pkg-dir, find-root. Workers is a stateless serverless environment without persistent filesystem to traverse - each request runs in isolation with no directory structure to walk upward through. Not applicable to Workers which is a runtime environment, not a build/development environment. Similar filesystem traversal utilities include pkg-up, read-pkg-up, find-root.",
+  "errorMessage": "The requested module 'unicorn-magic' does not provide an export named 'toPath'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:34:01.253Z",
+  "testedBy": "automated"
+}

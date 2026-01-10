@@ -1,0 +1,16 @@
+{
+  "name": "undici",
+  "version": "7.18.2",
+  "weeklyDownloads": 0,
+  "status": "built-in",
+  "category": "http-client",
+  "notes": "Use native fetch() API in Workers",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:26:56.645Z",
+  "testedBy": "automated"
+}

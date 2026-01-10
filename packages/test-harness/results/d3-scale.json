@@ -1,0 +1,16 @@
+{
+  "name": "d3-scale",
+  "version": "4.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { scaleLinear, scaleLog, scalePow, scaleTime } from 'd3-scale';\n\n// Usage:\nconst linear = scaleLinear().domain([0, 10]).range([0, 100]);\nconst log = scaleLog().domain([1, 10]).range([0, 100]);\nconst pow = scalePow().exponent(2).domain([0, 10]).range([0, 100]);\nconst time = scaleTime().domain([new Date(2020, 0, 1), new Date(2021, 0, 1)]).range([0, 100]);\nconst linearVal = linear(5);\nconst logVal = log(5);\nconst powVal = pow(5);\nconst timeVal = time(new Date(2020, 6, 1));\nreturn { success: linearVal === 50 && logVal > 0 && powVal === 25 && timeVal > 0, result: { linearVal, logVal, powVal, timeVal } };",
+  "notes": "D3 scales for mapping data values to visual ranges. Includes linear, logarithmic, power, time, and categorical scales for data visualization.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T22:31:26.835Z",
+  "testedBy": "automated"
+}

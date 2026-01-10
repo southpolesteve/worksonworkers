@@ -1,0 +1,15 @@
+{
+  "name": "draft-js",
+  "version": "0.11.7",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "Draft.js is a browser-only React framework for building rich text editors. Requires react-dom (peer dependency) for DOM manipulation APIs like document, window, HTMLElement, selection APIs, contentEditable, and DOM event handling. Provides Editor component that renders contentEditable <div>, manages editor state with EditorState and ContentState, handles keyboard events and text input, supports rich text formatting (bold, italic, links, lists), block-level styling (headings, quotes), entity system for custom data, and decorator system for syntax highlighting. Used extensively in web applications for WYSIWYG editing (Facebook, Medium-style editors, comment systems, content management). Designed exclusively for browser environments with full DOM APIs. Not applicable to Workers which is a serverless HTTP runtime without DOM APIs. For rich text editing in Workers, return HTML/Markdown to client and use Draft.js in the browser application, or process rich text data structures (ContentState JSON) server-side for storage/rendering.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:28:27.983Z",
+  "testedBy": "automated"
+}

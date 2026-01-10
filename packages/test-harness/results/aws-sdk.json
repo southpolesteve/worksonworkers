@@ -1,0 +1,17 @@
+{
+  "name": "aws-sdk",
+  "version": "2.1693.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "cloud-services",
+  "alternative": "@aws-sdk/client-* (AWS SDK v3)",
+  "notes": "aws-sdk (v2) is the legacy monolithic AWS SDK for JavaScript - now deprecated and replaced by AWS SDK v3. v2 requires node:punycode which isn't available in Workers' nodejs_compat. More importantly, AWS SDK v2 is a massive monolithic package importing ALL AWS services (~50MB+), making it unsuitable for edge/serverless. AWS SDK v3 (@aws-sdk/client-s3, @aws-sdk/client-dynamodb, @aws-sdk/client-sqs, etc.) is modular, tree-shakeable, and specifically designed to work in browser/edge environments including Workers. Use the specific @aws-sdk/client-* packages for the AWS services you need.",
+  "errorMessage": "No such module \"node:punycode\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:34:18.964Z",
+  "testedBy": "automated"
+}

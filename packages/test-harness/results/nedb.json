@@ -1,0 +1,17 @@
+{
+  "name": "nedb",
+  "version": "1.8.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "database",
+  "notes": "In-memory/file-based database",
+  "alternative": "D1 (SQLite), @upstash/redis, KV",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:04:57.805Z",
+  "testedBy": "automated"
+}

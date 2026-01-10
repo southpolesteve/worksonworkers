@@ -1,0 +1,16 @@
+{
+  "name": "hoist-non-react-statics",
+  "version": "3.3.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import hoistStatics from 'hoist-non-react-statics';\n\n// Usage:\nfunction Target() {}\nfunction Source() {}\nSource.foo = 'bar';\nhoistStatics(Target, Source);\nreturn { success: (Target as any).foo === 'bar', result: { foo: (Target as any).foo } };",
+  "notes": "Copies non-React static properties",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:00:53.400Z",
+  "testedBy": "automated"
+}

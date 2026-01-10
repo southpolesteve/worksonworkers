@@ -1,0 +1,15 @@
+{
+  "name": "chart.js",
+  "version": "4.5.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "Chart.js is a browser-only data visualization library that renders interactive charts using HTML5 Canvas (<canvas> element). Requires DOM APIs (window, document, HTMLCanvasElement, CanvasRenderingContext2D) which are not available in Workers. Designed for client-side chart rendering in browsers, not serverless environments. For data visualization in Workers, return data to client for rendering with Chart.js/Recharts/D3, or use server-side chart generation libraries that don't require Canvas.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:54:44.707Z",
+  "testedBy": "automated"
+}

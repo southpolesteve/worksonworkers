@@ -1,0 +1,17 @@
+{
+  "name": "bip39",
+  "version": "3.1.0",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "crypto",
+  "notes": "Bitcoin BIP39 library for mnemonic code generation. The package fails in Workers because validateMnemonic() returns false even for known-valid mnemonics like the standard test vector 'abandon abandon...'. This suggests the English wordlist (required for validation) is not loading properly - likely due to CommonJS JSON imports (require('./wordlists/english.json')) in the package's dependencies. The bip39 package depends on loading a 2048-word English dictionary at runtime which doesn't work in Workers' bundled environment.",
+  "errorMessage": "validateMnemonic returns false for valid mnemonics - wordlist loading fails",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T17:20:33.841Z",
+  "testedBy": "automated"
+}

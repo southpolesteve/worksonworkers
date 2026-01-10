@@ -1,0 +1,17 @@
+{
+  "name": "multer",
+  "version": "2.0.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "middleware",
+  "notes": "Express multipart/form-data middleware - not needed in Workers",
+  "investigated": true,
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:32:41.667Z",
+  "testedBy": "automated"
+}

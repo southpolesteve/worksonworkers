@@ -1,0 +1,15 @@
+{
+  "name": "grunt-contrib-uglify",
+  "version": "5.2.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "grunt-contrib-uglify is an official Grunt plugin for minifying JavaScript using UglifyJS during build workflows. Provides uglify task for Grunt build system that minifies JavaScript files to reduce file size (remove whitespace, shorten variable names, dead code elimination). Configured in Gruntfile.js as grunt.loadNpmTasks('grunt-contrib-uglify') with task configuration defining source files to minify, output destination, and UglifyJS options (compress, mangle, beautify settings). Requires filesystem access (fs.readFile to read JavaScript source files, fs.writeFile to write minified output, fs.mkdir for output directories). Used during development/build workflows for production builds (minify JS before deployment), optimizing bundle sizes (reduce download size and parse time), build pipelines (integrate with other Grunt tasks like concat/copy), and performance optimization (smaller files for faster page loads). Part of the grunt-contrib-* official plugin ecosystem alongside grunt-contrib-concat (concatenate files), grunt-contrib-copy (copy files), grunt-contrib-clean (delete files), grunt-contrib-watch (watch for changes). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern minifiers like terser (ES6+ aware successor to UglifyJS), esbuild (extremely fast bundler/minifier), swc (Rust-based minifier), and uglify-js CLI (standalone UglifyJS without Grunt) have superseded Grunt workflows for JavaScript minification.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:13:15.689Z",
+  "testedBy": "automated"
+}

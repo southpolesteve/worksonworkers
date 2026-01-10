@@ -1,0 +1,17 @@
+{
+  "name": "when",
+  "version": "3.7.8",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "other",
+  "notes": "Promise library with illegal invocation error",
+  "errorMessage": "Illegal invocation: function called with incorrect `this` reference. See https://developers.cloudflare.com/workers/observability/errors/#illegal-invocation-errors for details.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:10:13.498Z",
+  "testedBy": "automated",
+  "investigated": true
+}

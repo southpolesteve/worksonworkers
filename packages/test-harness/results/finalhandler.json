@@ -1,0 +1,16 @@
+{
+  "name": "finalhandler",
+  "version": "2.1.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "server-framework",
+  "notes": "finalhandler is a Node.js HTTP final responder middleware designed for traditional Node.js HTTP servers using http.createServer(). Used as the last middleware in Express/Connect chains to handle 404s and errors with req/res objects. Takes Node.js request/response objects (req, res) from http module and returns a finalizer function fn(err) that writes 404 for falsy errors or error responses (status code from err.status/statusCode, HTML error pages with stack traces in dev, unpipes req). Used with middleware-style functions and Connect/Express patterns for error handling. Workers uses fetch event handlers with Request/Response objects and stateless execution - completely different architecture. For error handling in Workers, use try/catch blocks in fetch handlers and return custom Response objects with error details. Similar traditional Node.js server middleware includes errorhandler (dev-only error handler), serve-static (static file serving), compression (response compression).",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:52:44.619Z",
+  "testedBy": "automated"
+}

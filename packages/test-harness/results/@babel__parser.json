@@ -1,0 +1,15 @@
+{
+  "name": "@babel/parser",
+  "version": "7.28.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/parser is Babel's JavaScript/TypeScript parser that converts source code into Abstract Syntax Trees (AST). It's used during build-time for code analysis, transpilation, linting, and code transformation tools. Like other Babel packages (@babel/core, @babel/cli), this is a build-time tool for development workflows and build pipelines, not for runtime execution in Workers. You don't parse JavaScript code in request handlers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:29:02.046Z",
+  "testedBy": "automated"
+}

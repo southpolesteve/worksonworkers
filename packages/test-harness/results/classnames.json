@@ -1,0 +1,16 @@
+{
+  "name": "classnames",
+  "version": "2.5.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import classNames from 'classnames';\n\n// Usage:\nconst classes = classNames('btn', { active: true, disabled: false }, 'primary');\nreturn { success: classes === 'btn active primary', result: classes };",
+  "notes": "Conditionally join CSS class names together. Useful for dynamic styling.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:07:45.964Z",
+  "testedBy": "automated"
+}

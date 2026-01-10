@@ -1,0 +1,16 @@
+{
+  "name": "markdown",
+  "version": "0.5.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { markdown } from 'markdown';\n\n// Usage:\nconst result = markdown.toHTML('# Hello');\nreturn { success: result.includes('<h1>'), result };",
+  "notes": "Markdown to HTML converter",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:59:54.152Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "fork-ts-checker-webpack-plugin-alt",
+  "version": "0.4.14",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack plugin for running TypeScript type checking in a separate process. The name pattern '*-webpack-plugin' clearly indicates it's a webpack build tool (like html-webpack-plugin, copy-webpack-plugin, extract-text-webpack-plugin). Configured in webpack.config.js as a plugin: new ForkTsCheckerWebpackPlugin(). Used during development/build workflows to run TypeScript type checking without blocking webpack compilation. Not applicable to Workers which is a runtime environment, not a build environment. Similar webpack TypeScript plugins include fork-ts-checker-webpack-plugin (original non-alt version).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:05:43.801Z",
+  "testedBy": "automated"
+}

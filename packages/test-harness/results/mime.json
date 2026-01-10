@@ -1,0 +1,15 @@
+{
+  "name": "mime",
+  "version": "4.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import mime from 'mime';\n\n// Usage:\nconst result = mime.getType('test.json');\nreturn { success: result === 'application/json', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:30:18.227Z",
+  "testedBy": "automated"
+}

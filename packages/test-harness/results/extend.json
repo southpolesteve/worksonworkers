@@ -1,0 +1,16 @@
+{
+  "name": "extend",
+  "version": "3.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import extend from 'extend';\n\n// Usage:\nconst result = extend({ a: 1 }, { b: 2 }, { c: 3 });\nreturn { success: result.a === 1 && result.b === 2 && result.c === 3, result };",
+  "notes": "Object extension utility",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:46:25.618Z",
+  "testedBy": "automated"
+}

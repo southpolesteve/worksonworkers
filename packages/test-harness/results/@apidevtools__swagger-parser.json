@@ -1,0 +1,17 @@
+{
+  "name": "@apidevtools/swagger-parser",
+  "version": "12.1.0",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "validation",
+  "notes": "Fails due to CommonJS JSON imports in @apidevtools/openapi-schemas dependency. The package loads OpenAPI JSON Schema files using require('./schema.json') pattern which doesn't work in Workers. While this is designed as a runtime library for parsing and validating Swagger/OpenAPI specs, the dependency on CommonJS JSON imports prevents it from working. Might work if properly pre-bundled with a build tool that handles JSON imports.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:59:17.305Z",
+  "testedBy": "automated",
+  "investigated": true
+}

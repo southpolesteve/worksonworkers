@@ -1,0 +1,17 @@
+{
+  "name": "file-saver",
+  "version": "2.0.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "file-saver is a browser-only library for saving files on the client-side. Uses browser APIs like Blob constructor, <a> element with download attribute, window.navigator.msSaveBlob (IE), and DOM manipulation (document.createElement, document.body.appendChild) to trigger file downloads in browsers. Designed to generate files in the browser (e.g., canvas.toBlob(), new Blob(['text'], {type: 'text/plain'}), URLs) and save them to the user's filesystem. Keywords include 'filesaver', 'saveas', 'blob' confirming it's browser-focused. Not applicable to Workers which is a serverless HTTP runtime without browser download APIs or DOM. For file generation in Workers, return files directly in HTTP responses with appropriate Content-Disposition headers (Response with {headers: {'Content-Disposition': 'attachment; filename=\"file.txt\"'}}), or upload to R2 storage (env.R2_BUCKET.put()). Similar browser-only file download libraries include StreamSaver.js (for large files with streaming), downloadjs (alternative download library).",
+  "errorMessage": "Package file-saver needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:54:00.881Z",
+  "testedBy": "automated",
+  "investigated": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "reselect",
+  "version": "5.1.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { createSelector } from 'reselect';\n\n// Usage:\nconst selectItems = state => state.items;\nconst selectTotal = createSelector(\n  [selectItems],\n  items => items.reduce((sum, item) => sum + item, 0)\n);\n\nconst state = { items: [1, 2, 3, 4] };\nconst result = selectTotal(state);\n\nreturn { success: result === 10, result };",
+  "notes": "Memoized selectors for Redux",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:34:35.576Z",
+  "testedBy": "automated"
+}

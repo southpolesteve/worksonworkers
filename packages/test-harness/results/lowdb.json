@@ -1,0 +1,16 @@
+{
+  "name": "lowdb",
+  "version": "7.0.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "database",
+  "example": "import { Low } from 'lowdb';\n\n// Usage:\nconst db = new Low({ read: async () => ({ posts: [] }), write: async () => {} }, { posts: [] });\nawait db.read();\nreturn { success: Array.isArray(db.data.posts), result: db.data };",
+  "notes": "JSON database - works with custom adapters",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:07:10.644Z",
+  "testedBy": "automated"
+}

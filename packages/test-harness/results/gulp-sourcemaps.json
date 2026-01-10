@@ -1,0 +1,16 @@
+{
+  "name": "gulp-sourcemaps",
+  "version": "3.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-sourcemaps is a Gulp plugin for generating source maps during build workflows. The name pattern 'gulp-*' indicates it's a Gulp plugin (like gulp-babel, gulp-concat, gulp-uglify, gulp-sass, gulp-autoprefixer). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('*.js').pipe(sourcemaps.init()).pipe(babel()).pipe(sourcemaps.write()).pipe(gulp.dest('dist'))). Used during development/build workflows to generate source maps for debugging transpiled/minified code (mapping transformed code back to original source, enabling breakpoints in original source, preserving variable names in debugger). Processes files from disk using Node.js streams and filesystem access (fs.createReadStream for reading source files, fs.createWriteStream for writing .map files alongside output). Supports inline sourcemaps (embedded in source files as data URIs), external sourcemaps (separate .map files), sourcemap chaining (preserving sourcemaps through multiple transformations). Part of the Gulp plugin ecosystem alongside gulp-babel (transpile JavaScript), gulp-uglify (minify JavaScript), gulp-sass (compile Sass), gulp-typescript (compile TypeScript), gulp-concat (concatenate files). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern sourcemap generation uses build tools with built-in sourcemap support (webpack with devtool option, rollup with sourcemap: true, esbuild with --sourcemap flag, vite with build.sourcemap option).",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:29:13.926Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,8 @@
+name = "works-on-workers"
+main = "src/index.ts"
+compatibility_date = "2026-01-10"
+compatibility_flags = ["nodejs_compat"]
+
+# Static assets
+[assets]
+directory = "./public"

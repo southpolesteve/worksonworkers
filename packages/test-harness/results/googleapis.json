@@ -1,0 +1,18 @@
+{
+  "name": "googleapis",
+  "version": "170.0.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "api-client",
+  "notes": "googleapis is Google's official Node.js client library for accessing 200+ Google APIs (Drive, Gmail, YouTube, Calendar, etc.) with OAuth2, API keys, and service account authentication. Error \"No such module 'node:child_process'\" indicates it requires child_process (non-functional stub in Workers) for internal operations like gRPC connections or auth flows. The monolithic googleapis package bundles all Google API clients (200+ APIs, 200 MB unpacked) with shared auth infrastructure. Designed for traditional Node.js servers with full Node.js API access. For Google APIs in Workers, use better alternatives: (1) @googleapis/* scoped packages (e.g., @googleapis/drive, @googleapis/gmail) - individual API packages that may work better in Workers with tree-shaking and smaller bundles, needs testing per API; (2) Direct Google REST APIs - call Google API endpoints directly using Workers' native fetch() with manual OAuth2/API key auth headers for full control; (3) @google-cloud/* packages for GCP services (e.g., @google-cloud/storage for Cloud Storage instead of Drive API) - purpose-built clients for Google Cloud Platform services that may have better Workers support. Most Google APIs are REST-based and should work via fetch(), but the googleapis package's Node.js dependencies make it incompatible. Similar monolithic API client libraries include aws-sdk (AWS SDK v2, deprecated), azure-sdk (Azure services).",
+  "alternative": "@googleapis/* scoped packages (e.g., @googleapis/drive) - individual API packages that may work in Workers, or direct Google REST API calls using fetch()",
+  "errorMessage": "No such module \"node:child_process\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:36:03.769Z",
+  "testedBy": "automated",
+  "investigated": true
+}

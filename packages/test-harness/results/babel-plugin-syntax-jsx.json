@@ -1,0 +1,16 @@
+{
+  "name": "babel-plugin-syntax-jsx",
+  "version": "6.18.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-plugin-syntax-jsx is a Babel 6 syntax plugin that enables parsing of JSX syntax (e.g., <div>Hello</div>, <Component />) in code. Babel syntax plugins (babel-plugin-syntax-*, @babel/plugin-syntax-*) are parser plugins that extend Babel's parser (@babel/parser) to recognize JSX/new JavaScript syntax during code parsing - they don't transform code, just enable parsing it. Like all Babel plugins, these are build-time tools configured in .babelrc or babel.config.js during development/build pipelines. JSX is now widely supported in modern build tools. Not applicable for Workers runtime.",
+  "errorMessage": "Package babel-plugin-syntax-jsx needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:58:58.759Z",
+  "testedBy": "automated"
+}

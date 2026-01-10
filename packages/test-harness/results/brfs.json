@@ -1,0 +1,15 @@
+{
+  "name": "brfs",
+  "version": "2.0.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "brfs is a Browserify transform (build-time plugin) that inlines fs.readFileSync() and fs.readFile() calls into JavaScript bundles during the build process. It parses the AST to replace filesystem reads with their static content at compile-time (e.g., transforms `fs.readFileSync(__dirname + '/file.txt', 'utf8')` to `var content = \"file contents here\"`). Like all Browserify transforms (babelify, envify, etc.) and build tools (browserify, webpack, rollup), this is designed for development/build workflows, not runtime execution in Workers. Modern bundlers (webpack, vite, esbuild) handle static asset imports natively.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:32:59.539Z",
+  "testedBy": "automated"
+}

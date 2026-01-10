@@ -1,0 +1,16 @@
+{
+  "name": "babel-plugin-module-resolver",
+  "version": "5.0.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-plugin-module-resolver is a Babel plugin that rewrites import paths (aliases) during build/compilation. For example, it transforms import '../../../components/Button' to import '@/components/Button' based on .babelrc configuration. Like all Babel plugins (babel-plugin-*, @babel/plugin-*), this is a build-time tool configured in .babelrc or babel.config.js for code transformation during development/build pipelines with webpack, vite, or esbuild. Not a runtime library for Workers execution.",
+  "errorMessage": "Package babel-plugin-module-resolver needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:48:46.364Z",
+  "testedBy": "automated"
+}

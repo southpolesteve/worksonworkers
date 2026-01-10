@@ -1,0 +1,17 @@
+{
+  "name": "react-dropzone",
+  "version": "14.3.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "React browser UI component - requires DOM",
+  "errorMessage": "Package react-dropzone needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:25:18.846Z",
+  "testedBy": "automated",
+  "investigated": true
+}

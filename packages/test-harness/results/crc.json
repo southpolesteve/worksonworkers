@@ -1,0 +1,16 @@
+{
+  "name": "crc",
+  "version": "4.3.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "crypto",
+  "example": "import { crc32 } from 'crc';\n\n// Usage:\nconst checksum = crc32('hello world');\nreturn { success: typeof checksum === 'number' && checksum === 0x0d4a1185, result: '0x' + checksum.toString(16) };",
+  "notes": "CRC (Cyclic Redundancy Check) checksums - supports CRC1, CRC8, CRC16, CRC24, CRC32",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T21:50:07.595Z",
+  "testedBy": "automated"
+}

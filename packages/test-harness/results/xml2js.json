@@ -1,0 +1,15 @@
+{
+  "name": "xml2js",
+  "version": "0.6.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import { parseString } from 'xml2js';\n\n// Usage:\nlet result: any;\nparseString('<root><name>test</name></root>', (err, res) => { result = res; });\nreturn { success: result?.root?.name?.[0] === 'test', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T09:08:17.726Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "esm",
+  "version": "3.2.25",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "esm is a Node.js module loader that enables ES modules (import/export) in legacy CommonJS environments. It hooks into Node.js's require() system to transpile ES module syntax to CommonJS at runtime using dynamic code generation (eval/Function constructor) which is blocked in Workers. Designed for older Node.js versions (<14) that lacked native ES module support. Modern Node.js and Workers have native ES module support built-in - no loader needed. Similar legacy module loaders include @std/esm (predecessor), babel-register (Babel transpilation), ts-node (TypeScript transpilation). Not applicable to Workers which already has full native ES module support.",
+  "errorMessage": "Code generation from strings disallowed for this context",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:34:12.190Z",
+  "testedBy": "automated"
+}

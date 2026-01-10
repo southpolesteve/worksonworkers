@@ -1,0 +1,17 @@
+{
+  "name": "webpack-bundle-analyzer",
+  "version": "5.1.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack bundle analyzer",
+  "investigated": true,
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:25:04.816Z",
+  "testedBy": "automated"
+}

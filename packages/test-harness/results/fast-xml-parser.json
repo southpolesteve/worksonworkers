@@ -1,0 +1,16 @@
+{
+  "name": "fast-xml-parser",
+  "version": "5.3.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import { XMLParser, XMLBuilder } from 'fast-xml-parser';\n\n// Usage:\nconst xml = '<root><name>John</name><age>30</age></root>';\nconst parser = new XMLParser();\nconst parsed = parser.parse(xml);\nconst builder = new XMLBuilder();\nconst rebuilt = builder.build(parsed);\nreturn { success: parsed.root.name === 'John' && parsed.root.age === 30, result: parsed };",
+  "notes": "Fast XML parser and builder",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:51:05.013Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "connect-redis",
+  "version": "9.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "utility",
+  "notes": "Express/Connect middleware for storing sessions in Redis. Designed for stateful Express servers with express-session middleware. Workers is stateless - for session storage in Workers, use KV, Durable Objects, or Redis directly with custom session management.",
+  "errorMessage": "Package connect-redis needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:48:35.430Z",
+  "testedBy": "automated"
+}

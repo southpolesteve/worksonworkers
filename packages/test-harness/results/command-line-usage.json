@@ -1,0 +1,15 @@
+{
+  "name": "command-line-usage",
+  "version": "7.0.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "command-line-usage is a CLI/terminal utility for generating formatted command-line usage help text and documentation (help screens showing options, flags, examples) for Node.js CLI applications. Provides utilities for formatting and displaying usage information in terminal/stdout using ANSI styling and table layouts. Designed exclusively for command-line interfaces and terminal applications requiring process.stdout and TTY control. Not applicable to Workers which is an HTTP request/response runtime without terminal I/O. Similar CLI help libraries include commander (with built-in help), yargs (with .help()), oclif (help system), cac (minimal CLI framework). For HTTP APIs in Workers, use OpenAPI/Swagger specs for API documentation.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:12:53.243Z",
+  "testedBy": "automated"
+}

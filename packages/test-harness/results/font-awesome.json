@@ -1,0 +1,16 @@
+{
+  "name": "font-awesome",
+  "version": "4.7.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "css-library",
+  "notes": "Font Awesome 4.x is a CSS/font library providing icon fonts and stylesheets for frontend styling. Not a JavaScript runtime module - fonts/CSS are included via <link> tags in HTML. Modern alternatives: @fortawesome/fontawesome-free (CSS/fonts) or @fortawesome/fontawesome-svg-core (JavaScript icon library for React/Vue). Not applicable to Workers runtime.",
+  "errorMessage": "Failed to resolve entry for package \"font-awesome\". The package may have incorrect main/module/exports specified in its package.json.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:10:44.842Z",
+  "testedBy": "automated"
+}

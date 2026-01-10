@@ -1,0 +1,16 @@
+{
+  "name": "co",
+  "version": "4.6.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import co from 'co';\n\n// Usage:\nconst result = await co(function* () {\n  const a = yield Promise.resolve(1);\n  const b = yield Promise.resolve(2);\n  return a + b;\n});\nreturn { success: result === 3, result };",
+  "notes": "Generator-based flow control. Modern async/await is preferred.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:12:49.782Z",
+  "testedBy": "automated"
+}

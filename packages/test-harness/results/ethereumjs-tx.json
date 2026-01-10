@@ -1,0 +1,16 @@
+{
+  "name": "ethereumjs-tx",
+  "version": "2.1.2",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "crypto",
+  "notes": "DEPRECATED package - last published 6 years ago (2018). ethereumjs-tx is the legacy Ethereum transaction library for creating, signing, and serializing Ethereum transactions. Used for constructing raw Ethereum transactions with Transaction class that handles nonce, gasPrice, gasLimit, to, value, data fields. Supports EIP-155 replay protection, chain/hardfork configuration (mainnet, ropsten, custom networks), transaction signing with private keys via sign() method, and serialization for broadcast to Ethereum nodes. Part of the EthereumJS ecosystem (ethereumjs-util, ethereumjs-common, ethereumjs-vm). Official deprecation message: 'New package name format for new versions: @ethereumjs/tx. Please update.' The package has been superseded by @ethereumjs/tx which has modern features, active maintenance, and improved TypeScript support. Similar Ethereum transaction libraries include ethers.js (more complete, recommended), web3.js (older alternative), viem (modern TypeScript alternative).",
+  "alternative": "@ethereumjs/tx (official successor) - may work with Workers, needs testing",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:57:59.888Z",
+  "testedBy": "automated"
+}

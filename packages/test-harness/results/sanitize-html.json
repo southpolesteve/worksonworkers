@@ -1,0 +1,16 @@
+{
+  "name": "sanitize-html",
+  "version": "2.17.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "string",
+  "example": "import sanitizeHtml from 'sanitize-html';\n\n// Usage:\nconst dirty = '<div><script>alert(\"xss\")</script><p>Safe content</p></div>';\nconst clean = sanitizeHtml(dirty);\n\nreturn { success: !clean.includes('script') && clean.includes('Safe content'), result: clean };",
+  "notes": "HTML sanitizer to prevent XSS attacks",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:39:33.452Z",
+  "testedBy": "automated"
+}

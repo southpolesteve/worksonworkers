@@ -1,0 +1,15 @@
+{
+  "name": "enzyme",
+  "version": "3.11.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "test-framework",
+  "notes": "enzyme is a JavaScript testing utility library from Airbnb for React that provides utilities for shallow rendering, full DOM rendering, and static rendering of React components in test environments (Jest, Mocha, etc.). Requires react-test-renderer (peer dependency) for component rendering simulation and DOM APIs for full mount testing. Used exclusively in test suites (describe/it blocks) to render and assert on React components. Keywords include 'testing', 'test utils', 'assertion helpers', 'tdd', 'mocha' confirming it's a test framework tool. Not applicable to Workers which is a runtime environment, not a testing environment. Modern React testing uses @testing-library/react instead of enzyme.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:48:36.871Z",
+  "testedBy": "automated"
+}

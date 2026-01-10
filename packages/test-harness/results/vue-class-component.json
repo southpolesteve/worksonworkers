@@ -1,0 +1,17 @@
+{
+  "name": "vue-class-component",
+  "version": "7.2.6",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "Vue component decorators - browser-only",
+  "errorMessage": "Package vue-class-component needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:38:52.421Z",
+  "testedBy": "automated",
+  "investigated": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "react-native",
+  "version": "0.83.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "mobile-framework",
+  "notes": "React Native - mobile app development framework",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:11:57.878Z",
+  "testedBy": "automated"
+}

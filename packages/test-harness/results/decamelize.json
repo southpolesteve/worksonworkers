@@ -1,0 +1,16 @@
+{
+  "name": "decamelize",
+  "version": "6.0.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "string",
+  "example": "import decamelize from 'decamelize';\n\n// Usage:\nconst result = decamelize('unicornRainbow');\nconst custom = decamelize('unicornRainbow', { separator: '-' });\nreturn { success: result === 'unicorn_rainbow' && custom === 'unicorn-rainbow', result: { result, custom } };",
+  "notes": "Converts camelCase strings to lowercase with custom separator (default underscore).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T22:40:53.788Z",
+  "testedBy": "automated"
+}

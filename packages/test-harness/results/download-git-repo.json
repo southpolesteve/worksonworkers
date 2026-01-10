@@ -1,0 +1,16 @@
+{
+  "name": "download-git-repo",
+  "version": "3.0.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "dev-tool",
+  "notes": "download-git-repo is a CLI/dev tool for downloading and extracting git repositories from GitHub, GitLab, and Bitbucket to disk. Used in scaffolding tools (vue-cli, create-app, yeoman generators) for cloning starter templates and boilerplates during project initialization. Requires node:os module (not available in Workers), filesystem access to extract repository contents to local directories, and git protocol or HTTP download capabilities. Similar repository download tools include degit (lightweight git clone), giget (minimal git clone), download (HTTP file downloader), or git clone CLI. Not applicable to Workers which is a serverless HTTP runtime without filesystem access or project scaffolding capabilities.",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:10:33.851Z",
+  "testedBy": "automated"
+}

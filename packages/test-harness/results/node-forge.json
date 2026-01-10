@@ -1,0 +1,16 @@
+{
+  "name": "node-forge",
+  "version": "1.3.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "crypto",
+  "example": "import forge from 'node-forge';\n\n// Usage:\nconst md = forge.md.sha256.create();\nmd.update('test');\nconst result = md.digest().toHex();\nreturn { success: result.length === 64, result };",
+  "notes": "Cryptography utilities",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:04:01.790Z",
+  "testedBy": "automated"
+}

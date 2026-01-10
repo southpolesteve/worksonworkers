@@ -1,0 +1,16 @@
+{
+  "name": "@babel/register",
+  "version": "7.28.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/register is a Node.js require hook that automatically transpiles files on-the-fly during development. It intercepts Node's require() system to compile ES6+/JSX/TypeScript code using Babel before execution. Like ts-node or nodemon, this is a development convenience tool for local Node.js development environments, not a runtime library. You configure it in development scripts (e.g., node -r @babel/register app.js) to avoid pre-compilation during development. In production Workers deployments, code is pre-compiled during build time using bundlers (esbuild, webpack, etc.), making this package unnecessary and incompatible.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:06:50.670Z",
+  "testedBy": "automated",
+  "investigated": true
+}

@@ -1,0 +1,15 @@
+{
+  "name": "blessed",
+  "version": "0.1.81",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "blessed is a high-level terminal interface library for Node.js that enables building interactive TUI (Text User Interface) applications with curses-like functionality. Designed exclusively for CLI/terminal applications requiring terminal APIs (process.stdout/stdin, TTY control, ANSI escape sequences, terminal dimensions, keyboard events, mouse events). Not applicable to Workers which is a serverless HTTP request/response runtime without terminal I/O. For building terminal UIs, run blessed applications in Node.js environments. Similar terminal UI libraries include ink (React-based), blessed-contrib (charts/widgets), neo-blessed (blessed fork).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:02:56.992Z",
+  "testedBy": "automated"
+}

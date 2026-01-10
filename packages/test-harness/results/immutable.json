@@ -1,0 +1,15 @@
+{
+  "name": "immutable",
+  "version": "5.1.4",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { Map } from 'immutable';\n\n// Usage:\nconst map = Map({ a: 1, b: 2 });\nconst map2 = map.set('c', 3);\nreturn { success: map2.get('c') === 3 && map2.size === 3, result: map2.toObject() };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:09:19.127Z",
+  "testedBy": "automated"
+}

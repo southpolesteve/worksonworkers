@@ -1,0 +1,16 @@
+{
+  "name": "polished",
+  "version": "4.3.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { darken, lighten } from 'polished';\n\n// Usage:\nconst darker = darken(0.1, '#CCCCCC');\nconst lighter = lighten(0.1, '#333333');\nreturn { success: typeof darker === 'string' && typeof lighter === 'string', result: { darker, lighter } };",
+  "notes": "CSS-in-JS utility library",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:24:55.493Z",
+  "testedBy": "automated"
+}

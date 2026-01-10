@@ -1,0 +1,15 @@
+{
+  "name": "json-stable-stringify",
+  "version": "1.3.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import stringify from 'json-stable-stringify';\n\n// Usage:\nconst result = stringify({ b: 2, a: 1 });\nreturn { success: result === '{\"a\":1,\"b\":2}', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:04:23.524Z",
+  "testedBy": "automated"
+}

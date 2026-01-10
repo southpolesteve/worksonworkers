@@ -1,0 +1,17 @@
+{
+  "name": "@angular/platform-browser-dynamic",
+  "version": "21.0.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "example": "import * as pkg from '@angular/platform-browser-dynamic';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+  "notes": "Angular framework - browser-only",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:35:59.175Z",
+  "testedBy": "automated",
+  "investigated": true
+}

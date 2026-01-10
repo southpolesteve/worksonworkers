@@ -1,0 +1,16 @@
+{
+  "name": "app-root-path",
+  "version": "3.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "tooling",
+  "notes": "Node.js utility for finding application root directory by walking filesystem to locate package.json. Requires module introspection (module.parent.filename) and filesystem access which don't work in Workers' bundled execution model. In Workers, paths are resolved at build time by bundlers, not at runtime. Error: Cannot read properties of undefined (reading 'filename')",
+  "errorMessage": "Cannot read properties of undefined (reading 'filename')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:23:58.939Z",
+  "testedBy": "automated"
+}

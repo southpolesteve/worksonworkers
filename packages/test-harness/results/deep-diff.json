@@ -1,0 +1,16 @@
+{
+  "name": "deep-diff",
+  "version": "1.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { diff, applyChange } from 'deep-diff';\n\n// Usage:\nconst lhs = { name: 'Alice', age: 30, city: 'NYC' };\nconst rhs = { name: 'Alice', age: 31, city: 'LA' };\nconst differences = diff(lhs, rhs);\nconst hasChanges = differences && differences.length === 2;\nconst ageChanged = differences.some(d => d.path[0] === 'age' && d.lhs === 30 && d.rhs === 31);\nconst cityChanged = differences.some(d => d.path[0] === 'city' && d.lhs === 'NYC' && d.rhs === 'LA');\nreturn { success: hasChanges && ageChanged && cityChanged, result: differences };",
+  "notes": "Calculate deep differences between objects. Captures changes (added, deleted, edited, array changes) and can apply/revert changes.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T22:43:50.320Z",
+  "testedBy": "automated"
+}

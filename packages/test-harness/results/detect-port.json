@@ -1,0 +1,15 @@
+{
+  "name": "detect-port",
+  "version": "2.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "dev-tool",
+  "notes": "detect-port is a CLI/dev tool utility for finding available network ports on a local machine. It checks if a port is occupied and returns an available alternative port. Used extensively by development servers (webpack-dev-server, create-react-app, gatsby, storybook, vite, umi, flipper, micro) to automatically find free ports during local development. Requires network port binding via net.createServer() to test port availability and OS-level network APIs which are not available in Workers' serverless environment. Workers is an HTTP request/response runtime without access to network port binding or server lifecycle management. Similar port detection utilities include get-port, portfinder, port-scanner. Not applicable to Workers which doesn't have network server capabilities.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:05:10.497Z",
+  "testedBy": "automated"
+}

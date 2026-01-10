@@ -1,0 +1,15 @@
+{
+  "name": "is-promise",
+  "version": "4.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import isPromise from 'is-promise';\n\n// Usage:\nconst a = isPromise(Promise.resolve(123));\nconst b = isPromise({ then: () => {} });\nconst c = isPromise(123);\nreturn { success: a === true && b === true && c === false, result: { a, b, c } };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:09:41.064Z",
+  "testedBy": "automated"
+}

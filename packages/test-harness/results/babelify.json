@@ -1,0 +1,16 @@
+{
+  "name": "babelify",
+  "version": "10.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babelify is a Browserify transform (stream-based plugin) that integrates Babel into the Browserify bundling pipeline to transpile JavaScript during build/compilation. Browserify is a build tool that bundles Node.js-style modules using require() for browser usage, and babelify extends it with Babel's transpilation capabilities (ES6+ to ES5, JSX, TypeScript, etc.). Like all build-time tools (browserify, webpack, rollup, esbuild, babel-loader, ts-loader), this is designed for development/build workflows configured in package.json scripts or Gulp/Grunt tasks, not for runtime execution in Workers. The error 'Expected opts.sync to be a function' occurs because it expects to run in Browserify's streaming build environment. Modern build tools have largely replaced Browserify.",
+  "errorMessage": "Expected opts.sync to be a function.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:16:56.709Z",
+  "testedBy": "automated"
+}

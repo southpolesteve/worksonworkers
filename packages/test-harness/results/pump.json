@@ -1,0 +1,16 @@
+{
+  "name": "pump",
+  "version": "3.0.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import pump from 'pump';\n\n// Usage:\nconst { Readable, Writable } = await import('node:stream');\n\nconst source = Readable.from(['hello', ' ', 'world']);\nconst chunks: string[] = [];\nconst dest = new Writable({\n  write(chunk, encoding, callback) {\n    chunks.push(chunk.toString());\n    callback();\n  }\n});\n\nawait new Promise((resolve, reject) => {\n  pump(source, dest, (err) => {\n    if (err) reject(err);\n    else resolve(undefined);\n  });\n});\n\nreturn { \n  success: chunks.join('') === 'hello world',\n  result: chunks.join('')\n};",
+  "notes": "Pipe streams together with proper error handling",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:26:27.098Z",
+  "testedBy": "automated"
+}

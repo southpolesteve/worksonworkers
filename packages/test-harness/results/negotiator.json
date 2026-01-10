@@ -1,0 +1,15 @@
+{
+  "name": "negotiator",
+  "version": "1.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import Negotiator from 'negotiator';\n\n// Usage:\nconst negotiator = new Negotiator({ headers: { accept: 'text/html,application/json;q=0.9' } });\nconst types = negotiator.mediaTypes();\nreturn { success: types.includes('text/html'), result: types };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:42:06.860Z",
+  "testedBy": "automated"
+}

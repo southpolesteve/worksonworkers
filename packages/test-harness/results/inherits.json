@@ -1,0 +1,15 @@
+{
+  "name": "inherits",
+  "version": "2.0.4",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import inherits from 'inherits';\n\n// Usage:\nfunction Parent() { this.name = 'parent'; }\nParent.prototype.getName = function() { return this.name; };\nfunction Child() { Parent.call(this); this.name = 'child'; }\ninherits(Child, Parent);\nconst child = new Child();\nreturn { success: child.getName() === 'child', result: child.getName() };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:09:30.498Z",
+  "testedBy": "automated"
+}

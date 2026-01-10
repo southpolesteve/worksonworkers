@@ -1,0 +1,17 @@
+{
+  "name": "ethereumjs-util",
+  "version": "7.1.5",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "crypto",
+  "notes": "DEPRECATED - old package (last published 2022). Official successor is @ethereumjs/util (v10.x, actively maintained, published 2025-11). The old package provides Ethereum utility functions: account/address operations (creation, validation, conversion, checksums), byte manipulation helpers, hash functions (Keccak-256), signature operations (signing, validation, recovery), constants (KECCAK256_NULL_S, etc.), and re-exports BN.js and rlp. Modern @ethereumjs/util has better TypeScript support, improved APIs, and active maintenance with latest Ethereum specs. Part of EthereumJS ecosystem (ethereumjs-tx → @ethereumjs/tx, ethereumjs-common → @ethereumjs/common, etc.). Dependencies include create-hash, ethereum-cryptography, bn.js, rlp - all pure JS crypto. Similar Ethereum utilities include ethers.js utils, web3.js utils, viem utils.",
+  "alternative": "@ethereumjs/util (v10.x, official successor) - may work with Workers, needs testing",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:48:23.585Z",
+  "testedBy": "automated",
+  "investigated": true
+}

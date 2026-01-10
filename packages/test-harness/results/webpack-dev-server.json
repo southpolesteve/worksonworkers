@@ -1,0 +1,17 @@
+{
+  "name": "webpack-dev-server",
+  "version": "5.2.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack dev server - build tool",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:35:37.696Z",
+  "testedBy": "automated",
+  "investigated": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "redux-saga",
+  "version": "1.4.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import createSagaMiddleware from 'redux-saga';\n\n// Usage:\nconst sagaMiddleware = createSagaMiddleware();\nreturn { success: typeof sagaMiddleware === 'function', result: { isFunction: typeof sagaMiddleware === 'function' } };",
+  "notes": "Redux middleware for side effects",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:31:51.505Z",
+  "testedBy": "automated"
+}

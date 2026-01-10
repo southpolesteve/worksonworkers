@@ -1,0 +1,16 @@
+{
+  "name": "convert-source-map",
+  "version": "2.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { fromObject, fromJSON } from 'convert-source-map';\n\n// Usage:\nconst map = { version: 3, sources: ['foo.js'], mappings: 'AAAA' };\nconst converter = fromObject(map);\nconst json = converter.toJSON();\nconst parsed = fromJSON(json);\nreturn { success: parsed.toObject().version === 3, result: parsed.toObject() };",
+  "notes": "Converts source maps between different formats (JSON, base64, inline comments).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T21:46:28.527Z",
+  "testedBy": "automated"
+}

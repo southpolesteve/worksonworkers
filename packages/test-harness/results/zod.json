@@ -1,0 +1,15 @@
+{
+  "name": "zod",
+  "version": "4.3.5",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "validation",
+  "example": "import { z } from 'zod';\n\n// Usage:\nconst schema = z.object({ name: z.string(), age: z.number() });\nconst result = schema.safeParse({ name: 'Alice', age: 30 });\nreturn { success: result.success, result: result.data };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T22:58:06.240Z",
+  "testedBy": "automated"
+}

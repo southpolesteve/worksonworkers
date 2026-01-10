@@ -1,0 +1,17 @@
+{
+  "name": "unzip",
+  "version": "0.1.11",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "compression",
+  "notes": "Requires process.binding - use fflate or pako",
+  "alternative": "fflate, pako",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:44:07.021Z",
+  "testedBy": "automated"
+}

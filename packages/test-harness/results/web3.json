@@ -1,0 +1,18 @@
+{
+  "name": "web3",
+  "version": "4.16.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "blockchain-library",
+  "notes": "Ethereum library",
+  "errorMessage": "No such module \"Users/steve/works-on-workers/packages/test-harness/sandbox/web3/node_modules/web3-providers-ws/lib/esm/isomorphic-ws\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:29:01.547Z",
+  "testedBy": "automated",
+  "investigated": true,
+  "alternative": "viem or ethers"
+}

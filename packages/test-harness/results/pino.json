@@ -1,0 +1,15 @@
+{
+  "name": "pino",
+  "version": "10.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "logging",
+  "example": "import pino from 'pino';\n\n// Usage:\nconst logger = pino({ level: 'info' });\nlogger.info({ test: true }, 'Hello from pino');\nreturn { success: true, result: 'logged' };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:20:46.940Z",
+  "testedBy": "automated"
+}

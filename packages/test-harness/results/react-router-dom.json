@@ -1,0 +1,16 @@
+{
+  "name": "react-router-dom",
+  "version": "7.12.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "React Router DOM bindings - requires React and browser DOM",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:53:34.087Z",
+  "testedBy": "automated"
+}

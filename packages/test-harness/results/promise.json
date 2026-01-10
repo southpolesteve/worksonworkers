@@ -1,0 +1,17 @@
+{
+  "name": "promise",
+  "version": "8.3.0",
+  "weeklyDownloads": 0,
+  "status": "built-in",
+  "category": "polyfill",
+  "notes": "ES6 Promise polyfill. Workers has native Promise support built-in.",
+  "alternative": "native Promise",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:49:37.929Z",
+  "testedBy": "automated"
+}

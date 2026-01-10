@@ -1,0 +1,18 @@
+{
+  "name": "connect",
+  "version": "3.7.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "server-framework",
+  "notes": "Connect is a middleware framework for Node.js HTTP servers that works with Node's http.createServer() to compose middleware chains. Designed for traditional Node.js server applications requiring http/https modules, server lifecycle management (listen, close), and IncomingMessage/ServerResponse objects. Workers uses a fetch handler model (addEventListener('fetch', ...)) instead of Node's HTTP server pattern - there's no http.createServer() or server instance to pass to connect(). Connect middleware expects Node's req/res objects with specific properties (req.url, req.method, req.headers, res.writeHead, res.end) which differ from Workers' Request/Response APIs. For middleware in Workers, use Hono (full-featured web framework with middleware), itty-router (lightweight routing with middleware), or implement custom middleware using native fetch handlers.",
+  "alternative": "Hono or itty-router",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:14:16.881Z",
+  "testedBy": "automated",
+  "investigated": true
+}

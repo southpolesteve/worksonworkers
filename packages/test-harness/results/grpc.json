@@ -1,0 +1,17 @@
+{
+  "name": "grpc",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "native-module",
+  "notes": "DEPRECATED native module (C++ bindings via node-gyp) - official gRPC Node.js library that requires native compilation. Error 'spawnSync /bin/sh ETIMEDOUT' confirms it tries to compile C++ code during installation. The package provides gRPC client/server implementations with protocol buffer support, service definitions, client stubs, server implementations, streaming (unary, client streaming, server streaming, bidirectional), authentication (SSL/TLS, OAuth2, custom), metadata handling, and interceptors. Used for microservices communication with strongly-typed RPC calls, high-performance inter-service communication, polyglot systems (cross-language RPC), streaming data pipelines, and service mesh architectures. Native modules with C++ bindings cannot run in Workers' serverless JavaScript environment - no compilation/linking at runtime, no access to native code. The grpc team officially recommends using @grpc/grpc-js instead - a pure JavaScript implementation that provides the same gRPC functionality without native dependencies. @grpc/grpc-js offers: (1) Pure JavaScript - no native compilation required, (2) Drop-in replacement - same API as native grpc, (3) Active maintenance - regularly updated with latest gRPC features, (4) Better compatibility - works in more environments including Workers. Similar RPC libraries include @grpc/proto-loader (proto file loading), grpc-web (@grpc/grpc-web for browser gRPC), connect-node (modern RPC with gRPC support).",
+  "alternative": "@grpc/grpc-js (official pure JavaScript implementation, drop-in replacement recommended by gRPC team)",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:22:39.701Z",
+  "testedBy": "automated"
+}

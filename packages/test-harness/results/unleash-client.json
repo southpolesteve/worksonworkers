@@ -1,0 +1,17 @@
+{
+  "name": "unleash-client",
+  "version": "6.9.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "feature-flags",
+  "notes": "Feature flag client - use @cloudflare/workers-sdk",
+  "alternative": "Cloudflare Workers Environment Variables or KV",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:59:52.061Z",
+  "testedBy": "automated"
+}

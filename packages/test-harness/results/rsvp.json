@@ -1,0 +1,16 @@
+{
+  "name": "rsvp",
+  "version": "4.8.5",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { Promise as RSVPPromise } from 'rsvp';\n\n// Usage:\nconst p = new RSVPPromise((resolve) => resolve(42));\nconst result = await p;\n\nreturn { success: result === 42, result };",
+  "notes": "Promise library (native promises preferred)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:35:04.018Z",
+  "testedBy": "automated"
+}

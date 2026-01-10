@@ -1,0 +1,16 @@
+{
+  "name": "globby",
+  "version": "16.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "globby is a promise-based filesystem glob pattern matching library for finding files on disk during build/dev workflows. Used extensively by build tools (webpack, rollup, vite), test runners (Jest, Vitest), linters (ESLint), and development scripts for file discovery and batch processing. Requires filesystem APIs (fs.readdir, fs.stat) to traverse directories and match patterns like '**/*.js', 'src/**/*.ts'. Error 'No such module \"node:child_process\"' occurred because globby requires child_process (non-functional stub in Workers) for some operations. Workers is a stateless serverless environment without filesystem access to traverse - each request runs in isolation with no disk I/O for reading directory structures. Not applicable to Workers which is a runtime environment, not a build environment. Similar filesystem glob libraries include fast-glob (underlying engine), minimatch (pattern matching only), picomatch (fast pattern matcher).",
+  "errorMessage": "No such module \"node:child_process\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:05:50.648Z",
+  "testedBy": "automated"
+}

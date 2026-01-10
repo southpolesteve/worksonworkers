@@ -1,0 +1,17 @@
+{
+  "name": "firebase",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-library",
+  "notes": "firebase is the client SDK for browsers/React Native. Designed for browser environments with IndexedDB, localStorage, WebSocket, and browser-specific APIs. Not suitable for Workers serverless environment. Use firebase-admin SDK for server-side Firebase operations, or use direct REST API calls to Firebase services (Auth REST API, Firestore REST API, etc.).",
+  "alternative": "firebase-admin (for server-side operations) or direct Firebase REST API",
+  "errorMessage": "npm install failed",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:16:23.075Z",
+  "testedBy": "automated"
+}

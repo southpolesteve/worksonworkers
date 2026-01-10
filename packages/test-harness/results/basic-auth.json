@@ -1,0 +1,16 @@
+{
+  "name": "basic-auth",
+  "version": "2.0.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import auth from 'basic-auth';\n\n// Usage:\n// Simulate an HTTP request with Basic Auth header\nconst credentials = btoa('user:pass'); // Base64 encode 'user:pass'\nconst mockRequest = {\n  headers: {\n    authorization: `Basic ${credentials}`\n  }\n};\nconst parsed = auth(mockRequest);\nreturn { success: parsed?.name === 'user' && parsed?.pass === 'pass', result: parsed };",
+  "notes": "HTTP Basic Authentication parser - parses Authorization header to extract credentials",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T17:14:52.050Z",
+  "testedBy": "automated"
+}

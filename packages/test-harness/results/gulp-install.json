@@ -1,0 +1,15 @@
+{
+  "name": "gulp-install",
+  "version": "1.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Gulp plugin for automatically installing npm/bower dependencies when package.json/bower.json files are detected in Gulp streams. Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('package.json').pipe(install())). Used during development/build workflows to automatically run 'npm install' or 'bower install' when dependency files change. Requires filesystem access (reading package.json, executing npm/bower commands via child_process) and process execution. Part of the Gulp plugin ecosystem. Not applicable to Workers which is a runtime environment without filesystem access or package installation capability, not a build environment. Modern dependency installation uses npm/yarn/pnpm CLI directly.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:07:03.369Z",
+  "testedBy": "automated"
+}

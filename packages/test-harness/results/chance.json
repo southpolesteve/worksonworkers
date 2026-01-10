@@ -1,0 +1,16 @@
+{
+  "name": "chance",
+  "version": "1.1.13",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import Chance from 'chance';\n\n// Usage:\nconst chance = new Chance();\nconst name = chance.name();\nconst email = chance.email();\nconst number = chance.integer({ min: 1, max: 100 });\nreturn { success: typeof name === 'string' && email.includes('@') && number >= 1 && number <= 100, result: { name, email, number } };",
+  "notes": "Random data generator for testing and development. Generates fake names, emails, addresses, numbers, etc.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T20:46:08.553Z",
+  "testedBy": "automated"
+}

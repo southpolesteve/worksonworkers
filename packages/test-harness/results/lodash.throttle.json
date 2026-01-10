@@ -1,0 +1,15 @@
+{
+  "name": "lodash.throttle",
+  "version": "4.1.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import throttle from 'lodash.throttle';\n\n// Usage:\nconst fn = throttle(() => 'throttled', 100);\nconst result = fn();\nreturn { success: result === 'throttled', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:40:41.936Z",
+  "testedBy": "automated"
+}

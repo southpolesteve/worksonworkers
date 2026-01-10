@@ -1,0 +1,18 @@
+{
+  "name": "levelup",
+  "version": "5.1.1",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "database",
+  "notes": "LevelDB wrapper",
+  "alternative": "@cloudflare/d1, @upstash/redis",
+  "investigated": true,
+  "errorMessage": "Package levelup needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:11:57.620Z",
+  "testedBy": "automated"
+}

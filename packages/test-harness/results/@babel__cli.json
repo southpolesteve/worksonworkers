@@ -1,0 +1,17 @@
+{
+  "name": "@babel/cli",
+  "version": "7.28.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/cli is Babel's command-line interface tool for transpiling JavaScript files from the terminal using the `babel` command. This is a build-time/development tool that requires terminal I/O (process.stdout/stderr) and is designed to transform code during development/build processes, not for runtime execution. Like webpack-cli, tsc, or esbuild CLI, this belongs in your build pipeline, not in Workers. For runtime JavaScript transformation, use @babel/standalone (browser) or pre-compile during build.",
+  "errorMessage": "Use the `@babel/core` package instead of `@babel/cli`.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:28:57.403Z",
+  "testedBy": "automated",
+  "investigated": true
+}

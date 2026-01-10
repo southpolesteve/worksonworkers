@@ -1,0 +1,16 @@
+{
+  "name": "common-tags",
+  "version": "1.8.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "string",
+  "example": "import { stripIndent, oneLine, html } from 'common-tags';\n\n// Usage:\nconst multiline = stripIndent`\n      Hello\n        World\n          !\n    `;\nconst single = oneLine`\n      This will be\n      on one line\n    `;\nconst markup = html`<div>Hello</div>`;\nreturn { \n  success: multiline === 'Hello\\n  World\\n    !' && single.includes('This will be on one line'), \n  result: { multiline, single, markup } \n};",
+  "notes": "ES2015 template literal tag functions for string manipulation (stripIndent, oneLine, html, etc.).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T21:05:38.617Z",
+  "testedBy": "automated"
+}

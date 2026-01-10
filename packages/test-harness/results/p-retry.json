@@ -1,0 +1,16 @@
+{
+  "name": "p-retry",
+  "version": "7.1.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import pRetry from 'p-retry';\n\n// Usage:\nlet count = 0;\nconst run = async () => {\n  count++;\n  if (count < 3) throw new Error('fail');\n  return 'success';\n};\nconst result = await pRetry(run, { retries: 5 });\nreturn { success: result === 'success' && count === 3, result: { result, count } };",
+  "notes": "Retry failed promises with exponential backoff",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:48:22.845Z",
+  "testedBy": "automated"
+}

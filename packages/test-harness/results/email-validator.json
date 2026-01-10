@@ -1,0 +1,16 @@
+{
+  "name": "email-validator",
+  "version": "2.0.4",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "validation",
+  "example": "import validator from 'email-validator';\n\n// Usage:\nconst valid = validator.validate('test@example.com');\nconst invalid = validator.validate('notanemail');\nreturn { success: valid && !invalid, result: { valid, invalid } };",
+  "notes": "Simple email validation",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:41:02.054Z",
+  "testedBy": "automated"
+}

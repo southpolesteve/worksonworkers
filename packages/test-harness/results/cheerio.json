@@ -1,0 +1,16 @@
+{
+  "name": "cheerio",
+  "version": "1.1.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import * as cheerio from 'cheerio';\n\n// Usage:\nconst $ = cheerio.load('<div><h1>Hello</h1><p>World</p></div>');\nconst h1Text = $('h1').text();\nconst pText = $('p').text();\nreturn { success: h1Text === 'Hello' && pText === 'World', result: { h1Text, pText } };",
+  "notes": "jQuery-like HTML parsing and manipulation. Perfect for web scraping on Workers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:05:47.365Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "ajv",
+  "version": "8.17.1",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "validation",
+  "notes": "ajv (Another JSON Schema Validator) is a popular JSON Schema validator for Node.js and browsers. Fails with 'Unexpected token \":\"' error when importing in Workers. This cryptic error suggests a parsing/bundling issue - possibly due to how ajv's code is being processed during the test. The error may be related to TypeScript syntax in source code, modern JavaScript syntax not being transpiled, or internal dependencies. ajv v8 uses ES modules and should theoretically work, but the test harness is unable to successfully import and instantiate it. Use zod or valibot as alternatives - both are designed for modern JavaScript/TypeScript and work perfectly in Workers.",
+  "alternative": "zod",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T14:50:17.162Z",
+  "testedBy": "automated",
+  "investigated": true
+}

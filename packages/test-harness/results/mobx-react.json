@@ -1,0 +1,17 @@
+{
+  "name": "mobx-react",
+  "version": "9.2.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "React bindings for MobX - requires browser/React environment",
+  "investigated": true,
+  "errorMessage": "Package mobx-react needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:55:51.418Z",
+  "testedBy": "automated"
+}

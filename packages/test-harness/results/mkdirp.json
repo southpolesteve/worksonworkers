@@ -1,0 +1,17 @@
+{
+  "name": "mkdirp",
+  "version": "3.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "filesystem-utility",
+  "notes": "Creates directories - requires node:fs",
+  "investigated": true,
+  "errorMessage": "The requested module 'fs' does not provide an export named 'mkdir'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:25:36.768Z",
+  "testedBy": "automated"
+}

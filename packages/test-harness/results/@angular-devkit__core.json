@@ -1,0 +1,16 @@
+{
+  "name": "@angular-devkit/core",
+  "version": "21.0.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@angular-devkit/core is part of Angular CLI's build system. It provides utilities for JSON schema validation, virtual filesystem operations, and workspace management - all build-time tools used by Angular CLI during development. This is not a runtime library. Not designed for or needed in Cloudflare Workers.",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:12:20.467Z",
+  "testedBy": "automated"
+}

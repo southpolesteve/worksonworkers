@@ -1,0 +1,15 @@
+{
+  "name": "async-retry",
+  "version": "1.3.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "async",
+  "example": "import retry from 'async-retry';\n\n// Usage:\nlet attempts = 0;\nconst result = await retry(async () => {\n  attempts++;\n  if (attempts < 2) throw new Error('retry');\n  return 'success';\n}, { retries: 3 });\nreturn { success: result === 'success', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:12:05.481Z",
+  "testedBy": "automated"
+}

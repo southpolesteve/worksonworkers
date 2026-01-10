@@ -1,0 +1,16 @@
+{
+  "name": "dompurify",
+  "version": "3.3.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "security",
+  "example": "import createDOMPurify from 'dompurify';\n\n// Usage:\n// DOMPurify requires a window object\ntry {\n  const DOMPurify = createDOMPurify(window);\n  return { success: false, result: 'should fail without window' };\n} catch (e) {\n  return { success: true, result: 'correctly requires window (browser-only)' };\n}",
+  "notes": "Browser-only - requires DOM. Use other sanitization for Workers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:33:23.559Z",
+  "testedBy": "automated"
+}

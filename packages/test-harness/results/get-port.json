@@ -1,0 +1,15 @@
+{
+  "name": "get-port",
+  "version": "7.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "dev-tool",
+  "notes": "Utility for finding available TCP ports on local machines. Used by development servers (webpack-dev-server, vite dev server, create-react-app), test runners (Jest, Playwright for test server ports), CLI tools (starting local HTTP/WebSocket servers), and build scripts (running parallel dev servers). Provides getPort() function that attempts to bind to specified port(s) or finds random available port. Requires Node.js net module to create TCP servers and check port availability via server.listen(). Workers is a serverless HTTP runtime - there's no concept of TCP ports to bind to or listen on. Workers don't run local servers; they respond to HTTP requests via fetch event handler without port binding. Not applicable to Workers which operates at the request handler level, not the server/port level.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:05:48.207Z",
+  "testedBy": "automated"
+}

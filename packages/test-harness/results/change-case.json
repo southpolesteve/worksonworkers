@@ -1,0 +1,15 @@
+{
+  "name": "change-case",
+  "version": "5.4.4",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "string",
+  "example": "import { camelCase, snakeCase } from 'change-case';\n\n// Usage:\nconst camel = camelCase('hello world');\nconst snake = snakeCase('helloWorld');\nreturn { success: true, result: { camel, snake } };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:07:04.258Z",
+  "testedBy": "automated"
+}

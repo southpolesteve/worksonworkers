@@ -1,0 +1,16 @@
+{
+  "name": "@babel/runtime",
+  "version": "7.28.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/runtime is a Babel runtime helper package that provides extracted helper functions (like _classCallCheck, _extends, _objectSpread, etc.) used by @babel/plugin-transform-runtime during build/compilation. It's used as a dependency to externalize Babel helper functions, reducing bundle size by deduplicating helpers across modules. Like @babel/plugin-transform-runtime, this is part of the build toolchain - you configure it in your Babel setup during development, and the bundler includes only the needed helpers in the final bundle. Not a runtime library for direct use in Workers. The package intentionally has no default export (missing '.' specifier) since you're meant to import specific helpers like '@babel/runtime/helpers/classCallCheck', which the Babel plugin does automatically during build time.",
+  "errorMessage": "Failed to resolve entry for package \"@babel/runtime\". The package may have incorrect main/module/exports specified in its package.json: Missing \".\" specifier in \"@babel/runtime\" package",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:33:13.125Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "sprintf-js",
+  "version": "1.1.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "string",
+  "example": "import { sprintf } from 'sprintf-js';\n\n// Usage:\nconst result = sprintf('Hello %s!', 'World');\nreturn { success: result === 'Hello World!', result };",
+  "notes": "String formatting library (sprintf)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:44:28.536Z",
+  "testedBy": "automated"
+}

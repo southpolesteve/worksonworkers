@@ -1,0 +1,17 @@
+{
+  "name": "karma",
+  "version": "6.4.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "test-framework",
+  "notes": "Test runner",
+  "investigated": true,
+  "errorMessage": "Cannot read properties of undefined (reading 'match')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:36:50.809Z",
+  "testedBy": "automated"
+}

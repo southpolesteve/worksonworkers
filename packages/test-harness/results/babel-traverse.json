@@ -1,0 +1,15 @@
+{
+  "name": "babel-traverse",
+  "version": "6.26.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-traverse is a Babel 6 AST (Abstract Syntax Tree) traversal library that provides utilities for walking through and manipulating ASTs during code transformation - now replaced by @babel/traverse in Babel 7+. Used by @babel/core and Babel plugins to visit/modify specific AST node types (e.g., traverse(ast, { FunctionDeclaration(path) { /* transform */ } })) during the build-time transpilation pipeline. Like all Babel packages (babel-core, babel-generator, babel-types, @babel/parser), this is a build-time tool for development workflows and build pipelines, not for runtime execution in Workers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:26:53.526Z",
+  "testedBy": "automated"
+}

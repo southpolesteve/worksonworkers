@@ -1,0 +1,15 @@
+{
+  "name": "grunt-contrib-concat",
+  "version": "2.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "grunt-contrib-concat is an official Grunt plugin for concatenating files during build workflows. Provides concat task for Grunt build system that combines multiple files (JavaScript, CSS, text) into single output files. Configured in Gruntfile.js as grunt.loadNpmTasks('grunt-contrib-concat') with task configuration defining src files and dest output. Requires filesystem access (fs.readFile, fs.writeFile) to read source files and write concatenated output. Used during development/build workflows for combining JavaScript modules before minification, merging CSS files into single stylesheet, bundling text files, and reducing HTTP requests in production builds. Part of the grunt-contrib-* official plugin ecosystem alongside grunt-contrib-uglify (minify), grunt-contrib-clean (delete files), grunt-contrib-copy (copy files), grunt-contrib-watch (watch for changes). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern build tools like webpack, rollup, and esbuild have superseded Grunt for most bundling workflows. Similar build-time concatenation tools include webpack (module bundler with concatenation), rollup (ES module bundler), concat-cli (simple CLI concatenation).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:06:51.297Z",
+  "testedBy": "automated"
+}

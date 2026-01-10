@@ -1,0 +1,18 @@
+{
+  "name": "koa-static",
+  "version": "5.0.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "server-framework",
+  "notes": "Koa static file middleware",
+  "alternative": "hono, itty-router",
+  "investigated": true,
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:15:40.807Z",
+  "testedBy": "automated"
+}

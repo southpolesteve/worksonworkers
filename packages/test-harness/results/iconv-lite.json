@@ -1,0 +1,15 @@
+{
+  "name": "iconv-lite",
+  "version": "0.7.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import iconv from 'iconv-lite';\n\n// Usage:\nconst encoded = iconv.encode('Hello', 'utf8');\nconst decoded = iconv.decode(encoded, 'utf8');\nreturn { success: decoded === 'Hello', result: decoded };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:08:35.837Z",
+  "testedBy": "automated"
+}

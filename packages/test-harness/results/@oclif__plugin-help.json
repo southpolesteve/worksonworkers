@@ -1,0 +1,16 @@
+{
+  "name": "@oclif/plugin-help",
+  "version": "6.2.36",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "@oclif/plugin-help is a plugin for the oclif CLI framework that provides automatic help documentation generation for CLI commands (--help flag, command lists, etc.). Like all oclif packages (@oclif/command, @oclif/config, @oclif/core), it's designed for building command-line interfaces that require terminal I/O (stdout/stderr) and interactive help displays. This is a CLI framework component, not a runtime library for serverless environments.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:39:27.144Z",
+  "testedBy": "automated"
+}

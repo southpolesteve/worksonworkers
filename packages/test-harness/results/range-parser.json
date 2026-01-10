@@ -1,0 +1,16 @@
+{
+  "name": "range-parser",
+  "version": "1.2.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import rangeParser from 'range-parser';\n\n// Usage:\nconst result = rangeParser(1000, 'bytes=0-499');\nreturn { success: Array.isArray(result) && result[0].start === 0 && result[0].end === 499, result };",
+  "notes": "Parse HTTP Range header (used in streaming/partial content)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:29:55.445Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "valibot",
+  "version": "1.2.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "validation",
+  "example": "import * as v from 'valibot';\n\n// Usage:\nconst schema = v.object({ name: v.string() });\nconst result = v.safeParse(schema, { name: 'Alice' });\nreturn { success: result.success, result: result.output };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:00:58.510Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "log-symbols",
+  "version": "7.0.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import logSymbols from 'log-symbols';\n\n// Usage:\nconst result = {\n  success: typeof logSymbols.success === 'string',\n  error: typeof logSymbols.error === 'string',\n  warning: typeof logSymbols.warning === 'string',\n  info: typeof logSymbols.info === 'string',\n};\nreturn { success: result.success && result.error && result.warning && result.info, result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:22:28.301Z",
+  "testedBy": "automated"
+}

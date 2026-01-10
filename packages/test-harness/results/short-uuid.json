@@ -1,0 +1,16 @@
+{
+  "name": "short-uuid",
+  "version": "6.0.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "id-generation",
+  "example": "import shortUUID from 'short-uuid';\n\n// Usage:\n// Test the generate function\nconst uuid = shortUUID.generate();\nconst isValid = typeof uuid === 'string' && uuid.length > 0;\n\nreturn { success: isValid, result: { uuid } };",
+  "notes": "Short UUID generator using base58",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:39:17.578Z",
+  "testedBy": "automated"
+}

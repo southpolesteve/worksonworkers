@@ -1,0 +1,16 @@
+{
+  "name": "acorn",
+  "version": "8.15.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { parse } from 'acorn';\n\n// Usage:\nconst ast = parse('const x = 1 + 2;', { ecmaVersion: 2020 });\nreturn { success: ast.type === 'Program' && ast.body.length === 1, result: ast.type };",
+  "notes": "JavaScript parser producing AST. Useful for code analysis/transformation.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:48:56.036Z",
+  "testedBy": "automated"
+}

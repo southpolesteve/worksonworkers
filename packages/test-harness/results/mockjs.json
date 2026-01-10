@@ -1,0 +1,16 @@
+{
+  "name": "mockjs",
+  "version": "1.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "testing",
+  "example": "import Mock from 'mockjs';\n\n// Usage:\nconst result = Mock.mock({ 'number|1-100': 1 });\nreturn { success: typeof result.number === 'number', result };",
+  "notes": "Mock data generator",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:00:42.115Z",
+  "testedBy": "automated"
+}

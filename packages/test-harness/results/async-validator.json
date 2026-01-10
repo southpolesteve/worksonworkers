@@ -1,0 +1,16 @@
+{
+  "name": "async-validator",
+  "version": "4.2.5",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "validation",
+  "example": "import Schema from 'async-validator';\n\n// Usage:\nconst descriptor = {\n  name: { type: 'string', required: true, message: 'Name is required' },\n  age: { type: 'number', min: 0, max: 120 }\n};\nconst validator = new Schema(descriptor);\nconst result = await validator.validate({ name: 'Alice', age: 30 });\nreturn { success: true, result };",
+  "notes": "Async form validation library - commonly used with Ant Design forms",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T15:27:28.418Z",
+  "testedBy": "automated"
+}

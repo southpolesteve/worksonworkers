@@ -1,0 +1,15 @@
+{
+  "name": "eslint-plugin-babel",
+  "version": "5.3.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "ESLint plugin providing custom linting rules for Babel-specific syntax (experimental ES features, Flow types, etc.). ESLint plugins extend ESLint's rule set via the 'plugins' array in .eslintrc configuration files. Used exclusively during development/CI workflows to lint code with Babel-specific rules. Not applicable to Workers which is a runtime environment, not a linting environment. Similar ESLint plugins include eslint-plugin-react, eslint-plugin-import, eslint-plugin-jsx-a11y.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:57:10.631Z",
+  "testedBy": "automated"
+}

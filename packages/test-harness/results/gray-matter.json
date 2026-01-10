@@ -1,0 +1,16 @@
+{
+  "name": "gray-matter",
+  "version": "4.0.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import matter from 'gray-matter';\n\n// Usage:\nconst content = `---\ntitle: Works on Workers\ndescription: Testing gray-matter\ntags: [cloudflare, workers, yaml]\n---\n\n# Article Content\n\nThis is the body of the markdown file.\n`;\nconst parsed = matter(content);\nreturn { \n  success: parsed.data.title === 'Works on Workers' && parsed.content.includes('Article Content'),\n  result: { data: parsed.data, contentLength: parsed.content.length }\n};",
+  "notes": "Parses YAML front matter from markdown/strings. Popular in static site generators (Gatsby, Hugo, VuePress). Similar to front-matter but more feature-rich.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T00:28:03.216Z",
+  "testedBy": "automated"
+}

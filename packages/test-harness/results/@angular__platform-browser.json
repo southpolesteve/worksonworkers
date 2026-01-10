@@ -1,0 +1,16 @@
+{
+  "name": "@angular/platform-browser",
+  "version": "21.0.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "@angular/platform-browser is the browser-specific Angular platform module that provides DOM and browser API integrations for Angular applications. Error 'Disallowed operation called within global scope' occurs because Angular performs initialization at import time that's incompatible with Workers. Requires DOM APIs (window, document, BrowserModule, DomSanitizer, etc.) which aren't available in Workers. All Angular packages are designed for browser client-side rendering, not serverless environments.",
+  "errorMessage": "Disallowed operation called within global scope. Asynchronous I/O (ex: fetch() or connect()), setting a timeout, and generating random values are not allowed within global scope. To fix this error, perform this operation within a handler. https://developers.cloudflare.com/workers/runtime-apis/handlers/",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:32:59.771Z",
+  "testedBy": "automated"
+}

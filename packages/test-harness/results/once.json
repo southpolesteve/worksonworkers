@@ -1,0 +1,15 @@
+{
+  "name": "once",
+  "version": "1.4.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import once from 'once';\n\n// Usage:\nlet count = 0;\nconst fn = once(() => count++);\nfn(); fn(); fn();\nreturn { success: count === 1, result: count };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:42:56.461Z",
+  "testedBy": "automated"
+}

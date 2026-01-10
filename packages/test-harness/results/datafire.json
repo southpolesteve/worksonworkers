@@ -1,0 +1,16 @@
+{
+  "name": "datafire",
+  "version": "2.27.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "DataFire is a CLI framework and API integration platform for building and hosting API workflows. Designed as a global CLI tool (npm install -g datafire) for creating projects that integrate with 1000+ APIs (AWS, Azure, MongoDB, Slack, GitHub, etc.). Actions can be triggered by URL, on a schedule, or manually. Requires filesystem access for project management, server infrastructure for running on ports, and the DataFire.io hosting platform for deployment. Similar API integration frameworks include Zapier, n8n, Node-RED. Not applicable to Workers which is a serverless HTTP runtime without CLI/project scaffolding capabilities.",
+  "errorMessage": "Cannot read properties of undefined (reading 'substring')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:08:59.976Z",
+  "testedBy": "automated"
+}

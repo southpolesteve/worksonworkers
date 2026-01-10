@@ -1,0 +1,16 @@
+{
+  "name": "@babel/preset-env",
+  "version": "7.28.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/preset-env is a Babel preset (collection of Babel plugins) that automatically determines which JavaScript features need transpilation based on target browser/runtime environments. It's a configuration tool used during build/compilation with @babel/core to convert modern JavaScript (ES6+) to ES5 or other compatibility levels. Like all Babel presets (@babel/preset-react, @babel/preset-typescript, @babel/preset-flow), this is a build-time tool for development workflows and build pipelines (webpack, esbuild, vite), not for runtime execution in Workers. You configure it in .babelrc or babel.config.js during development.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:56:56.758Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "debounce",
+  "version": "3.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "async",
+  "example": "import debounce from 'debounce';\n\n// Usage:\nlet callCount = 0;\nconst debouncedFn = debounce(() => { callCount++; }, 100);\ndebouncedFn();\ndebouncedFn();\ndebouncedFn();\n// Wait for debounce delay\nawait new Promise(resolve => setTimeout(resolve, 150));\nreturn { success: callCount === 1, result: callCount };",
+  "notes": "Delays function calls until a set time elapses after the last invocation.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T22:39:09.569Z",
+  "testedBy": "automated"
+}

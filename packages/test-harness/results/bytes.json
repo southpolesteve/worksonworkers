@@ -1,0 +1,16 @@
+{
+  "name": "bytes",
+  "version": "3.1.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import bytes from 'bytes';\n\n// Usage:\nconst parsed = bytes('1MB');\nconst formatted = bytes(1048576);\nreturn { success: parsed === 1048576 && formatted === '1MB', result: { parsed, formatted } };",
+  "notes": "Convert byte values to/from human-readable strings (e.g., \"1MB\" ↔ 1048576).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:00:57.792Z",
+  "testedBy": "automated"
+}

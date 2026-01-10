@@ -1,0 +1,16 @@
+{
+  "name": "path-is-absolute",
+  "version": "2.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import pathIsAbsolute from 'path-is-absolute';\n\n// Usage:\nconst abs = pathIsAbsolute('/foo/bar');\nconst rel = pathIsAbsolute('foo/bar');\nreturn { success: abs === true && rel === false, result: { abs, rel } };",
+  "notes": "Check if path is absolute",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:27:40.349Z",
+  "testedBy": "automated"
+}

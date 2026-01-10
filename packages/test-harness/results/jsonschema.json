@@ -1,0 +1,15 @@
+{
+  "name": "jsonschema",
+  "version": "1.5.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { Validator } from 'jsonschema';\n\n// Usage:\nconst v = new Validator();\nconst result = v.validate({ name: 'test' }, { type: 'object', properties: { name: { type: 'string' } } });\nreturn { success: result.valid, result: result.valid };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:14:47.071Z",
+  "testedBy": "automated"
+}

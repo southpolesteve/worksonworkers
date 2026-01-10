@@ -1,0 +1,15 @@
+{
+  "name": "command-exists",
+  "version": "1.2.9",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "CLI utility for checking if command-line commands exist (e.g., commandExists('ls'), commandExists('git')). Spawns shell processes via child_process.exec() to check if commands are available in the system PATH. Requires child_process and OS shell access which are not available in Workers' sandboxed serverless environment. Similar CLI command-checking utilities include which, has, find-exec. Not applicable to Workers which is an HTTP request/response runtime without access to system commands or process spawning.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:41:53.905Z",
+  "testedBy": "automated"
+}

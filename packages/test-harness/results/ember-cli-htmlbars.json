@@ -1,0 +1,16 @@
+{
+  "name": "ember-cli-htmlbars",
+  "version": "7.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Ember CLI plugin (Broccoli plugin) for compiling Handlebars/HTMLBars templates during the Ember CLI build process. Provides custom AST transform registration and integrates with ember-template-compiler. Like all framework-specific build plugins (vue-loader for webpack, svelte-loader, @angular/compiler-cli), this is designed for development/build workflows, not runtime execution. Template compilation happens during the build step before deployment. Not applicable to Workers which is a runtime environment.",
+  "errorMessage": "Cannot read properties of undefined (reading 'native')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:09:04.897Z",
+  "testedBy": "automated"
+}

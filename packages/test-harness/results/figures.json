@@ -1,0 +1,16 @@
+{
+  "name": "figures",
+  "version": "6.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "CLI/terminal tool for displaying Unicode symbols with fallbacks. Provides terminal-friendly symbols (✔, ✖, ℹ, ⚠, etc.) for command-line interfaces with fallbacks for older terminals. Used by CLI tools like ora, chalk, inquirer for visual feedback. Keywords include 'cli', 'cmd', 'command-line' confirming it's terminal-focused. Not applicable to Workers which is a runtime environment, not a terminal environment.",
+  "errorMessage": "",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:04:34.381Z",
+  "testedBy": "automated"
+}

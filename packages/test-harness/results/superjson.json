@@ -1,0 +1,16 @@
+{
+  "name": "superjson",
+  "version": "2.2.6",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "encoding",
+  "example": "import superjson from 'superjson';\n\n// Usage:\nconst data = { date: new Date('2026-01-10'), set: new Set([1, 2, 3]) };\nconst serialized = superjson.stringify(data);\nconst deserialized = superjson.parse(serialized);\nreturn { success: deserialized.date instanceof Date && deserialized.set instanceof Set, result: { serialized } };",
+  "notes": "JSON serializer with support for Date, Set, Map, etc.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:45:14.414Z",
+  "testedBy": "automated"
+}

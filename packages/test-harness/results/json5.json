@@ -1,0 +1,15 @@
+{
+  "name": "json5",
+  "version": "2.2.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import JSON5 from 'json5';\n\n// Usage:\nconst obj = JSON5.parse('{ key: \"value\", /* comment */ }');\nreturn { success: obj.key === 'value', result: obj };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:14:10.434Z",
+  "testedBy": "automated"
+}

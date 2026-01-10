@@ -1,0 +1,16 @@
+{
+  "name": "gulp-clean-css",
+  "version": "4.3.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-clean-css is a Gulp plugin for minifying CSS using clean-css during build workflows. The name pattern 'gulp-*' clearly indicates it's a Gulp plugin (like gulp-concat, gulp-uglify, gulp-autoprefixer, gulp-sass, gulp-babel, etc.). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('*.css').pipe(cleanCSS()).pipe(gulp.dest('dist'))). Used during development/build workflows to automatically minify CSS (remove whitespace, optimize selectors, merge rules) for production using the clean-css library internally. Processes CSS files from disk using Node.js streams and filesystem access (fs.createReadStream, fs.createWriteStream). Part of the Gulp plugin ecosystem alongside gulp-autoprefixer (add vendor prefixes), gulp-sass (compile Sass), gulp-concat (concatenate files), gulp-uglify (minify JavaScript), gulp-sourcemaps (generate sourcemaps). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern CSS minification uses clean-css CLI directly (without Gulp), build tools with built-in minification (webpack/vite with css-minimizer-webpack-plugin), or cssnano with PostCSS.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:45:48.507Z",
+  "testedBy": "automated",
+  "investigated": true
+}

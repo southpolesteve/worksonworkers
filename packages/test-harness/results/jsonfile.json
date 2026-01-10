@@ -1,0 +1,15 @@
+{
+  "name": "jsonfile",
+  "version": "6.2.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import jsonfile from 'jsonfile';\n\n// Usage:\n// jsonfile is filesystem-based, but exports readFile/writeFile\nreturn { success: typeof jsonfile.readFile === 'function', result: 'Has readFile' };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:14:32.096Z",
+  "testedBy": "automated"
+}

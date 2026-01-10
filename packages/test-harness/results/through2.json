@@ -1,0 +1,16 @@
+{
+  "name": "through2",
+  "version": "4.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import through2 from 'through2';\n\n// Usage:\n// through2 is a stream transformer\nconst stream = through2((chunk, enc, callback) => {\n  callback(null, chunk);\n});\nreturn { success: typeof stream.write === 'function', result: { hasWrite: true } };",
+  "notes": "Stream transformer utility (wrapper for through)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:48:48.314Z",
+  "testedBy": "automated"
+}

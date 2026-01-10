@@ -1,0 +1,15 @@
+{
+  "name": "gulp-sass",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "example": "import gulpSass from 'gulp-sass';\n\n// Usage:\nreturn { success: false, error: 'Build tool - not applicable' };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:08:03.118Z",
+  "testedBy": "automated"
+}

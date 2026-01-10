@@ -1,0 +1,15 @@
+{
+  "name": "gulp-imagemin",
+  "version": "9.2.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Gulp plugin for image optimization during build workflows. The name pattern 'gulp-*' indicates it's a Gulp plugin (like gulp-babel, gulp-concat, gulp-uglify). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('images/**').pipe(imagemin()).pipe(gulp.dest('dist'))). Used during development/build workflows to automatically optimize images (compress PNG/JPG/GIF/SVG files, reduce file sizes) for production. Processes image files from disk using Node.js streams and filesystem access. Part of the Gulp plugin ecosystem alongside gulp-autoprefixer, gulp-concat, gulp-uglify. Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern image optimization uses imagemin CLI directly, build tools with image optimization plugins (webpack/vite with image-minimizer-webpack-plugin), or cloud image optimization services (Cloudflare Images, Cloudinary).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:06:21.246Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,174 @@
+name: Test Package Request
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  test-package:
+    if: contains(github.event.issue.labels.*.name, 'package-request')
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          
+      - name: Extract package name from issue
+        id: extract
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = context.payload.issue.title;
+            const body = context.payload.issue.body || '';
+            
+            // Try to extract from title first (format: "Test package: package-name")
+            let packageName = title.replace(/^Test package:\s*/i, '').trim();
+            
+            // If not in title, try to extract from body (the form field)
+            if (!packageName || packageName === title) {
+              const match = body.match(/### Package Name\s*\n\s*(.+)/);
+              if (match) {
+                packageName = match[1].trim();
+              }
+            }
+            
+            if (!packageName) {
+              core.setFailed('Could not extract package name from issue');
+              return;
+            }
+            
+            // Validate package name (basic check)
+            if (!/^(@[a-z0-9-~][a-z0-9-._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/.test(packageName)) {
+              core.setFailed(`Invalid package name: ${packageName}`);
+              return;
+            }
+            
+            core.setOutput('package', packageName);
+            console.log(`Testing package: ${packageName}`);
+            
+      - name: Install dependencies
+        run: npm ci
+        working-directory: packages/test-harness
+        
+      - name: Test package
+        id: test
+        run: |
+          npx tsx src/runner.ts "${{ steps.extract.outputs.package }}" > test-output.txt 2>&1 || true
+          cat test-output.txt
+          
+          # Check if test passed
+          if grep -q '"status": "works"' packages/test-harness/results/*.json 2>/dev/null || \
+             grep -q '"status": "works-with-caveats"' packages/test-harness/results/*.json 2>/dev/null || \
+             grep -q '"status": "use-alternative"' packages/test-harness/results/*.json 2>/dev/null || \
+             grep -q '"status": "built-in"' packages/test-harness/results/*.json 2>/dev/null || \
+             grep -q '"status": "not-applicable"' packages/test-harness/results/*.json 2>/dev/null; then
+            echo "result=passed" >> $GITHUB_OUTPUT
+          else
+            echo "result=failed" >> $GITHUB_OUTPUT
+          fi
+        working-directory: packages/test-harness
+        continue-on-error: true
+        
+      - name: Comment on issue with results
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const packageName = '${{ steps.extract.outputs.package }}';
+            const testResult = '${{ steps.test.outputs.result }}';
+            
+            let resultJson = {};
+            try {
+              const filename = packageName.replace('/', '__');
+              const resultPath = `packages/test-harness/results/${filename}.json`;
+              resultJson = JSON.parse(fs.readFileSync(resultPath, 'utf-8'));
+            } catch (e) {
+              console.log('Could not read result file:', e);
+            }
+            
+            const statusEmoji = {
+              'works': '✅',
+              'works-with-caveats': '⚠️',
+              'doesnt-work': '❌',
+              'use-alternative': '🔄',
+              'built-in': '🏠',
+              'not-applicable': '➖'
+            };
+            
+            const emoji = statusEmoji[resultJson.status] || '❓';
+            const status = resultJson.status || 'unknown';
+            
+            let body = `## ${emoji} Test Results for \`${packageName}\`\n\n`;
+            body += `**Status:** ${status}\n`;
+            body += `**Version:** ${resultJson.version || 'unknown'}\n`;
+            body += `**Category:** ${resultJson.category || 'unknown'}\n\n`;
+            
+            if (resultJson.notes) {
+              body += `**Notes:** ${resultJson.notes}\n\n`;
+            }
+            
+            if (resultJson.alternative) {
+              body += `**Recommended Alternative:** \`${resultJson.alternative}\`\n\n`;
+            }
+            
+            if (resultJson.errorMessage) {
+              body += `**Error:**\n\`\`\`\n${resultJson.errorMessage}\n\`\`\`\n\n`;
+            }
+            
+            if (resultJson.example) {
+              body += `**Example:**\n\`\`\`typescript\n${resultJson.example}\n\`\`\`\n\n`;
+            }
+            
+            body += `---\n`;
+            body += `Tested with Wrangler ${resultJson.testedWith?.wranglerVersion || 'unknown'} `;
+            body += `| Compatibility date: ${resultJson.testedWith?.compatibilityDate || 'unknown'}\n`;
+            
+            if (testResult === 'passed') {
+              body += `\n🎉 This package will be added to the database automatically.`;
+            }
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: body
+            });
+            
+      - name: Create PR if test passed
+        if: steps.test.outputs.result == 'passed'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Add test result for ${{ steps.extract.outputs.package }}"
+          title: "Add: ${{ steps.extract.outputs.package }}"
+          body: |
+            Automated PR from issue #${{ github.event.issue.number }}
+            
+            Adds test result for `${{ steps.extract.outputs.package }}`.
+          branch: "add-${{ steps.extract.outputs.package }}"
+          base: main
+          add-paths: |
+            packages/test-harness/results/*.json
+            packages/data/packages.json
+            
+      - name: Label issue based on result
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const testResult = '${{ steps.test.outputs.result }}';
+            const labels = testResult === 'passed' 
+              ? ['tested', 'works'] 
+              : ['tested', 'doesnt-work'];
+              
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: labels
+            });

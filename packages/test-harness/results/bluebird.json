@@ -1,0 +1,16 @@
+{
+  "name": "bluebird",
+  "version": "3.7.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import Promise from 'bluebird';\n\n// Usage:\nconst result = await Promise.resolve(42).then(x => x * 2);\nconst mapped = await Promise.map([1, 2, 3], x => x * 2);\nreturn { success: result === 84 && mapped.join(',') === '2,4,6', result: { result, mapped } };",
+  "notes": "Feature-rich Promise library with utilities like map, filter, reduce, etc.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:57:53.083Z",
+  "testedBy": "automated"
+}

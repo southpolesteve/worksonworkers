@@ -1,0 +1,15 @@
+{
+  "name": "query-string",
+  "version": "9.3.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import queryString from 'query-string';\n\n// Usage:\nconst parsed = queryString.parse('a=1&b=2');\nreturn { success: true, result: parsed };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:04:46.499Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "progress",
+  "version": "2.0.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "example": "import * as pkg from 'progress';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+  "notes": "Terminal progress bar - CLI tool",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:15:41.625Z",
+  "testedBy": "automated"
+}

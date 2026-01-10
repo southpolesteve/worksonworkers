@@ -1,0 +1,15 @@
+{
+  "name": "chalk",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "example": "\n\n// Usage:\n",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:54:54.673Z",
+  "testedBy": "automated"
+}

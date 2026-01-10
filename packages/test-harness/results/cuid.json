@@ -1,0 +1,17 @@
+{
+  "name": "cuid",
+  "version": "3.0.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "id-generation",
+  "alternative": "crypto.randomUUID() or nanoid",
+  "notes": "cuid requires node:os API which is not available in Workers. Use crypto.randomUUID() (built-in Web Crypto API) for UUIDs, or nanoid for shorter, URL-safe IDs.",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:00:05.055Z",
+  "testedBy": "automated"
+}

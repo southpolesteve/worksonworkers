@@ -1,0 +1,16 @@
+{
+  "name": "object-path",
+  "version": "0.11.8",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import objectPath from 'object-path';\n\n// Usage:\nconst obj = { a: { b: { c: 1 } } };\nconst val = objectPath.get(obj, 'a.b.c');\nobjectPath.set(obj, 'a.b.d', 2);\nreturn { success: val === 1 && obj.a.b.d === 2, result: { val, obj } };",
+  "notes": "Access deep object properties using path strings",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:16:17.222Z",
+  "testedBy": "automated"
+}

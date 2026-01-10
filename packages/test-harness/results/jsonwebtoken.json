@@ -1,0 +1,15 @@
+{
+  "name": "jsonwebtoken",
+  "version": "9.0.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "crypto",
+  "example": "import jwt from 'jsonwebtoken';\n\n// Usage:\nconst token = jwt.sign({ sub: '123' }, 'secret');\nconst decoded = jwt.verify(token, 'secret');\nreturn { success: decoded.sub === '123', result: decoded };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:09:23.279Z",
+  "testedBy": "automated"
+}

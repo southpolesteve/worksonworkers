@@ -1,0 +1,15 @@
+{
+  "name": "grunt-cli",
+  "version": "1.5.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "grunt-cli is the command-line interface for Grunt, a JavaScript task runner. Provides the 'grunt' CLI command for running Gruntfiles that define build tasks (concatenation, minification, linting, unit testing, compilation). Used during development/build workflows, not runtime execution. Requires process.argv for CLI argument parsing, process.stdin/stdout for terminal I/O, and filesystem access for reading Gruntfiles and task configurations. Part of the Grunt ecosystem alongside grunt (task runner core), grunt-contrib-* plugins (build tasks). Not applicable to Workers which is a runtime environment, not a build environment. Similar task runners include gulp (streaming build system), npm scripts (package.json scripts), webpack CLI.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:04:39.933Z",
+  "testedBy": "automated"
+}

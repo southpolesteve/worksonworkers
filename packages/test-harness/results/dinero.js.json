@@ -1,0 +1,16 @@
+{
+  "name": "dinero.js",
+  "version": "1.9.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import Dinero from 'dinero.js';\n\n// Usage:\nconst price = Dinero({ amount: 500, currency: 'USD' });\nconst total = price.add(Dinero({ amount: 200, currency: 'USD' }));\nreturn { success: total.getAmount() === 700, result: total.toFormat('$0,0.00') };",
+  "notes": "Money/currency handling with precision",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:33:12.338Z",
+  "testedBy": "automated"
+}

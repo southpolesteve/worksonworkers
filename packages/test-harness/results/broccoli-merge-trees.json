@@ -1,0 +1,15 @@
+{
+  "name": "broccoli-merge-trees",
+  "version": "4.2.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Broccoli plugin for merging multiple file trees during the Broccoli build process. Broccoli is a build tool (like webpack, gulp, rollup) used primarily in the Ember.js ecosystem for asset pipeline processing. broccoli-merge-trees copies/merges multiple source directories into a single output tree during build-time (e.g., mergeTrees(['public', 'scripts']) combines the public/ and scripts/ directories). Like all Broccoli plugins (broccoli-funnel for filtering files, broccoli-concat for concatenating files, broccoli-uglify-js for minification, broccoli-sass for SCSS compilation) and build tools, this is designed for development/build workflows configured in Brocfile.js or ember-cli-build.js, not for runtime execution in Workers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:46:55.873Z",
+  "testedBy": "automated"
+}

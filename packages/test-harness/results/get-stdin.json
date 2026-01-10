@@ -1,0 +1,17 @@
+{
+  "name": "get-stdin",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "CLI utility for reading from stdin (standard input) in Node.js command-line applications. Provides getStdin() function that returns a Promise resolving with stdin contents as string or buffer. Used by CLI tools (yargs, commander, inquirer for reading piped input like cat file.txt | my-cli), build scripts (reading config from stdin), shell utilities (processing piped data), and command-line processors (echo 'data' | node script.js). Requires process.stdin stream to read from terminal/pipe input. Workers is a serverless HTTP request/response environment without stdin/stdout/stderr streams - requests come via fetch event handler with Request objects, not terminal pipes. Not applicable to Workers which operates at the HTTP handler level, not the CLI/terminal level. Similar stdin utilities include get-stream (general stream-to-string), concat-stream (concatenate streams).",
+  "errorMessage": "spawn npm ENOENT",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:45:42.475Z",
+  "testedBy": "automated",
+  "investigated": true
+}

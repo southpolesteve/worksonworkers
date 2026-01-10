@@ -1,0 +1,15 @@
+{
+  "name": "del",
+  "version": "8.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "dev-tool",
+  "notes": "del is a filesystem deletion utility for removing files and directories from disk (like rm -rf, rimraf). Used extensively in build scripts and development workflows (gulp tasks, cleanup scripts, pre-build cleaning) to delete build directories, temporary files, and old artifacts. Requires persistent filesystem access (fs.unlink, fs.rmdir) which is not available in Workers' stateless serverless environment. Workers has no persistent filesystem to delete from. Similar filesystem deletion tools include rimraf, fs-extra.remove(), graceful-fs. For cleanup tasks in Workers context, handle file operations in the build pipeline or use external storage services (R2, KV, Durable Objects). Original error was a module resolution issue with 'ignore' dependency.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:59:17.365Z",
+  "testedBy": "automated"
+}

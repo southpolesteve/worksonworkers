@@ -1,0 +1,16 @@
+{
+  "name": "file-loader",
+  "version": "6.2.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack loader for importing files during webpack compilation. Configured in webpack.config.js module.rules to emit files and return URLs during webpack builds. Like all webpack loaders (*-loader pattern: style-loader, babel-loader, css-loader, sass-loader), this is designed exclusively for development/build workflows, not runtime execution in Workers. Modern bundlers handle file imports during build time. Not applicable to Workers which is a runtime environment, not a build environment.",
+  "errorMessage": "No test files found, exiting with code 1\n\ninclude: **/*.{test,spec}.?(c|m)[jt]s?(x)\nexclude:  **/node_modules/**, **/dist/**, **/cypress/**, **/.{idea,git,cache,output,temp}/**, **/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress,tsup,build,eslint,prettier}.config.*\n\n",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:32:44.781Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "quill",
+  "version": "2.0.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "Rich text editor - requires DOM",
+  "investigated": true,
+  "errorMessage": "Package quill needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:16:02.612Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "clone",
+  "version": "2.1.2",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "utility",
+  "example": "import clone from 'clone';\n\n// Usage:\nconst obj = { a: 1, b: { c: 2 } };\nconst cloned = clone(obj);\ncloned.b.c = 3;\nreturn { success: obj.b.c === 2 && cloned.b.c === 3, result: { original: obj, cloned } };",
+  "notes": "Deep clone objects. Alternative: structuredClone (built-in).",
+  "alternative": "built-in: structuredClone",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:09:21.119Z",
+  "testedBy": "automated"
+}

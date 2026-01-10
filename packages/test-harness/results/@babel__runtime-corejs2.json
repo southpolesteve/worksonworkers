@@ -1,0 +1,15 @@
+{
+  "name": "@babel/runtime-corejs2",
+  "version": "7.28.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/runtime-corejs2 is a Babel runtime helper package that provides extracted helper functions and core-js v2 polyfills. It's used as a dependency by @babel/plugin-transform-runtime during build/compilation to externalize Babel helper functions (like _classCallCheck, _extends, _objectSpread) and inject polyfills for ES6+ features (Promise, Symbol, etc.). Like @babel/runtime and @babel/runtime-corejs3, this is part of the build toolchain - you configure it in your Babel setup during development, and the bundler includes only the needed helpers/polyfills in the final bundle. Not a runtime library for direct use in Workers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:27:15.686Z",
+  "testedBy": "automated"
+}

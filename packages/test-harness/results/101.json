@@ -1,0 +1,16 @@
+{
+  "name": "101",
+  "version": "1.6.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import pluck from '101/pluck';\nimport omit from '101/omit';\n\n// Usage:\nconst obj = { foo: 1, bar: 2, baz: 3 };\nconst val = pluck(obj, 'foo');\nconst omitted = omit(obj, 'bar');\nreturn { success: val === 1 && omitted.bar === undefined, result: { val, omitted } };",
+  "notes": "Modular utility library - import specific utilities like 101/pluck, 101/omit, etc.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T14:02:49.173Z",
+  "testedBy": "automated"
+}

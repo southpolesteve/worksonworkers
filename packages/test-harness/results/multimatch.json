@@ -1,0 +1,16 @@
+{
+  "name": "multimatch",
+  "version": "7.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import multimatch from 'multimatch';\n\n// Usage:\nconst result = multimatch(['foo.js', 'bar.css', 'baz.html'], ['*.js', '*.css']);\nreturn { success: result.length === 2 && result.includes('foo.js'), result };",
+  "notes": "Match files against glob patterns",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:10:23.192Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "escape-string-regexp",
+  "version": "5.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import escapeStringRegexp from 'escape-string-regexp';\n\n// Usage:\nconst result = escapeStringRegexp('foo.bar*baz');\nreturn { success: result === 'foo\\\\.bar\\\\*baz', result };",
+  "notes": "Escape special regex characters",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:41:23.862Z",
+  "testedBy": "automated"
+}

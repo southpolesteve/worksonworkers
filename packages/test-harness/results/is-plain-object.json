@@ -1,0 +1,15 @@
+{
+  "name": "is-plain-object",
+  "version": "5.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "type-checking",
+  "example": "import { isPlainObject } from 'is-plain-object';\n\n// Usage:\nconst r1 = isPlainObject({});\nconst r2 = isPlainObject([]);\nreturn { success: r1 && !r2, result: { object: r1, array: r2 } };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:10:48.374Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "morgan",
+  "version": "1.10.1",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "utility",
+  "notes": "HTTP request logger middleware - use with httpServerHandler",
+  "errorMessage": "'construct' on proxy: trap returned non-object ('undefined')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:38:07.093Z",
+  "testedBy": "automated",
+  "investigated": true
+}

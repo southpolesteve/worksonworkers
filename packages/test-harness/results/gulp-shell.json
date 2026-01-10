@@ -1,0 +1,16 @@
+{
+  "name": "gulp-shell",
+  "version": "0.8.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-shell is a Gulp plugin for running shell commands during build workflows. The name pattern 'gulp-*' indicates it's a Gulp plugin (like gulp-babel, gulp-concat, gulp-uglify). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src().pipe(shell(['echo hello', 'ls -la']))). Used during development/build workflows to run arbitrary shell commands (executing build scripts, running CLI tools, triggering external processes, cleaning directories with rm commands, copying files with cp commands). Requires child_process.spawn/exec to execute shell commands, which is a non-functional stub in Workers. Part of the Gulp plugin ecosystem alongside gulp-run (run commands), gulp-exec (execute commands). Not applicable to Workers which is a runtime environment without shell command execution capability, not a build environment. Modern shell command execution in build workflows uses npm scripts (package.json scripts), build tool hooks (webpack/vite lifecycle hooks), or execa package for programmatic command execution.",
+  "errorMessage": "Package gulp-shell needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:15:03.178Z",
+  "testedBy": "automated"
+}

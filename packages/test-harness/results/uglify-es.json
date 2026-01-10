@@ -1,0 +1,16 @@
+{
+  "name": "uglify-es",
+  "version": "3.3.9",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "ES6+ minifier - deprecated in favor of terser",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:11:31.677Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "gm",
+  "version": "1.25.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "native-bindings",
+  "notes": "gm is a Node.js wrapper for GraphicsMagick and ImageMagick command-line tools. Requires child_process (non-functional stub in Workers) to spawn external binaries (gm convert, identify, compare, etc.) installed on the system. GraphicsMagick/ImageMagick are native image processing tools written in C/C++ that must be installed separately. The package doesn't perform image processing itself - it just calls external commands via child_process.spawn(). Workers is a serverless runtime without access to: (1) child_process for spawning processes, (2) external binaries installed on the system, (3) filesystem for temporary file storage during processing. For image processing in Workers, use pure JavaScript alternatives like @cloudflare/images (Cloudflare Images API), browser-image-compression (pure JS compression), pica (pure JS resize), or Cloudflare Image Resizing (built-in transform API). Similar native binding wrappers include sharp (libvips native module, also won't work).",
+  "errorMessage": "No such module \"node:child_process\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:32:31.767Z",
+  "testedBy": "automated"
+}

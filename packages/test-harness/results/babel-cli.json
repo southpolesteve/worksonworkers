@@ -1,0 +1,16 @@
+{
+  "name": "babel-cli",
+  "version": "6.26.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-cli (v6.26.0) is the legacy Babel 6 command-line interface tool for transpiling JavaScript files from the terminal using the `babel` command. Babel 6 has been replaced by Babel 7+ (@babel/cli). Like all CLI build tools (webpack-cli, tsc, esbuild CLI), this is a build-time tool requiring terminal I/O (process.stdout/stderr), designed to transform code during development/build processes, not for runtime execution in Workers.",
+  "errorMessage": "Use the `babel-core` package not `babel`.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:59:06.392Z",
+  "testedBy": "automated"
+}

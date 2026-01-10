@@ -1,0 +1,16 @@
+{
+  "name": "boom",
+  "version": "7.3.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import Boom from 'boom';\n\n// Usage:\nconst notFound = Boom.notFound('Resource not found');\nconst badRequest = Boom.badRequest('Invalid input');\nconst unauthorized = Boom.unauthorized('Must authenticate', 'Bearer');\nreturn { \n  success: notFound.output.statusCode === 404 && badRequest.output.statusCode === 400 && unauthorized.output.statusCode === 401, \n  result: { notFound: notFound.output.statusCode, badRequest: badRequest.output.statusCode, unauthorized: unauthorized.output.statusCode } \n};",
+  "notes": "HTTP-friendly error objects. Popular with Hapi framework.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:58:41.027Z",
+  "testedBy": "automated"
+}

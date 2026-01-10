@@ -1,0 +1,15 @@
+{
+  "name": "lodash.clonedeep",
+  "version": "4.5.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import cloneDeep from 'lodash.clonedeep';\n\n// Usage:\nconst obj = { a: { b: 1 } };\nconst clone = cloneDeep(obj);\nclone.a.b = 2;\nreturn { success: obj.a.b === 1 && clone.a.b === 2, result: { original: obj, clone } };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:21:26.989Z",
+  "testedBy": "automated"
+}

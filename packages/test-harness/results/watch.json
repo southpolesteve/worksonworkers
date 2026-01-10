@@ -1,0 +1,17 @@
+{
+  "name": "watch",
+  "version": "1.0.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "filesystem-utility",
+  "notes": "File watching utility - filesystem tool",
+  "errorMessage": "Package watch needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:51:54.643Z",
+  "testedBy": "automated",
+  "investigated": true
+}

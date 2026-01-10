@@ -1,0 +1,18 @@
+{
+  "name": "serve-static",
+  "version": "2.2.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "middleware",
+  "notes": "Express middleware for serving static files. Workers serve static files via Assets or R2.",
+  "alternative": "Use Workers Assets or R2 for static file serving",
+  "investigated": true,
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:21:58.603Z",
+  "testedBy": "automated"
+}

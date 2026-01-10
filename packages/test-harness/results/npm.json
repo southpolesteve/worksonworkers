@@ -1,0 +1,17 @@
+{
+  "name": "npm",
+  "version": "11.7.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "npm CLI - programmatic API removed in v8",
+  "investigated": true,
+  "errorMessage": "The programmatic API was removed in npm v8.0.0",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:58:15.294Z",
+  "testedBy": "automated"
+}

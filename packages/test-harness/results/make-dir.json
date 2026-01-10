@@ -1,0 +1,17 @@
+{
+  "name": "make-dir",
+  "version": "5.1.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "filesystem-utility",
+  "notes": "Creates directories - requires node:fs",
+  "investigated": true,
+  "errorMessage": "Package make-dir needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:38:05.906Z",
+  "testedBy": "automated"
+}

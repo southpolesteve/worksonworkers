@@ -1,0 +1,16 @@
+{
+  "name": "es6-shim",
+  "version": "0.35.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "polyfill",
+  "notes": "Legacy polyfill for ECMAScript 6 features in older JavaScript engines (IE8-11, Safari 5, Chrome <30, Firefox <20). Adds ES6 features like Promise, Map, Set, Object.setPrototypeOf, Array.from, String.prototype.repeat, etc. Workers already has full native ES6+ support built-in - all modern JavaScript features (Promise, Map, Set, async/await, classes, arrow functions, template literals, destructuring, etc.) work natively without polyfills. Not needed in Workers which uses modern V8 runtime with complete ES2022+ support.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:51:43.803Z",
+  "testedBy": "automated",
+  "investigated": true
+}

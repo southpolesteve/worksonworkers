@@ -1,0 +1,15 @@
+{
+  "name": "grunt-contrib-clean",
+  "version": "2.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "grunt-contrib-clean is an official Grunt plugin for deleting files and directories during build workflows. Provides clean task for Grunt build system that removes files matching glob patterns (build/, dist/, temp/, **/*.tmp). Configured in Gruntfile.js as grunt.loadNpmTasks('grunt-contrib-clean') with task configuration. Requires filesystem access (fs.unlink, fs.rmdir) to delete files/directories. Used during development/build workflows for cleaning build artifacts before compilation, removing temporary files, clearing output directories between builds, and preparing clean slate for fresh builds. Part of the grunt-contrib-* official plugin ecosystem alongside grunt-contrib-copy (copy files), grunt-contrib-concat (concatenate files), grunt-contrib-uglify (minify JavaScript), grunt-contrib-watch (watch for changes). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Similar build tools include del (delete files/dirs), rimraf (rm -rf for Node.js), clean-webpack-plugin (webpack clean plugin).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:10:02.340Z",
+  "testedBy": "automated"
+}

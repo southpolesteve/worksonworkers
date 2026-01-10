@@ -1,0 +1,15 @@
+{
+  "name": "content-type",
+  "version": "1.0.5",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "http-client",
+  "example": "import contentType from 'content-type';\n\n// Usage:\nconst result = contentType.parse('text/html; charset=utf-8');\nreturn { success: result.type === 'text/html', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:16:38.854Z",
+  "testedBy": "automated"
+}

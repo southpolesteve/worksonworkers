@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap",
+  "version": "5.3.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "Bootstrap is a browser-only CSS/JavaScript framework for building responsive websites using HTML, CSS, and JavaScript components (modals, dropdowns, carousels, tooltips, etc.). Requires DOM APIs (document, window, Element, HTMLElement) to manipulate the DOM, attach event listeners to UI elements, and provide interactive components. Not applicable to Workers which is a serverless HTTP runtime without DOM APIs. Bootstrap is designed for client-side rendering in browsers. For styling in Workers SSR applications, use Tailwind CSS (utility-first CSS classes) or server-side HTML generation with CSS-in-JS libraries.",
+  "errorMessage": "document is not defined",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:47:52.072Z",
+  "testedBy": "automated"
+}

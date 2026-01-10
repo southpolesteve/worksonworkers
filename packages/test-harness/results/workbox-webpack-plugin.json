@@ -1,0 +1,17 @@
+{
+  "name": "workbox-webpack-plugin",
+  "version": "7.4.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack plugin for Workbox service worker generation",
+  "investigated": true,
+  "errorMessage": "Cannot use import statement outside a module",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:12:29.630Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "escape-html",
+  "version": "1.0.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "string",
+  "example": "import escapeHtml from 'escape-html';\n\n// Usage:\nconst escaped = escapeHtml('<script>alert(\"xss\")</script>');\nreturn { success: escaped.includes('&lt;'), result: escaped };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:07:14.960Z",
+  "testedBy": "automated"
+}

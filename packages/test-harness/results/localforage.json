@@ -1,0 +1,17 @@
+{
+  "name": "localforage",
+  "version": "1.10.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "other",
+  "notes": "Browser storage library - requires localStorage/IndexedDB",
+  "alternative": "Workers KV, Durable Objects, or R2",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:55:00.000Z",
+  "testedBy": "automated",
+  "investigated": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "tough-cookie",
+  "version": "6.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "http-client",
+  "example": "import { Cookie } from 'tough-cookie';\n\n// Usage:\nconst cookie = Cookie.parse('foo=bar; Path=/; Domain=example.com');\nreturn { success: cookie && cookie.key === 'foo' && cookie.value === 'bar', result: { key: cookie?.key, value: cookie?.value } };",
+  "notes": "HTTP cookie parsing and storage",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T04:07:46.119Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "devalue",
+  "version": "5.6.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { stringify, parse } from 'devalue';\n\n// Usage:\nconst obj = { a: 1, b: new Date('2026-01-10'), c: /test/ };\nconst str = stringify(obj);\nconst result = parse(str);\nreturn { success: result.a === 1 && result.b instanceof Date, result };",
+  "notes": "Serialize JavaScript values (including Date, RegExp, Map, Set)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:31:38.272Z",
+  "testedBy": "automated"
+}

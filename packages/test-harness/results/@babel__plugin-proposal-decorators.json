@@ -1,0 +1,16 @@
+{
+  "name": "@babel/plugin-proposal-decorators",
+  "version": "7.28.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/plugin-proposal-decorators is a Babel plugin for transforming decorator syntax (e.g., `@decorator class Foo {}`, `@bound method() {}`) during build/compilation. Part of Babel's code transformation ecosystem used by build tools like webpack, esbuild, and vite to transpile experimental JavaScript features. Like all Babel plugins (@babel/plugin-transform-runtime, @babel/plugin-proposal-class-properties, etc.), these are build-time tools for development workflows, not runtime libraries. Not designed for or needed in Workers runtime.",
+  "errorMessage": "Expected opts.sync to be a function.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:40:02.052Z",
+  "testedBy": "automated"
+}

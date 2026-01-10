@@ -1,0 +1,15 @@
+{
+  "name": "long",
+  "version": "5.3.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import Long from 'long';\n\n// Usage:\nconst val = Long.fromNumber(123456789);\nconst result = val.toString();\nreturn { success: result === '123456789', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:41:28.220Z",
+  "testedBy": "automated"
+}

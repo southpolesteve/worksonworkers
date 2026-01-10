@@ -1,0 +1,16 @@
+{
+  "name": "apollo-link-http",
+  "version": "1.5.17",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "http-client",
+  "notes": "Part of deprecated Apollo Client v2 modular architecture (apollo-client, apollo-link, apollo-link-http, apollo-cache-inmemory). Apollo Client v3+ unified these packages into a single @apollo/client package with better TypeScript support, improved developer experience, and modern GraphQL features. apollo-link-http was the HTTP transport layer for sending GraphQL queries over HTTP in Apollo v2.",
+  "alternative": "@apollo/client",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:10:11.931Z",
+  "testedBy": "automated"
+}

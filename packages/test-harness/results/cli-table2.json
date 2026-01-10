@@ -1,0 +1,15 @@
+{
+  "name": "cli-table2",
+  "version": "0.2.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "cli-table2 is a terminal/CLI utility for creating pretty Unicode tables for command-line output (stdout). Based on the original cli-table library. Renders ASCII/Unicode tables with customizable borders, colors, and column alignment for displaying tabular data in terminal/console applications. Designed exclusively for command-line interfaces and Node.js terminal applications requiring process.stdout, TTY control, and terminal width detection. Not applicable to Workers which is an HTTP request/response runtime without terminal I/O. Similar CLI table libraries include cli-table, cli-table3, table, columnify, easy-table. For data formatting in Workers, use JSON responses or HTML tables.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:14:18.992Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "lodash.get",
+  "version": "4.4.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import get from 'lodash.get';\n\n// Usage:\nconst obj = { a: { b: { c: 123 } } };\nconst result = get(obj, 'a.b.c');\nconst missing = get(obj, 'x.y.z', 'default');\nreturn { success: result === 123 && missing === 'default', result: { result, missing } };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:22:13.115Z",
+  "testedBy": "automated"
+}

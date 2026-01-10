@@ -1,0 +1,16 @@
+{
+  "name": "css-loader",
+  "version": "7.1.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "css-loader is a webpack loader for processing CSS files during the webpack build process. It interprets @import and url() in CSS files, resolves module dependencies, and transforms CSS into JavaScript modules. Like all webpack loaders (*-loader pattern: style-loader, sass-loader, file-loader, babel-loader), this is designed for development/build workflows configured in webpack.config.js as part of the module.rules array, not for runtime execution in Workers. Modern bundlers (webpack, vite, esbuild) handle CSS imports during build time.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:28:38.960Z",
+  "testedBy": "automated"
+}

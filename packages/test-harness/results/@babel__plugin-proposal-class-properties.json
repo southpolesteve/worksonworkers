@@ -1,0 +1,17 @@
+{
+  "name": "@babel/plugin-proposal-class-properties",
+  "version": "7.18.6",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Babel plugin for transforming class properties syntax during build/compilation. Part of Babel's code transformation ecosystem - designed for build pipelines (webpack, esbuild, vite) to transpile modern JavaScript features into older syntax. Not a runtime library. Like @babel/cli, @babel/core, and other Babel plugins, this is for development/build workflows, not serverless execution.",
+  "errorMessage": "Expected opts.sync to be a function.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:21:35.503Z",
+  "testedBy": "automated",
+  "investigated": true
+}

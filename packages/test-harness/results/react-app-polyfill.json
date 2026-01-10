@@ -1,0 +1,17 @@
+{
+  "name": "react-app-polyfill",
+  "version": "3.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "React browser UI component - requires DOM",
+  "errorMessage": "Failed to resolve entry for package \"react-app-polyfill\". The package may have incorrect main/module/exports specified in its package.json.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:15:52.748Z",
+  "testedBy": "automated",
+  "investigated": true
+}

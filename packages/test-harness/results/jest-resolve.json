@@ -1,0 +1,17 @@
+{
+  "name": "jest-resolve",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "test-framework",
+  "notes": "Jest resolver",
+  "investigated": true,
+  "errorMessage": "npm error Lifecycle script `test` failed with error:\nnpm error workspace @works-on-workers/test-harness@0.1.0\nnpm error location /Users/steve/works-on-workers/packages/test-harness\nnpm error Missing script: \"test\"\nnpm error\nnpm error To see a list of scripts, run:\nnpm error   npm run --workspace=@works-on-workers/test-harness@0.1.0\n",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:17:19.941Z",
+  "testedBy": "automated"
+}

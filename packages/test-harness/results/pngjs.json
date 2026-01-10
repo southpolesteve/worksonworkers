@@ -1,0 +1,16 @@
+{
+  "name": "pngjs",
+  "version": "7.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "image",
+  "example": "import { PNG } from 'pngjs';\n\n// Usage:\nconst png = new PNG({ width: 10, height: 10 });\nreturn { success: png.width === 10, result: { width: png.width, height: png.height } };",
+  "notes": "PNG encoder/decoder",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:28:24.535Z",
+  "testedBy": "automated"
+}

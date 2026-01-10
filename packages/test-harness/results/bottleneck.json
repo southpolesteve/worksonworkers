@@ -1,0 +1,17 @@
+{
+  "name": "bottleneck",
+  "version": "2.19.5",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "async",
+  "notes": "Bottleneck is a task scheduler and rate limiter for Node.js and browsers that provides concurrency control (maxConcurrent), request throttling (minTime), and Redis Clustering support. The package genuinely doesn't work in Workers due to a syntax error (\"Unexpected token ':'\") during import/parsing. This indicates the package's ES module build contains invalid or incompatible JavaScript syntax that Workers' bundler/runtime cannot parse. The package was last published 6 years ago (2018) and may use older build tooling that doesn't produce Workers-compatible output. For rate limiting in Workers, use p-limit (concurrent promise limiting), p-queue (promise queue with concurrency control), or implement custom rate limiting using Durable Objects for distributed state.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T17:28:27.026Z",
+  "testedBy": "automated",
+  "investigated": true
+}

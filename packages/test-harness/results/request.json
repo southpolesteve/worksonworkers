@@ -1,0 +1,17 @@
+{
+  "name": "request",
+  "version": "2.88.2",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "http",
+  "alternative": "fetch (built-in) or node:http with nodejs_compat",
+  "notes": "request is deprecated (archived since 2020) and tries to run async operations at import time which violates Workers' global scope restrictions. Use the built-in fetch API instead, which is the modern standard for HTTP requests.",
+  "errorMessage": "Disallowed operation called within global scope. Asynchronous I/O (ex: fetch() or connect()), setting a timeout, and generating random values are not allowed within global scope. To fix this error, perform this operation within a handler. https://developers.cloudflare.com/workers/runtime-apis/handlers/",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:19:16.639Z",
+  "testedBy": "automated"
+}

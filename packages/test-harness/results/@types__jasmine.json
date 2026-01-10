@@ -1,0 +1,15 @@
+{
+  "name": "@types/jasmine",
+  "version": "5.1.13",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "type-definitions",
+  "notes": "TypeScript type definition package for Jasmine test framework. All @types/* packages contain only compile-time type definitions with no runtime code - used by TypeScript compiler during development and removed during transpilation.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:27:39.002Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "dom-helpers",
+  "version": "6.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "Browser-only DOM manipulation library requiring DOM APIs (document, window, HTMLElement, classList, event handling, style manipulation, CSS classes). Used by react-bootstrap for cross-browser DOM utilities. Provides functions for addClass/removeClass, CSS styles, event handling, element dimensions (height/width), scroll position, and other DOM operations. Not applicable to Workers which is a serverless HTTP runtime without DOM APIs.",
+  "errorMessage": null,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:57:34.138Z",
+  "testedBy": "automated"
+}

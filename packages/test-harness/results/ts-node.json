@@ -1,0 +1,16 @@
+{
+  "name": "ts-node",
+  "version": "10.9.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "TypeScript execution engine for Node.js CLI",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:07:56.574Z",
+  "testedBy": "automated"
+}

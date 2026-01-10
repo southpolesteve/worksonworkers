@@ -1,0 +1,16 @@
+{
+  "name": "@typescript-eslint/parser",
+  "version": "8.52.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "ESLint parser that parses TypeScript code for ESLint. Part of TypeScript ESLint tooling ecosystem. Build-time/development tool for linting, not a runtime library.",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:28:09.998Z",
+  "testedBy": "automated"
+}

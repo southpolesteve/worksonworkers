@@ -1,0 +1,16 @@
+{
+  "name": "regenerator-runtime",
+  "version": "0.14.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import 'regenerator-runtime/runtime';\n\n// Usage:\nasync function* asyncGen() { yield 1; yield 2; }\nconst gen = asyncGen();\nconst result = await gen.next();\nreturn { success: result.value === 1, result: result.value };",
+  "notes": "Runtime for generators/async functions (often unnecessary in modern Workers)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:31:05.753Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "react-dnd-html5-backend",
+  "version": "16.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "React browser UI component - requires DOM",
+  "errorMessage": "Package react-dnd-html5-backend needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:12:31.342Z",
+  "testedBy": "automated",
+  "investigated": true
+}

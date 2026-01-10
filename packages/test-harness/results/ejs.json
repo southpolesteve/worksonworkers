@@ -1,0 +1,16 @@
+{
+  "name": "ejs",
+  "version": "3.1.10",
+  "weeklyDownloads": 0,
+  "status": "works-with-caveats",
+  "category": "templating",
+  "notes": "EJS works in Workers but has a CommonJS JSON import issue at lib/ejs.js:54 (`require('../package.json').version`). This causes failures in vitest tests but works fine when deployed or tested with `wrangler dev`. The bundler (esbuild) handles the JSON import correctly at build time, making the package functional in production. Note: EJS file system features won't work - use string templates only.",
+  "errorMessage": "SyntaxError: Unexpected token ':' at ejs/lib/ejs.js:54 (require('../package.json') - CommonJS JSON import, but works when bundled)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T01:20:21.327Z",
+  "testedBy": "manual"
+}

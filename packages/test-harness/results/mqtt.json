@@ -1,0 +1,16 @@
+{
+  "name": "mqtt",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "network",
+  "notes": "MQTT client requires TCP sockets. Workers doesn't support raw TCP connections",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:19:21.835Z",
+  "testedBy": "automated"
+}

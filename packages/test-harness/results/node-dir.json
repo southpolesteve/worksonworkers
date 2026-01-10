@@ -1,0 +1,17 @@
+{
+  "name": "node-dir",
+  "version": "0.1.17",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "filesystem-utility",
+  "notes": "Filesystem directory operations",
+  "investigated": true,
+  "errorMessage": "Package node-dir needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:05:54.934Z",
+  "testedBy": "automated"
+}

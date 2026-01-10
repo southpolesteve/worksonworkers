@@ -1,0 +1,16 @@
+{
+  "name": "url-parse",
+  "version": "1.5.10",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import URL from 'url-parse';\n\n// Usage:\nconst parsed = new URL('https://example.com/path?q=1');\nreturn { success: parsed.hostname === 'example.com', result: { hostname: parsed.hostname } };",
+  "notes": "URL parsing library",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:53:55.642Z",
+  "testedBy": "automated"
+}

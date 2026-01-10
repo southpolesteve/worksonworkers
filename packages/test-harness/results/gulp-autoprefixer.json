@@ -1,0 +1,16 @@
+{
+  "name": "gulp-autoprefixer",
+  "version": "10.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "RECLASSIFIED! gulp-autoprefixer is a Gulp plugin for adding vendor prefixes to CSS during build workflows. The name pattern 'gulp-*' clearly indicates it's a Gulp plugin (like gulp-babel, gulp-concat, gulp-uglify, gulp-clean-css, etc.). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('*.css').pipe(autoprefixer()).pipe(gulp.dest('dist'))). Used during development/build workflows to automatically add CSS vendor prefixes (-webkit-, -moz-, -ms-, -o-) to CSS properties for cross-browser compatibility based on Can I Use database. Processes CSS files from disk using Node.js streams and filesystem access (fs.createReadStream, fs.createWriteStream). Works with PostCSS and Autoprefixer library internally. Part of the Gulp plugin ecosystem alongside gulp-sass (compile Sass), gulp-concat (concatenate files), gulp-uglify (minify JavaScript), gulp-clean-css (minify CSS), gulp-sourcemaps (generate sourcemaps). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern CSS prefixing uses PostCSS with autoprefixer directly (without Gulp), build tools with built-in prefixing (webpack/vite with postcss-loader), or CSS-in-JS libraries with automatic prefixing.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:31:23.759Z",
+  "testedBy": "automated"
+}

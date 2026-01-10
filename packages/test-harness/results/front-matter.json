@@ -1,0 +1,16 @@
+{
+  "name": "front-matter",
+  "version": "4.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import fm from 'front-matter';\n\n// Usage:\nconst content = `---\ntitle: Hello World\ndate: 2026-01-09\ntags: [test, markdown]\n---\n\n# Article Content\n\nThis is the body of the article.\n`;\nconst parsed = fm(content);\nreturn { \n  success: parsed.attributes.title === 'Hello World' && parsed.body.includes('Article Content'),\n  result: { attributes: parsed.attributes, bodyLength: parsed.body.length }\n};",
+  "notes": "Extracts YAML front matter from markdown files. Commonly used in static site generators.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T00:01:40.105Z",
+  "testedBy": "automated"
+}

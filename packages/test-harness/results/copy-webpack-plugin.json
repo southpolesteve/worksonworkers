@@ -1,0 +1,16 @@
+{
+  "name": "copy-webpack-plugin",
+  "version": "13.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "copy-webpack-plugin is a webpack plugin for copying files during webpack build process. Like all webpack plugins and build tools, this is designed for development/build workflows (configured in webpack.config.js), not for runtime execution in Workers.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:05:26.766Z",
+  "testedBy": "automated"
+}

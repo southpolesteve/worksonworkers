@@ -1,0 +1,15 @@
+{
+  "name": "eslint-plugin-react",
+  "version": "7.37.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "ESLint plugin for React-specific linting rules (jsx-uses-react, react-in-jsx-scope, prop-types, jsx-key, no-unused-state, hooks rules, etc.). ESLint plugins extend ESLint's rule set via the 'plugins' array in .eslintrc or eslint.config.js configuration files. Used exclusively during development/CI workflows to enforce React best practices and catch common React mistakes. Not applicable to Workers which is a runtime environment, not a linting environment. Similar ESLint React plugins include eslint-plugin-react-hooks (React Hooks rules), eslint-plugin-jsx-a11y (accessibility rules).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:34:03.336Z",
+  "testedBy": "automated"
+}

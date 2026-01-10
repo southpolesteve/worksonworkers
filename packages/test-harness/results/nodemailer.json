@@ -1,0 +1,16 @@
+{
+  "name": "nodemailer",
+  "version": "7.0.12",
+  "weeklyDownloads": 6000000,
+  "status": "not-applicable",
+  "category": "email",
+  "notes": "Nodemailer requires the Node.js 'net' module to create SMTP connections over TCP sockets. Workers don't support raw TCP socket connections. For sending emails from Workers, use email API services like Resend, SendGrid, Mailgun, or Cloudflare Email Routing API instead.",
+  "errorMessage": "SyntaxError: Unexpected token ':' at nodemailer/lib/fetch/index.js:10 (require('net'))",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T00:46:35.000Z",
+  "testedBy": "manual"
+}

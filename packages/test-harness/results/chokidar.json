@@ -1,0 +1,16 @@
+{
+  "name": "chokidar",
+  "version": "5.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "dev-tool",
+  "notes": "chokidar is a filesystem watcher library for Node.js that monitors files/directories and emits events when they change (add, change, unlink). Used by build tools (webpack-dev-server, vite, parcel, rollup watch mode) to detect file changes and trigger hot reloading/rebuilds during development. Requires persistent filesystem access (fs.watch, fs.watchFile) and OS APIs (node:os) which are not available in Workers. Workers is a stateless serverless environment without persistent filesystem to watch. For real-time updates in Workers, use WebSockets, Server-Sent Events, or Durable Objects.",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:48:39.240Z",
+  "testedBy": "automated"
+}

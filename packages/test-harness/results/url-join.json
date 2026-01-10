@@ -1,0 +1,16 @@
+{
+  "name": "url-join",
+  "version": "5.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import urljoin from 'url-join';\n\n// Usage:\nconst result = urljoin('https://example.com', 'path', 'to', 'file.html');\nreturn { success: result === 'https://example.com/path/to/file.html', result };",
+  "notes": "URL path joining utility",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:53:36.099Z",
+  "testedBy": "automated"
+}

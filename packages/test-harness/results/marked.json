@@ -1,0 +1,16 @@
+{
+  "name": "marked",
+  "version": "17.0.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { marked } from 'marked';\n\n// Usage:\nconst result = marked('# Hello **World**');\nreturn { success: result.includes('<h1>') && result.includes('<strong>'), result };",
+  "notes": "Fast markdown parser and compiler",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:25:05.982Z",
+  "testedBy": "automated"
+}

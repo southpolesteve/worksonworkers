@@ -1,0 +1,15 @@
+{
+  "name": "sanitize-filename",
+  "version": "1.6.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import sanitize from 'sanitize-filename';\n\n// Usage:\nconst result = sanitize('hello/world.txt');\nreturn { success: result === 'helloworld.txt', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:52:36.540Z",
+  "testedBy": "automated"
+}

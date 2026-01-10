@@ -1,0 +1,17 @@
+{
+  "name": "jest-watch-typeahead",
+  "version": "3.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "test-framework",
+  "notes": "Jest watch typeahead",
+  "investigated": true,
+  "errorMessage": "Package jest-watch-typeahead needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:56:47.229Z",
+  "testedBy": "automated"
+}

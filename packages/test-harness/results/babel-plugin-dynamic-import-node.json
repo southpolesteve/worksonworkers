@@ -1,0 +1,16 @@
+{
+  "name": "babel-plugin-dynamic-import-node",
+  "version": "2.3.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-plugin-dynamic-import-node is a Babel plugin that transforms ES6 dynamic import() syntax (e.g., import('./module.js')) to Node.js require() during build/compilation. Part of Babel's plugin ecosystem for code transformation used by build tools (webpack, babel, rollup) to convert modern import syntax to CommonJS for environments that don't support dynamic imports. Like all Babel plugins (@babel/plugin-transform-runtime, @babel/plugin-proposal-decorators, babel-plugin-istanbul, etc.), this is a build-time tool configured in .babelrc or babel.config.js during development, not a runtime library for Workers execution.",
+  "errorMessage": "Package babel-plugin-dynamic-import-node needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:11:20.850Z",
+  "testedBy": "automated"
+}

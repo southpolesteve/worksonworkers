@@ -1,0 +1,16 @@
+{
+  "name": "buffer",
+  "version": "6.0.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { Buffer } from 'buffer';\n\n// Usage:\nconst buf = Buffer.from('hello world', 'utf-8');\nconst hex = buf.toString('hex');\nconst base64 = buf.toString('base64');\nreturn { success: hex.length === 22 && base64.length === 16, result: { hex, base64 } };",
+  "notes": "Node.js Buffer polyfill. Use built-in Workers Buffer or Uint8Array when possible.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:05:30.657Z",
+  "testedBy": "automated"
+}

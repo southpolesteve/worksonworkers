@@ -1,0 +1,17 @@
+{
+  "name": "eslint-plugin-prettier",
+  "version": "5.5.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "ESLint plugin that runs Prettier as an ESLint rule. Integrates Prettier code formatter into ESLint workflows by reporting formatting differences as ESLint errors. Configured in .eslintrc via plugins: ['prettier'] and rules: {'prettier/prettier': 'error'}. Used exclusively during development/CI workflows to enforce Prettier formatting standards through ESLint. Not applicable to Workers which is a runtime environment, not a linting environment. Similar ESLint-formatter integrations include eslint-plugin-standard, eslint-config-prettier (disables conflicting ESLint formatting rules).",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:17:18.199Z",
+  "testedBy": "automated",
+  "investigated": true
+}

@@ -1,0 +1,15 @@
+{
+  "name": "btoa",
+  "version": "1.2.1",
+  "weeklyDownloads": 0,
+  "status": "built-in",
+  "category": "encoding",
+  "notes": "btoa() is a native Web API function for base64 encoding (binary-to-ASCII) that's already built into Cloudflare Workers. The 'btoa' npm package was created as a polyfill for Node.js environments that didn't have btoa natively. Workers provides native btoa()/atob() functions - no package installation needed. Simply use: btoa('hello') to encode, atob('aGVsbG8=') to decode.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:36:34.557Z",
+  "testedBy": "automated"
+}

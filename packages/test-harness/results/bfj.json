@@ -1,0 +1,15 @@
+{
+  "name": "bfj",
+  "version": "9.1.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "utility",
+  "notes": "Big-Friendly JSON - Asynchronous streaming library for parsing/serializing large JSON files using Node.js filesystem operations (fs.createReadStream, fs.createWriteStream, fs.readFile, fs.writeFile). Designed for build-time/Node.js server environments to process large JSON files without blocking the event loop. Not applicable to Workers which lack persistent filesystem access and operate in a stateless request/response model. For JSON processing in Workers, use standard JSON.parse/JSON.stringify or the Streams API for streaming large payloads.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:49:09.747Z",
+  "testedBy": "automated"
+}

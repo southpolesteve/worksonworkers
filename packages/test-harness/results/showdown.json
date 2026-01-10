@@ -1,0 +1,16 @@
+{
+  "name": "showdown",
+  "version": "2.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "string",
+  "example": "import { Converter } from 'showdown';\n\n// Usage:\nconst converter = new Converter();\nconst html = converter.makeHtml('# Hello World');\nreturn { success: html.includes('<h1') && html.includes('Hello World'), result: html };",
+  "notes": "Markdown to HTML converter",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:43:09.294Z",
+  "testedBy": "automated"
+}

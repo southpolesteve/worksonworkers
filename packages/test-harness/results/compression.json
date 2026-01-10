@@ -1,0 +1,17 @@
+{
+  "name": "compression",
+  "version": "1.8.1",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "utility",
+  "notes": "Express/Connect middleware for HTTP response compression using Node.js zlib. Workers has native CompressionStream API (gzip, deflate) for streaming compression - use that instead. For frameworks like Hono, use built-in compress() middleware which uses CompressionStream under the hood.",
+  "alternative": "CompressionStream (built-in Web API) or Hono's compress() middleware",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T21:36:41.978Z",
+  "testedBy": "automated",
+  "investigated": true
+}

@@ -1,0 +1,15 @@
+{
+  "name": "webpack-merge",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "example": "import { merge } from 'webpack-merge';\n\n// Usage:\nreturn { success: false };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T09:01:57.314Z",
+  "testedBy": "automated"
+}

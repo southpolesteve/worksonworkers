@@ -1,0 +1,17 @@
+{
+  "name": "child_process",
+  "version": "1.0.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "other",
+  "notes": "child_process is a polyfill/wrapper for Node.js's built-in child_process module which spawns external processes (exec, spawn, fork, execFile). Cloudflare Workers is a sandboxed serverless environment that does not allow spawning child processes for security and isolation reasons. The nodejs_compat flag provides child_process as a non-functional stub that throws errors when used. Process spawning requires an operating system with process management (fork, exec syscalls), filesystem access, and unrestricted system resources - none of which are available in Workers' V8 isolate-based runtime. Not applicable to Workers. For background tasks, use Durable Objects, Queues, or external services.",
+  "errorMessage": "Package child_process needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:47:33.817Z",
+  "testedBy": "automated",
+  "investigated": true
+}

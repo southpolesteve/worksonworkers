@@ -1,0 +1,17 @@
+{
+  "name": "axios",
+  "version": "1.13.2",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "http-client",
+  "example": "import axios from 'axios';\n\n// Usage:\nconst response = await axios.get('https://httpbin.org/json');\nreturn { success: response.status === 200, result: response.data };",
+  "notes": "Works but consider using native fetch() instead",
+  "alternative": "built-in: fetch",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:03:22.674Z",
+  "testedBy": "automated"
+}

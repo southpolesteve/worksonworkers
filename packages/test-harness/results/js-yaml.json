@@ -1,0 +1,15 @@
+{
+  "name": "js-yaml",
+  "version": "4.1.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import yaml from 'js-yaml';\n\n// Usage:\nconst obj = yaml.load('name: Alice\\nage: 30');\nreturn { success: true, result: obj };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:04:57.292Z",
+  "testedBy": "automated"
+}

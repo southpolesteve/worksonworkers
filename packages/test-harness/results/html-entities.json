@@ -1,0 +1,15 @@
+{
+  "name": "html-entities",
+  "version": "2.6.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { encode, decode } from 'html-entities';\n\n// Usage:\nconst encoded = encode('<div>Hello & goodbye</div>');\nconst decoded = decode('&lt;div&gt;Hello &amp; goodbye&lt;/div&gt;');\nreturn { success: encoded === '&lt;div&gt;Hello &amp; goodbye&lt;/div&gt;' && decoded === '<div>Hello & goodbye</div>', result: { encoded, decoded } };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:09:03.250Z",
+  "testedBy": "automated"
+}

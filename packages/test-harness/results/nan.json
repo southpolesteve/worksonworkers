@@ -1,0 +1,17 @@
+{
+  "name": "nan",
+  "version": "2.24.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "example": "import * as pkg from 'nan';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+  "notes": "Native Abstractions for Node.js - C++ addon header library",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:49:15.933Z",
+  "testedBy": "automated",
+  "investigated": true
+}

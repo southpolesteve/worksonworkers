@@ -1,0 +1,16 @@
+{
+  "name": "babel-runtime",
+  "version": "6.26.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-runtime is a Babel 6 package containing runtime helper functions and polyfills (regenerator-runtime, core-js) that Babel plugins inject into transpiled code during build/compilation. It's used by babel-plugin-transform-runtime to avoid duplicating Babel helper code (like _extends, _asyncToGenerator, _classCallCheck) across multiple output files by extracting them into importable modules from babel-runtime. Like all Babel packages (babel-core, @babel/plugin-*, babel-preset-*, etc.), this is a build-time tool for development workflows and build pipelines, not for runtime execution in Workers. In Babel 7+, replaced by @babel/runtime.",
+  "errorMessage": "Failed to resolve entry for package \"babel-runtime\". The package may have incorrect main/module/exports specified in its package.json.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:26:57.853Z",
+  "testedBy": "automated"
+}

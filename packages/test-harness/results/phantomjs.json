@@ -1,0 +1,17 @@
+{
+  "name": "phantomjs",
+  "version": "2.1.7+deprecated",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "Headless browser testing tool (deprecated)",
+  "investigated": true,
+  "errorMessage": "Package phantomjs needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:35:50.459Z",
+  "testedBy": "automated"
+}

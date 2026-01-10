@@ -1,0 +1,15 @@
+{
+  "name": "chai-as-promised",
+  "version": "8.0.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "test-framework",
+  "notes": "chai-as-promised is a Chai plugin that extends the Chai assertion library to support promise assertions (e.g., expect(promise).to.eventually.equal(value), expect(promise).to.be.rejected). Chai is a BDD/TDD assertion library used by test frameworks like Mocha, Jest, and Jasmine. This plugin is exclusively used in test suites during development, not for runtime execution in Workers. Similar test assertion utilities include sinon-chai, chai-http, jest-extended.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:50:05.798Z",
+  "testedBy": "automated"
+}

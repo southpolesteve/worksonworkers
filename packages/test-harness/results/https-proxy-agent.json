@@ -1,0 +1,17 @@
+{
+  "name": "https-proxy-agent",
+  "version": "7.0.6",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "http-client",
+  "notes": "Incompatible node:url APIs. Workers doesn't support HTTP proxies in the same way as Node.js",
+  "errorMessage": "url_1.URL is not a constructor",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T02:44:49.637Z",
+  "testedBy": "automated"
+}

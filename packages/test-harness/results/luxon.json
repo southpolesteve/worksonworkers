@@ -1,0 +1,15 @@
+{
+  "name": "luxon",
+  "version": "3.7.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "date-time",
+  "example": "import { DateTime } from 'luxon';\n\n// Usage:\nconst dt = DateTime.fromISO('2026-01-08');\nconst formatted = dt.toFormat('yyyy-MM-dd');\nreturn { success: formatted === '2026-01-08', result: formatted };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:01:52.782Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "gulp-eslint",
+  "version": "6.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Gulp plugin for ESLint linting during build workflows. The name pattern 'gulp-*' indicates it's a Gulp plugin. Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('src/**/*.js').pipe(eslint()).pipe(eslint.format()).pipe(eslint.failAfterError())). Used during development/build workflows to automatically lint JavaScript files using ESLint. Requires filesystem access (fs.createReadStream) to read source files. Part of the Gulp plugin ecosystem. Not applicable to Workers which is a runtime environment, not a build environment. Modern linters use ESLint CLI directly.",
+  "errorMessage": "Package gulp-eslint needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:58:36.510Z",
+  "testedBy": "automated"
+}

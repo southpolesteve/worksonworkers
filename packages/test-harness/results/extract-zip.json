@@ -1,0 +1,15 @@
+{
+  "name": "extract-zip",
+  "version": "2.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "dev-tool",
+  "notes": "extract-zip is a filesystem-based utility for unzipping zip files to local directories. Uses yauzl to parse zip archives and writes extracted files to disk using Node.js filesystem APIs. Designed for build scripts, CLI tools, and development workflows that need to extract archives to local filesystem. Workers is a stateless serverless environment without persistent filesystem write access. For zip file handling in Workers, use fflate or pako for in-memory compression/decompression and return data via Response or upload to R2 storage.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:14:51.739Z",
+  "testedBy": "automated"
+}

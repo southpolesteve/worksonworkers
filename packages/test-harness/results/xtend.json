@@ -1,0 +1,15 @@
+{
+  "name": "xtend",
+  "version": "4.0.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import xtend from 'xtend';\n\n// Usage:\nconst result = xtend({ a: 1 }, { b: 2 }, { c: 3 });\nreturn { success: result.a === 1 && result.b === 2 && result.c === 3, result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T09:06:39.706Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "event-stream",
+  "version": "4.0.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import es from 'event-stream';\n\n// Usage:\nconst results = [];\nconst stream = es.through(function(data) { results.push(data); this.emit('data', data); });\nstream.write('test');\nreturn { success: results[0] === 'test', result: results };",
+  "notes": "Stream utilities and helpers",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:41:40.698Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "d3-shape",
+  "version": "3.2.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { line, area, pie, arc } from 'd3-shape';\n\n// Usage:\nconst lineGenerator = line().x((d, i) => i * 10).y(d => d);\nconst linePath = lineGenerator([10, 20, 30, 20, 10]);\nconst areaGenerator = area().x((d, i) => i * 10).y0(0).y1(d => d);\nconst areaPath = areaGenerator([10, 20, 30, 20, 10]);\nconst pieGenerator = pie();\nconst pieData = pieGenerator([1, 2, 3]);\nconst arcGenerator = arc().innerRadius(0).outerRadius(100);\nconst arcPath = arcGenerator(pieData[0]);\nreturn { success: typeof linePath === 'string' && typeof areaPath === 'string' && pieData.length === 3 && typeof arcPath === 'string', result: { linePath: linePath.substring(0, 20), pieAngles: pieData.map(d => [d.startAngle, d.endAngle]) } };",
+  "notes": "D3 shape generators for SVG path data. Provides line(), area(), pie(), arc(), and more for creating data-driven shapes and charts.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T22:34:38.737Z",
+  "testedBy": "automated"
+}

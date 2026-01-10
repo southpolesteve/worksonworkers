@@ -1,0 +1,16 @@
+{
+  "name": "extract-text-webpack-plugin",
+  "version": "3.0.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack plugin for extracting CSS into separate files during webpack builds. Configured in webpack.config.js as a plugin. Used during development/build workflows, not runtime execution. Modern webpack 5 uses mini-css-extract-plugin instead.",
+  "errorMessage": "_fs2.default.realpathSync is not a function",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:52:16.975Z",
+  "testedBy": "automated"
+}

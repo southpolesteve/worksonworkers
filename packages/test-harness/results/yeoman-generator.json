@@ -1,0 +1,17 @@
+{
+  "name": "yeoman-generator",
+  "version": "7.5.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "Yeoman scaffolding tool - requires filesystem and child_process",
+  "investigated": true,
+  "errorMessage": "No such module \"node:child_process\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:27:25.747Z",
+  "testedBy": "automated"
+}

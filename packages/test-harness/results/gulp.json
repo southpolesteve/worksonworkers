@@ -1,0 +1,17 @@
+{
+  "name": "gulp",
+  "version": "5.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Gulp task runner - build tool",
+  "investigated": true,
+  "errorMessage": "No such module \"node:domain\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:32:20.389Z",
+  "testedBy": "automated"
+}

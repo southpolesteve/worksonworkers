@@ -1,0 +1,15 @@
+{
+  "name": "xlsx",
+  "version": "0.18.5",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import * as XLSX from 'xlsx';\n\n// Usage:\nconst wb = XLSX.utils.book_new();\nconst ws = XLSX.utils.aoa_to_sheet([['Name', 'Age'], ['Alice', 30]]);\nXLSX.utils.book_append_sheet(wb, ws, 'Sheet1');\nconst csv = XLSX.utils.sheet_to_csv(ws);\nreturn { success: csv.includes('Alice'), result: csv };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T09:08:06.941Z",
+  "testedBy": "automated"
+}

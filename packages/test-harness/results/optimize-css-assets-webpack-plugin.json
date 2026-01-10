@@ -1,0 +1,17 @@
+{
+  "name": "optimize-css-assets-webpack-plugin",
+  "version": "6.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "example": "import * as pkg from 'optimize-css-assets-webpack-plugin';\n\n// Usage:\nconst keys = Object.keys(pkg);\nreturn { success: keys.length > 0, result: { exports: keys.slice(0, 5) } };",
+  "notes": "webpack plugin for CSS optimization",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:15:58.988Z",
+  "testedBy": "automated",
+  "investigated": true
+}

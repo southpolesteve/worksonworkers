@@ -1,0 +1,16 @@
+{
+  "name": "bignumber.js",
+  "version": "9.3.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "math",
+  "example": "import BigNumber from 'bignumber.js';\n\n// Usage:\nconst x = new BigNumber('0.1');\nconst y = new BigNumber('0.2');\nconst sum = x.plus(y);\nreturn { success: sum.toString() === '0.3', result: sum.toString() };",
+  "notes": "Arbitrary-precision decimal and non-decimal arithmetic",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:52:54.923Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "slug",
+  "version": "11.0.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "string",
+  "example": "import slug from 'slug';\n\n// Usage:\nconst result = slug('Hello World!');\nreturn { success: result === 'hello-world', result };",
+  "notes": "URL slug generator",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:32:08.059Z",
+  "testedBy": "automated"
+}

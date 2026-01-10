@@ -1,0 +1,18 @@
+{
+  "name": "node-uuid",
+  "version": "1.4.8",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "uuid",
+  "notes": "Deprecated package. Use uuid or crypto.randomUUID()",
+  "alternative": "uuid",
+  "investigated": true,
+  "errorMessage": "Disallowed operation called within global scope. Asynchronous I/O (ex: fetch() or connect()), setting a timeout, and generating random values are not allowed within global scope. To fix this error, perform this operation within a handler. https://developers.cloudflare.com/workers/runtime-apis/handlers/",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:55:25.448Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "gulp-notify",
+  "version": "5.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Gulp plugin for displaying system notifications during build workflows. Part of Gulp's streaming build system (gulp.src().pipe(notify())). Displays desktop notifications (macOS Notification Center, Windows toast, Linux libnotify) when tasks complete/fail. Used for developer experience during build/watch tasks. Requires filesystem access and OS-level notification APIs. Not applicable to Workers which is a runtime environment, not a build environment.",
+  "errorMessage": "Package gulp-notify needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:19:15.971Z",
+  "testedBy": "automated"
+}

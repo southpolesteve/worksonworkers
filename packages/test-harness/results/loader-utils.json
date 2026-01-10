@@ -1,0 +1,16 @@
+{
+  "name": "loader-utils",
+  "version": "3.3.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack loader utilities - build tool not needed in Workers runtime",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:50:47.766Z",
+  "testedBy": "automated"
+}

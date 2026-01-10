@@ -1,0 +1,16 @@
+{
+  "name": "vary",
+  "version": "1.1.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import vary from 'vary';\n\n// Usage:\n// vary.append() appends field to header value\nconst result = vary.append('Accept', 'Accept-Encoding');\nreturn { success: result === 'Accept, Accept-Encoding', result };",
+  "notes": "HTTP Vary header utility",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T09:00:55.810Z",
+  "testedBy": "automated"
+}

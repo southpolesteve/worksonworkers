@@ -1,0 +1,16 @@
+{
+  "name": "kysely",
+  "version": "0.28.9",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "database",
+  "example": "import { Kysely, sql } from 'kysely';\n\n// Usage:\nreturn { success: typeof Kysely === 'function' && typeof sql === 'function', result: 'Kysely exports available' };",
+  "notes": "Type-safe SQL query builder - use with D1 database",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:19:12.309Z",
+  "testedBy": "automated"
+}

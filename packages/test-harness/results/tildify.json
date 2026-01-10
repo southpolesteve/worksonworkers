@@ -1,0 +1,16 @@
+{
+  "name": "tildify",
+  "version": "3.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "Converts absolute paths to use ~ for home directory",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:57:45.087Z",
+  "testedBy": "automated"
+}

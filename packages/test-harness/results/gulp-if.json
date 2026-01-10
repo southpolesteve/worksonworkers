@@ -1,0 +1,16 @@
+{
+  "name": "gulp-if",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-if is a Gulp plugin for conditional processing in Gulp streaming build pipelines. The name pattern 'gulp-*' clearly indicates it's a Gulp plugin (like gulp-babel, gulp-concat, gulp-uglify, gulp-filter, gulp-sass). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('src/**/*.js').pipe(gulpIf(condition, uglify())).pipe(gulp.dest('dist'))). Used during development/build workflows to conditionally apply transformations (e.g., only minify in production, only lint certain files, skip processing for some file types). Provides conditional logic for build pipelines (if/else branching, predicate functions, regex matching). Processes files from disk using Node.js streams and filesystem access (fs.createReadStream for reading source files). Part of the Gulp plugin ecosystem alongside gulp-filter (filter files by patterns), gulp-ignore (exclude files), gulp-changed (only changed files), gulp-newer (only newer files). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern conditional processing uses build tools with native conditional logic (webpack with conditionals, vite with environment variables) or ternary operators in build configs.",
+  "errorMessage": "Command failed: npm install\n/Users/steve/.nvm/versions/node/v24.3.0/lib/node_modules/npm/lib/cli/validate-engines.js:29\n    throw err\n    ^\n\nError: ENOENT: no such file or directory, uv_cwd\n    at process.wrappedCwd (node:internal/bootstrap/switches/does_own_process_state:142:28)\n    at process.cwd (/Users/steve/.nvm/versions/node/v24.3.0/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:10:19)\n    at new Config (/Users/steve/.nvm/versions/node/v24.3.0/lib/node_modules/npm/node_modules/@npmcli/config/lib/index.js:79:19)\n    at new Npm (/Users/steve/.nvm/versions/node/v24.3.0/lib/node_modules/npm/lib/npm.js:67:19)\n    at module.exports (/Users/steve/.nvm/versions/node/v24.3.0/lib/node_modules/npm/lib/cli/entry.js:14:15)\n    at module.exports (/Users/steve/.nvm/versions/node/v24.3.0/lib/node_modules/npm/lib/cli/validate-engines.js:37:10)\n    at module.exports (/Users/steve/.nvm/versions/node/v24.3.0/lib/node_modules/npm/lib/cli.js:12:31)\n    at Object.<anonymous> (/Users/steve/.nvm/versions/node/v24.3.0/lib/node_modules/npm/bin/npm-cli.js:2:25)\n    at Module._compile (node:internal/modules/cjs/loader:1692:14)\n    at Object..js (node:internal/modules/cjs/loader:1824:10) {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'uv_cwd'\n}\n\nNode.js v24.3.0\n",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:17:39.205Z",
+  "testedBy": "automated"
+}

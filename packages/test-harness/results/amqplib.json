@@ -1,0 +1,17 @@
+{
+  "name": "amqplib",
+  "version": "0.10.9",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "messaging",
+  "notes": "AMQP (Advanced Message Queuing Protocol) client library for RabbitMQ. Requires persistent TCP socket connections to message brokers, which doesn't fit Workers' request/response execution model. Also fails with parsing error 'Unexpected token \":\"' suggesting bundling/import issues. For message queuing in Workers, use Cloudflare Queues, Pub/Sub, or MQTT brokers compatible with Workers' connection model.",
+  "errorMessage": "Unexpected token ':'",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:12:52.666Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "graphql",
+  "version": "16.12.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "parsing",
+  "example": "import { graphql, buildSchema } from 'graphql';\n\n// Usage:\nconst schema = buildSchema(`\n  type Query {\n    hello: String\n  }\n`);\nconst root = { hello: () => 'Hello world!' };\nconst result = await graphql({ schema, source: '{ hello }', rootValue: root });\nreturn { success: result.data?.hello === 'Hello world!', result: result.data };",
+  "notes": "GraphQL query language implementation",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:52:26.024Z",
+  "testedBy": "automated"
+}

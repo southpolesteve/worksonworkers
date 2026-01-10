@@ -1,0 +1,16 @@
+{
+  "name": "i18next",
+  "version": "25.7.4",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import i18next from 'i18next';\n\n// Usage:\nawait i18next.init({\n  lng: 'en',\n  resources: {\n    en: { translation: { hello: 'Hello World' } }\n  }\n});\nconst result = i18next.t('hello');\nreturn { success: result === 'Hello World', result };",
+  "notes": "Internationalization framework",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T06:56:31.363Z",
+  "testedBy": "automated"
+}

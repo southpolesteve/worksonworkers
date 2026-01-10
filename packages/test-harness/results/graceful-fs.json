@@ -1,0 +1,16 @@
+{
+  "name": "graceful-fs",
+  "version": "4.2.11",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "filesystem-tool",
+  "notes": "graceful-fs is a drop-in replacement for Node.js's fs module that adds retry logic (EMFILE errors from too many open files), queuing for file operations, better error handling (EAGAIN, EINVAL, EPERM, EACCESS), and polyfills for older Node.js versions. Designed for traditional Node.js applications with persistent filesystem access - used as a dependency in build tools like fs-extra, npm, webpack, and other tools that perform heavy file I/O operations. Provides improved reliability for file operations in environments with file descriptor limits or concurrent I/O. Workers has only a limited virtual filesystem stub via nodejs_compat - essentially read-only access to bundled assets with no persistent storage or real I/O capability. graceful-fs's core functionality (retrying file operations, handling file descriptor limits, queuing I/O) requires a real persistent filesystem that can be read from and written to. Not applicable to Workers which is a stateless serverless environment without persistent filesystem. Similar filesystem reliability libraries include fs-plus (Atom editor's fs extensions), fs-extra (extends fs with utilities, uses graceful-fs internally).",
+  "errorMessage": "Cannot read properties of undefined (reading 'match')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:26:14.951Z",
+  "testedBy": "automated"
+}

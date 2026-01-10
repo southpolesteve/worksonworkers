@@ -1,0 +1,16 @@
+{
+  "name": "eslint-config-react-app",
+  "version": "7.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "ESLint shareable config from Create React App for linting React applications. Combines ESLint rules for React best practices, accessibility (jsx-a11y), import/export validation, hooks, and JavaScript standards. Used exclusively during development/CI workflows configured in .eslintrc via extends: ['react-app']. Not applicable to Workers runtime environment.",
+  "errorMessage": "require.resolve is not a function",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:04:30.206Z",
+  "testedBy": "automated"
+}

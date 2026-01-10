@@ -1,0 +1,15 @@
+{
+  "name": "shell-quote",
+  "version": "1.8.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { parse } from 'shell-quote';\n\n// Usage:\nconst result = parse('echo \"hello world\"');\nreturn { success: result.length === 2, result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:59:11.512Z",
+  "testedBy": "automated"
+}

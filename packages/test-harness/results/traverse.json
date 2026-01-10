@@ -1,0 +1,16 @@
+{
+  "name": "traverse",
+  "version": "0.6.11",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import traverse from 'traverse';\n\n// Usage:\nconst obj = { a: 1, b: { c: 2 } };\nconst result = traverse(obj).map(function(x) {\n  if (typeof x === 'number') this.update(x * 2);\n});\nreturn { success: result.a === 2 && result.b.c === 4, result };",
+  "notes": "Object traversal utility",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:52:36.002Z",
+  "testedBy": "automated"
+}

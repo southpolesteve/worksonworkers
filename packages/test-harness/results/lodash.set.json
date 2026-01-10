@@ -1,0 +1,15 @@
+{
+  "name": "lodash.set",
+  "version": "4.3.2",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import set from 'lodash.set';\n\n// Usage:\nconst obj = {};\nset(obj, 'a.b.c', 123);\nreturn { success: obj.a?.b?.c === 123, result: obj };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:11:47.397Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "kind-of",
+  "version": "6.0.3",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import kindOf from 'kind-of';\n\n// Usage:\nconst result = [kindOf('test'), kindOf(123), kindOf([]), kindOf({})];\nreturn { success: result.join(',') === 'string,number,array,object', result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:15:02.025Z",
+  "testedBy": "automated"
+}

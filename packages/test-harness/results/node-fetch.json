@@ -1,0 +1,17 @@
+{
+  "name": "node-fetch",
+  "version": "3.3.2",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "http-client",
+  "example": "import fetch from 'node-fetch';\n\n// Usage:\nreturn { success: true, result: 'Use native fetch instead' };",
+  "notes": "Workers has native fetch() - no need for this package",
+  "alternative": "built-in: fetch",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:03:55.945Z",
+  "testedBy": "automated"
+}

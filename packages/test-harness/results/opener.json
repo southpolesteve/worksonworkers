@@ -1,0 +1,17 @@
+{
+  "name": "opener",
+  "version": "1.5.2",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli-tool",
+  "notes": "Opens URLs/files in default browser",
+  "investigated": true,
+  "errorMessage": "Package opener needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:39:48.148Z",
+  "testedBy": "automated"
+}

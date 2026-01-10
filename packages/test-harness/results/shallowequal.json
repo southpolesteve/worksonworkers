@@ -1,0 +1,15 @@
+{
+  "name": "shallowequal",
+  "version": "1.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import shallowEqual from 'shallowequal';\n\n// Usage:\nconst result = shallowEqual({ a: 1, b: 2 }, { a: 1, b: 2 });\nreturn { success: result === true, result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T03:58:56.854Z",
+  "testedBy": "automated"
+}

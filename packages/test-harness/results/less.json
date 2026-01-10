@@ -1,0 +1,17 @@
+{
+  "name": "less",
+  "version": "4.5.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "LESS CSS preprocessor - build tool",
+  "investigated": true,
+  "errorMessage": "window is not defined",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:50:23.971Z",
+  "testedBy": "automated"
+}

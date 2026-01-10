@@ -1,0 +1,16 @@
+{
+  "name": "babel-preset-env",
+  "version": "1.7.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-preset-env is a Babel 6 preset that automatically configures Babel plugins to transform ES6+/modern JavaScript to older browser-compatible JavaScript based on target environments (e.g., browsers, Node versions). Babel presets (babel-preset-*, @babel/preset-*) are collections of Babel plugins bundled together for convenience - for example, @babel/preset-env includes plugins like @babel/plugin-transform-arrow-functions, @babel/plugin-transform-classes, @babel/plugin-transform-async-to-generator, etc. Like all Babel plugins and presets, these are build-time tools configured in .babelrc or babel.config.js during development/build pipelines with webpack, vite, or esbuild. In Babel 7+, this was replaced by @babel/preset-env. Not for runtime execution in Workers.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:54:21.119Z",
+  "testedBy": "automated"
+}

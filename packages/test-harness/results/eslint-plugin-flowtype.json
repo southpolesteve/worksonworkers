@@ -1,0 +1,17 @@
+{
+  "name": "eslint-plugin-flowtype",
+  "version": "8.0.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "ESLint plugin for Flow type checker. Provides linting rules for Flow type annotations (flow-object-type, no-weak-types, require-valid-file-annotation, etc.). ESLint plugins extend ESLint's rule set via the 'plugins' array in .eslintrc configuration files. Used exclusively during development/CI workflows to lint Flow-typed code. Not applicable to Workers which is a runtime environment, not a linting environment. Similar ESLint plugins include eslint-plugin-react, eslint-plugin-import, @typescript-eslint/eslint-plugin.",
+  "errorMessage": "Unexpected token ':'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:56:32.715Z",
+  "testedBy": "automated",
+  "investigated": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "dockerode",
+  "version": "4.0.9",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "dev-tool",
+  "notes": "dockerode is a Docker Remote API client library for programmatic control of Docker containers, images, networks, and volumes. Requires network access to Docker daemon (unix socket or HTTP/TCP), filesystem operations for container tar archives (uses tar-fs for copying files to/from containers), and Docker daemon connectivity which doesn't exist in Workers' serverless environment. Designed for Docker automation, CI/CD pipelines, container orchestration, and development tooling that manage Docker infrastructure. Not applicable to Workers which is a stateless serverless HTTP runtime without access to Docker daemon or container management capabilities. Similar Docker client libraries include dockerode alternatives (dockerode-compose), Kubernetes clients (kubernetes-client), or container management SDKs.",
+  "errorMessage": "Package dockerode needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:03:59.980Z",
+  "testedBy": "automated"
+}

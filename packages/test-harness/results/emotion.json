@@ -1,0 +1,15 @@
+{
+  "name": "emotion",
+  "version": "11.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "emotion is an older/deprecated CSS-in-JS library for styling React components (modern Emotion uses @emotion/react, @emotion/css, @emotion/styled instead). CSS-in-JS libraries like Emotion are designed for browser environments where they inject styles into the DOM via <style> tags, manipulate className properties on HTML elements, and use document.head for style insertion. Requires DOM APIs (document, window, HTMLElement, document.createElement('style'), document.head.appendChild()) which are not available in Workers' serverless environment. Emotion's primary use case is client-side styling of React components with dynamic CSS generation, nested selectors, media queries, and auto vendor-prefixing. Not applicable to Workers which is a serverless HTTP runtime without DOM APIs. Similar browser-only CSS-in-JS libraries include styled-components, JSS, glamorous, linaria. For styling in Workers SSR scenarios, generate CSS strings and return them in HTML responses, or use CSS-in-JS libraries that work without DOM (like vanilla-extract for build-time CSS extraction).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:15:10.741Z",
+  "testedBy": "automated"
+}

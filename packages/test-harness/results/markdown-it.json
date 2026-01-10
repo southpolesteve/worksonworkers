@@ -1,0 +1,16 @@
+{
+  "name": "markdown-it",
+  "version": "14.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import MarkdownIt from 'markdown-it';\n\n// Usage:\nconst md = new MarkdownIt();\nconst result = md.render('# Hello World');\nreturn { success: result.includes('<h1>') && result.includes('Hello World'), result };",
+  "notes": "Markdown parser and renderer",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:24:50.899Z",
+  "testedBy": "automated"
+}

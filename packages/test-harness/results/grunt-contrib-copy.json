@@ -1,0 +1,16 @@
+{
+  "name": "grunt-contrib-copy",
+  "version": "1.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "grunt-contrib-copy is an official Grunt plugin for copying files and directories during build workflows. Provides copy task for Grunt build system that copies files from source to destination using glob patterns (src/**/*.js, assets/**/*). Configured in Gruntfile.js as grunt.loadNpmTasks('grunt-contrib-copy') with task configuration defining source patterns and destination paths. Requires filesystem access (fs.readFile, fs.writeFile, fs.mkdir) to read source files and write to destination directories. Used during development/build workflows for copying static assets to build directories, moving files between project locations, duplicating files for different environments, and preparing distribution packages. Part of the grunt-contrib-* official plugin ecosystem alongside grunt-contrib-concat (concatenate files), grunt-contrib-clean (delete files), grunt-contrib-uglify (minify JavaScript), grunt-contrib-watch (watch for changes). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern build tools like webpack copy-webpack-plugin, rollup rollup-plugin-copy, and vite vite-plugin-static-copy have superseded Grunt for most file copying workflows.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:39:26.222Z",
+  "testedBy": "automated",
+  "investigated": true
+}

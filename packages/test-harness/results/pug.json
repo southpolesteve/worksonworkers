@@ -1,0 +1,17 @@
+{
+  "name": "pug",
+  "version": "3.0.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Pug template engine - build/compile time tool",
+  "investigated": true,
+  "errorMessage": "rawAsap.makeRequestCallFromTimer is not a function",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:22:22.184Z",
+  "testedBy": "automated"
+}

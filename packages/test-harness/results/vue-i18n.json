@@ -1,0 +1,17 @@
+{
+  "name": "vue-i18n",
+  "version": "11.2.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-only",
+  "notes": "Vue i18n - browser-only",
+  "errorMessage": "Package vue-i18n needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:15:18.876Z",
+  "testedBy": "automated",
+  "investigated": true
+}

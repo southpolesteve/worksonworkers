@@ -1,0 +1,153 @@
+{
+  "description": "Curated package categories for website display. Shows packages by use case.",
+  "lastUpdated": "2026-01-10",
+  "categories": [
+    {
+      "id": "validation",
+      "name": "Validation & Schemas",
+      "description": "Validate data, parse inputs, define schemas",
+      "icon": "✓",
+      "featured": ["zod", "joi", "yup", "superstruct", "class-validator"],
+      "alsoWorks": ["validator", "fastest-validator", "ajv"],
+      "notes": "All major validation libraries work great on Workers"
+    },
+    {
+      "id": "http",
+      "name": "HTTP & APIs", 
+      "description": "Make HTTP requests, call APIs",
+      "icon": "🌐",
+      "featured": ["ky", "cross-fetch", "isomorphic-fetch", "superagent"],
+      "builtIn": "Workers has native fetch() - often no package needed",
+      "alternatives": {
+        "axios": "Works, but native fetch() is simpler",
+        "got": "Use native fetch() instead",
+        "node-fetch": "Use native fetch() instead"
+      }
+    },
+    {
+      "id": "datetime",
+      "name": "Date & Time",
+      "description": "Parse, format, and manipulate dates",
+      "icon": "📅",
+      "featured": ["date-fns", "dayjs", "luxon", "moment", "ms"],
+      "notes": "Full date manipulation support"
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities",
+      "description": "General-purpose helper functions",
+      "icon": "🔧",
+      "featured": ["lodash", "lodash-es", "ramda", "underscore", "deepmerge", "fast-deep-equal"],
+      "alsoWorks": ["lodash.get", "lodash.merge", "lodash.debounce", "lodash.throttle", "lodash.clonedeep"]
+    },
+    {
+      "id": "id-generation",
+      "name": "ID Generation",
+      "description": "Generate unique identifiers",
+      "icon": "🔑",
+      "featured": ["nanoid", "uuid", "ulid"],
+      "builtIn": "crypto.randomUUID() is built into Workers",
+      "alternatives": {
+        "cuid": "Use nanoid or crypto.randomUUID() instead",
+        "shortid": "Use nanoid instead (shortid is deprecated)"
+      }
+    },
+    {
+      "id": "parsing",
+      "name": "Parsing & Serialization",
+      "description": "Parse HTML, XML, CSV, YAML, and more",
+      "icon": "📄",
+      "featured": ["cheerio", "yaml", "csv-parse", "papaparse", "fast-xml-parser", "htmlparser2"],
+      "notes": "Excellent support for data parsing"
+    },
+    {
+      "id": "crypto",
+      "name": "Crypto & Security",
+      "description": "Encryption, hashing, JWT, authentication",
+      "icon": "🔐",
+      "featured": ["jose", "bcryptjs", "jsonwebtoken", "jwt-decode"],
+      "builtIn": "Web Crypto API is built into Workers",
+      "alternatives": {
+        "bcrypt": "Use bcryptjs (pure JS implementation)",
+        "crypto-js": "Use built-in Web Crypto API"
+      }
+    },
+    {
+      "id": "strings",
+      "name": "String Manipulation",
+      "description": "Transform, format, and process strings",
+      "icon": "📝",
+      "featured": ["change-case", "slugify", "pluralize", "escape-html", "he"],
+      "alsoWorks": ["camelcase", "escape-string-regexp", "strip-ansi"]
+    },
+    {
+      "id": "async",
+      "name": "Async & Promises",
+      "description": "Control async flow, rate limiting, queues",
+      "icon": "⏳",
+      "featured": ["p-limit", "p-queue", "p-retry", "async", "delay"],
+      "notes": "Async utilities work well in Workers"
+    },
+    {
+      "id": "encoding",
+      "name": "Encoding & Compression",
+      "description": "Base64, buffer manipulation, compression",
+      "icon": "📦",
+      "featured": ["base64-js", "buffer", "pako"],
+      "builtIn": "Workers has native TextEncoder/TextDecoder and CompressionStream"
+    },
+    {
+      "id": "frameworks",
+      "name": "Web Frameworks",
+      "description": "Build APIs and web applications",
+      "icon": "🚀",
+      "featured": ["hono", "itty-router"],
+      "alternatives": {
+        "express": "Works with httpServerHandler from cloudflare:node",
+        "koa": "Works with httpServerHandler from cloudflare:node",
+        "fastify": "Works with httpServerHandler from cloudflare:node"
+      },
+      "notes": "Hono and itty-router are optimized for Workers. Express/Koa work via httpServerHandler."
+    }
+  ],
+  "cloudflareServices": {
+    "description": "For some use cases, Cloudflare services are the best solution",
+    "services": [
+      {
+        "need": "Key-Value Storage",
+        "use": "Cloudflare KV",
+        "instead_of": ["redis", "memcached", "level"]
+      },
+      {
+        "need": "SQL Database",
+        "use": "Cloudflare D1",
+        "instead_of": ["sqlite3", "better-sqlite3", "knex", "sequelize"]
+      },
+      {
+        "need": "Object Storage",
+        "use": "Cloudflare R2",
+        "instead_of": ["aws-sdk (S3)", "minio"]
+      },
+      {
+        "need": "Message Queues",
+        "use": "Cloudflare Queues",
+        "instead_of": ["amqplib", "bull", "bee-queue"]
+      },
+      {
+        "need": "Real-time / WebSockets",
+        "use": "Durable Objects",
+        "instead_of": ["socket.io", "ws"]
+      },
+      {
+        "need": "Image Processing",
+        "use": "Cloudflare Images",
+        "instead_of": ["sharp", "jimp", "canvas"]
+      },
+      {
+        "need": "Email",
+        "use": "Resend, SendGrid, or Mailgun API",
+        "instead_of": ["nodemailer"]
+      }
+    ]
+  }
+}

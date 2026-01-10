@@ -1,0 +1,15 @@
+{
+  "name": "decompress",
+  "version": "4.2.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "dev-tool",
+  "notes": "decompress is a filesystem-based archive extraction library for extracting archives (zip, tar.gz, tar.bz2, etc.) to disk. Requires filesystem access to write extracted files to an output directory. The API takes a file path (string or Buffer) as input and an output directory path (string) as the second parameter: decompress('unicorn.zip', 'dist'). Workers is a stateless serverless environment without persistent filesystem access - files cannot be written to disk. This is designed for build-time/development workflows and local file extraction tasks, not for runtime use in Workers. For archive handling in Workers, use streaming APIs with libraries that work with Buffers/ArrayBuffers directly (e.g., jszip for zip files, fflate for compression), or return raw file data to client for extraction. Similar filesystem-based extraction tools include extract-zip, unzipper, tar-fs.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:13:56.353Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "generic-pool",
+  "version": "3.9.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "async",
+  "example": "import { createPool } from 'generic-pool';\n\n// Usage:\n// Create a simple resource factory\nconst factory = {\n  create: async () => ({ id: Math.random() }),\n  destroy: async (resource) => {}\n};\n// Create pool with max 2 resources\nconst pool = createPool(factory, { max: 2, min: 1 });\n// Acquire and release a resource\nconst resource = await pool.acquire();\nawait pool.release(resource);\nconst size = pool.size;\nawait pool.drain();\nawait pool.clear();\nreturn { success: size >= 1, result: { poolSize: size, resourceId: resource.id } };",
+  "notes": "Generic resource pooling for managing reusable resources like database connections, API clients, or any limited resources with lifecycle management.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T00:09:53.496Z",
+  "testedBy": "automated"
+}

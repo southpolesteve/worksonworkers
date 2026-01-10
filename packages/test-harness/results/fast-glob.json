@@ -1,0 +1,16 @@
+{
+  "name": "fast-glob",
+  "version": "3.3.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Filesystem-based glob pattern matching library for finding files on disk during build/dev workflows. Requires Node.js filesystem APIs (fs.readdir, fs.stat) to traverse directories and match file patterns (e.g., '**/*.js', 'src/**/*.ts'). Used by build tools (webpack, rollup, vite), test runners (Jest, Vitest for test file discovery), linters (ESLint for file matching), and development scripts for file operations (copying, cleaning, processing). Workers is a stateless serverless environment without filesystem access to traverse. Not applicable to Workers which is a runtime environment, not a build environment. Similar filesystem glob libraries include glob (original Node.js glob), globby (promise-based glob wrapper), minimatch (pattern matching only).",
+  "errorMessage": null,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:31:49.656Z",
+  "testedBy": "automated"
+}

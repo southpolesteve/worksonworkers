@@ -1,0 +1,17 @@
+{
+  "name": "fs-promise",
+  "version": "2.0.3",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "filesystem-tool",
+  "notes": "DEPRECATED package (last updated 2017). Official deprecation message: 'Use mz or fs-extra^3.0 with Promise Support'. This was a promise wrapper for Node.js filesystem operations (fs.readFile, fs.writeFile, etc.) before native fs.promises API existed in Node.js. Modern Node.js (10+) has native fs.promises built-in. Workers has limited virtual filesystem via nodejs_compat - no persistent storage. For file storage in Workers, use R2 (object storage), KV (key-value), or D1 (database).",
+  "alternative": "R2 for object storage, KV for key-value, D1 for database, or native fs.promises in modern Node.js (if targeting Node.js)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:11:41.647Z",
+  "testedBy": "automated",
+  "investigated": true
+}

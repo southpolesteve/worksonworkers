@@ -1,0 +1,16 @@
+{
+  "name": "@angular/compiler-cli",
+  "version": "21.0.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@angular/compiler-cli is Angular's AOT (ahead-of-time) compiler - a build tool that compiles Angular templates and TypeScript code during development/production builds. Like tsc, webpack, or esbuild, this is not a runtime library. It's used by Angular CLI and build systems to transform code before deployment. Not designed for or needed in Workers runtime.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:59:56.384Z",
+  "testedBy": "automated",
+  "investigated": true
+}

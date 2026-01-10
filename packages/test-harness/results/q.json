@@ -1,0 +1,16 @@
+{
+  "name": "q",
+  "version": "1.5.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "async",
+  "example": "import Q from 'q';\n\n// Usage:\nconst deferred = Q.defer();\nsetTimeout(() => deferred.resolve('hello'), 10);\n\nconst result = await deferred.promise;\n\nreturn { \n  success: result === 'hello',\n  result\n};",
+  "notes": "Promise library (use native Promises instead)",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:26:41.736Z",
+  "testedBy": "automated"
+}

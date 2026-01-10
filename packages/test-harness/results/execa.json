@@ -1,0 +1,16 @@
+{
+  "name": "execa",
+  "version": "9.6.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "process-management",
+  "notes": "Execa is for running external processes using child_process, which is not available in Workers. Workers run in a sandboxed V8 isolate with no access to OS processes. For background tasks in Workers, use Durable Objects, Queues, or scheduled events instead.",
+  "errorMessage": "No such module \"node:child_process\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T00:18:13.418Z",
+  "testedBy": "automated"
+}

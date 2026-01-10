@@ -1,0 +1,16 @@
+{
+  "name": "unist-util-visit",
+  "version": "5.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { visit } from 'unist-util-visit';\n\n// Usage:\nconst tree = { type: 'root', children: [{ type: 'text', value: 'hello' }] };\nconst values: string[] = [];\nvisit(tree, 'text', (node: any) => values.push(node.value));\nreturn { success: values[0] === 'hello', result: values };",
+  "notes": "AST utility for traversing unist trees",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:30:04.726Z",
+  "testedBy": "automated"
+}

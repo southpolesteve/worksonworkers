@@ -1,0 +1,17 @@
+{
+  "name": "nunjucks",
+  "version": "3.2.4",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Nunjucks template engine - build/compile time tool",
+  "investigated": true,
+  "errorMessage": "Unexpected token 'null'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T01:51:57.327Z",
+  "testedBy": "automated"
+}

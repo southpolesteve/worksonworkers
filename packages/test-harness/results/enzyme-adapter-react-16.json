@@ -1,0 +1,15 @@
+{
+  "name": "enzyme-adapter-react-16",
+  "version": "1.15.8",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "test-framework",
+  "notes": "enzyme-adapter-react-16 is an Enzyme adapter for testing React 16 components. Enzyme is a JavaScript testing utility library from Airbnb for React that provides utilities for shallow rendering, full DOM rendering, and static rendering of React components in test environments (Jest, Mocha, etc.). This adapter configures Enzyme to work with React 16.x specifically. Requires react-test-renderer (peer dependency) for component rendering simulation and DOM APIs for full mount testing. Used exclusively in test suites (describe/it blocks) to render and assert on React components. Keywords include 'testing', 'test utils', 'assertion helpers', 'tdd', 'mocha' confirming it's a test framework tool. Not applicable to Workers which is a runtime environment, not a testing environment. Modern React testing uses @testing-library/react instead of Enzyme. Similar React testing utilities include @testing-library/react (modern approach), react-test-renderer (for snapshot testing).",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T06:04:13.331Z",
+  "testedBy": "automated"
+}

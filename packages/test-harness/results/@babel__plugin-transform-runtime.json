@@ -1,0 +1,16 @@
+{
+  "name": "@babel/plugin-transform-runtime",
+  "version": "7.28.5",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "@babel/plugin-transform-runtime is a Babel plugin used during build/compilation to optimize code by extracting helper functions to @babel/runtime. Part of Babel's code transformation ecosystem used by build tools like webpack, esbuild, and vite to reduce bundle size by deduplicating Babel helper functions across modules. Like all Babel plugins (@babel/plugin-proposal-decorators, @babel/plugin-proposal-class-properties, etc.), these are build-time tools for development workflows, not runtime libraries. Error 'Expected opts.sync to be a function' occurs because Babel plugins expect to run in a Node.js build environment with filesystem access.",
+  "errorMessage": "Expected opts.sync to be a function.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:10:02.623Z",
+  "testedBy": "automated"
+}

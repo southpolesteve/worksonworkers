@@ -1,0 +1,16 @@
+{
+  "name": "path-to-regexp",
+  "version": "8.3.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { match } from 'path-to-regexp';\n\n// Usage:\nconst matchFn = match('/user/:id');\nconst result = matchFn('/user/123');\nreturn { success: result !== false && result.params.id === '123', result };",
+  "notes": "Path pattern matching - useful for routing in Workers",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:14:52.275Z",
+  "testedBy": "automated"
+}

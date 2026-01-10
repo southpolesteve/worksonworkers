@@ -1,0 +1,16 @@
+{
+  "name": "ts-jest",
+  "version": "29.4.6",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "test-framework",
+  "notes": "Jest transformer for TypeScript - test framework",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:11:07.876Z",
+  "testedBy": "automated"
+}

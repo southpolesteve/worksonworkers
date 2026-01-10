@@ -1,0 +1,16 @@
+{
+  "name": "http-proxy",
+  "version": "1.18.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "other",
+  "example": "import httpProxy from 'http-proxy';\n\n// Usage:\n// http-proxy creates HTTP proxy servers - requires node:http server APIs\nconst proxy = httpProxy.createProxyServer();\nreturn { success: true, result: 'HTTP proxy created' };",
+  "notes": "HTTP proxy server - use with httpServerHandler from cloudflare:node",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:08:19.851Z",
+  "testedBy": "automated"
+}

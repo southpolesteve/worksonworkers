@@ -1,0 +1,16 @@
+{
+  "name": "url-loader",
+  "version": "4.1.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack loader for file data URLs",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:34:57.837Z",
+  "testedBy": "automated"
+}

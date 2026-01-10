@@ -1,0 +1,17 @@
+{
+  "name": "html-loader",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack loader for HTML - build tool",
+  "investigated": true,
+  "errorMessage": "Command failed: npm install\nnpm warn deprecated rollup-plugin-inject@3.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-inject.\nnpm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead\nnpm error code ENOENT\nnpm error syscall spawn sh\nnpm error path /Users/steve/works-on-workers/packages/test-harness/sandbox/html-loader/node_modules/esbuild\nnpm error errno -2\nnpm error enoent spawn sh ENOENT\nnpm error enoent This is related to npm not being able to find a file.\nnpm error enoent\nnpm error A complete log of this run can be found in: /Users/steve/.npm/_logs/2026-01-09T04_21_40_354Z-debug-0.log\n",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:21:54.261Z",
+  "testedBy": "automated"
+}

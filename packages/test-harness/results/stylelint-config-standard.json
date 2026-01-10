@@ -1,0 +1,17 @@
+{
+  "name": "stylelint-config-standard",
+  "version": "39.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "linter",
+  "notes": "Stylelint config",
+  "investigated": true,
+  "errorMessage": "Package stylelint-config-standard needs manual test configuration - do not use generic Object.keys() test",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:06:01.612Z",
+  "testedBy": "automated"
+}

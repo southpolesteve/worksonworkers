@@ -1,0 +1,16 @@
+{
+  "name": "@types/react",
+  "version": "19.2.7",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "type-definitions",
+  "notes": "TypeScript type definition package providing type information for React (JSX elements, components, hooks, props, etc.). All @types/* packages contain only compile-time type definitions for TypeScript projects with no runtime code or behavior. These packages are used during development by the TypeScript compiler and removed during transpilation.",
+  "errorMessage": "Failed to resolve entry for package \"@types/react\". The package may have incorrect main/module/exports specified in its package.json: No known conditions for \".\" specifier in \"@types/react\" package",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:05:16.651Z",
+  "testedBy": "automated"
+}

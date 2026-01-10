@@ -1,0 +1,16 @@
+{
+  "name": "source-map-support",
+  "version": "0.5.21",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import sourceMapSupport from 'source-map-support';\n\n// Usage:\n// Install source map support\nsourceMapSupport.install();\nreturn { success: true, result: 'installed' };",
+  "notes": "Fixes stack traces for files with source maps",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:43:38.946Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "winston",
+  "version": "3.19.0",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "logging",
+  "alternative": "console or pino-cloudflare",
+  "notes": "winston requires node:os API which is not available in Workers. Use console.log/error for simple logging, or pino with cloudflare transport for structured logging.",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:20:58.248Z",
+  "testedBy": "automated"
+}

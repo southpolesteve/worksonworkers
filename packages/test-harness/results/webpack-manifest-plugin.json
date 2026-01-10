@@ -1,0 +1,17 @@
+{
+  "name": "webpack-manifest-plugin",
+  "version": "6.0.1",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Webpack plugin for generating asset manifest",
+  "investigated": true,
+  "errorMessage": "The requested module 'node:fs' does not provide an export named 'mkdirSync'",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:58:26.941Z",
+  "testedBy": "automated"
+}

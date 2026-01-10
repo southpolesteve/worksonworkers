@@ -1,0 +1,15 @@
+{
+  "name": "lodash.isequal",
+  "version": "4.5.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import isEqual from 'lodash.isequal';\n\n// Usage:\nconst result1 = isEqual({ a: 1 }, { a: 1 });\nconst result2 = isEqual({ a: 1 }, { a: 2 });\nreturn { success: result1 && !result2, result: { result1, result2 } };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:11:25.678Z",
+  "testedBy": "automated"
+}

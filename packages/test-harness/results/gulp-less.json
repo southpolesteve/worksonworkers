@@ -1,0 +1,15 @@
+{
+  "name": "gulp-less",
+  "version": "5.0.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "gulp-less is a Gulp plugin for compiling LESS to CSS during build workflows. The name pattern 'gulp-*' indicates it's a Gulp plugin (like gulp-sass, gulp-stylus, gulp-postcss, gulp-autoprefixer). Configured in gulpfile.js as part of Gulp's streaming build system (gulp.src('*.less').pipe(less()).pipe(gulp.dest('dist'))). Used during development/build workflows to automatically compile LESS stylesheets to CSS, apply Less language features (variables, mixins, nested rules, functions, operations), and generate CSS output files. Processes LESS files from disk using Node.js streams and filesystem access (fs.createReadStream for reading .less source files, fs.createWriteStream for writing compiled .css output). Part of the Gulp plugin ecosystem alongside gulp-sass (compile Sass/SCSS), gulp-stylus (compile Stylus), gulp-postcss (PostCSS processing), gulp-autoprefixer (add vendor prefixes), gulp-clean-css (minify CSS). Not applicable to Workers which is a runtime environment without filesystem access, not a build environment. Modern LESS compilation uses lessc CLI directly (without Gulp), build tools with built-in LESS support (webpack with less-loader, vite with built-in Less support), or PostCSS with postcss-less.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:50:10.365Z",
+  "testedBy": "automated"
+}

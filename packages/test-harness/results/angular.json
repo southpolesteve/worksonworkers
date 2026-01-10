@@ -1,0 +1,16 @@
+{
+  "name": "angular",
+  "version": "1.8.3",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "browser-framework",
+  "notes": "AngularJS 1.x is a browser-only framework for client-side rendering. Requires DOM APIs (window, document, Element, HTMLElement) which are not available in Workers. This is the legacy AngularJS framework (v1.x), not to be confused with modern Angular (v2+). Both are designed for browser environments, not serverless. Error 'window is not defined' confirms browser dependency. For building apps on Workers, use edge-compatible frameworks like Remix, SolidStart, Hono, or itty-router.",
+  "errorMessage": "window is not defined",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T03:03:31.595Z",
+  "testedBy": "automated"
+}

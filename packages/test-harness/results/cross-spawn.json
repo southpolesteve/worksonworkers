@@ -1,0 +1,16 @@
+{
+  "name": "cross-spawn",
+  "version": "7.0.6",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "utility",
+  "notes": "cross-spawn is a cross-platform wrapper around Node.js child_process.spawn() for spawning child processes. Handles cross-platform differences in command execution (Windows vs Unix). Requires child_process module which is not available in Workers (spawning processes requires OS process management). Used by tools like execa, npm-run-all, and concurrently. Not applicable to Workers' sandboxed serverless environment.",
+  "errorMessage": "No such module \"node:child_process\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:55:47.282Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@graphql-tools/schema",
+  "version": "10.0.31",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { makeExecutableSchema } from '@graphql-tools/schema';\n\n// Usage:\nconst typeDefs = 'type Query { hello: String }';\nconst resolvers = { Query: { hello: () => 'world' } };\nconst schema = makeExecutableSchema({ typeDefs, resolvers });\nreturn { success: schema.getQueryType()?.name === 'Query', result: 'Schema created' };",
+  "notes": "Create executable GraphQL schemas. Merges type definitions and resolvers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:45:42.912Z",
+  "testedBy": "automated"
+}

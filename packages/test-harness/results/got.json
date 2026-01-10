@@ -1,0 +1,17 @@
+{
+  "name": "got",
+  "version": "14.6.6",
+  "weeklyDownloads": 0,
+  "status": "use-alternative",
+  "category": "http-client",
+  "alternative": "fetch (built-in) or ky",
+  "notes": "got requires node:os API which is not available in Workers. Use the built-in fetch API or ky (a lighter fetch wrapper) instead. The notes already suggested this alternative due to bundle size concerns.",
+  "errorMessage": "No such module \"node:os\".",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-08T23:26:40.882Z",
+  "testedBy": "automated"
+}

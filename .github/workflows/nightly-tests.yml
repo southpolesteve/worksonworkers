@@ -1,0 +1,69 @@
+name: Nightly Package Tests
+
+on:
+  schedule:
+    # Run every night at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      package_count:
+        description: 'Number of top packages to test'
+        required: false
+        default: '100'
+
+jobs:
+  test-packages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          
+      - name: Install root dependencies
+        run: npm ci
+        
+      - name: Install test harness dependencies
+        run: npm ci
+        working-directory: packages/test-harness
+        
+      - name: Run batch tests
+        run: |
+          npx tsx src/batch-runner.ts --top ${{ github.event.inputs.package_count || '100' }}
+        working-directory: packages/test-harness
+        env:
+          CI: true
+          
+      - name: Generate summary
+        run: |
+          echo "## 📊 Nightly Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Count by status
+          for status in works works-with-caveats doesnt-work use-alternative built-in not-applicable; do
+            count=$(grep -l "\"status\": \"$status\"" packages/test-harness/results/*.json 2>/dev/null | wc -l || echo 0)
+            echo "- **$status**: $count packages" >> $GITHUB_STEP_SUMMARY
+          done
+          
+      - name: Create PR with updated results
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Update package test results (nightly run)"
+          title: "Update: Nightly test results"
+          body: |
+            Automated nightly test run completed.
+            
+            See the [workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.
+          branch: nightly-updates
+          base: main
+          add-paths: |
+            packages/test-harness/results/*.json
+            packages/data/packages.json
+          delete-branch: true

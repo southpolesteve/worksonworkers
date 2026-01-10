@@ -1,0 +1,17 @@
+{
+  "name": "stack-trace",
+  "version": "1.0.0-pre2",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "utility",
+  "notes": "Get v8 stack traces",
+  "errorMessage": "Cannot read properties of undefined (reading 'get')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T05:33:38.471Z",
+  "testedBy": "automated",
+  "investigated": true
+}

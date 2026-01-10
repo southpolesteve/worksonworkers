@@ -1,0 +1,17 @@
+{
+  "name": "@alifd/next",
+  "version": "1.27.33",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "ui-components",
+  "notes": "Browser-only React component library (Alibaba Fusion Design). Requires DOM/browser APIs for rendering UI components. Not designed for serverless/Workers environments.",
+  "errorMessage": "Cannot read properties of undefined (reading 'polyfill')",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T02:52:35.332Z",
+  "testedBy": "automated",
+  "investigated": true
+}

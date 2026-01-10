@@ -1,0 +1,27 @@
+{
+  "name": "@works-on-workers/test-harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:package": "tsx src/runner.ts",
+    "test:batch": "tsx src/batch-runner.ts",
+    "get-top-packages": "tsx src/get-top-packages.ts"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.8.0",
+    "@cloudflare/workers-types": "^4.20250109.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "~3.2.0",
+    "wrangler": "^3.99.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "ajv": "^8.17.1",
+    "bottleneck": "^2.19.5",
+    "rate-limiter-flexible": "^9.0.1"
+  }
+}

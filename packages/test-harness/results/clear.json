@@ -1,0 +1,15 @@
+{
+  "name": "clear",
+  "version": "unknown",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "cli",
+  "notes": "Terminal/CLI utility for clearing the terminal screen using ANSI codes and escape sequences. Designed exclusively for command-line interfaces and Node.js terminal applications using process.stdout and TTY control. Not applicable to Workers which is an HTTP request/response runtime without terminal I/O. Original error was npm installation issue (TAR_ENTRY_ERROR), but package is fundamentally a CLI tool regardless.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T04:23:07.420Z",
+  "testedBy": "automated"
+}

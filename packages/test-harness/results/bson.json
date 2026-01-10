@@ -1,0 +1,16 @@
+{
+  "name": "bson",
+  "version": "7.0.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "encoding",
+  "example": "import { BSON } from 'bson';\n\n// Usage:\nconst doc = { name: 'John', age: 30, tags: ['developer', 'nodejs'] };\nconst serialized = BSON.serialize(doc);\nconst deserialized = BSON.deserialize(serialized);\nreturn { success: deserialized.name === 'John' && deserialized.age === 30, result: deserialized };",
+  "notes": "Binary JSON (BSON) parser used by MongoDB for efficient binary data serialization.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T20:40:07.232Z",
+  "testedBy": "automated"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "redux-thunk",
+  "version": "3.1.0",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import { thunk } from 'redux-thunk';\n\n// Usage:\nconst middleware = thunk;\nreturn { success: typeof middleware === 'function', result: { isFunction: typeof middleware === 'function' } };",
+  "notes": "Redux middleware for async actions",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T08:31:33.100Z",
+  "testedBy": "automated"
+}

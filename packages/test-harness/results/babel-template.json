@@ -1,0 +1,15 @@
+{
+  "name": "babel-template",
+  "version": "6.26.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "babel-template (v6.26.0) is the legacy Babel 6 template utility for creating AST nodes from string templates - now replaced by @babel/template (Babel 7+). Used by Babel plugins to generate AST nodes programmatically using template strings (e.g., `template('const NAME = VALUE')({ NAME: t.identifier('foo'), VALUE: t.numericLiteral(42) })`). Part of Babel's build-time AST manipulation pipeline used by @babel/core, Babel plugins, and build tools to generate JavaScript code during transformation. Like all Babel packages, this is a build-time tool for development workflows and build pipelines, not for runtime execution in Workers.",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:58:11.441Z",
+  "testedBy": "automated"
+}

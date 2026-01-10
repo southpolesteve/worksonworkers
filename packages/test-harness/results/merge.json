@@ -1,0 +1,15 @@
+{
+  "name": "merge",
+  "version": "2.1.1",
+  "weeklyDownloads": 0,
+  "status": "works",
+  "category": "utility",
+  "example": "import merge from 'merge';\n\n// Usage:\nconst result = merge({ a: 1 }, { b: 2 });\nreturn { success: result.a === 1 && result.b === 2, result };",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-10T07:29:29.798Z",
+  "testedBy": "automated"
+}

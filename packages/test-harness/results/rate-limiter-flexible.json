@@ -1,0 +1,17 @@
+{
+  "name": "rate-limiter-flexible",
+  "version": "9.0.1",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "async",
+  "notes": "Requires node:cluster which is not available in Workers. For rate limiting, use Durable Objects with state or Workers Rate Limiting API.",
+  "alternative": "Durable Objects, Workers Rate Limiting API",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T01:49:39.984Z",
+  "testedBy": "automated"
+}

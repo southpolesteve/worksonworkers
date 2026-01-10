@@ -1,0 +1,16 @@
+{
+  "name": "node-pre-gyp",
+  "version": "0.17.0",
+  "weeklyDownloads": 0,
+  "status": "not-applicable",
+  "category": "build-tool",
+  "notes": "Build tool for downloading pre-built native binaries",
+  "investigated": true,
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T05:54:02.542Z",
+  "testedBy": "automated"
+}

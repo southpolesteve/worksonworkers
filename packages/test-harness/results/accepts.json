@@ -1,0 +1,17 @@
+{
+  "name": "accepts",
+  "version": "1.3.8",
+  "weeklyDownloads": 0,
+  "status": "doesnt-work",
+  "category": "http",
+  "notes": "HTTP content negotiation library used by Express. Depends on mime-types which uses CommonJS require('./db.json') that doesn't work in Workers. The mime-db package loads a 182KB JSON database via require() which fails even with nodejs_compat. This is a legitimate runtime library for content negotiation (Accept headers, charsets, encodings, languages). Might work if properly pre-bundled with a bundler that can inline the JSON. For now, genuinely broken due to CommonJS JSON import limitations.",
+  "errorMessage": "SyntaxError: Unexpected token ':' at mime-db/index.js:12 (require('./db.json'))",
+  "testedWith": {
+    "wranglerVersion": "3.114.16",
+    "compatibilityDate": "2026-01-08",
+    "nodeCompat": true
+  },
+  "lastTested": "2026-01-09T00:39:25.256Z",
+  "testedBy": "manual-investigation",
+  "investigated": true
+}

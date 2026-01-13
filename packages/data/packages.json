@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-01-13T23:45:00.000Z",
+  "lastUpdated": "2026-01-13T23:50:00.000Z",
   "wranglerVersion": "3.114.16",
   "compatibilityDate": "2026-01-08",
   "packages": [
@@ -5465,19 +5465,19 @@
       "name": "finalhandler",
       "version": "2.1.1",
       "weeklyDownloads": 61042944,
-      "status": "doesnt-work",
+      "status": "works",
       "category": "server-framework",
-      "notes": "Express/Connect final handler for ending middleware chains. Requires Node.js stream internals (req.unpipe) that are not fully supported in Workers. Use Hono or itty-router for Workers-native error handling.",
+      "notes": "Express/Connect final handler for ending middleware chains. Works with httpServerHandler - correctly handles 404s and errors.",
       "investigated": true,
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-13T23:30:00.000Z",
+      "lastTested": "2026-01-13T23:45:00.000Z",
       "testedBy": "manual",
-      "example": "import finalhandler from 'finalhandler';\n\n// Create a final handler for a mock request/response\nconst done = finalhandler({}, {});\nreturn { success: typeof done === 'function', result: 'finalhandler ready' };",
-      "errorMessage": "req.unpipe is not a function",
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport { createServer } from 'node:http';\nimport finalhandler from 'finalhandler';\n\nconst server = createServer((req, res) => {\n  const done = finalhandler(req, res);\n  \n  if (req.url === '/') {\n    res.writeHead(200, { 'Content-Type': 'application/json' });\n    res.end(JSON.stringify({ message: 'Hello!' }));\n  } else {\n    done(); // 404 for unknown routes\n  }\n});\n\nserver.listen(3000);\nexport default httpServerHandler({ port: 3000 });",
+      "errorMessage": null,
       "alternative": "Use Hono or itty-router for error handling"
     },
     {
@@ -7016,19 +7016,19 @@
       "name": "http-proxy-middleware",
       "version": "unknown",
       "weeklyDownloads": 18028204,
-      "status": "doesnt-work",
+      "status": "works-with-caveats",
       "category": "middleware",
-      "notes": "HTTP proxy middleware for Express/Connect. Fails with \"debug_1.Debug.extend is not a function\" due to incompatibility with the debug library in Workers. For proxying in Workers, use native fetch() to forward requests.",
+      "notes": "HTTP proxy middleware for Express/Connect. Works with httpServerHandler but the actual proxying may have issues with some request types. Simple proxy forwarding works. For complex proxy needs, consider using native fetch() directly.",
       "investigated": true,
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-13T23:30:00.000Z",
+      "lastTested": "2026-01-13T23:45:00.000Z",
       "testedBy": "manual",
-      "example": "import { createProxyMiddleware } from 'http-proxy-middleware';\n\n// Create proxy middleware\nconst proxy = createProxyMiddleware({ target: 'http://example.com' });\nreturn { success: typeof proxy === 'function', result: 'proxy middleware created' };",
-      "errorMessage": "debug_1.Debug.extend is not a function",
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport { createProxyMiddleware } from 'http-proxy-middleware';\n\nconst app = express();\n\n// Note: Basic proxying works but may have edge cases\nconst apiProxy = createProxyMiddleware({\n  target: 'https://api.example.com',\n  changeOrigin: true\n});\n\napp.use('/api', apiProxy);\napp.get('/', (req, res) => res.json({ message: 'Proxy ready' }));\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });",
+      "errorMessage": null,
       "alternative": "Use native fetch() for proxying requests"
     },
     {

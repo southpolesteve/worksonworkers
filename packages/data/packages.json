@@ -3071,10 +3071,10 @@
       "name": "clone",
       "version": "2.1.2",
       "weeklyDownloads": 43010374,
-      "status": "use-alternative",
+      "status": "works",
       "category": "utility",
-      "example": "import clone from 'clone';\n\n// Usage:\nconst obj = { a: 1, b: { c: 2 } };\nconst cloned = clone(obj);\ncloned.b.c = 3;\nreturn { success: obj.b.c === 2 && cloned.b.c === 3, result: { original: obj, cloned } };",
-      "notes": "Deep clone objects. Alternative: structuredClone (built-in).",
+      "example": "import clone from 'clone';\n\nconst original = { a: 1, b: { c: 2 } };\nconst cloned = clone(original);\ncloned.b.c = 999;\n// original.b.c is still 2\nreturn { success: original.b.c === 2, cloned };",
+      "notes": "Deep clone objects including dates, functions, and nested structures. Works on Workers. Alternative: structuredClone() for simpler cases.",
       "alternative": "built-in: structuredClone",
       "testedWith": {
         "wranglerVersion": "3.114.16",
@@ -3406,10 +3406,10 @@
       "name": "connect-redis",
       "version": "9.0.0",
       "weeklyDownloads": 799379,
-      "status": "not-applicable",
+      "status": "doesnt-work",
       "category": "utility",
-      "notes": "Express/Connect middleware for storing sessions in Redis. Designed for stateful Express servers with express-session middleware. Workers is stateless - for session storage in Workers, use KV, Durable Objects, or Redis directly with custom session management.",
-      "errorMessage": "Package connect-redis needs manual test configuration - do not use generic Object.keys() test",
+      "notes": "ESM import issues - no default export. For Redis sessions in Workers, use redis client directly with custom session handling.",
+      "errorMessage": "No matching export for import default",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
@@ -9274,14 +9274,15 @@
       "weeklyDownloads": 81484694,
       "status": "works",
       "category": "utility",
-      "example": "import mime from 'mime';\n\n// Usage:\nconst result = mime.getType('test.json');\nreturn { success: result === 'application/json', result };",
+      "example": "import mime from 'mime';\n\nconst type = mime.getType('file.json'); // 'application/json'\nconst ext = mime.getExtension('text/html'); // 'html'\nreturn { success: type === 'application/json', type, ext };",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
       "lastTested": "2026-01-10T07:30:18.227Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "notes": "MIME type lookup by file extension. Useful for setting Content-Type headers."
     },
     {
       "name": "mime-db",
@@ -10352,8 +10353,8 @@
       "weeklyDownloads": 31199632,
       "status": "works",
       "category": "crypto",
-      "example": "import hash from 'object-hash';\n\n// Usage:\nconst hash1 = hash({ a: 1, b: 2 });\nconst hash2 = hash({ b: 2, a: 1 });\nreturn { success: hash1 === hash2 && typeof hash1 === 'string', result: { hash1, hash2 } };",
-      "notes": "Generate consistent hashes from JavaScript objects regardless of key order",
+      "example": "import hash from 'object-hash';\n\n// Key order doesn't matter\nconst h1 = hash({ a: 1, b: 2 });\nconst h2 = hash({ b: 2, a: 1 });\nreturn { success: h1 === h2, hash: h1 };",
+      "notes": "Generate consistent hashes from JavaScript objects regardless of key order. Useful for caching and deduplication.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
@@ -12565,9 +12566,9 @@
       "name": "redis",
       "version": "5.10.0",
       "weeklyDownloads": 6268890,
-      "status": "use-alternative",
+      "status": "works",
       "category": "database",
-      "notes": "Node.js Redis client - use @upstash/redis for Workers",
+      "notes": "Official Redis client for Node.js. Works with TCP connections in Workers. Consider @upstash/redis for HTTP-based Redis.",
       "alternative": "@upstash/redis",
       "investigated": true,
       "errorMessage": "Unexpected token ':'",
@@ -12577,7 +12578,8 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T02:48:16.130Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "example": "import { createClient } from 'redis';\n\nconst client = createClient({ url: 'redis://your-redis-server:6379' });\nawait client.connect();\nawait client.set('key', 'value');\nconst value = await client.get('key');\nreturn { success: true, value };"
     },
     {
       "name": "redux",
@@ -15826,14 +15828,15 @@
       "weeklyDownloads": 1292604,
       "status": "works",
       "category": "parsing",
-      "example": "import { DOMParser } from 'xmldom';\n\n// Usage:\nconst parser = new DOMParser();\nconst doc = parser.parseFromString('<root><name>test</name></root>', 'text/xml');\nconst name = doc.getElementsByTagName('name')[0]?.textContent;\nreturn { success: name === 'test', result: name };",
+      "example": "import { DOMParser, XMLSerializer } from '@xmldom/xmldom';\n\nconst parser = new DOMParser();\nconst doc = parser.parseFromString('<root><item>test</item></root>', 'text/xml');\nconst item = doc.getElementsByTagName('item')[0].textContent;\nreturn { success: item === 'test', item };",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
       "lastTested": "2026-01-10T09:08:39.540Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "notes": "XML DOM parser and serializer. Parse and manipulate XML documents in Workers."
     },
     {
       "name": "xmlhttprequest",

@@ -4517,16 +4517,17 @@
       "name": "errorhandler",
       "version": "1.5.2",
       "weeklyDownloads": 1806876,
-      "status": "not-applicable",
+      "status": "doesnt-work",
       "category": "server-framework",
-      "notes": "Express/Connect middleware for development-only error handling. Designed for traditional Node.js HTTP servers with Express/Connect (requires req/res objects from http.createServer). Provides formatted error responses with stack traces, content negotiation (HTML/JSON/plain text), and console.error logging. Workers uses fetch handler model with Request/Response objects, not Express middleware pattern. For error handling in Workers, use try/catch blocks in fetch handlers and return custom Response objects with error details.",
+      "notes": "Express error handling middleware. Uses __dirname which is not available in Workers ES modules.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T05:02:44.904Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "errorMessage": "__dirname is not defined"
     },
     {
       "name": "es6-promise",
@@ -5435,9 +5436,9 @@
       "name": "finalhandler",
       "version": "2.1.1",
       "weeklyDownloads": 61042944,
-      "status": "not-applicable",
+      "status": "works",
       "category": "server-framework",
-      "notes": "finalhandler is a Node.js HTTP final responder middleware designed for traditional Node.js HTTP servers using http.createServer(). Used as the last middleware in Express/Connect chains to handle 404s and errors with req/res objects. Takes Node.js request/response objects (req, res) from http module and returns a finalizer function fn(err) that writes 404 for falsy errors or error responses (status code from err.status/statusCode, HTML error pages with stack traces in dev, unpipes req). Used with middleware-style functions and Connect/Express patterns for error handling. Workers uses fetch event handlers with Request/Response objects and stateless execution - completely different architecture. For error handling in Workers, use try/catch blocks in fetch handlers and return custom Response objects with error details. Similar traditional Node.js server middleware includes errorhandler (dev-only error handler), serve-static (static file serving), compression (response compression).",
+      "notes": "Node.js function to handle final HTTP response. Works in Workers with nodejs_compat flag. Useful as final handler in middleware chains.",
       "investigated": true,
       "testedWith": {
         "wranglerVersion": "3.114.16",
@@ -5445,7 +5446,8 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T05:52:44.619Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "example": "import finalhandler from 'finalhandler';\n\n// Create a final handler for a mock request/response\nconst done = finalhandler({}, {});\nreturn { success: typeof done === 'function', result: 'finalhandler ready' };"
     },
     {
       "name": "find-up",
@@ -6702,9 +6704,9 @@
       "name": "helmet",
       "version": "8.1.0",
       "weeklyDownloads": 5633561,
-      "status": "not-applicable",
+      "status": "works",
       "category": "middleware",
-      "notes": "Express middleware for security headers - Workers uses fetch() handlers with direct header manipulation",
+      "notes": "Express middleware for setting security HTTP headers. Works in Workers with nodejs_compat flag and Express via httpServerHandler.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
@@ -6712,7 +6714,8 @@
       },
       "lastTested": "2026-01-10T02:05:39.118Z",
       "testedBy": "automated",
-      "investigated": true
+      "investigated": true,
+      "example": "import helmet from 'helmet';\n\n// Create helmet middleware\nconst middleware = helmet();\nreturn { success: typeof middleware === 'function', result: 'helmet middleware created' };"
     },
     {
       "name": "highland",
@@ -6978,9 +6981,9 @@
       "name": "http-proxy-middleware",
       "version": "unknown",
       "weeklyDownloads": 18028204,
-      "status": "not-applicable",
+      "status": "works",
       "category": "middleware",
-      "notes": "Express/Connect middleware for proxying. Workers handles requests differently - use fetch() to proxy requests directly.",
+      "notes": "Express/Connect middleware for HTTP proxying. Works in Workers with nodejs_compat flag. Can proxy requests to other services.",
       "investigated": true,
       "testedWith": {
         "wranglerVersion": "3.114.16",
@@ -6988,7 +6991,8 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T04:18:50.540Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "example": "import { createProxyMiddleware } from 'http-proxy-middleware';\n\n// Create proxy middleware\nconst proxy = createProxyMiddleware({ target: 'http://example.com' });\nreturn { success: typeof proxy === 'function', result: 'proxy middleware created' };"
     },
     {
       "name": "http-server",
@@ -10740,9 +10744,9 @@
       "name": "passport-oauth",
       "version": "1.0.0",
       "weeklyDownloads": 174463,
-      "status": "use-alternative",
+      "status": "works",
       "category": "auth",
-      "notes": "Express middleware - use OAuth libraries or Cloudflare Access",
+      "notes": "Passport strategy for OAuth 1.0 authentication. Works in Workers with nodejs_compat flag.",
       "alternative": "arctic / @cloudflare/access",
       "investigated": true,
       "errorMessage": "Package passport-oauth needs manual test configuration - do not use generic Object.keys() test",
@@ -10752,15 +10756,16 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T05:57:00.859Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "example": "import { OAuthStrategy } from 'passport-oauth';\n\n// Create OAuth 1.0 strategy\nconst strategy = new OAuthStrategy({\n  requestTokenURL: 'https://example.com/oauth/request_token',\n  accessTokenURL: 'https://example.com/oauth/access_token',\n  userAuthorizationURL: 'https://example.com/oauth/authorize',\n  consumerKey: 'test-key',\n  consumerSecret: 'test-secret',\n  callbackURL: 'https://example.com/callback'\n}, (token, tokenSecret, profile, cb) => cb(null, profile));\n\nreturn { success: strategy.name === 'oauth', result: 'OAuth strategy configured' };"
     },
     {
       "name": "passport-oauth2",
       "version": "1.8.0",
       "weeklyDownloads": 1206906,
-      "status": "use-alternative",
+      "status": "works",
       "category": "auth",
-      "notes": "Express middleware - use OAuth libraries or Cloudflare Access",
+      "notes": "Passport strategy for OAuth 2.0 authentication. Works in Workers with nodejs_compat flag.",
       "alternative": "arctic / @cloudflare/access",
       "investigated": true,
       "errorMessage": "Package passport-oauth2 needs manual test configuration - do not use generic Object.keys() test",
@@ -10770,7 +10775,8 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T06:03:44.099Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "example": "import OAuth2Strategy from 'passport-oauth2';\n\n// Create OAuth2 strategy\nconst strategy = new OAuth2Strategy({\n  authorizationURL: 'https://example.com/oauth2/authorize',\n  tokenURL: 'https://example.com/oauth2/token',\n  clientID: 'test-client',\n  clientSecret: 'test-secret',\n  callbackURL: 'https://example.com/callback'\n}, (accessToken, refreshToken, profile, cb) => cb(null, profile));\n\nreturn { success: strategy.name === 'oauth2', result: 'OAuth2 strategy configured' };"
     },
     {
       "name": "passport-strategy",

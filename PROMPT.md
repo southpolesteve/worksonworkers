@@ -342,28 +342,193 @@ return { success: result.success, result: result.data };
 
 - **Native modules** (C++ bindings) → use-alternative
 - **Browser-only** (DOM, window, document) → not-applicable
+- **Filesystem-dependent** - Workers has NO persistent filesystem. Packages that read/write files at startup or runtime won't work.
+- **Code generation** - `new Function()`, `eval()` are blocked in Workers
 - **Node APIs** - Many ARE supported! Check before assuming failure.
   - Supported: crypto, fs, path, buffer, stream, events, util, http, https, net, dns, zlib, timers, url, assert, process, async_hooks (AsyncLocalStorage)
   - **NEW: node:http server APIs** - http.createServer, http.Server, http.ServerResponse now work!
   - Non-functional stubs: child_process, cluster, vm, v8, readline, repl, dgram
 
-## HTTP Framework Testing
+## Filesystem Limitations
 
-When testing HTTP frameworks (express, koa, hapi, fastify, etc.), use this pattern:
+**Workers has no persistent filesystem!** The `node:fs` module exists but operates on a virtual in-memory filesystem.
 
+**Packages that WON'T work due to filesystem:**
+- `serve-static` - Tries to serve files from disk
+- `serve-favicon` - Reads favicon file at startup  
+- `serve-index` - Lists directory contents
+- `node-static` - Static file server
+- Any package that uses `fs.readFileSync()` at import time
+
+**Alternatives for static files:**
+- Use Cloudflare R2 for object storage
+- Use Workers Assets for static files
+- Embed small files as base64 in code
+- Use KV for key-value data
+
+**Packages that WILL work despite using fs:**
+- `multer` with `memoryStorage()` - Files stay in memory
+- Packages that only use fs optionally or lazily
+
+## HTTP Framework & Middleware Testing
+
+### CRITICAL: How to Properly Test Express Middleware
+
+**DO NOT just test if a package imports!** That's a lazy test that doesn't verify the package actually works.
+
+**WRONG approach (lazy test):**
 ```typescript
-// In package-tests.ts for express:
-'express': {
-  test: async (pkg: any) => {
-    const { httpServerHandler } = await import('cloudflare:node');
-    const app = pkg();
-    app.get('/test', (req, res) => res.json({ ok: true }));
-    const server = app.listen(3000);
-    // Test would need to make request to verify
-    return { success: true, result: 'Express server created with httpServerHandler' };
-  },
-  notes: 'Use httpServerHandler from cloudflare:node. Requires nodejs_compat and compatibility date 2025-09-01+',
-}
+import helmet from 'helmet';
+const middleware = helmet();
+return { success: typeof middleware === 'function' }; // LAZY!
+```
+
+**RIGHT approach (functional test):**
+Create a real Express app with `httpServerHandler`, use the middleware, and verify it actually does what it's supposed to do:
+
+```javascript
+import { httpServerHandler } from 'cloudflare:node';
+import express from 'express';
+import helmet from 'helmet';
+
+const app = express();
+app.use(helmet()); // Actually use the middleware
+
+app.get('/test', (req, res) => {
+  res.json({ message: 'Testing helmet' });
+});
+
+app.listen(3000);
+export default httpServerHandler({ port: 3000 });
+```
+
+Then test with curl:
+```bash
+# For helmet - verify security headers are set
+curl -sI http://localhost:8799/ | grep -i "x-frame-options"
+
+# For multer - actually upload a file
+curl -X POST -F "file=@test.txt" http://localhost:8799/upload
+
+# For cookie-parser - set and read cookies
+curl -c cookies.txt http://localhost:8799/set-cookie
+curl -b cookies.txt http://localhost:8799/read-cookie
+
+# For compression - verify gzip encoding
+curl -sI -H "Accept-Encoding: gzip" http://localhost:8799/ | grep "Content-Encoding"
+
+# For passport - do a full login flow
+curl -X POST -d "username=test&password=pass" http://localhost:8799/login
+```
+
+### Middleware Categories
+
+**Works with Express + httpServerHandler:**
+- `helmet` - Security headers (CSP, HSTS, X-Frame-Options)
+- `multer` - File uploads (use memoryStorage, NOT diskStorage)
+- `cookie-parser` - Cookie parsing and signing
+- `compression` - Gzip/deflate response compression
+- `cors` - CORS headers
+- `body-parser` - Request body parsing
+- `express-session` - Session management
+- `connect-flash` - Flash messages
+- `connect-history-api-fallback` - SPA routing
+- `passport` - Authentication framework
+- `passport-local` - Username/password auth
+- `passport-oauth2` - OAuth 2.0
+- `method-override` - HTTP method override
+
+**Does NOT work (requires filesystem):**
+- `serve-static` - No persistent filesystem in Workers
+- `serve-favicon` - Reads file at startup
+- `serve-index` - Directory listings need filesystem
+- `node-static` - Static file server
+
+**Does NOT work (other reasons):**
+- `errorhandler` - Uses `__dirname` (not available in ES modules)
+- `morgan` - Uses code generation (disallowed in Workers)
+
+### Test Setup for Middleware
+
+```toml
+# wrangler.toml
+name = "middleware-test"
+main = "src/index.js"
+compatibility_date = "2026-01-10"
+compatibility_flags = ["nodejs_compat"]  # REQUIRED for node:http
+```
+
+### Full Example: Testing passport-local
+
+```javascript
+import { httpServerHandler } from 'cloudflare:node';
+import express from 'express';
+import session from 'express-session';
+import passport from 'passport';
+import { Strategy as LocalStrategy } from 'passport-local';
+
+const app = express();
+app.use(express.urlencoded({ extended: false }));
+app.use(session({ secret: 'test', resave: false, saveUninitialized: false }));
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Configure strategy
+passport.use(new LocalStrategy((username, password, done) => {
+  if (username === 'admin' && password === 'pass') {
+    return done(null, { id: 1, username });
+  }
+  return done(null, false);
+}));
+
+passport.serializeUser((user, done) => done(null, user.id));
+passport.deserializeUser((id, done) => done(null, { id }));
+
+// Login endpoint
+app.post('/login', passport.authenticate('local'), (req, res) => {
+  res.json({ success: true, user: req.user });
+});
+
+// Protected endpoint
+app.get('/profile', (req, res) => {
+  if (req.isAuthenticated()) {
+    res.json({ user: req.user });
+  } else {
+    res.status(401).json({ error: 'Not authenticated' });
+  }
+});
+
+app.listen(3000);
+export default httpServerHandler({ port: 3000 });
+```
+
+Test it:
+```bash
+# Start worker
+npx wrangler dev --port 8799
+
+# Login and save session cookie
+curl -c cookies.txt -X POST -d "username=admin&password=pass" http://localhost:8799/login
+
+# Access protected route with session
+curl -b cookies.txt http://localhost:8799/profile
+```
+
+### Key Testing Principles
+
+1. **Always use httpServerHandler** - This is how Express runs on Workers
+2. **Test the actual functionality** - Don't just check if it imports
+3. **Use proper wrangler.toml** - Need `nodejs_compat` flag
+4. **Verify with curl** - Check headers, cookies, responses
+5. **Test error cases** - Make sure failures are handled correctly
+
+### Common Mistakes to Avoid
+
+- ❌ Testing import only: `typeof middleware === 'function'`
+- ❌ Using `nodejs_compat_v2` instead of `nodejs_compat`
+- ❌ Forgetting to add session middleware for passport
+- ❌ Using diskStorage with multer (no filesystem)
+- ❌ Assuming filesystem-based middleware will work
 ```
 
 ## NOW: Exit after your task

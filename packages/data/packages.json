@@ -3533,8 +3533,8 @@
       "weeklyDownloads": 24977922,
       "status": "works",
       "category": "http-client",
-      "example": "import cors from 'cors';\n\n// Usage:\nconst middleware = cors();\nreturn { success: typeof middleware === 'function', result: { type: 'middleware' } };",
-      "notes": "CORS middleware (Express/Connect)",
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport cors from 'cors';\n\nconst app = express();\napp.use(cors({ origin: 'https://example.com', methods: ['GET', 'POST'] }));\n\napp.get('/api', (req, res) => res.json({ data: 'test' }));\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });",
+      "notes": "CORS middleware for Express/Connect. Works with httpServerHandler.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
@@ -3692,10 +3692,10 @@
       "name": "crypto-js",
       "version": "4.2.0",
       "weeklyDownloads": 10695783,
-      "status": "use-alternative",
+      "status": "works",
       "category": "crypto",
-      "example": "import CryptoJS from 'crypto-js';\n\n// Usage:\nconst hash = CryptoJS.SHA256('hello').toString();\nreturn { success: hash.length === 64, result: hash };",
-      "notes": "Consider using built-in Web Crypto API",
+      "example": "import CryptoJS from 'crypto-js';\n\n// Hash a string\nconst hash = CryptoJS.SHA256('hello world').toString();\n\n// Encrypt/decrypt\nconst encrypted = CryptoJS.AES.encrypt('secret', 'password').toString();\nconst decrypted = CryptoJS.AES.decrypt(encrypted, 'password').toString(CryptoJS.enc.Utf8);\n\nreturn { success: true, hash, decrypted };",
+      "notes": "Crypto library for hashing (SHA256, MD5) and encryption (AES). Works on Workers. Consider Web Crypto API for better performance.",
       "alternative": "built-in: crypto",
       "testedWith": {
         "wranglerVersion": "3.114.16",
@@ -10531,9 +10531,9 @@
       "name": "os",
       "version": "0.1.2",
       "weeklyDownloads": 671400,
-      "status": "built-in",
+      "status": "works",
       "category": "polyfill",
-      "notes": "Node.js os module available via node:os",
+      "notes": "Node.js os module. Available via node:os with nodejs_compat. Returns limited info in Workers.",
       "investigated": true,
       "errorMessage": "Package os needs manual test configuration - do not use generic Object.keys() test",
       "testedWith": {
@@ -10542,7 +10542,8 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T06:14:29.737Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "example": "import os from 'node:os';\n\n// Get system info\nconst info = {\n  platform: os.platform(),\n  arch: os.arch(),\n  tmpdir: os.tmpdir()\n};\nreturn { success: true, info };"
     },
     {
       "name": "osenv",
@@ -15761,17 +15762,18 @@
       "name": "ws",
       "version": "8.19.0",
       "weeklyDownloads": 118207170,
-      "status": "works",
+      "status": "doesnt-work",
       "category": "network",
       "example": "import WebSocket from 'ws';\n\n// Usage:\nconst hasConstructor = typeof WebSocket === 'function';\nreturn { success: hasConstructor, result: { type: typeof WebSocket } };",
-      "notes": "WebSocket library - use Workers native WebSocket API instead",
+      "notes": "WebSocket library that detects browser-like environment and refuses to run. Use Workers native WebSocket API instead.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
       "lastTested": "2026-01-10T09:07:56.045Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "errorMessage": "ws does not work in the browser. Browser clients must use the native WebSocket object"
     },
     {
       "name": "xlsx",

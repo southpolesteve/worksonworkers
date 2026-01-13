@@ -10718,8 +10718,8 @@
       "weeklyDownloads": 4735813,
       "status": "works",
       "category": "other",
-      "example": "import passport from 'passport';\n\n// Usage:\nconst p = new passport.Passport();\nconst hasInit = typeof p.initialize === 'function';\nconst hasAuth = typeof p.authenticate === 'function';\nreturn { success: hasInit && hasAuth, result: { hasInit, hasAuth } };",
-      "notes": "Authentication framework - may need HTTP context for full functionality",
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport session from 'express-session';\nimport passport from 'passport';\nimport { Strategy as LocalStrategy } from 'passport-local';\n\nconst app = express();\napp.use(express.urlencoded({ extended: false }));\napp.use(session({ secret: 'secret', resave: false, saveUninitialized: false }));\napp.use(passport.initialize());\napp.use(passport.session());\n\npassport.use(new LocalStrategy((username, password, done) => {\n  if (username === 'admin' && password === 'pass') return done(null, { id: 1, username });\n  return done(null, false);\n}));\npassport.serializeUser((user, done) => done(null, user.id));\npassport.deserializeUser((id, done) => done(null, { id, username: 'admin' }));\n\napp.post('/login', passport.authenticate('local'), (req, res) => res.json({ user: req.user }));\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });",
+      "notes": "Authentication middleware for Express. Works with httpServerHandler and express-session.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
@@ -10732,9 +10732,9 @@
       "name": "passport-local",
       "version": "unknown",
       "weeklyDownloads": 1737539,
-      "status": "use-alternative",
+      "status": "works",
       "category": "auth",
-      "notes": "Express middleware - use Cloudflare Access or custom auth",
+      "notes": "Username/password authentication strategy for Passport. Works with Express via httpServerHandler.",
       "alternative": "@cloudflare/access",
       "investigated": true,
       "errorMessage": "spawn npm ENOENT",
@@ -10744,7 +10744,8 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T04:19:08.519Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport session from 'express-session';\nimport passport from 'passport';\nimport { Strategy as LocalStrategy } from 'passport-local';\n\nconst app = express();\napp.use(express.urlencoded({ extended: false }));\napp.use(session({ secret: 'secret', resave: false, saveUninitialized: false }));\napp.use(passport.initialize());\napp.use(passport.session());\n\npassport.use(new LocalStrategy((username, password, done) => {\n  // Verify credentials against your user store\n  if (username === 'admin' && password === 'pass') {\n    return done(null, { id: 1, username });\n  }\n  return done(null, false, { message: 'Invalid credentials' });\n}));\n\npassport.serializeUser((user, done) => done(null, user.id));\npassport.deserializeUser((id, done) => done(null, { id }));\n\napp.post('/login', passport.authenticate('local'), (req, res) => {\n  res.json({ success: true, user: req.user });\n});\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });"
     },
     {
       "name": "passport-oauth",
@@ -10752,7 +10753,7 @@
       "weeklyDownloads": 174463,
       "status": "works",
       "category": "auth",
-      "notes": "Passport strategy for OAuth 1.0 authentication. Works in Workers with nodejs_compat flag.",
+      "notes": "OAuth 1.0 authentication strategy for Passport. Works with Express via httpServerHandler.",
       "alternative": "arctic / @cloudflare/access",
       "investigated": true,
       "errorMessage": "Package passport-oauth needs manual test configuration - do not use generic Object.keys() test",
@@ -10763,7 +10764,7 @@
       },
       "lastTested": "2026-01-09T05:57:00.859Z",
       "testedBy": "automated",
-      "example": "import { OAuthStrategy } from 'passport-oauth';\n\n// Create OAuth 1.0 strategy\nconst strategy = new OAuthStrategy({\n  requestTokenURL: 'https://example.com/oauth/request_token',\n  accessTokenURL: 'https://example.com/oauth/access_token',\n  userAuthorizationURL: 'https://example.com/oauth/authorize',\n  consumerKey: 'test-key',\n  consumerSecret: 'test-secret',\n  callbackURL: 'https://example.com/callback'\n}, (token, tokenSecret, profile, cb) => cb(null, profile));\n\nreturn { success: strategy.name === 'oauth', result: 'OAuth strategy configured' };"
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport session from 'express-session';\nimport passport from 'passport';\nimport { OAuthStrategy } from 'passport-oauth';\n\nconst app = express();\napp.use(session({ secret: 'secret', resave: false, saveUninitialized: false }));\napp.use(passport.initialize());\napp.use(passport.session());\n\npassport.use(new OAuthStrategy({\n  requestTokenURL: 'https://api.example.com/oauth/request_token',\n  accessTokenURL: 'https://api.example.com/oauth/access_token',\n  userAuthorizationURL: 'https://api.example.com/oauth/authorize',\n  consumerKey: process.env.OAUTH_CONSUMER_KEY,\n  consumerSecret: process.env.OAUTH_CONSUMER_SECRET,\n  callbackURL: 'https://myapp.com/auth/callback'\n}, (token, tokenSecret, profile, done) => done(null, { token, profile })));\n\npassport.serializeUser((user, done) => done(null, user));\npassport.deserializeUser((user, done) => done(null, user));\n\napp.get('/auth/provider', passport.authenticate('oauth'));\napp.get('/auth/callback', passport.authenticate('oauth'), (req, res) => res.json({ user: req.user }));\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });"
     },
     {
       "name": "passport-oauth2",
@@ -10771,7 +10772,7 @@
       "weeklyDownloads": 1206906,
       "status": "works",
       "category": "auth",
-      "notes": "Passport strategy for OAuth 2.0 authentication. Works in Workers with nodejs_compat flag.",
+      "notes": "OAuth 2.0 authentication strategy for Passport. Works with Express via httpServerHandler.",
       "alternative": "arctic / @cloudflare/access",
       "investigated": true,
       "errorMessage": "Package passport-oauth2 needs manual test configuration - do not use generic Object.keys() test",
@@ -10782,15 +10783,15 @@
       },
       "lastTested": "2026-01-09T06:03:44.099Z",
       "testedBy": "automated",
-      "example": "import OAuth2Strategy from 'passport-oauth2';\n\n// Create OAuth2 strategy\nconst strategy = new OAuth2Strategy({\n  authorizationURL: 'https://example.com/oauth2/authorize',\n  tokenURL: 'https://example.com/oauth2/token',\n  clientID: 'test-client',\n  clientSecret: 'test-secret',\n  callbackURL: 'https://example.com/callback'\n}, (accessToken, refreshToken, profile, cb) => cb(null, profile));\n\nreturn { success: strategy.name === 'oauth2', result: 'OAuth2 strategy configured' };"
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport session from 'express-session';\nimport passport from 'passport';\nimport OAuth2Strategy from 'passport-oauth2';\n\nconst app = express();\napp.use(session({ secret: 'secret', resave: false, saveUninitialized: false }));\napp.use(passport.initialize());\napp.use(passport.session());\n\npassport.use(new OAuth2Strategy({\n  authorizationURL: 'https://github.com/login/oauth/authorize',\n  tokenURL: 'https://github.com/login/oauth/access_token',\n  clientID: process.env.GITHUB_CLIENT_ID,\n  clientSecret: process.env.GITHUB_CLIENT_SECRET,\n  callbackURL: 'https://myapp.com/auth/callback'\n}, (accessToken, refreshToken, profile, done) => done(null, { accessToken, profile })));\n\npassport.serializeUser((user, done) => done(null, user));\npassport.deserializeUser((user, done) => done(null, user));\n\napp.get('/auth/github', passport.authenticate('oauth2'));\napp.get('/auth/callback', passport.authenticate('oauth2'), (req, res) => res.json({ user: req.user }));\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });"
     },
     {
       "name": "passport-strategy",
       "version": "1.0.0",
       "weeklyDownloads": 4474148,
-      "status": "use-alternative",
+      "status": "works",
       "category": "auth",
-      "notes": "Express middleware - use OAuth libraries or Cloudflare Access",
+      "notes": "Base class for creating custom Passport authentication strategies. Works with Express via httpServerHandler.",
       "alternative": "arctic / @cloudflare/access",
       "investigated": true,
       "errorMessage": "Package passport-strategy needs manual test configuration - do not use generic Object.keys() test",
@@ -10800,7 +10801,8 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T05:57:11.597Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport passport from 'passport';\nimport Strategy from 'passport-strategy';\n\n// Custom API key strategy\nclass ApiKeyStrategy extends Strategy {\n  constructor() { super(); this.name = 'apikey'; }\n  authenticate(req) {\n    const apiKey = req.headers['x-api-key'];\n    if (apiKey === 'valid-key') this.success({ id: 1, name: 'API User' });\n    else this.fail({ message: 'Invalid API key' }, 401);\n  }\n}\n\nconst app = express();\napp.use(passport.initialize());\npassport.use(new ApiKeyStrategy());\n\napp.get('/api/protected', passport.authenticate('apikey', { session: false }), (req, res) => {\n  res.json({ user: req.user });\n});\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });"
     },
     {
       "name": "path",

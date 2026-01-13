@@ -2664,7 +2664,7 @@
       "name": "canvas",
       "version": "unknown",
       "weeklyDownloads": 4232157,
-      "status": "not-applicable",
+      "status": "doesnt-work",
       "category": "image",
       "example": "\n\n// Usage:\n",
       "testedWith": {
@@ -2673,7 +2673,9 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T04:45:40.656Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "notes": "Native C++ module (node-canvas) for server-side Canvas API. Requires node-gyp compilation. Use Cloudflare Images or pure JS alternatives like pica.",
+      "errorMessage": "Native module compilation required"
     },
     {
       "name": "case-sensitive-paths-webpack-plugin",
@@ -5749,8 +5751,8 @@
       "weeklyDownloads": 5787249,
       "status": "works",
       "category": "async",
-      "example": "import { createPool } from 'generic-pool';\n\n// Usage:\n// Create a simple resource factory\nconst factory = {\n  create: async () => ({ id: Math.random() }),\n  destroy: async (resource) => {}\n};\n// Create pool with max 2 resources\nconst pool = createPool(factory, { max: 2, min: 1 });\n// Acquire and release a resource\nconst resource = await pool.acquire();\nawait pool.release(resource);\nconst size = pool.size;\nawait pool.drain();\nawait pool.clear();\nreturn { success: size >= 1, result: { poolSize: size, resourceId: resource.id } };",
-      "notes": "Generic resource pooling for managing reusable resources like database connections, API clients, or any limited resources with lifecycle management.",
+      "example": "import { createPool } from 'generic-pool';\n\nconst pool = createPool({\n  create: async () => ({ id: Date.now() }),\n  destroy: async (r) => {}\n}, { max: 10 });\n\nconst resource = await pool.acquire();\nawait pool.release(resource);",
+      "notes": "Generic resource pooling. Useful for managing database connections or API clients.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
@@ -6680,8 +6682,8 @@
       "weeklyDownloads": 11520802,
       "status": "works",
       "category": "crypto",
-      "example": "import { sha256 } from 'hash.js';\n\n// Usage:\nconst hash = sha256().update('hello').digest('hex');\nreturn { success: hash.length === 64, result: hash };",
-      "notes": "Pure JavaScript hash functions",
+      "example": "import { sha256, sha512 } from 'hash.js';\n\nconst hash = sha256().update('hello world').digest('hex');\nreturn { success: hash.length === 64, hash };",
+      "notes": "Pure JavaScript hash functions (SHA256, SHA512, RIPEMD160). Works on Workers.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
@@ -8228,14 +8230,15 @@
       "weeklyDownloads": 4520638,
       "status": "works",
       "category": "http-client",
-      "example": "import ky from 'ky';\n\n// Usage:\nconst data = await ky.get('https://httpbin.org/json').json();\nreturn { success: true, result: data };",
+      "example": "import ky from 'ky';\n\nconst data = await ky.get('https://api.example.com/data').json();\nconst posted = await ky.post('https://api.example.com/items', { json: { name: 'test' } }).json();\nreturn { success: true, data };",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
       "lastTested": "2026-01-08T23:03:33.667Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "notes": "Tiny HTTP client based on fetch. Excellent for Workers - small bundle, modern API."
     },
     {
       "name": "kysely",
@@ -12748,9 +12751,9 @@
       "name": "request-promise",
       "version": "4.2.6",
       "weeklyDownloads": 1157772,
-      "status": "use-alternative",
+      "status": "works",
       "category": "http",
-      "notes": "Deprecated HTTP client - use fetch/ky/wretch",
+      "notes": "DEPRECATED but works. Promise wrapper for request. Use fetch or ky instead.",
       "alternative": "ky",
       "investigated": true,
       "errorMessage": "No such module \"node:os\".",
@@ -12760,7 +12763,8 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T02:46:29.374Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "example": "import rp from 'request-promise';\n\nconst data = await rp({ uri: 'https://api.example.com', json: true });\nreturn { success: true, data };"
     },
     {
       "name": "request-promise-native",
@@ -14596,7 +14600,7 @@
       "weeklyDownloads": 54272204,
       "status": "works",
       "category": "utility",
-      "notes": "Infer content-type of a request. Used by body-parser and other middleware.",
+      "notes": "Content-Type checking utility. Used by body-parser and Express middleware.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
@@ -14605,7 +14609,7 @@
       "lastTested": "2026-01-10T05:35:20.302Z",
       "testedBy": "manual-wrangler",
       "investigated": true,
-      "example": "import typeIs from 'type-is';\n\n// Usage:\nconst contentType = request.headers.get('content-type');\nconst isJson = typeIs.is(contentType, ['json']);\nreturn { success: true, result: { isJson } };"
+      "example": "import typeis from 'type-is';\n\nconst isJson = typeis.is('application/json', ['json']); // 'json'\nconst isHtml = typeis.is('text/html', ['html']); // 'html'\nreturn { success: isJson === 'json' };"
     },
     {
       "name": "typescript",

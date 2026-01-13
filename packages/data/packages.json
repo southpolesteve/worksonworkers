@@ -3288,9 +3288,9 @@
       "name": "compression",
       "version": "1.8.1",
       "weeklyDownloads": 38194791,
-      "status": "use-alternative",
+      "status": "works",
       "category": "utility",
-      "notes": "Express/Connect middleware for HTTP response compression using Node.js zlib. Workers has native CompressionStream API (gzip, deflate) for streaming compression - use that instead. For frameworks like Hono, use built-in compress() middleware which uses CompressionStream under the hood.",
+      "notes": "Express middleware for gzip/deflate compression. Works with Express via httpServerHandler.",
       "alternative": "CompressionStream (built-in Web API) or Hono's compress() middleware",
       "testedWith": {
         "wranglerVersion": "3.114.16",
@@ -3299,7 +3299,8 @@
       },
       "lastTested": "2026-01-09T21:36:41.978Z",
       "testedBy": "automated",
-      "investigated": true
+      "investigated": true,
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport compression from 'compression';\n\nconst app = express();\napp.use(compression());\n\napp.get('/test', (req, res) => {\n  res.json({ data: 'x'.repeat(1000) });\n});\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });"
     },
     {
       "name": "concat-stream",
@@ -3352,9 +3353,9 @@
       "name": "connect",
       "version": "3.7.0",
       "weeklyDownloads": 8833651,
-      "status": "not-applicable",
+      "status": "works",
       "category": "server-framework",
-      "notes": "Connect is a middleware framework for Node.js HTTP servers that works with Node's http.createServer() to compose middleware chains. Designed for traditional Node.js server applications requiring http/https modules, server lifecycle management (listen, close), and IncomingMessage/ServerResponse objects. Workers uses a fetch handler model (addEventListener('fetch', ...)) instead of Node's HTTP server pattern - there's no http.createServer() or server instance to pass to connect(). Connect middleware expects Node's req/res objects with specific properties (req.url, req.method, req.headers, res.writeHead, res.end) which differ from Workers' Request/Response APIs. For middleware in Workers, use Hono (full-featured web framework with middleware), itty-router (lightweight routing with middleware), or implement custom middleware using native fetch handlers.",
+      "notes": "Extensible HTTP server framework (predecessor to Express). Works with httpServerHandler.",
       "alternative": "Hono or itty-router",
       "errorMessage": "Unexpected token ':'",
       "testedWith": {
@@ -3364,15 +3365,16 @@
       },
       "lastTested": "2026-01-09T03:14:16.881Z",
       "testedBy": "automated",
-      "investigated": true
+      "investigated": true,
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport connect from 'connect';\n\nconst app = connect();\napp.use((req, res) => {\n  res.end('Hello from Connect!');\n});\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });"
     },
     {
       "name": "connect-flash",
       "version": "0.1.1",
       "weeklyDownloads": 140732,
-      "status": "not-applicable",
+      "status": "works",
       "category": "utility",
-      "notes": "Express/Connect middleware for flash messages (temporary messages stored in session across redirects). Requires stateful session storage via express-session with persistent session store. Workers is stateless - sessions must be managed externally using KV, D1, or Durable Objects. Flash messages are a traditional stateful server pattern not suited for serverless. For flash-like messages in Workers, pass messages via URL parameters, cookies, or implement custom session management with KV/Durable Objects.",
+      "notes": "Flash message middleware for Express. Works with express-session via httpServerHandler.",
       "errorMessage": "Package connect-flash needs manual test configuration - do not use generic Object.keys() test",
       "testedWith": {
         "wranglerVersion": "3.114.16",
@@ -3380,22 +3382,24 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T06:02:57.753Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport session from 'express-session';\nimport flash from 'connect-flash';\n\nconst app = express();\napp.use(session({ secret: 'secret', resave: false, saveUninitialized: true }));\napp.use(flash());\n\napp.get('/set', (req, res) => { req.flash('info', 'Hello!'); res.json({ set: true }); });\napp.get('/get', (req, res) => res.json({ messages: req.flash('info') }));\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });"
     },
     {
       "name": "connect-history-api-fallback",
       "version": "unknown",
       "weeklyDownloads": 13133893,
-      "status": "not-applicable",
+      "status": "works",
       "category": "framework",
-      "example": "import historyFallback from 'connect-history-api-fallback';\n\n// Usage:\nreturn { success: false, result: 'n/a' };",
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport history from 'connect-history-api-fallback';\n\nconst app = express();\napp.use(history({ rewrites: [{ from: /^\\/api\\/.*$/, to: ctx => ctx.parsedUrl.pathname }] }));\n\napp.get('/index.html', (req, res) => res.send('<html>SPA</html>'));\napp.get('/api/test', (req, res) => res.json({ api: true }));\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
       "lastTested": "2026-01-10T06:16:50.868Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "notes": "Middleware to proxy requests through index.html for SPA routing. Works with Express via httpServerHandler."
     },
     {
       "name": "connect-redis",
@@ -3479,16 +3483,17 @@
       "name": "cookie-parser",
       "version": "unknown",
       "weeklyDownloads": 5049256,
-      "status": "not-applicable",
+      "status": "works",
       "category": "framework",
-      "example": "import cookieParser from 'cookie-parser';\n\n// Usage:\nreturn { success: false, result: 'n/a' };",
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport cookieParser from 'cookie-parser';\n\nconst app = express();\napp.use(cookieParser('secret'));\n\napp.get('/test', (req, res) => {\n  res.cookie('test', 'value', { signed: true });\n  res.json({ cookies: req.signedCookies });\n});\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
       "lastTested": "2026-01-10T06:16:55.917Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "notes": "Express middleware for parsing cookies. Works with Express via httpServerHandler."
     },
     {
       "name": "cookie-signature",
@@ -6706,7 +6711,7 @@
       "weeklyDownloads": 5633561,
       "status": "works",
       "category": "middleware",
-      "notes": "Express middleware for setting security HTTP headers. Works in Workers with nodejs_compat flag and Express via httpServerHandler.",
+      "notes": "Express middleware for setting security HTTP headers (CSP, HSTS, X-Frame-Options, etc). Works with Express via httpServerHandler.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
@@ -6715,7 +6720,7 @@
       "lastTested": "2026-01-10T02:05:39.118Z",
       "testedBy": "automated",
       "investigated": true,
-      "example": "import helmet from 'helmet';\n\n// Create helmet middleware\nconst middleware = helmet();\nreturn { success: typeof middleware === 'function', result: 'helmet middleware created' };"
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport helmet from 'helmet';\n\nconst app = express();\napp.use(helmet());\n\napp.get('/test', (req, res) => {\n  res.json({ secure: true });\n});\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });"
     },
     {
       "name": "highland",
@@ -9607,9 +9612,9 @@
       "name": "multer",
       "version": "2.0.2",
       "weeklyDownloads": 8596833,
-      "status": "not-applicable",
+      "status": "works",
       "category": "middleware",
-      "notes": "Express multipart/form-data middleware - not needed in Workers",
+      "notes": "Express middleware for handling multipart/form-data (file uploads). Works with memoryStorage - diskStorage not available in Workers.",
       "investigated": true,
       "errorMessage": "Unexpected token ':'",
       "testedWith": {
@@ -9618,7 +9623,8 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T03:32:41.667Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport multer from 'multer';\n\nconst app = express();\nconst upload = multer({ storage: multer.memoryStorage() });\n\napp.post('/upload', upload.single('file'), (req, res) => {\n  res.json({ filename: req.file.originalname, size: req.file.size });\n});\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });"
     },
     {
       "name": "multimatch",
@@ -9986,11 +9992,11 @@
       "name": "node-static",
       "version": "0.7.11",
       "weeklyDownloads": 55225,
-      "status": "not-applicable",
+      "status": "doesnt-work",
       "category": "cli-tool",
-      "notes": "Static file server - CLI tool",
+      "notes": "Static file server for Node.js. Workers has no persistent filesystem - use Cloudflare R2 or Assets instead.",
       "investigated": true,
-      "errorMessage": "Package node-static needs manual test configuration - do not use generic Object.keys() test",
+      "errorMessage": "ENOENT: no such file or directory",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
@@ -13323,9 +13329,9 @@
       "name": "serve-favicon",
       "version": "2.5.1",
       "weeklyDownloads": 1727905,
-      "status": "not-applicable",
+      "status": "doesnt-work",
       "category": "middleware",
-      "notes": "Express middleware - use Cloudflare Workers static asset serving",
+      "notes": "Express middleware for serving favicon from filesystem. Workers has no persistent filesystem - serve favicon from R2 or embed as base64.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
@@ -13333,15 +13339,16 @@
       },
       "lastTested": "2026-01-09T03:24:52.695Z",
       "testedBy": "automated",
-      "investigated": true
+      "investigated": true,
+      "errorMessage": "no such file or directory, stat"
     },
     {
       "name": "serve-index",
       "version": "1.9.1",
       "weeklyDownloads": 12010335,
-      "status": "not-applicable",
+      "status": "doesnt-work",
       "category": "middleware",
-      "notes": "Express middleware for serving directory indexes. Not applicable to Workers.",
+      "notes": "Express middleware for directory listings from filesystem. Workers has no persistent filesystem.",
       "investigated": true,
       "testedWith": {
         "wranglerVersion": "3.114.16",
@@ -13349,18 +13356,19 @@
         "nodeCompat": true
       },
       "lastTested": "2026-01-09T05:55:54.061Z",
-      "testedBy": "automated"
+      "testedBy": "automated",
+      "errorMessage": "Could not resolve emitter"
     },
     {
       "name": "serve-static",
       "version": "2.2.1",
       "weeklyDownloads": 56338664,
-      "status": "not-applicable",
+      "status": "doesnt-work",
       "category": "middleware",
-      "notes": "Express middleware for serving static files. Workers serve static files via Assets or R2.",
+      "notes": "Express middleware for serving static files from filesystem. Workers has no persistent filesystem - use Cloudflare R2 or Assets instead.",
       "alternative": "Use Workers Assets or R2 for static file serving",
       "investigated": true,
-      "errorMessage": "Unexpected token ':'",
+      "errorMessage": "ENOENT: no such file or directory",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",

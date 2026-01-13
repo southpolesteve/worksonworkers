@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-01-10T09:54:01.684Z",
+  "lastUpdated": "2026-01-13T21:45:00.000Z",
   "wranglerVersion": "3.114.16",
   "compatibilityDate": "2026-01-08",
   "packages": [
@@ -713,15 +713,16 @@
       "weeklyDownloads": 1401673,
       "status": "works",
       "category": "encoding",
-      "example": "import { encode, decode } from '@msgpack/msgpack';\n\n// Usage:\nconst data = { name: 'test', count: 42, tags: ['a', 'b'] };\nconst encoded = encode(data);\nconst decoded = decode(encoded);\nreturn { success: decoded.name === 'test' && decoded.count === 42, result: decoded };",
-      "notes": "MessagePack binary serialization format - efficient binary encoding/decoding",
+      "example": "import { encode, decode } from '@msgpack/msgpack';\n\nexport default {\n  async fetch(request) {\n    // Encode complex data\n    const data = {\n      name: 'User',\n      nested: { foo: 'bar', num: 42 },\n      tags: ['worker', 'test'],\n      binary: new Uint8Array([1, 2, 3, 4, 5])\n    };\n    \n    const encoded = encode(data);\n    const decoded = decode(encoded);\n    \n    // MessagePack is ~25% smaller than JSON\n    const jsonSize = JSON.stringify(data).length;\n    const msgpackSize = encoded.byteLength;\n    \n    return Response.json({\n      decoded,\n      compression: `${msgpackSize}/${jsonSize} bytes (${(msgpackSize/jsonSize*100).toFixed(0)}%)`\n    });\n  }\n};",
+      "notes": "MessagePack binary serialization - typically 25-50% smaller than JSON. Supports typed arrays, Maps, and custom extensions. Great for efficient data transfer between Workers and clients/APIs.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T05:47:07.348Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:17:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "@neondatabase/serverless",
@@ -1135,31 +1136,33 @@
       "weeklyDownloads": 115531955,
       "status": "works",
       "category": "utility",
-      "example": "import { parse } from 'acorn';\n\n// Usage:\nconst ast = parse('const x = 1 + 2;', { ecmaVersion: 2020 });\nreturn { success: ast.type === 'Program' && ast.body.length === 1, result: ast.type };",
-      "notes": "JavaScript parser producing AST. Useful for code analysis/transformation.",
+      "example": "import * as acorn from 'acorn';\n\nexport default {\n  async fetch(request) {\n    // Parse ES modules with modern syntax\n    const code = `\n      import { foo } from './bar';\n      const obj = { a: 1, ...other };\n      const fn = async () => await fetch('/api');\n      class Foo { static bar = 42; }\n    `;\n    \n    const ast = acorn.parse(code, { \n      ecmaVersion: 2022, \n      sourceType: 'module' \n    });\n    \n    return Response.json({\n      type: ast.type,\n      statements: ast.body.length,\n      firstNode: ast.body[0].type\n    });\n  }\n};",
+      "notes": "JavaScript parser producing AST. Supports ES2022+ including private fields, optional chaining, nullish coalescing, and ESM syntax. Useful for code analysis, transformation, or building dev tools in Workers.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T05:48:56.036Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:14:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "adm-zip",
       "version": "0.5.16",
       "weeklyDownloads": 8755903,
-      "status": "works",
+      "status": "works-with-caveats",
       "category": "compression",
-      "example": "import AdmZip from 'adm-zip';\n\n// Usage:\nconst zip = new AdmZip();\nzip.addFile('test.txt', Buffer.from('hello world'));\nconst entries = zip.getEntries();\nreturn { success: entries.length === 1 && entries[0].entryName === 'test.txt', result: entries[0].entryName };",
-      "notes": "Create/extract ZIP archives in memory",
+      "example": "import AdmZip from 'adm-zip';\n\n// Creating ZIP works:\nconst zip = new AdmZip();\nzip.addFile('hello.txt', Buffer.from('Hello from Workers!'));\nzip.addFile('data.json', Buffer.from(JSON.stringify({ test: true })));\nconst zipBuffer = zip.toBuffer();\n\n// Return as downloadable ZIP:\nreturn new Response(zipBuffer, {\n  headers: {\n    'Content-Type': 'application/zip',\n    'Content-Disposition': 'attachment; filename=\"archive.zip\"'\n  }\n});",
+      "notes": "ZIP creation works perfectly. Extraction/decompression fails with 'Memory limit exceeded' error due to zlib constraints in Workers. Use for creating ZIPs only - for extraction, consider streaming or using R2/external storage.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T05:49:11.405Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:11:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "ajv",
@@ -1378,14 +1381,16 @@
       "weeklyDownloads": 13841120,
       "status": "works",
       "category": "async",
-      "example": "import retry from 'async-retry';\n\n// Usage:\nlet attempts = 0;\nconst result = await retry(async () => {\n  attempts++;\n  if (attempts < 2) throw new Error('retry');\n  return 'success';\n}, { retries: 3 });\nreturn { success: result === 'success', result };",
+      "example": "import retry from 'async-retry';\n\nexport default {\n  async fetch(request) {\n    // Retry with exponential backoff\n    const result = await retry(async (bail, attemptNumber) => {\n      const response = await fetch('https://api.example.com/data');\n      \n      // Use bail() to stop retrying on fatal errors\n      if (response.status === 401) {\n        bail(new Error('Unauthorized - no point retrying'));\n        return;\n      }\n      \n      if (!response.ok) throw new Error(`Attempt ${attemptNumber} failed`);\n      return response.json();\n    }, {\n      retries: 5,\n      minTimeout: 100,\n      maxTimeout: 1000,\n      factor: 2\n    });\n    \n    return Response.json(result);\n  }\n};",
+      "notes": "Retry async operations with exponential backoff. Supports bail() to abort retries on fatal errors, configurable timeout/factor. Perfect for resilient API calls in Workers.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-08T23:12:05.481Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:13:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "async-validator",
@@ -2204,14 +2209,16 @@
       "weeklyDownloads": 4704231,
       "status": "works",
       "category": "crypto",
-      "example": "import bcrypt from 'bcryptjs';\n\n// Usage:\nconst hash = await bcrypt.hash('password', 10);\nconst match = await bcrypt.compare('password', hash);\nreturn { success: match, result: { hash: hash.substring(0, 20) + '...' } };",
+      "example": "import bcrypt from 'bcryptjs';\n\nexport default {\n  async fetch(request) {\n    const password = 'mypassword123';\n    \n    // Hash password (both sync and async work)\n    const salt = bcrypt.genSaltSync(10);\n    const hash = bcrypt.hashSync(password, salt);\n    \n    // Or use async versions\n    const asyncHash = await bcrypt.hash(password, 10);\n    \n    // Verify password\n    const isValid = bcrypt.compareSync(password, hash);\n    const asyncValid = await bcrypt.compare(password, asyncHash);\n    \n    return Response.json({ hash, isValid, asyncValid });\n  }\n};",
+      "notes": "Pure JavaScript bcrypt implementation - perfect alternative to native bcrypt which doesn't work on Workers. Both sync and async methods work. Use saltRounds of 10-12 for good security/performance balance.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-08T22:58:52.456Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:12:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "bfj",
@@ -2348,15 +2355,16 @@
       "weeklyDownloads": 30031991,
       "status": "works",
       "category": "utility",
-      "example": "import Promise from 'bluebird';\n\n// Usage:\nconst result = await Promise.resolve(42).then(x => x * 2);\nconst mapped = await Promise.map([1, 2, 3], x => x * 2);\nreturn { success: result === 84 && mapped.join(',') === '2,4,6', result: { result, mapped } };",
-      "notes": "Feature-rich Promise library with utilities like map, filter, reduce, etc.",
+      "example": "import Promise from 'bluebird';\n\nexport default {\n  async fetch(request) {\n    // Promise.map with concurrency control\n    const items = [1, 2, 3, 4, 5];\n    const mapped = await Promise.map(items, async (n) => {\n      await Promise.delay(10);\n      return n * 2;\n    }, { concurrency: 2 });\n    \n    // Promise.props - resolve object of promises\n    const props = await Promise.props({\n      a: Promise.resolve(1),\n      b: Promise.delay(10).then(() => 2)\n    });\n    \n    // Promise.filter, Promise.reduce\n    const filtered = await Promise.filter(items, n => n % 2 === 0);\n    const sum = await Promise.reduce(items, (acc, n) => acc + n, 0);\n    \n    return Response.json({ mapped, props, filtered, sum });\n  }\n};",
+      "notes": "Feature-rich Promise library with utilities like map (with concurrency), filter, reduce, props, some, any, delay, and more. All features work on Workers.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T05:57:53.083Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:15:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "bn.js",
@@ -2397,15 +2405,16 @@
       "weeklyDownloads": 1591020,
       "status": "works",
       "category": "utility",
-      "example": "import Boom from 'boom';\n\n// Usage:\nconst notFound = Boom.notFound('Resource not found');\nconst badRequest = Boom.badRequest('Invalid input');\nconst unauthorized = Boom.unauthorized('Must authenticate', 'Bearer');\nreturn { \n  success: notFound.output.statusCode === 404 && badRequest.output.statusCode === 400 && unauthorized.output.statusCode === 401, \n  result: { notFound: notFound.output.statusCode, badRequest: badRequest.output.statusCode, unauthorized: unauthorized.output.statusCode } \n};",
-      "notes": "HTTP-friendly error objects. Popular with Hapi framework.",
+      "example": "import Boom from 'boom';\n\nexport default {\n  async fetch(request) {\n    const url = new URL(request.url);\n    \n    try {\n      if (url.pathname === '/protected') {\n        throw Boom.unauthorized('Authentication required');\n      }\n      if (url.pathname === '/missing') {\n        throw Boom.notFound('Resource not found', { id: 123 });\n      }\n      return Response.json({ message: 'OK' });\n    } catch (error) {\n      if (Boom.isBoom(error)) {\n        return Response.json(error.output.payload, {\n          status: error.output.statusCode,\n          headers: error.output.headers\n        });\n      }\n      throw error;\n    }\n  }\n};",
+      "notes": "HTTP-friendly error objects with proper status codes, messages, and error payloads. Supports notFound(), unauthorized(), badRequest(), forbidden(), conflict(), internal(), teapot(), and more. Use Boom.isBoom() to detect Boom errors.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T05:58:41.027Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:16:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "bootstrap",
@@ -2569,15 +2578,16 @@
       "weeklyDownloads": 7798627,
       "status": "works",
       "category": "encoding",
-      "example": "import { BSON } from 'bson';\n\n// Usage:\nconst doc = { name: 'John', age: 30, tags: ['developer', 'nodejs'] };\nconst serialized = BSON.serialize(doc);\nconst deserialized = BSON.deserialize(serialized);\nreturn { success: deserialized.name === 'John' && deserialized.age === 30, result: deserialized };",
-      "notes": "Binary JSON (BSON) parser used by MongoDB for efficient binary data serialization.",
+      "example": "import { BSON, ObjectId, Binary, UUID, serialize, deserialize } from 'bson';\n\nexport default {\n  async fetch(request) {\n    // Create MongoDB-compatible documents\n    const doc = {\n      _id: new ObjectId(),\n      name: 'Document',\n      data: new Binary(Buffer.from('binary data')),\n      uuid: new UUID(),\n      created: new Date()\n    };\n    \n    // Serialize/deserialize\n    const bsonData = serialize(doc);\n    const restored = deserialize(bsonData);\n    \n    // EJSON for JSON-compatible output\n    const ejson = BSON.EJSON.stringify(doc);\n    \n    return Response.json({ restored, ejson });\n  }\n};",
+      "notes": "MongoDB BSON serialization with full support for ObjectId, Binary, UUID, Date, and other BSON types. Use for MongoDB-compatible data or efficient binary serialization. EJSON support for JSON-compatible output.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-09T20:40:07.232Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:31:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "btoa",
@@ -2762,15 +2772,16 @@
       "weeklyDownloads": 1839527,
       "status": "works",
       "category": "utility",
-      "example": "import Chance from 'chance';\n\n// Usage:\nconst chance = new Chance();\nconst name = chance.name();\nconst email = chance.email();\nconst number = chance.integer({ min: 1, max: 100 });\nreturn { success: typeof name === 'string' && email.includes('@') && number >= 1 && number <= 100, result: { name, email, number } };",
-      "notes": "Random data generator for testing and development. Generates fake names, emails, addresses, numbers, etc.",
+      "example": "import Chance from 'chance';\n\nexport default {\n  async fetch(request) {\n    const chance = new Chance();\n    // Seed for reproducible results\n    const seeded = new Chance(12345);\n    \n    return Response.json({\n      person: {\n        name: chance.name(),\n        email: chance.email(),\n        phone: chance.phone(),\n        address: chance.address(),\n        city: chance.city()\n      },\n      misc: {\n        guid: chance.guid(),\n        ip: chance.ip(),\n        url: chance.url(),\n        color: chance.color({ format: 'hex' })\n      },\n      // Seeded gives same result every time\n      seededName: seeded.name()\n    });\n  }\n};",
+      "notes": "Random data generator for testing, mocking APIs, and development. Generates names, emails, addresses, GUIDs, IPs, colors, sentences, and more. Supports seeding for reproducible results.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-09T20:46:08.553Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:32:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "change-case",
@@ -2808,15 +2819,16 @@
       "weeklyDownloads": 12843962,
       "status": "works",
       "category": "parsing",
-      "example": "import * as cheerio from 'cheerio';\n\n// Usage:\nconst $ = cheerio.load('<div><h1>Hello</h1><p>World</p></div>');\nconst h1Text = $('h1').text();\nconst pText = $('p').text();\nreturn { success: h1Text === 'Hello' && pText === 'World', result: { h1Text, pText } };",
-      "notes": "jQuery-like HTML parsing and manipulation. Perfect for web scraping on Workers.",
+      "example": "import * as cheerio from 'cheerio';\n\nexport default {\n  async fetch(request) {\n    // Fetch and parse a webpage\n    const response = await fetch('https://example.com');\n    const html = await response.text();\n    const $ = cheerio.load(html);\n    \n    // Extract data with jQuery-like selectors\n    const title = $('title').text();\n    const h1 = $('h1').text();\n    const links = $('a').map((i, el) => $(el).attr('href')).get();\n    \n    // Manipulate HTML\n    $('h1').addClass('scraped').text('Modified');\n    \n    return Response.json({ title, h1, links });\n  }\n};",
+      "notes": "jQuery-like HTML parsing and manipulation. Perfect for web scraping, HTML transformation, and extracting data from webpages on Workers. Supports full CSS selectors.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T06:05:47.365Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:30:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "child_process",
@@ -2872,15 +2884,16 @@
       "weeklyDownloads": 1473645,
       "status": "works",
       "category": "utility",
-      "example": "import chroma from 'chroma-js';\n\n// Usage:\nconst color = chroma('#ff0000');\nconst hex = color.hex();\nconst rgb = color.rgb();\nconst darken = color.darken().hex();\nreturn { success: hex === '#ff0000' && rgb[0] === 255, result: { hex, rgb, darken } };",
-      "notes": "Color manipulation library for parsing, converting, and manipulating colors.",
+      "example": "import chroma from 'chroma-js';\n\nexport default {\n  async fetch(request) {\n    // Parse and manipulate colors\n    const color = chroma('#3498db');\n    \n    return Response.json({\n      original: color.hex(),\n      darken: color.darken().hex(),\n      brighten: color.brighten().hex(),\n      rgb: color.rgb(),\n      hsl: color.hsl(),\n      luminance: color.luminance(),\n      // Generate color scales\n      gradient: chroma.scale(['#fafa6e', '#2A4858']).colors(5),\n      // Color mixing\n      mix: chroma.mix('red', 'blue', 0.5).hex(),\n      // WCAG contrast check\n      contrast: chroma.contrast('white', '#3498db')\n    });\n  }\n};",
+      "notes": "Color manipulation library for parsing (hex, rgb, hsl, lab), converting between formats, generating scales/gradients, mixing colors, and checking WCAG contrast ratios for accessibility.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T06:07:14.733Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:33:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "class-validator",
@@ -3107,15 +3120,16 @@
       "weeklyDownloads": 28282961,
       "status": "works",
       "category": "utility",
-      "example": "import co from 'co';\n\n// Usage:\nconst result = await co(function* () {\n  const a = yield Promise.resolve(1);\n  const b = yield Promise.resolve(2);\n  return a + b;\n});\nreturn { success: result === 3, result };",
-      "notes": "Generator-based flow control. Modern async/await is preferred.",
+      "example": "import co from 'co';\n\nexport default {\n  async fetch(request) {\n    // Generator-based control flow\n    const result = await co(function* () {\n      // Sequential async operations\n      const response = yield fetch('https://httpbin.org/json');\n      const data = yield response.json();\n      \n      // Parallel with arrays\n      const [a, b, c] = yield [\n        Promise.resolve(1),\n        Promise.resolve(2),\n        Promise.resolve(3)\n      ];\n      \n      return { title: data.slideshow.title, sum: a + b + c };\n    });\n    \n    return Response.json(result);\n  }\n};",
+      "notes": "Generator-based async control flow. Supports sequential operations, parallel arrays/objects. Modern async/await is preferred for new code, but co still works for legacy codebases.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T06:12:49.782Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:34:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "co-prompt",
@@ -3745,32 +3759,33 @@
       "weeklyDownloads": 1388451,
       "status": "works",
       "category": "parsing",
-      "example": "import { parse, stringify } from 'csv/sync';\n\n// Usage:\nconst csvInput = 'name,age\\nAlice,30\\nBob,25';\nconst records = parse(csvInput, { columns: true });\nconst csvOutput = stringify(records, { header: true });\nreturn { success: records.length === 2 && records[0].name === 'Alice', result: { records, csvOutput } };",
-      "notes": "CSV parsing and generation library with sync and stream APIs.",
+      "example": "import { parse, stringify } from 'csv/sync';\n\nexport default {\n  async fetch(request) {\n    // Parse CSV with headers as column names\n    const csvData = 'name,age,city\\nAlice,30,NYC\\nBob,25,LA';\n    const records = parse(csvData, { columns: true, skip_empty_lines: true });\n    \n    // Generate CSV from objects\n    const data = [{ id: 1, product: 'Widget', price: 9.99 }];\n    const csv = stringify(data, { header: true });\n    \n    // TSV support with custom delimiter\n    const tsv = 'name\\tvalue\\nfoo\\t100';\n    const tsvRecords = parse(tsv, { columns: true, delimiter: '\\t' });\n    \n    return Response.json({ records, csv, tsvRecords });\n  }\n};",
+      "notes": "Full-featured CSV parsing and generation. Supports headers, custom delimiters (TSV), quoted values, escaped characters, and both sync and streaming APIs.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-09T22:00:35.686Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:35:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "cuid",
       "version": "3.0.0",
       "weeklyDownloads": 537104,
-      "status": "use-alternative",
+      "status": "works",
       "category": "id-generation",
-      "alternative": "crypto.randomUUID() or nanoid",
-      "notes": "cuid requires node:os API which is not available in Workers. Use crypto.randomUUID() (built-in Web Crypto API) for UUIDs, or nanoid for shorter, URL-safe IDs.",
-      "errorMessage": "No such module \"node:os\".",
+      "example": "import cuid from 'cuid';\n\nexport default {\n  async fetch(request) {\n    // Generate collision-resistant IDs\n    const id = cuid();\n    \n    // Shorter slug version for URLs\n    const slug = cuid.slug();\n    \n    // Validate IDs\n    const isValid = cuid.isCuid(id);\n    const isSlug = cuid.isSlug(slug);\n    \n    // Generate multiple unique IDs\n    const ids = Array.from({ length: 5 }, () => cuid());\n    \n    return Response.json({ id, slug, isValid, isSlug, ids });\n  }\n};",
+      "notes": "Collision-resistant ID generator. Creates sortable, URL-safe IDs. Includes cuid.slug() for shorter IDs and validation functions. Works on Workers with nodejs_compat.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-08T23:00:05.055Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:36:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "d3-array",
@@ -4205,17 +4220,18 @@
       "name": "dompurify",
       "version": "3.3.1",
       "weeklyDownloads": 16647201,
-      "status": "works",
+      "status": "use-alternative",
       "category": "security",
-      "example": "import createDOMPurify from 'dompurify';\n\n// Usage:\n// DOMPurify requires a window object\ntry {\n  const DOMPurify = createDOMPurify(window);\n  return { success: false, result: 'should fail without window' };\n} catch (e) {\n  return { success: true, result: 'correctly requires window (browser-only)' };\n}",
-      "notes": "Browser-only - requires DOM. Use other sanitization for Workers.",
+      "alternative": "sanitize-html",
+      "notes": "DOMPurify requires a real DOM (window/document) which Workers doesn't have. isomorphic-dompurify also doesn't work (isSupported: false). Use sanitize-html instead - it's a pure string-based HTML sanitizer that works perfectly on Workers without DOM dependencies.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T06:33:23.559Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:44:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "dotenv",
@@ -5300,15 +5316,16 @@
       "weeklyDownloads": 46575790,
       "status": "works",
       "category": "parsing",
-      "example": "import { XMLParser, XMLBuilder } from 'fast-xml-parser';\n\n// Usage:\nconst xml = '<root><name>John</name><age>30</age></root>';\nconst parser = new XMLParser();\nconst parsed = parser.parse(xml);\nconst builder = new XMLBuilder();\nconst rebuilt = builder.build(parsed);\nreturn { success: parsed.root.name === 'John' && parsed.root.age === 30, result: parsed };",
-      "notes": "Fast XML parser and builder",
+      "example": "import { XMLParser, XMLBuilder, XMLValidator } from 'fast-xml-parser';\n\nexport default {\n  async fetch(request) {\n    // Parse XML to JSON\n    const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_' });\n    const xml = '<catalog><book id=\"1\"><title>JS Guide</title></book></catalog>';\n    const parsed = parser.parse(xml);\n    \n    // Build XML from JSON\n    const builder = new XMLBuilder({ ignoreAttributes: false, attributeNamePrefix: '@_' });\n    const built = builder.build({ root: { item: [{ '@_id': '1', name: 'Item' }] } });\n    \n    // Validate XML\n    const isValid = XMLValidator.validate(xml);\n    \n    return Response.json({ parsed, built, isValid });\n  }\n};",
+      "notes": "Fast XML parser, builder, and validator. Supports attributes, CDATA, namespaces, and various XML formats (RSS, SOAP, etc.). No DOM required - pure string parsing.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T06:51:05.013Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:45:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "fbjs",
@@ -5332,15 +5349,16 @@
       "weeklyDownloads": 20528356,
       "status": "works",
       "category": "compression",
-      "example": "import { deflateSync, inflateSync } from 'fflate';\n\n// Usage:\nconst input = new TextEncoder().encode('Hello, World!');\nconst compressed = deflateSync(input);\nconst decompressed = inflateSync(compressed);\nconst output = new TextDecoder().decode(decompressed);\nreturn { success: output === 'Hello, World!', result: output };",
-      "notes": "Fast and lightweight compression library",
+      "example": "import { gzipSync, gunzipSync, zipSync, unzipSync, strToU8, strFromU8 } from 'fflate';\n\nexport default {\n  async fetch(request) {\n    // GZIP compression\n    const text = 'Hello '.repeat(100);\n    const gzipped = gzipSync(strToU8(text));\n    const ungzipped = strFromU8(gunzipSync(gzipped));\n    \n    // Create ZIP archive\n    const archive = zipSync({\n      'hello.txt': strToU8('Hello World'),\n      'data.json': strToU8(JSON.stringify({ test: true }))\n    });\n    \n    // Extract ZIP\n    const extracted = unzipSync(archive);\n    \n    return Response.json({\n      gzipRatio: (gzipped.length / text.length * 100).toFixed(1) + '%',\n      zipFiles: Object.keys(extracted)\n    });\n  }\n};",
+      "notes": "Fast pure-JS compression library. Supports GZIP, DEFLATE, ZLIB, and ZIP. Both creation and extraction work (unlike adm-zip). Use sync versions (gzipSync, zipSync) in Workers.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-08T23:10:27.102Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:46:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "figlet",
@@ -5948,15 +5966,16 @@
       "weeklyDownloads": 21372329,
       "status": "works",
       "category": "parsing",
-      "example": "import { graphql, buildSchema } from 'graphql';\n\n// Usage:\nconst schema = buildSchema(`\n  type Query {\n    hello: String\n  }\n`);\nconst root = { hello: () => 'Hello world!' };\nconst result = await graphql({ schema, source: '{ hello }', rootValue: root });\nreturn { success: result.data?.hello === 'Hello world!', result: result.data };",
-      "notes": "GraphQL query language implementation",
+      "example": "import { graphql, buildSchema, parse, validate, GraphQLSchema, GraphQLObjectType, GraphQLString } from 'graphql';\n\nexport default {\n  async fetch(request) {\n    // SDL-based schema\n    const schema = buildSchema(`\n      type Query {\n        hello: String\n        user(id: Int!): User\n      }\n      type User { id: Int, name: String }\n    `);\n    const root = {\n      hello: () => 'Hello from Workers!',\n      user: ({ id }) => ({ id, name: 'User ' + id })\n    };\n    \n    const result = await graphql({\n      schema,\n      source: '{ hello user(id: 1) { name } }',\n      rootValue: root\n    });\n    \n    return Response.json(result);\n  }\n};",
+      "notes": "Full GraphQL implementation: schema building (SDL or programmatic), query parsing, validation, and execution. Build complete GraphQL APIs on Workers.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T06:52:26.024Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:48:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "graphql-tag",
@@ -5996,15 +6015,16 @@
       "weeklyDownloads": 2672665,
       "status": "works",
       "category": "parsing",
-      "example": "import matter from 'gray-matter';\n\n// Usage:\nconst content = `---\ntitle: Works on Workers\ndescription: Testing gray-matter\ntags: [cloudflare, workers, yaml]\n---\n\n# Article Content\n\nThis is the body of the markdown file.\n`;\nconst parsed = matter(content);\nreturn { \n  success: parsed.data.title === 'Works on Workers' && parsed.content.includes('Article Content'),\n  result: { data: parsed.data, contentLength: parsed.content.length }\n};",
-      "notes": "Parses YAML front matter from markdown/strings. Popular in static site generators (Gatsby, Hugo, VuePress). Similar to front-matter but more feature-rich.",
+      "example": "import matter from 'gray-matter';\n\nexport default {\n  async fetch(request) {\n    // Parse YAML front matter\n    const markdown = `---\ntitle: My Post\ndate: 2024-01-15\ntags: [js, workers]\n---\n\n# Content Here`;\n    const { data, content } = matter(markdown);\n    \n    // JSON front matter\n    const json = `---json\n{\"title\": \"JSON\"}\n---\nContent`;\n    const jsonParsed = matter(json);\n    \n    // Stringify back to front matter\n    const output = matter.stringify('New content', { title: 'Generated' });\n    \n    return Response.json({ yaml: data, json: jsonParsed.data, output });\n  }\n};",
+      "notes": "Parse YAML/JSON front matter from markdown strings. Supports custom delimiters, stringify for generating front matter, and excerpts. TOML requires additional engine config.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T00:28:03.216Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T18:47:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "grpc",
@@ -6846,15 +6866,16 @@
       "weeklyDownloads": 9047483,
       "status": "works",
       "category": "framework",
-      "example": "import { Hono } from 'hono';\n\n// Usage:\nconst app = new Hono();\napp.get('/test', (c) => c.text('Hello'));\nreturn { success: app !== null, result: { routes: 'defined' } };",
-      "notes": "Fast web framework for Workers",
+      "example": "import { Hono } from 'hono';\nimport { cors } from 'hono/cors';\nimport { prettyJSON } from 'hono/pretty-json';\n\nconst app = new Hono();\napp.use('*', cors());\napp.use('*', prettyJSON());\n\napp.get('/', (c) => c.json({ message: 'Hello!' }));\napp.get('/users/:id', (c) => c.json({ userId: c.req.param('id') }));\napp.post('/data', async (c) => c.json({ body: await c.req.json() }));\n\nexport default app;",
+      "notes": "Ultra-fast web framework built specifically for edge/Workers. Includes middleware (cors, logger, jwt, validator), routing, context helpers. Recommended for building APIs on Workers.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T07:01:08.072Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T19:00:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "html-entities",
@@ -6927,15 +6948,16 @@
       "weeklyDownloads": 43886770,
       "status": "works",
       "category": "parsing",
-      "example": "import * as htmlparser2 from 'htmlparser2';\n\n// Usage:\nconst dom = htmlparser2.parseDocument('<div>test</div>');\nreturn { success: dom.children.length > 0, result: { childCount: dom.children.length } };",
-      "notes": "Fast HTML parser",
+      "example": "import { parseDocument, DomUtils } from 'htmlparser2';\nimport render from 'dom-serializer';\n\nexport default {\n  async fetch(request) {\n    const response = await fetch('https://example.com');\n    const html = await response.text();\n    const dom = parseDocument(html);\n    \n    // Find elements\n    const h1 = DomUtils.findOne(el => el.name === 'h1', dom.children, true);\n    const title = h1 ? DomUtils.textContent(h1) : null;\n    const links = DomUtils.findAll(el => el.name === 'a', dom.children, true);\n    \n    // Serialize back to HTML\n    const serialized = render(dom);\n    \n    return Response.json({ title, linkCount: links.length });\n  }\n};",
+      "notes": "Fast streaming HTML/XML parser with DOM utilities. Use with dom-serializer for HTML output. Good alternative to cheerio for lower-level parsing.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T07:01:23.244Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T19:05:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "http",
@@ -7109,15 +7131,16 @@
       "weeklyDownloads": 10001051,
       "status": "works",
       "category": "utility",
-      "example": "import i18next from 'i18next';\n\n// Usage:\nawait i18next.init({\n  lng: 'en',\n  resources: {\n    en: { translation: { hello: 'Hello World' } }\n  }\n});\nconst result = i18next.t('hello');\nreturn { success: result === 'Hello World', result };",
-      "notes": "Internationalization framework",
+      "example": "import i18next from 'i18next';\n\nexport default {\n  async fetch(request) {\n    await i18next.init({\n      lng: 'en',\n      fallbackLng: 'en',\n      resources: {\n        en: { translation: { greeting: 'Hello, {{name}}!', welcome: 'Welcome' } },\n        es: { translation: { greeting: '¡Hola, {{name}}!', welcome: 'Bienvenido' } }\n      }\n    });\n    \n    const en = i18next.t('greeting', { name: 'World' });\n    await i18next.changeLanguage('es');\n    const es = i18next.t('greeting', { name: 'Mundo' });\n    \n    return Response.json({ en, es });\n  }\n};",
+      "notes": "Internationalization framework with interpolation, pluralization, language detection, fallbacks. Works on Workers for multi-language APIs.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T06:56:31.363Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T19:04:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "iconv-lite",
@@ -7188,14 +7211,16 @@
       "weeklyDownloads": 20904024,
       "status": "works",
       "category": "utility",
-      "example": "import { produce } from 'immer';\n\n// Usage:\nconst base = { count: 1, nested: { value: 2 } };\nconst next = produce(base, draft => {\n  draft.count = 2;\n  draft.nested.value = 3;\n});\nreturn { success: next.count === 2 && next.nested.value === 3, result: next };",
+      "example": "import { produce, enableMapSet } from 'immer';\nenableMapSet();\n\nexport default {\n  async fetch(request) {\n    const state = {\n      users: [{ id: 1, name: 'Alice' }],\n      settings: { theme: 'light' }\n    };\n    \n    const nextState = produce(state, draft => {\n      draft.users.push({ id: 2, name: 'Bob' });\n      draft.settings.theme = 'dark';\n    });\n    \n    // Curried producer\n    const addUser = produce((draft, user) => { draft.users.push(user); });\n    const withNewUser = addUser(nextState, { id: 3, name: 'Charlie' });\n    \n    return Response.json({ original: state, updated: withNewUser });\n  }\n};",
+      "notes": "Immutable state updates with mutable syntax. Supports nested objects, arrays, Maps, Sets. Great for state management in Workers.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T07:09:03.081Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T19:03:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "immutability-helper",
@@ -7529,15 +7554,17 @@
       "version": "5.0.22",
       "weeklyDownloads": 116412,
       "status": "works",
-      "category": "other",
-      "example": "import { Router } from 'itty-router';\n\n// Usage:\nconst router = Router();\nrouter.get('/test', () => new Response('Hello'));\nreturn { success: true, result: 'Router created' };",
+      "category": "framework",
+      "example": "import { AutoRouter } from 'itty-router';\n\nconst router = AutoRouter();\n\n// Routes return objects - auto-converted to JSON\nrouter.get('/', () => ({ message: 'Hello!' }));\nrouter.get('/users/:id', ({ id }) => ({ userId: id }));\nrouter.get('/search', (req) => {\n  const url = new URL(req.url);\n  return { query: url.searchParams.get('q') };\n});\nrouter.post('/data', async (req) => ({ body: await req.json() }));\n\nexport default router;",
+      "notes": "Tiny (~1KB) router built for Workers. v5 uses AutoRouter for automatic JSON responses. Supports params, query strings, middleware. Simpler than Hono but less features.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T07:11:30.363Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T19:06:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "iview",
@@ -7694,14 +7721,16 @@
       "weeklyDownloads": 13183645,
       "status": "works",
       "category": "validation",
-      "example": "import Joi from 'joi';\n\n// Usage:\nconst schema = Joi.object({ name: Joi.string().required() });\nconst { value } = schema.validate({ name: 'Alice' });\nreturn { success: true, result: value };",
+      "example": "import Joi from 'joi';\n\nexport default {\n  async fetch(request) {\n    const userSchema = Joi.object({\n      username: Joi.string().alphanum().min(3).max(30).required(),\n      email: Joi.string().email().required(),\n      age: Joi.number().integer().min(0).max(120),\n      role: Joi.string().valid('admin', 'user').default('user')\n    });\n    \n    const body = await request.json();\n    const { error, value } = userSchema.validate(body, { abortEarly: false });\n    \n    if (error) {\n      return Response.json({ errors: error.details.map(d => d.message) }, { status: 400 });\n    }\n    return Response.json({ valid: true, data: value });\n  }\n};",
+      "notes": "Powerful schema validation with nested objects, arrays, conditionals, custom messages. Works on Workers unlike ajv (which uses new Function).",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-08T23:00:37.180Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T19:02:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "jose",
@@ -7709,15 +7738,16 @@
       "weeklyDownloads": 28810541,
       "status": "works",
       "category": "crypto",
-      "example": "import * as jose from 'jose';\n\n// Usage:\nconst secret = new TextEncoder().encode('my-secret-key-at-least-32-chars!');\nconst jwt = await new jose.SignJWT({ sub: '123' }).setProtectedHeader({ alg: 'HS256' }).sign(secret);\nreturn { success: typeof jwt === 'string', result: jwt.substring(0, 50) + '...' };",
-      "notes": "Recommended for JWT in Workers",
+      "example": "import * as jose from 'jose';\n\nexport default {\n  async fetch(request) {\n    // Sign JWT with HS256\n    const secret = new TextEncoder().encode('my-secret-32-chars-minimum-key!');\n    const jwt = await new jose.SignJWT({ sub: 'user123', role: 'admin' })\n      .setProtectedHeader({ alg: 'HS256' })\n      .setIssuedAt()\n      .setExpirationTime('2h')\n      .sign(secret);\n    \n    // Verify JWT\n    const { payload } = await jose.jwtVerify(jwt, secret);\n    \n    // RSA key pair\n    const { publicKey, privateKey } = await jose.generateKeyPair('RS256');\n    \n    // Encrypted JWT (JWE)\n    const key = await jose.generateSecret('A256GCM');\n    const jwe = await new jose.EncryptJWT({ secret: 'data' })\n      .setProtectedHeader({ alg: 'dir', enc: 'A256GCM' })\n      .encrypt(key);\n    \n    return Response.json({ jwt, payload });\n  }\n};",
+      "notes": "Recommended JWT library for Workers. Supports JWT signing/verification (HS256, RS256, ES256), JWE encryption, JWK key management. Uses Web Crypto API - perfect for edge.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
-        "compatibilityDate": "2026-01-08",
+        "compatibilityDate": "2026-01-10",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-08T23:09:33.848Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T19:01:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "jquery",
@@ -7908,18 +7938,19 @@
       "name": "jsonfile",
       "version": "6.2.0",
       "weeklyDownloads": 71095024,
-      "status": "doesnt-work",
+      "status": "works-with-caveats",
       "category": "utility",
-      "example": "import jsonfile from 'jsonfile';\n\n// Usage:\n// jsonfile is filesystem-based, but exports readFile/writeFile\nreturn { success: typeof jsonfile.readFile === 'function', result: 'Has readFile' };",
+      "example": "import jsonfile from 'jsonfile';\nimport { mkdirSync } from 'node:fs';\n\nexport default {\n  async fetch(request) {\n    // Write JSON to /tmp (ephemeral, per-request)\n    mkdirSync('/tmp/data', { recursive: true });\n    const data = { name: 'test', timestamp: Date.now() };\n    jsonfile.writeFileSync('/tmp/data/config.json', data, { spaces: 2 });\n    \n    // Read it back\n    const result = jsonfile.readFileSync('/tmp/data/config.json');\n    return Response.json({ written: data, readBack: result });\n  }\n};",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T07:14:32.096Z",
-      "testedBy": "automated",
-      "notes": "Filesystem-based JSON file reader/writer. Workers has no persistent filesystem. Use KV, R2, or D1 instead.",
-      "errorMessage": "no such file or directory"
+      "lastTested": "2026-01-13T21:40:00.000Z",
+      "testedBy": "manual",
+      "notes": "Works with Workers node:fs support. Can read/write JSON files to /tmp (ephemeral, per-request) or read from /bundle (bundled files, read-only). Not for persistent storage - use KV, R2, or D1 for that.",
+      "errorMessage": "no such file or directory",
+      "investigated": true
     },
     {
       "name": "jsonschema",
@@ -10001,9 +10032,9 @@
       "name": "node-static",
       "version": "0.7.11",
       "weeklyDownloads": 55225,
-      "status": "doesnt-work",
+      "status": "use-alternative",
       "category": "cli-tool",
-      "notes": "Static file server for Node.js. Workers has no persistent filesystem - use Cloudflare R2 or Assets instead.",
+      "notes": "Static file server for Node.js. While node:fs now works in Workers, node-static depends on Node.js stream and http internals that are not fully compatible. Use Workers Static Assets instead - it is the built-in, optimized solution.",
       "investigated": true,
       "errorMessage": "ENOENT: no such file or directory",
       "testedWith": {
@@ -10011,8 +10042,9 @@
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-09T06:13:44.465Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T21:40:00.000Z",
+      "testedBy": "manual",
+      "alternative": "Workers Static Assets (https://developers.cloudflare.com/workers/static-assets/)"
     },
     {
       "name": "node-uuid",
@@ -13343,44 +13375,46 @@
       "name": "serve-favicon",
       "version": "2.5.1",
       "weeklyDownloads": 1727905,
-      "status": "doesnt-work",
+      "status": "use-alternative",
       "category": "middleware",
-      "notes": "Express middleware for serving favicon from filesystem. Workers has no persistent filesystem - serve favicon from R2 or embed as base64.",
+      "notes": "Express middleware for serving favicon. Depends on Node.js stream internals. For favicons in Workers, use Static Assets to serve favicon.ico directly, or embed as base64 in your code.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-09T03:24:52.695Z",
-      "testedBy": "automated",
+      "lastTested": "2026-01-13T21:40:00.000Z",
+      "testedBy": "manual",
       "investigated": true,
-      "errorMessage": "no such file or directory, stat"
+      "errorMessage": "no such file or directory, stat",
+      "alternative": "Workers Static Assets or embed favicon as base64"
     },
     {
       "name": "serve-index",
       "version": "1.9.1",
       "weeklyDownloads": 12010335,
-      "status": "doesnt-work",
+      "status": "use-alternative",
       "category": "middleware",
-      "notes": "Express middleware for directory listings from filesystem. Workers has no persistent filesystem.",
+      "notes": "Express middleware for directory listings. Depends on Node.js stream internals not fully supported in Workers. For directory listing functionality, implement custom logic with Workers Static Assets or R2.",
       "investigated": true,
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-09T05:55:54.061Z",
-      "testedBy": "automated",
-      "errorMessage": "Could not resolve emitter"
+      "lastTested": "2026-01-13T21:40:00.000Z",
+      "testedBy": "manual",
+      "errorMessage": "Could not resolve emitter",
+      "alternative": "Workers Static Assets with custom directory listing"
     },
     {
       "name": "serve-static",
       "version": "2.2.1",
       "weeklyDownloads": 56338664,
-      "status": "doesnt-work",
+      "status": "use-alternative",
       "category": "middleware",
-      "notes": "Express middleware for serving static files from filesystem. Workers has no persistent filesystem - use Cloudflare R2 or Assets instead.",
-      "alternative": "Use Workers Assets or R2 for static file serving",
+      "notes": "Express/Connect middleware for serving static files. While node:fs now works in Workers, serve-static depends on Node.js stream internals that are not fully compatible. Use Workers Static Assets instead - it is the built-in, optimized solution for serving static files.",
+      "alternative": "Workers Static Assets (https://developers.cloudflare.com/workers/static-assets/)",
       "investigated": true,
       "errorMessage": "ENOENT: no such file or directory",
       "testedWith": {
@@ -13388,8 +13422,8 @@
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-09T03:21:58.603Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T21:40:00.000Z",
+      "testedBy": "manual"
     },
     {
       "name": "sha1",

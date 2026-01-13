@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-01-13T21:45:00.000Z",
+  "lastUpdated": "2026-01-13T23:45:00.000Z",
   "wranglerVersion": "3.114.16",
   "compatibilityDate": "2026-01-08",
   "packages": [
@@ -3935,15 +3935,16 @@
       "weeklyDownloads": 392562383,
       "status": "works",
       "category": "utility",
-      "example": "import debug from 'debug';\n\n// Usage:\nconst log = debug('test:app');\nlog.enabled = true; // Force enable for testing\nlog('test message');\nreturn { success: typeof log === 'function', result: 'Debug logger created' };",
-      "notes": "Lightweight debugging utility. Namespace-based logging with conditional output.",
+      "example": "import debug from 'debug';\n\n// Create namespaced loggers\nconst logApp = debug('app:main');\nconst logHttp = debug('app:http');\n\n// Enable namespaces\ndebug.enable('app:*');\n\nexport default {\n  async fetch(request) {\n    const url = new URL(request.url);\n    logApp('Request: %s %s', request.method, url.pathname);\n    logHttp('Headers: %O', Object.fromEntries(request.headers));\n    \n    return Response.json({ debugEnabled: debug.enabled('app:main') });\n  }\n};",
+      "notes": "Lightweight debugging utility with namespace-based logging. Works in Workers - debug output appears in console/logs.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T06:27:34.877Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T23:35:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "decamelize",
@@ -4077,15 +4078,16 @@
       "weeklyDownloads": 69104358,
       "status": "works",
       "category": "utility",
-      "example": "import depd from 'depd';\n\n// Usage:\nconst deprecate = depd('test-package');\ndeprecate('old-function');\nreturn { success: true, result: 'deprecation warning issued' };",
-      "notes": "Deprecation warnings for Node.js",
+      "example": "import depd from 'depd';\n\nconst deprecate = depd('my-module');\n\nfunction oldFunction() {\n  deprecate('oldFunction() is deprecated');\n  return 'result';\n}\n\nexport default {\n  async fetch(request) {\n    const result = oldFunction();\n    return Response.json({ result, message: 'Check console for deprecation warning' });\n  }\n};",
+      "notes": "Deprecation warning utility for Node.js modules. Works in Workers for issuing console warnings about deprecated API usage.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T06:32:34.588Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T23:35:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "destroy",
@@ -5463,18 +5465,20 @@
       "name": "finalhandler",
       "version": "2.1.1",
       "weeklyDownloads": 61042944,
-      "status": "works",
+      "status": "doesnt-work",
       "category": "server-framework",
-      "notes": "Node.js function to handle final HTTP response. Works in Workers with nodejs_compat flag. Useful as final handler in middleware chains.",
+      "notes": "Express/Connect final handler for ending middleware chains. Requires Node.js stream internals (req.unpipe) that are not fully supported in Workers. Use Hono or itty-router for Workers-native error handling.",
       "investigated": true,
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-09T05:52:44.619Z",
-      "testedBy": "automated",
-      "example": "import finalhandler from 'finalhandler';\n\n// Create a final handler for a mock request/response\nconst done = finalhandler({}, {});\nreturn { success: typeof done === 'function', result: 'finalhandler ready' };"
+      "lastTested": "2026-01-13T23:30:00.000Z",
+      "testedBy": "manual",
+      "example": "import finalhandler from 'finalhandler';\n\n// Create a final handler for a mock request/response\nconst done = finalhandler({}, {});\nreturn { success: typeof done === 'function', result: 'finalhandler ready' };",
+      "errorMessage": "req.unpipe is not a function",
+      "alternative": "Use Hono or itty-router for error handling"
     },
     {
       "name": "find-up",
@@ -7012,18 +7016,20 @@
       "name": "http-proxy-middleware",
       "version": "unknown",
       "weeklyDownloads": 18028204,
-      "status": "works",
+      "status": "doesnt-work",
       "category": "middleware",
-      "notes": "Express/Connect middleware for HTTP proxying. Works in Workers with nodejs_compat flag. Can proxy requests to other services.",
+      "notes": "HTTP proxy middleware for Express/Connect. Fails with \"debug_1.Debug.extend is not a function\" due to incompatibility with the debug library in Workers. For proxying in Workers, use native fetch() to forward requests.",
       "investigated": true,
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-09T04:18:50.540Z",
-      "testedBy": "automated",
-      "example": "import { createProxyMiddleware } from 'http-proxy-middleware';\n\n// Create proxy middleware\nconst proxy = createProxyMiddleware({ target: 'http://example.com' });\nreturn { success: typeof proxy === 'function', result: 'proxy middleware created' };"
+      "lastTested": "2026-01-13T23:30:00.000Z",
+      "testedBy": "manual",
+      "example": "import { createProxyMiddleware } from 'http-proxy-middleware';\n\n// Create proxy middleware\nconst proxy = createProxyMiddleware({ target: 'http://example.com' });\nreturn { success: typeof proxy === 'function', result: 'proxy middleware created' };",
+      "errorMessage": "debug_1.Debug.extend is not a function",
+      "alternative": "Use native fetch() for proxying requests"
     },
     {
       "name": "http-server",
@@ -9229,15 +9235,16 @@
       "weeklyDownloads": 62150297,
       "status": "works",
       "category": "utility",
-      "example": "import mergeStream from 'merge-stream';\n\n// Usage:\nconst merged = mergeStream();\nreturn { success: typeof merged === 'object', result: 'merge-utility' };",
-      "notes": "Utility for merging multiple readable streams into one",
+      "example": "import mergeStream from 'merge-stream';\nimport { Readable } from 'node:stream';\n\nexport default {\n  async fetch(request) {\n    // Create readable streams\n    const stream1 = Readable.from(['Hello ', 'from ', 'stream1! ']);\n    const stream2 = Readable.from(['And ', 'stream2 ', 'too!']);\n    \n    // Merge them\n    const merged = mergeStream(stream1, stream2);\n    \n    // Collect all data\n    const chunks = [];\n    for await (const chunk of merged) {\n      chunks.push(chunk);\n    }\n    \n    return Response.json({ result: chunks.join('''') });\n  }\n};",
+      "notes": "Utility for merging multiple readable streams into one. Works with Workers node:stream support.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T03:10:07.437Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-13T23:35:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "metalsmith",

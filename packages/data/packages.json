@@ -5175,15 +5175,16 @@
       "weeklyDownloads": 2925235,
       "status": "works",
       "category": "http-client",
-      "example": "import session from 'express-session';\n\n// Usage:\nconst middleware = session({ secret: 'test', resave: false, saveUninitialized: true });\nreturn { success: typeof middleware === 'function', result: 'session middleware created' };",
-      "notes": "Express middleware for session management",
+      "example": "import { httpServerHandler } from 'cloudflare:node';\nimport express from 'express';\nimport session from 'express-session';\n\nconst app = express();\napp.use(session({\n  secret: 'keyboard cat',\n  resave: false,\n  saveUninitialized: true,\n  cookie: { secure: false } // set true in production with HTTPS\n}));\n\napp.get('/', (req, res) => {\n  if (req.session.views) {\n    req.session.views++;\n  } else {\n    req.session.views = 1;\n  }\n  res.json({ views: req.session.views });\n});\n\napp.listen(3000);\nexport default httpServerHandler({ port: 3000 });",
+      "notes": "Express session middleware. Works with httpServerHandler. Note: default MemoryStore is not suitable for production - use a session store backed by KV, D1, or external Redis.",
       "testedWith": {
         "wranglerVersion": "3.114.16",
         "compatibilityDate": "2026-01-08",
         "nodeCompat": true
       },
-      "lastTested": "2026-01-10T06:46:10.423Z",
-      "testedBy": "automated"
+      "lastTested": "2026-01-14T00:00:00.000Z",
+      "testedBy": "manual",
+      "investigated": true
     },
     {
       "name": "extend",

@@ -351,24 +351,30 @@ return { success: result.success, result: result.data };
 
 ## Filesystem Limitations
 
-**Workers has no persistent filesystem!** The `node:fs` module exists but operates on a virtual in-memory filesystem.
+**Workers has a virtual in-memory filesystem via `node:fs`!**
 
-**Packages that WON'T work due to filesystem:**
-- `serve-static` - Tries to serve files from disk
-- `serve-favicon` - Reads favicon file at startup  
-- `serve-index` - Lists directory contents
-- `node-static` - Static file server
-- Any package that uses `fs.readFileSync()` at import time
+As of 2025, Workers supports `node:fs` with:
+- `/bundle` - Read-only, contains bundled files
+- `/tmp` - Writable, ephemeral per-request (up to 128MB)
+- `/dev/null`, `/dev/random`, `/dev/zero` - Character devices
 
-**Alternatives for static files:**
+**Packages that NOW WORK with node:fs:**
+- `jsonfile` - Works with `/tmp` for ephemeral JSON storage
+- Packages that use fs lazily or optionally
+
+**Packages that should use Workers alternatives:**
+- `serve-static`, `node-static`, `serve-index`, `serve-favicon` - Use Workers Static Assets instead (built-in, optimized)
+
+**Alternatives for persistent storage:**
 - Use Cloudflare R2 for object storage
 - Use Workers Assets for static files
-- Embed small files as base64 in code
 - Use KV for key-value data
+- Use D1 for SQL database
 
-**Packages that WILL work despite using fs:**
+**Packages that WILL work:**
 - `multer` with `memoryStorage()` - Files stay in memory
-- Packages that only use fs optionally or lazily
+- `jsonfile` - Works with `/tmp` directory
+- Packages that only use fs lazily
 
 ## HTTP Framework & Middleware Testing
 
@@ -438,15 +444,16 @@ curl -X POST -d "username=test&password=pass" http://localhost:8799/login
 - `passport-oauth2` - OAuth 2.0
 - `method-override` - HTTP method override
 
-**Does NOT work (requires filesystem):**
-- `serve-static` - No persistent filesystem in Workers
-- `serve-favicon` - Reads file at startup
-- `serve-index` - Directory listings need filesystem
-- `node-static` - Static file server
+**Use Workers alternatives instead:**
+- `serve-static`, `serve-favicon`, `serve-index`, `node-static` - Use Workers Static Assets (built-in, optimized)
 
-**Does NOT work (other reasons):**
+**Does NOT work:**
 - `errorhandler` - Uses `__dirname` (not available in ES modules)
 - `morgan` - Uses code generation (disallowed in Workers)
+
+**Works with caveats:**
+- `http-proxy-middleware` - Basic setup works, actual proxying may have edge cases
+- `finalhandler` - Works perfectly with httpServerHandler
 
 ### Test Setup for Middleware
 
